@@ -9,7 +9,7 @@ on:
 
 concurrency:
   group: atualizar-dados-b3
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: write
