@@ -344,16 +344,22 @@ def main():
         try:
             zip_bytes = baixar(f"{BASE}/DOC/DFP/DADOS/dfp_cia_aberta_{ano}.zip")
             dre_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "DRE_con"))
-            bpa_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "BPA_con"))
-            bpp_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "BPP_con"))
-            try:
-                dfc_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "DFC_MI_con"))
-            except RuntimeError:
-                dfc_idx = {}
-            try:
-                capital_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "composicao_capital"))
-            except RuntimeError:
-                capital_idx = {}
+            if ano >= ano_atual - 2:
+                bpa_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "BPA_con"))
+                bpp_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "BPP_con"))
+            else:
+                bpa_idx, bpp_idx = {}, {}
+            if ano == ano_atual - 1:
+                try:
+                    dfc_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "DFC_MI_con"))
+                except RuntimeError:
+                    dfc_idx = {}
+                try:
+                    capital_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "composicao_capital"))
+                except RuntimeError:
+                    capital_idx = {}
+            else:
+                dfc_idx, capital_idx = {}, {}
             anos_ok.append(ano)
         except Exception as exc:
             erros.append(f"{ano}: {str(exc)[:180]}")
