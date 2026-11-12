@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-12T13:55:47.185614+00:00",
+  "atualizado_em": "2026-11-12T14:00:26.024851+00:00",
   "fonte": "CVM - Dados Abertos; universo de ativos Lummios (CC BY 4.0)",
   "url_fonte": "https://dados.cvm.gov.br/dataset/cia_aberta-doc-dfp",
   "url_mapa_tickers": "https://developers.lummios.com.br/dados-abertos.html",
@@ -12,840 +12,15 @@
     2025,
     2026
   ],
-  "quantidade_empresas": 338,
-  "quantidade_emissores_cvm_com_dados": 538,
-  "emissores_sem_ticker_excluidos": 200,
-  "quantidade_empresas_com_ticker": 338,
+  "quantidade_empresas": 296,
+  "quantidade_linhas_ticker": 447,
+  "quantidade_emissores_cvm_com_dados": 296,
+  "emissores_sem_ticker_excluidos": 0,
+  "quantidade_empresas_com_ticker": 296,
   "quantidade_ativos_acao_no_mapa": 640,
-  "observacao": "Exibe somente emissores com ao menos um ticker classificado como ação no universo de referência da B3. Nomes conciliados por CNPJ normalizado. Dados financeiros DFP consolidados; indicadores não calculados permanecem nulos.",
+  "observacao": "Exibe emissores com registro ativo na CVM e ticker de ação no universo de referência; cada classe/ticker aparece em uma linha separada. Os indicadores contábeis do emissor se repetem entre classes. Nomes conciliados por CNPJ normalizado, com razão social da DFP como alternativa. Dados DFP consolidados; indicadores não calculados permanecem nulos.",
   "erros": [],
   "empresas": [
-    {
-      "cnpj": "00.416.968/0001-01",
-      "empresa": "00.416.968/0001-01",
-      "ticker": "BIDI11 / BIDI3 / BIDI4",
-      "tickers": [
-        "BIDI11",
-        "BIDI3",
-        "BIDI4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2022,
-      "receita_liquida": null,
-      "lucro_liquido": -27298.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "01.971.614/0001-83",
-      "empresa": "01.971.614/0001-83",
-      "ticker": "ECPR3 / ECPR4",
-      "tickers": [
-        "ECPR3",
-        "ECPR4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2021,
-      "receita_liquida": 0.0,
-      "lucro_liquido": -17375.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "02.762.113/0001-50",
-      "empresa": "02.762.113/0001-50",
-      "ticker": "BFRE11 / BFRE12",
-      "tickers": [
-        "BFRE11",
-        "BFRE12"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2023,
-      "receita_liquida": null,
-      "lucro_liquido": null,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "02.860.694/0001-62",
-      "empresa": "02.860.694/0001-62",
-      "ticker": "SHOW3",
-      "tickers": [
-        "SHOW3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2025,
-      "receita_liquida": 180765.0,
-      "lucro_liquido": -54365.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -30.07,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "03.802.115/0001-98",
-      "empresa": "03.802.115/0001-98",
-      "ticker": "CLSA3",
-      "tickers": [
-        "CLSA3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2024,
-      "receita_liquida": 474576.0,
-      "lucro_liquido": -28610.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -6.03,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "04.065.791/0001-99",
-      "empresa": "04.065.791/0001-99",
-      "ticker": "SNSL3 / SQIA3",
-      "tickers": [
-        "SNSL3",
-        "SQIA3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2022,
-      "receita_liquida": 616472.0,
-      "lucro_liquido": 17556.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 2.85,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "06.164.253/0001-87",
-      "empresa": "06.164.253/0001-87",
-      "ticker": "GOLL4 / GOLL54 / GOLL80",
-      "tickers": [
-        "GOLL4",
-        "GOLL54",
-        "GOLL80"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2025,
-      "receita_liquida": 22103281.0,
-      "lucro_liquido": -1304930.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -5.9,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "07.718.269/0001-57",
-      "empresa": "07.718.269/0001-57",
-      "ticker": "SGPS3",
-      "tickers": [
-        "SGPS3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2024,
-      "receita_liquida": 439368.0,
-      "lucro_liquido": -613382.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -139.61,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "07.950.674/0001-04",
-      "empresa": "07.950.674/0001-04",
-      "ticker": "CCXC3",
-      "tickers": [
-        "CCXC3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2022,
-      "receita_liquida": 0.0,
-      "lucro_liquido": -7970.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "09.347.516/0001-81",
-      "empresa": "09.347.516/0001-81",
-      "ticker": "ELMD3",
-      "tickers": [
-        "ELMD3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2024,
-      "receita_liquida": 1187207.0,
-      "lucro_liquido": 145762.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 12.28,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "10.139.870/0001-08",
-      "empresa": "10.139.870/0001-08",
-      "ticker": "NGRD3",
-      "tickers": [
-        "NGRD3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2025,
-      "receita_liquida": 270844.0,
-      "lucro_liquido": -5383.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -1.99,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "10.215.988/0001-60",
-      "empresa": "10.215.988/0001-60",
-      "ticker": "LCAM3",
-      "tickers": [
-        "LCAM3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2024,
-      "receita_liquida": 8503476.0,
-      "lucro_liquido": 834795.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 9.82,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "10.285.590/0001-08",
-      "empresa": "10.285.590/0001-08",
-      "ticker": "SOMA3",
-      "tickers": [
-        "SOMA3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2023,
-      "receita_liquida": 5360547.0,
-      "lucro_liquido": -1617129.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -30.17,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "11.669.021/0001-10",
-      "empresa": "11.669.021/0001-10",
-      "ticker": "ENAT3 / QGEP3",
-      "tickers": [
-        "ENAT3",
-        "QGEP3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2023,
-      "receita_liquida": 1388562.0,
-      "lucro_liquido": -45393.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -3.27,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "11.721.921/0001-60",
-      "empresa": "11.721.921/0001-60",
-      "ticker": "APER3",
-      "tickers": [
-        "APER3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2025,
-      "receita_liquida": 510843.0,
-      "lucro_liquido": 15294.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 2.99,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "11.725.176/0001-27",
-      "empresa": "11.725.176/0001-27",
-      "ticker": "BOAS3",
-      "tickers": [
-        "BOAS3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2022,
-      "receita_liquida": 872293.0,
-      "lucro_liquido": 297750.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 34.13,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "15.101.405/0001-93",
-      "empresa": "15.101.405/0001-93",
-      "ticker": "CORR4",
-      "tickers": [
-        "CORR4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2022,
-      "receita_liquida": 2260.0,
-      "lucro_liquido": 9236.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 408.67,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "15.144.017/0001-90",
-      "empresa": "15.144.017/0001-90",
-      "ticker": "CSAB3 / CSAB4",
-      "tickers": [
-        "CSAB3",
-        "CSAB4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2022,
-      "receita_liquida": null,
-      "lucro_liquido": 18227.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "15.527.906/0001-36",
-      "empresa": "15.527.906/0001-36",
-      "ticker": "BSEV3",
-      "tickers": [
-        "BSEV3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2021,
-      "receita_liquida": 10329992.0,
-      "lucro_liquido": 163042.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 1.58,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "17.167.412/0001-13",
-      "empresa": "17.167.412/0001-13",
-      "ticker": "CRIV3 / CRIV4",
-      "tickers": [
-        "CRIV3",
-        "CRIV4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2023,
-      "receita_liquida": null,
-      "lucro_liquido": null,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "17.193.806/0001-46",
-      "empresa": "17.193.806/0001-46",
-      "ticker": "BRGE11 / BRGE12 / BRGE3 / BRGE5 / BRGE6 / BRGE7 / BRGE8",
-      "tickers": [
-        "BRGE11",
-        "BRGE12",
-        "BRGE3",
-        "BRGE5",
-        "BRGE6",
-        "BRGE7",
-        "BRGE8"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2023,
-      "receita_liquida": 3555.0,
-      "lucro_liquido": 49105.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 1381.29,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "18.328.118/0001-09",
-      "empresa": "18.328.118/0001-09",
-      "ticker": "PETZ3",
-      "tickers": [
-        "PETZ3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2025,
-      "receita_liquida": 3586622.0,
-      "lucro_liquido": 40042.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 1.12,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "19.378.769/0001-76",
-      "empresa": "19.378.769/0001-76",
-      "ticker": "PARD3",
-      "tickers": [
-        "PARD3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2022,
-      "receita_liquida": 2098683.0,
-      "lucro_liquido": 173012.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 8.24,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "19.796.586/0001-70",
-      "empresa": "19.796.586/0001-70",
-      "ticker": "BRIT3",
-      "tickers": [
-        "BRIT3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2023,
-      "receita_liquida": 1227870.0,
-      "lucro_liquido": 163349.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 13.3,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "21.255.567/0001-89",
-      "empresa": "21.255.567/0001-89",
-      "ticker": "CTSA3 / CTSA4",
-      "tickers": [
-        "CTSA3",
-        "CTSA4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2024,
-      "receita_liquida": 35551.0,
-      "lucro_liquido": -161364.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -453.89,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "22.677.520/0001-76",
-      "empresa": "22.677.520/0001-76",
-      "ticker": "CTNM3 / CTNM4",
-      "tickers": [
-        "CTNM3",
-        "CTNM4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2024,
-      "receita_liquida": 470295.0,
-      "lucro_liquido": -780032.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -165.86,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "29.978.814/0001-87",
-      "empresa": "29.978.814/0001-87",
-      "ticker": "SULA11 / SULA3 / SULA4",
-      "tickers": [
-        "SULA11",
-        "SULA3",
-        "SULA4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2021,
-      "receita_liquida": 20362901.0,
-      "lucro_liquido": 332694.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 1.63,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "30.723.886/0001-62",
-      "empresa": "30.723.886/0001-62",
-      "ticker": "MODL11 / MODL3",
-      "tickers": [
-        "MODL11",
-        "MODL3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2022,
-      "receita_liquida": null,
-      "lucro_liquido": 48902.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "32.785.497/0001-97",
-      "empresa": "32.785.497/0001-97",
-      "ticker": "NTCO3",
-      "tickers": [
-        "NTCO3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2024,
-      "receita_liquida": 24089804.0,
-      "lucro_liquido": -8929680.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -37.07,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "33.102.476/0001-92",
-      "empresa": "33.102.476/0001-92",
-      "ticker": "MOAR3",
-      "tickers": [
-        "MOAR3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2024,
-      "receita_liquida": 0.0,
-      "lucro_liquido": 72642.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "33.111.246/0001-90",
-      "empresa": "33.111.246/0001-90",
-      "ticker": "TCNO3 / TCNO4",
-      "tickers": [
-        "TCNO3",
-        "TCNO4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2021,
-      "receita_liquida": 0.0,
-      "lucro_liquido": -634.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "33.130.691/0001-05",
-      "empresa": "33.130.691/0001-05",
-      "ticker": "PORT3",
-      "tickers": [
-        "PORT3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2024,
-      "receita_liquida": 2925895.0,
-      "lucro_liquido": 488612.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 16.7,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "33.467.572/0001-34",
-      "empresa": "33.467.572/0001-34",
-      "ticker": "TKNO3 / TKNO4",
-      "tickers": [
-        "TKNO3",
-        "TKNO4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2025,
-      "receita_liquida": 296981.0,
-      "lucro_liquido": 30018.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 10.11,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "43.185.362/0001-07",
-      "empresa": "43.185.362/0001-07",
-      "ticker": "IGBR3",
-      "tickers": [
-        "IGBR3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2021,
-      "receita_liquida": 5501.0,
-      "lucro_liquido": -54161.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -984.57,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "59.285.411/0001-13",
-      "empresa": "59.285.411/0001-13",
-      "ticker": "BPAN4",
-      "tickers": [
-        "BPAN4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2024,
-      "receita_liquida": null,
-      "lucro_liquido": 528229.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "60.500.139/0001-26",
-      "empresa": "60.500.139/0001-26",
-      "ticker": "SLED3 / SLED4",
-      "tickers": [
-        "SLED3",
-        "SLED4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2022,
-      "receita_liquida": 86582.0,
-      "lucro_liquido": 115773.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 133.71,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "60.637.238/0001-54",
-      "empresa": "60.637.238/0001-54",
-      "ticker": "BLUT3 / BLUT4 / JBDU3",
-      "tickers": [
-        "BLUT3",
-        "BLUT4",
-        "JBDU3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2021,
-      "receita_liquida": 0.0,
-      "lucro_liquido": -4662.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "60.770.336/0001-65",
-      "empresa": "60.770.336/0001-65",
-      "ticker": "BRIV3 / BRIV4",
-      "tickers": [
-        "BRIV3",
-        "BRIV4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2023,
-      "receita_liquida": null,
-      "lucro_liquido": null,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "67.010.660/0001-24",
-      "empresa": "67.010.660/0001-24",
-      "ticker": "RDNI3",
-      "tickers": [
-        "RDNI3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2025,
-      "receita_liquida": 349314.0,
-      "lucro_liquido": -199612.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -57.14,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "75.315.333/0001-09",
-      "empresa": "75.315.333/0001-09",
-      "ticker": "CRFB3",
-      "tickers": [
-        "CRFB3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2024,
-      "receita_liquida": 115636000.0,
-      "lucro_liquido": 1940000.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 1.68,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "82.636.986/0001-55",
-      "empresa": "82.636.986/0001-55",
-      "ticker": "TEKA3 / TEKA4",
-      "tickers": [
-        "TEKA3",
-        "TEKA4"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2025,
-      "receita_liquida": 361360.0,
-      "lucro_liquido": 21912.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 6.06,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
-    {
-      "cnpj": "86.550.951/0001-50",
-      "empresa": "86.550.951/0001-50",
-      "ticker": "FRTA3",
-      "tickers": [
-        "FRTA3"
-      ],
-      "fonte": "CVM - DFP consolidada",
-      "ano_referencia": 2023,
-      "receita_liquida": 7531.0,
-      "lucro_liquido": -5444.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -72.29,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null
-    },
     {
       "cnpj": "12.528.708/0001-07",
       "empresa": "AERIS IND. E COM. DE EQUIP. PARA GER. DE ENG. S.A.",
@@ -944,10 +119,46 @@
     {
       "cnpj": "05.878.397/0001-32",
       "empresa": "ALLOS S.A.",
-      "ticker": "ALOS3 / ALSO3 / SSBR3",
+      "ticker": "ALOS3",
       "tickers": [
-        "ALOS3",
-        "ALSO3",
+        "ALOS3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 2859106.0,
+      "lucro_liquido": 945293.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 33.06,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "05.878.397/0001-32",
+      "empresa": "ALLOS S.A.",
+      "ticker": "ALSO3",
+      "tickers": [
+        "ALSO3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 2859106.0,
+      "lucro_liquido": 945293.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 33.06,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "05.878.397/0001-32",
+      "empresa": "ALLOS S.A.",
+      "ticker": "SSBR3",
+      "tickers": [
         "SSBR3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -984,9 +195,27 @@
     {
       "cnpj": "61.079.117/0001-05",
       "empresa": "ALPARGATAS SA",
-      "ticker": "ALPA3 / ALPA4",
+      "ticker": "ALPA3",
       "tickers": [
-        "ALPA3",
+        "ALPA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 4564874.0,
+      "lucro_liquido": 567926.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 12.44,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "61.079.117/0001-05",
+      "empresa": "ALPARGATAS SA",
+      "ticker": "ALPA4",
+      "tickers": [
         "ALPA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1023,10 +252,46 @@
     {
       "cnpj": "08.364.948/0001-38",
       "empresa": "ALUPAR INVESTIMENTO S/A",
-      "ticker": "ALUP11 / ALUP3 / ALUP4",
+      "ticker": "ALUP11",
       "tickers": [
-        "ALUP11",
-        "ALUP3",
+        "ALUP11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 4397883.0,
+      "lucro_liquido": 1733193.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 39.41,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "08.364.948/0001-38",
+      "empresa": "ALUPAR INVESTIMENTO S/A",
+      "ticker": "ALUP3",
+      "tickers": [
+        "ALUP3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 4397883.0,
+      "lucro_liquido": 1733193.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 39.41,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "08.364.948/0001-38",
+      "empresa": "ALUPAR INVESTIMENTO S/A",
+      "ticker": "ALUP4",
+      "tickers": [
         "ALUP4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1082,9 +347,27 @@
     {
       "cnpj": "00.776.574/0001-56",
       "empresa": "AMERICANAS S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": "AMER3 / BTOW3",
+      "ticker": "AMER3",
       "tickers": [
-        "AMER3",
+        "AMER3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 12305000.0,
+      "lucro_liquido": -271000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -2.2,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "00.776.574/0001-56",
+      "empresa": "AMERICANAS S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "BTOW3",
+      "tickers": [
         "BTOW3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1121,9 +404,27 @@
     {
       "cnpj": "14.127.813/0001-51",
       "empresa": "ARANDU INVESTIMENTOS S.A.",
-      "ticker": "ARND3 / NINJ3",
+      "ticker": "ARND3",
       "tickers": [
-        "ARND3",
+        "ARND3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 70943.0,
+      "lucro_liquido": -459708.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -648.0,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "14.127.813/0001-51",
+      "empresa": "ARANDU INVESTIMENTOS S.A.",
+      "ticker": "NINJ3",
+      "tickers": [
         "NINJ3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1236,12 +537,84 @@
     {
       "cnpj": "00.001.180/0001-26",
       "empresa": "AXIA ENERGIA S.A.",
-      "ticker": "AXIA3 / AXIA7 / ELET3 / ELET5 / ELET6",
+      "ticker": "AXIA3",
       "tickers": [
-        "AXIA3",
-        "AXIA7",
-        "ELET3",
-        "ELET5",
+        "AXIA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 41281596.0,
+      "lucro_liquido": 6559659.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 15.89,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "00.001.180/0001-26",
+      "empresa": "AXIA ENERGIA S.A.",
+      "ticker": "AXIA7",
+      "tickers": [
+        "AXIA7"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 41281596.0,
+      "lucro_liquido": 6559659.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 15.89,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "00.001.180/0001-26",
+      "empresa": "AXIA ENERGIA S.A.",
+      "ticker": "ELET3",
+      "tickers": [
+        "ELET3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 41281596.0,
+      "lucro_liquido": 6559659.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 15.89,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "00.001.180/0001-26",
+      "empresa": "AXIA ENERGIA S.A.",
+      "ticker": "ELET5",
+      "tickers": [
+        "ELET5"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 41281596.0,
+      "lucro_liquido": 6559659.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 15.89,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "00.001.180/0001-26",
+      "empresa": "AXIA ENERGIA S.A.",
+      "ticker": "ELET6",
+      "tickers": [
         "ELET6"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1278,10 +651,46 @@
     {
       "cnpj": "61.351.532/0001-68",
       "empresa": "AZEVEDO & TRAVASSOS SA",
-      "ticker": "AZEV11 / AZEV3 / AZEV4",
+      "ticker": "AZEV11",
       "tickers": [
-        "AZEV11",
-        "AZEV3",
+        "AZEV11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 349427.0,
+      "lucro_liquido": -618309.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -176.95,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "61.351.532/0001-68",
+      "empresa": "AZEVEDO & TRAVASSOS SA",
+      "ticker": "AZEV3",
+      "tickers": [
+        "AZEV3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 349427.0,
+      "lucro_liquido": -618309.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -176.95,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "61.351.532/0001-68",
+      "empresa": "AZEVEDO & TRAVASSOS SA",
+      "ticker": "AZEV4",
+      "tickers": [
         "AZEV4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1299,12 +708,84 @@
     {
       "cnpj": "09.305.994/0001-29",
       "empresa": "AZUL S.A.",
-      "ticker": "AZUL3 / AZUL4 / AZUL97 / AZUL98 / AZUL99",
+      "ticker": "AZUL3",
       "tickers": [
-        "AZUL3",
-        "AZUL4",
-        "AZUL97",
-        "AZUL98",
+        "AZUL3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 21640393.0,
+      "lucro_liquido": 124858.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 0.58,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "09.305.994/0001-29",
+      "empresa": "AZUL S.A.",
+      "ticker": "AZUL4",
+      "tickers": [
+        "AZUL4"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 21640393.0,
+      "lucro_liquido": 124858.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 0.58,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "09.305.994/0001-29",
+      "empresa": "AZUL S.A.",
+      "ticker": "AZUL97",
+      "tickers": [
+        "AZUL97"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 21640393.0,
+      "lucro_liquido": 124858.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 0.58,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "09.305.994/0001-29",
+      "empresa": "AZUL S.A.",
+      "ticker": "AZUL98",
+      "tickers": [
+        "AZUL98"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 21640393.0,
+      "lucro_liquido": 124858.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 0.58,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "09.305.994/0001-29",
+      "empresa": "AZUL S.A.",
+      "ticker": "AZUL99",
+      "tickers": [
         "AZUL99"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1322,9 +803,27 @@
     {
       "cnpj": "16.590.234/0001-76",
       "empresa": "AZZAS 2154 S.A.",
-      "ticker": "ARZZ3 / AZZA3",
+      "ticker": "ARZZ3",
       "tickers": [
-        "ARZZ3",
+        "ARZZ3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 11819492.0,
+      "lucro_liquido": 911249.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 7.71,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "16.590.234/0001-76",
+      "empresa": "AZZAS 2154 S.A.",
+      "ticker": "AZZA3",
+      "tickers": [
         "AZZA3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1342,9 +841,27 @@
     {
       "cnpj": "52.270.350/0001-71",
       "empresa": "B100 S.A.",
-      "ticker": "ADMF3 / B1003",
+      "ticker": "ADMF3",
       "tickers": [
-        "ADMF3",
+        "ADMF3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 0.0,
+      "lucro_liquido": -465085.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "52.270.350/0001-71",
+      "empresa": "B100 S.A.",
+      "ticker": "B1003",
+      "tickers": [
         "B1003"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1362,9 +879,27 @@
     {
       "cnpj": "09.346.601/0001-25",
       "empresa": "B3 S.A. - BRASIL, BOLSA, BALCÃO",
-      "ticker": "B3SA3 / BVMF3",
+      "ticker": "B3SA3",
       "tickers": [
-        "B3SA3",
+        "B3SA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 11121545.0,
+      "lucro_liquido": 4586872.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 41.24,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "09.346.601/0001-25",
+      "empresa": "B3 S.A. - BRASIL, BOLSA, BALCÃO",
+      "ticker": "BVMF3",
+      "tickers": [
         "BVMF3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1401,9 +936,27 @@
     {
       "cnpj": "61.186.680/0001-74",
       "empresa": "BANCO BMG S/A",
-      "ticker": "BMGB11 / BMGB4",
+      "ticker": "BMGB11",
       "tickers": [
-        "BMGB11",
+        "BMGB11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": 587304.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "61.186.680/0001-74",
+      "empresa": "BANCO BMG S/A",
+      "ticker": "BMGB4",
+      "tickers": [
         "BMGB4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1421,9 +974,27 @@
     {
       "cnpj": "60.746.948/0001-12",
       "empresa": "BANCO BRADESCO S.A.",
-      "ticker": "BBDC3 / BBDC4",
+      "ticker": "BBDC3",
       "tickers": [
-        "BBDC3",
+        "BBDC3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": null,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "60.746.948/0001-12",
+      "empresa": "BANCO BRADESCO S.A.",
+      "ticker": "BBDC4",
+      "tickers": [
         "BBDC4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1441,10 +1012,46 @@
     {
       "cnpj": "30.306.294/0001-45",
       "empresa": "BANCO BTG PACTUAL S/A",
-      "ticker": "BPAC11 / BPAC3 / BPAC5",
+      "ticker": "BPAC11",
       "tickers": [
-        "BPAC11",
-        "BPAC3",
+        "BPAC11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": 16663803.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "30.306.294/0001-45",
+      "empresa": "BANCO BTG PACTUAL S/A",
+      "ticker": "BPAC3",
+      "tickers": [
+        "BPAC3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": 16663803.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "30.306.294/0001-45",
+      "empresa": "BANCO BTG PACTUAL S/A",
+      "ticker": "BPAC5",
+      "tickers": [
         "BPAC5"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1481,10 +1088,46 @@
     {
       "cnpj": "92.702.067/0001-96",
       "empresa": "BANCO DO ESTADO DO RIO GRANDE DO SUL SA",
-      "ticker": "BRSR3 / BRSR5 / BRSR6",
+      "ticker": "BRSR3",
       "tickers": [
-        "BRSR3",
-        "BRSR5",
+        "BRSR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": null,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "92.702.067/0001-96",
+      "empresa": "BANCO DO ESTADO DO RIO GRANDE DO SUL SA",
+      "ticker": "BRSR5",
+      "tickers": [
+        "BRSR5"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": null,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "92.702.067/0001-96",
+      "empresa": "BANCO DO ESTADO DO RIO GRANDE DO SUL SA",
+      "ticker": "BRSR6",
+      "tickers": [
         "BRSR6"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1502,9 +1145,27 @@
     {
       "cnpj": "17.184.037/0001-10",
       "empresa": "BANCO MERCANTIL BRASIL SA",
-      "ticker": "BMEB3 / BMEB4",
+      "ticker": "BMEB3",
       "tickers": [
-        "BMEB3",
+        "BMEB3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": null,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "17.184.037/0001-10",
+      "empresa": "BANCO MERCANTIL BRASIL SA",
+      "ticker": "BMEB4",
+      "tickers": [
         "BMEB4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1522,9 +1183,27 @@
     {
       "cnpj": "62.144.175/0001-20",
       "empresa": "BANCO PINE S/A",
-      "ticker": "PINE3 / PINE4",
+      "ticker": "PINE3",
       "tickers": [
-        "PINE3",
+        "PINE3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": null,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "62.144.175/0001-20",
+      "empresa": "BANCO PINE S/A",
+      "ticker": "PINE4",
+      "tickers": [
         "PINE4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1542,10 +1221,46 @@
     {
       "cnpj": "90.400.888/0001-42",
       "empresa": "BANCO SANTANDER (BRASIL) S.A.",
-      "ticker": "SANB11 / SANB3 / SANB4",
+      "ticker": "SANB11",
       "tickers": [
-        "SANB11",
-        "SANB3",
+        "SANB11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": null,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "90.400.888/0001-42",
+      "empresa": "BANCO SANTANDER (BRASIL) S.A.",
+      "ticker": "SANB3",
+      "tickers": [
+        "SANB3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": null,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "90.400.888/0001-42",
+      "empresa": "BANCO SANTANDER (BRASIL) S.A.",
+      "ticker": "SANB4",
+      "tickers": [
         "SANB4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1563,9 +1278,27 @@
     {
       "cnpj": "28.127.603/0001-78",
       "empresa": "BANESTES SA BANCO DO ESTADO DO ESPIRITO SANTO",
-      "ticker": "BEES3 / BEES4",
+      "ticker": "BEES3",
       "tickers": [
-        "BEES3",
+        "BEES3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": null,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "28.127.603/0001-78",
+      "empresa": "BANESTES SA BANCO DO ESTADO DO ESPIRITO SANTO",
+      "ticker": "BEES4",
+      "tickers": [
         "BEES4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1583,9 +1316,27 @@
     {
       "cnpj": "60.851.615/0001-53",
       "empresa": "BARDELLA S.A. INDUSTRIAS MECANICAS - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": "BDLL3 / BDLL4",
+      "ticker": "BDLL3",
       "tickers": [
-        "BDLL3",
+        "BDLL3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 48072.0,
+      "lucro_liquido": -20752.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -43.17,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "60.851.615/0001-53",
+      "empresa": "BARDELLA S.A. INDUSTRIAS MECANICAS - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "BDLL4",
+      "tickers": [
         "BDLL4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1603,9 +1354,27 @@
     {
       "cnpj": "61.374.161/0001-30",
       "empresa": "BAUMER SA",
-      "ticker": "BALM3 / BALM4",
+      "ticker": "BALM3",
       "tickers": [
-        "BALM3",
+        "BALM3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 213729.0,
+      "lucro_liquido": 22106.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 10.34,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "61.374.161/0001-30",
+      "empresa": "BAUMER SA",
+      "ticker": "BALM4",
+      "tickers": [
         "BALM4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1661,9 +1430,27 @@
     {
       "cnpj": "45.987.245/0001-92",
       "empresa": "BIOMA EDUCAÇÃO S.A.",
-      "ticker": "BAHI3 / BIED3",
+      "ticker": "BAHI3",
       "tickers": [
-        "BAHI3",
+        "BAHI3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 332743.0,
+      "lucro_liquido": -61569.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -18.5,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "45.987.245/0001-92",
+      "empresa": "BIOMA EDUCAÇÃO S.A.",
+      "ticker": "BIED3",
+      "tickers": [
         "BIED3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1738,9 +1525,27 @@
     {
       "cnpj": "50.564.053/0001-03",
       "empresa": "BOMBRIL S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": "BOBR3 / BOBR4",
+      "ticker": "BOBR3",
       "tickers": [
-        "BOBR3",
+        "BOBR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1729013.0,
+      "lucro_liquido": 68008.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 3.93,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "50.564.053/0001-03",
+      "empresa": "BOMBRIL S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "BOBR4",
+      "tickers": [
         "BOBR4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1777,9 +1582,27 @@
     {
       "cnpj": "03.847.461/0001-92",
       "empresa": "BRADESPAR S/A",
-      "ticker": "BRAP3 / BRAP4",
+      "ticker": "BRAP3",
       "tickers": [
-        "BRAP3",
+        "BRAP3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2023,
+      "receita_liquida": 0.0,
+      "lucro_liquido": 1896619.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "03.847.461/0001-92",
+      "empresa": "BRADESPAR S/A",
+      "ticker": "BRAP4",
+      "tickers": [
         "BRAP4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1797,9 +1620,27 @@
     {
       "cnpj": "58.119.199/0001-51",
       "empresa": "BRADSAÚDE S.A.",
-      "ticker": "ODPV3 / SAUD3",
+      "ticker": "ODPV3",
       "tickers": [
-        "ODPV3",
+        "ODPV3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 2420159.0,
+      "lucro_liquido": 582537.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 24.07,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "58.119.199/0001-51",
+      "empresa": "BRADSAÚDE S.A.",
+      "ticker": "SAUD3",
+      "tickers": [
         "SAUD3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1836,10 +1677,46 @@
     {
       "cnpj": "42.150.391/0001-70",
       "empresa": "BRASKEM S.A.",
-      "ticker": "BRKM3 / BRKM5 / BRKM6",
+      "ticker": "BRKM3",
       "tickers": [
-        "BRKM3",
-        "BRKM5",
+        "BRKM3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 70717000.0,
+      "lucro_liquido": -10961000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -15.5,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "42.150.391/0001-70",
+      "empresa": "BRASKEM S.A.",
+      "ticker": "BRKM5",
+      "tickers": [
+        "BRKM5"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 70717000.0,
+      "lucro_liquido": -10961000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -15.5,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "42.150.391/0001-70",
+      "empresa": "BRASKEM S.A.",
+      "ticker": "BRKM6",
+      "tickers": [
         "BRKM6"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1857,9 +1734,27 @@
     {
       "cnpj": "12.091.809/0001-55",
       "empresa": "BRAVA ENERGIA S.A.",
-      "ticker": "BRAV3 / RRRP3",
+      "ticker": "BRAV3",
       "tickers": [
-        "BRAV3",
+        "BRAV3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 11622991.0,
+      "lucro_liquido": 1411225.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 12.14,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "12.091.809/0001-55",
+      "empresa": "BRAVA ENERGIA S.A.",
+      "ticker": "RRRP3",
+      "tickers": [
         "RRRP3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1877,9 +1772,27 @@
     {
       "cnpj": "00.000.208/0001-00",
       "empresa": "BRB BANCO DE BRASILIA SA",
-      "ticker": "BSLI3 / BSLI4",
+      "ticker": "BSLI3",
       "tickers": [
-        "BSLI3",
+        "BSLI3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2024,
+      "receita_liquida": null,
+      "lucro_liquido": null,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "00.000.208/0001-00",
+      "empresa": "BRB BANCO DE BRASILIA SA",
+      "ticker": "BSLI4",
+      "tickers": [
         "BSLI4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -1992,9 +1905,27 @@
     {
       "cnpj": "61.088.894/0001-08",
       "empresa": "CAMBUCI SA",
-      "ticker": "CAMB3 / CAMB4",
+      "ticker": "CAMB3",
       "tickers": [
-        "CAMB3",
+        "CAMB3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 383122.0,
+      "lucro_liquido": 68390.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 17.85,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "61.088.894/0001-08",
+      "empresa": "CAMBUCI SA",
+      "ticker": "CAMB4",
+      "tickers": [
         "CAMB4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2031,9 +1962,27 @@
     {
       "cnpj": "83.878.892/0001-55",
       "empresa": "CENTRAIS ELETRICAS DE SANTA CATARINA S.A",
-      "ticker": "CLSC3 / CLSC4",
+      "ticker": "CLSC3",
       "tickers": [
-        "CLSC3",
+        "CLSC3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 11900276.0,
+      "lucro_liquido": 729495.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 6.13,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "83.878.892/0001-55",
+      "empresa": "CENTRAIS ELETRICAS DE SANTA CATARINA S.A",
+      "ticker": "CLSC4",
+      "tickers": [
         "CLSC4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2051,10 +2000,46 @@
     {
       "cnpj": "60.933.603/0001-78",
       "empresa": "CESP - COMPANHIA ENERGÉTICA DE SÃO PAULO",
-      "ticker": "CESP3 / CESP5 / CESP6",
+      "ticker": "CESP3",
       "tickers": [
-        "CESP3",
-        "CESP5",
+        "CESP3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1710155.0,
+      "lucro_liquido": 335809.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 19.64,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "60.933.603/0001-78",
+      "empresa": "CESP - COMPANHIA ENERGÉTICA DE SÃO PAULO",
+      "ticker": "CESP5",
+      "tickers": [
+        "CESP5"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1710155.0,
+      "lucro_liquido": 335809.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 19.64,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "60.933.603/0001-78",
+      "empresa": "CESP - COMPANHIA ENERGÉTICA DE SÃO PAULO",
+      "ticker": "CESP6",
+      "tickers": [
         "CESP6"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2072,9 +2057,27 @@
     {
       "cnpj": "01.938.783/0001-11",
       "empresa": "CIA DE PARTICIPAÇÕES ALIANÇA DA BAHIA",
-      "ticker": "PEAB3 / PEAB4",
+      "ticker": "PEAB3",
       "tickers": [
-        "PEAB3",
+        "PEAB3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 117260.0,
+      "lucro_liquido": 33709.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 28.75,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "01.938.783/0001-11",
+      "empresa": "CIA DE PARTICIPAÇÕES ALIANÇA DA BAHIA",
+      "ticker": "PEAB4",
+      "tickers": [
         "PEAB4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2092,9 +2095,27 @@
     {
       "cnpj": "17.155.730/0001-64",
       "empresa": "CIA ENERG MINAS GERAIS - CEMIG",
-      "ticker": "CMIG3 / CMIG4",
+      "ticker": "CMIG3",
       "tickers": [
-        "CMIG3",
+        "CMIG3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 42751283.0,
+      "lucro_liquido": 4899617.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 11.46,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "17.155.730/0001-64",
+      "empresa": "CIA ENERG MINAS GERAIS - CEMIG",
+      "ticker": "CMIG4",
+      "tickers": [
         "CMIG4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2112,9 +2133,27 @@
     {
       "cnpj": "15.141.799/0001-03",
       "empresa": "CIA FERRO LIGAS BAHIA FERBASA",
-      "ticker": "FESA3 / FESA4",
+      "ticker": "FESA3",
       "tickers": [
-        "FESA3",
+        "FESA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 2334454.0,
+      "lucro_liquido": 188676.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 8.08,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "15.141.799/0001-03",
+      "empresa": "CIA FERRO LIGAS BAHIA FERBASA",
+      "ticker": "FESA4",
+      "tickers": [
         "FESA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2227,9 +2266,27 @@
     {
       "cnpj": "60.730.348/0001-66",
       "empresa": "COMPANHIA  MELHORAMENTOS DE SÃO PAULO",
-      "ticker": "MSPA3 / MSPA4",
+      "ticker": "MSPA3",
       "tickers": [
-        "MSPA3",
+        "MSPA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 177091.0,
+      "lucro_liquido": -32702.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -18.47,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "60.730.348/0001-66",
+      "empresa": "COMPANHIA  MELHORAMENTOS DE SÃO PAULO",
+      "ticker": "MSPA4",
+      "tickers": [
         "MSPA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2266,9 +2323,27 @@
     {
       "cnpj": "47.508.411/0001-56",
       "empresa": "COMPANHIA BRASILEIRA DE DISTRIBUIÇÃO",
-      "ticker": "PCAR3 / PCAR4",
+      "ticker": "PCAR3",
       "tickers": [
-        "PCAR3",
+        "PCAR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 19113000.0,
+      "lucro_liquido": -815000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -4.26,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "47.508.411/0001-56",
+      "empresa": "COMPANHIA BRASILEIRA DE DISTRIBUIÇÃO",
+      "ticker": "PCAR4",
+      "tickers": [
         "PCAR4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2305,9 +2380,27 @@
     {
       "cnpj": "17.245.234/0001-00",
       "empresa": "COMPANHIA DE FIACAO E TECIDOS CEDRO E CACHOEIRA",
-      "ticker": "CEDO3 / CEDO4",
+      "ticker": "CEDO3",
       "tickers": [
-        "CEDO3",
+        "CEDO3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2024,
+      "receita_liquida": 1036777.0,
+      "lucro_liquido": 110590.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 10.67,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "17.245.234/0001-00",
+      "empresa": "COMPANHIA DE FIACAO E TECIDOS CEDRO E CACHOEIRA",
+      "ticker": "CEDO4",
+      "tickers": [
         "CEDO4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2344,10 +2437,46 @@
     {
       "cnpj": "00.070.698/0001-11",
       "empresa": "COMPANHIA ENERGÉTICA DE BRASÍLIA - CEB",
-      "ticker": "CEBR3 / CEBR5 / CEBR6",
+      "ticker": "CEBR3",
       "tickers": [
-        "CEBR3",
-        "CEBR5",
+        "CEBR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 510334.0,
+      "lucro_liquido": 235310.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 46.11,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "00.070.698/0001-11",
+      "empresa": "COMPANHIA ENERGÉTICA DE BRASÍLIA - CEB",
+      "ticker": "CEBR5",
+      "tickers": [
+        "CEBR5"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 510334.0,
+      "lucro_liquido": 235310.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 46.11,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "00.070.698/0001-11",
+      "empresa": "COMPANHIA ENERGÉTICA DE BRASÍLIA - CEB",
+      "ticker": "CEBR6",
+      "tickers": [
         "CEBR6"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2365,10 +2494,46 @@
     {
       "cnpj": "76.483.817/0001-20",
       "empresa": "COMPANHIA PARANAENSE DE ENERGIA COPEL",
-      "ticker": "CPLE3 / CPLE5 / CPLE6",
+      "ticker": "CPLE3",
       "tickers": [
-        "CPLE3",
-        "CPLE5",
+        "CPLE3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 26116856.0,
+      "lucro_liquido": 2687939.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 10.29,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "76.483.817/0001-20",
+      "empresa": "COMPANHIA PARANAENSE DE ENERGIA COPEL",
+      "ticker": "CPLE5",
+      "tickers": [
+        "CPLE5"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 26116856.0,
+      "lucro_liquido": 2687939.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 10.29,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "76.483.817/0001-20",
+      "empresa": "COMPANHIA PARANAENSE DE ENERGIA COPEL",
+      "ticker": "CPLE6",
+      "tickers": [
         "CPLE6"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2443,9 +2608,27 @@
     {
       "cnpj": "61.022.042/0001-18",
       "empresa": "CONSTRUTORA ADOLPHO LINDENBERG S.A.",
-      "ticker": "CALI11 / CALI3",
+      "ticker": "CALI11",
       "tickers": [
-        "CALI11",
+        "CALI11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 365614.0,
+      "lucro_liquido": 45872.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 12.55,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "61.022.042/0001-18",
+      "empresa": "CONSTRUTORA ADOLPHO LINDENBERG S.A.",
+      "ticker": "CALI3",
+      "tickers": [
         "CALI3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2482,10 +2665,46 @@
     {
       "cnpj": "04.032.433/0001-80",
       "empresa": "CONTAX PARTICIPAÇÕES S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": "ATMP3 / CTAX3 / LIQO3",
+      "ticker": "ATMP3",
       "tickers": [
-        "ATMP3",
-        "CTAX3",
+        "ATMP3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 447089.0,
+      "lucro_liquido": -34365.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -7.69,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "04.032.433/0001-80",
+      "empresa": "CONTAX PARTICIPAÇÕES S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "CTAX3",
+      "tickers": [
+        "CTAX3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 447089.0,
+      "lucro_liquido": -34365.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -7.69,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "04.032.433/0001-80",
+      "empresa": "CONTAX PARTICIPAÇÕES S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "LIQO3",
+      "tickers": [
         "LIQO3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2560,9 +2779,27 @@
     {
       "cnpj": "92.715.812/0001-31",
       "empresa": "CPFL TRANSMISSÃO S.A.",
-      "ticker": "EEEL3 / EEEL4",
+      "ticker": "EEEL3",
       "tickers": [
-        "EEEL3",
+        "EEEL3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 2106957.0,
+      "lucro_liquido": 318724.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 15.13,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "92.715.812/0001-31",
+      "empresa": "CPFL TRANSMISSÃO S.A.",
+      "ticker": "EEEL4",
+      "tickers": [
         "EEEL4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2618,9 +2855,27 @@
     {
       "cnpj": "01.896.779/0001-38",
       "empresa": "CSU DIGITAL S.A.",
-      "ticker": "CARD3 / CSUD3",
+      "ticker": "CARD3",
       "tickers": [
-        "CARD3",
+        "CARD3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 623529.0,
+      "lucro_liquido": 106051.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 17.01,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "01.896.779/0001-38",
+      "empresa": "CSU DIGITAL S.A.",
+      "ticker": "CSUD3",
+      "tickers": [
         "CSUD3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2676,9 +2931,27 @@
     {
       "cnpj": "73.178.600/0001-18",
       "empresa": "CYRELA BRAZIL REALTY S.A.EMPREEND E PART",
-      "ticker": "CYRE3 / CYRE4",
+      "ticker": "CYRE3",
       "tickers": [
-        "CYRE3",
+        "CYRE3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 9423494.0,
+      "lucro_liquido": 2395829.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 25.42,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "73.178.600/0001-18",
+      "empresa": "CYRELA BRAZIL REALTY S.A.EMPREEND E PART",
+      "ticker": "CYRE4",
+      "tickers": [
         "CYRE4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2734,9 +3007,27 @@
     {
       "cnpj": "97.837.181/0001-47",
       "empresa": "DEXCO S.A.",
-      "ticker": "DTEX3 / DXCO3",
+      "ticker": "DTEX3",
       "tickers": [
-        "DTEX3",
+        "DTEX3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 8248752.0,
+      "lucro_liquido": 63065.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 0.76,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "97.837.181/0001-47",
+      "empresa": "DEXCO S.A.",
+      "ticker": "DXCO3",
+      "tickers": [
         "DXCO3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2754,11 +3045,65 @@
     {
       "cnpj": "02.193.750/0001-52",
       "empresa": "DEXXOS PARTICIPAÇÕES S.A.",
-      "ticker": "DEXP3 / DEXP4 / GPCP3 / GPCP4",
+      "ticker": "DEXP3",
       "tickers": [
-        "DEXP3",
-        "DEXP4",
-        "GPCP3",
+        "DEXP3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 2136828.0,
+      "lucro_liquido": 143653.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 6.72,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.193.750/0001-52",
+      "empresa": "DEXXOS PARTICIPAÇÕES S.A.",
+      "ticker": "DEXP4",
+      "tickers": [
+        "DEXP4"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 2136828.0,
+      "lucro_liquido": 143653.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 6.72,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.193.750/0001-52",
+      "empresa": "DEXXOS PARTICIPAÇÕES S.A.",
+      "ticker": "GPCP3",
+      "tickers": [
+        "GPCP3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 2136828.0,
+      "lucro_liquido": 143653.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 6.72,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.193.750/0001-52",
+      "empresa": "DEXXOS PARTICIPAÇÕES S.A.",
+      "ticker": "GPCP4",
+      "tickers": [
         "GPCP4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2795,9 +3140,27 @@
     {
       "cnpj": "92.665.611/0001-77",
       "empresa": "DIMED SA DISTRIBUIDORA DE MEDICAMENTOS",
-      "ticker": "PNVL3 / PNVL4",
+      "ticker": "PNVL3",
       "tickers": [
-        "PNVL3",
+        "PNVL3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 5512118.0,
+      "lucro_liquido": 124605.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 2.26,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "92.665.611/0001-77",
+      "empresa": "DIMED SA DISTRIBUIDORA DE MEDICAMENTOS",
+      "ticker": "PNVL4",
+      "tickers": [
         "PNVL4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2853,9 +3216,27 @@
     {
       "cnpj": "26.345.998/0001-50",
       "empresa": "ECONOMATICA S.A.",
-      "ticker": "ECOM3 / TRAD3",
+      "ticker": "ECOM3",
       "tickers": [
-        "ECOM3",
+        "ECOM3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 22335.0,
+      "lucro_liquido": -85986.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -384.98,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "26.345.998/0001-50",
+      "empresa": "ECONOMATICA S.A.",
+      "ticker": "TRAD3",
+      "tickers": [
         "TRAD3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2911,9 +3292,27 @@
     {
       "cnpj": "82.643.537/0001-34",
       "empresa": "ELECTRO AÇO ALTONA S/A",
-      "ticker": "EALT3 / EALT4",
+      "ticker": "EALT3",
       "tickers": [
-        "EALT3",
+        "EALT3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 556054.0,
+      "lucro_liquido": 91042.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 16.37,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "82.643.537/0001-34",
+      "empresa": "ELECTRO AÇO ALTONA S/A",
+      "ticker": "EALT4",
+      "tickers": [
         "EALT4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2931,9 +3330,27 @@
     {
       "cnpj": "02.302.101/0001-42",
       "empresa": "EMAE - EMPRESA METROP.AGUAS ENERGIA S.A.",
-      "ticker": "EMAE3 / EMAE4",
+      "ticker": "EMAE3",
       "tickers": [
-        "EMAE3",
+        "EMAE3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 476851.0,
+      "lucro_liquido": -133356.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -27.97,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.302.101/0001-42",
+      "empresa": "EMAE - EMPRESA METROP.AGUAS ENERGIA S.A.",
+      "ticker": "EMAE4",
+      "tickers": [
         "EMAE4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -2970,9 +3387,27 @@
     {
       "cnpj": "07.689.002/0001-89",
       "empresa": "EMBRAER S.A.",
-      "ticker": "EMBJ3 / EMBR3",
+      "ticker": "EMBJ3",
       "tickers": [
-        "EMBJ3",
+        "EMBJ3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 41883234.0,
+      "lucro_liquido": 1992037.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 4.76,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "07.689.002/0001-89",
+      "empresa": "EMBRAER S.A.",
+      "ticker": "EMBR3",
+      "tickers": [
         "EMBR3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3009,10 +3444,46 @@
     {
       "cnpj": "00.864.214/0001-06",
       "empresa": "ENERGISA SA",
-      "ticker": "ENGI11 / ENGI3 / ENGI4",
+      "ticker": "ENGI11",
       "tickers": [
-        "ENGI11",
-        "ENGI3",
+        "ENGI11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 35441353.0,
+      "lucro_liquido": 3140072.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 8.86,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "00.864.214/0001-06",
+      "empresa": "ENERGISA SA",
+      "ticker": "ENGI3",
+      "tickers": [
+        "ENGI3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 35441353.0,
+      "lucro_liquido": 3140072.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 8.86,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "00.864.214/0001-06",
+      "empresa": "ENERGISA SA",
+      "ticker": "ENGI4",
+      "tickers": [
         "ENGI4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3125,9 +3596,27 @@
     {
       "cnpj": "56.643.018/0001-66",
       "empresa": "EUCATEX S.A. INDUSTRIA E COMERCIO",
-      "ticker": "EUCA3 / EUCA4",
+      "ticker": "EUCA3",
       "tickers": [
-        "EUCA3",
+        "EUCA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 3104252.0,
+      "lucro_liquido": 319096.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 10.28,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "56.643.018/0001-66",
+      "empresa": "EUCATEX S.A. INDUSTRIA E COMERCIO",
+      "ticker": "EUCA4",
+      "tickers": [
         "EUCA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3183,9 +3672,27 @@
     {
       "cnpj": "00.359.742/0001-08",
       "empresa": "FASA S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": "ATOM3 / FICT3",
+      "ticker": "ATOM3",
       "tickers": [
-        "ATOM3",
+        "ATOM3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 77084.0,
+      "lucro_liquido": -23420.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -30.38,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "00.359.742/0001-08",
+      "empresa": "FASA S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "FICT3",
+      "tickers": [
         "FICT3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3203,9 +3710,27 @@
     {
       "cnpj": "07.820.907/0001-46",
       "empresa": "FICA EMPREENDIMENTOS IMOBILIARIOS S.A.",
-      "ticker": "CRDE3 / FIEI3",
+      "ticker": "CRDE3",
       "tickers": [
-        "CRDE3",
+        "CRDE3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": -29.0,
+      "lucro_liquido": -8275.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 28534.48,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "07.820.907/0001-46",
+      "empresa": "FICA EMPREENDIMENTOS IMOBILIARIOS S.A.",
+      "ticker": "FIEI3",
+      "tickers": [
         "FIEI3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3299,9 +3824,27 @@
     {
       "cnpj": "33.611.500/0001-19",
       "empresa": "GERDAU S.A.",
-      "ticker": "GGBR3 / GGBR4",
+      "ticker": "GGBR3",
       "tickers": [
-        "GGBR3",
+        "GGBR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 69858532.0,
+      "lucro_liquido": 1418438.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 2.03,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.611.500/0001-19",
+      "empresa": "GERDAU S.A.",
+      "ticker": "GGBR4",
+      "tickers": [
         "GGBR4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3338,9 +3881,27 @@
     {
       "cnpj": "92.012.467/0001-70",
       "empresa": "GRAZZIOTIN SA",
-      "ticker": "CGRA3 / CGRA4",
+      "ticker": "CGRA3",
       "tickers": [
-        "CGRA3",
+        "CGRA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 744815.0,
+      "lucro_liquido": 83855.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 11.26,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "92.012.467/0001-70",
+      "empresa": "GRAZZIOTIN SA",
+      "ticker": "CGRA4",
+      "tickers": [
         "CGRA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3377,13 +3938,103 @@
     {
       "cnpj": "33.041.260/0652-90",
       "empresa": "GRUPO CASAS BAHIA S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": "BHIA12 / BHIA3 / VIIA3 / VVAR11 / VVAR3 / VVAR4",
+      "ticker": "BHIA12",
       "tickers": [
-        "BHIA12",
-        "BHIA3",
-        "VIIA3",
-        "VVAR11",
-        "VVAR3",
+        "BHIA12"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 29197000.0,
+      "lucro_liquido": -2988000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -10.23,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.041.260/0652-90",
+      "empresa": "GRUPO CASAS BAHIA S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "BHIA3",
+      "tickers": [
+        "BHIA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 29197000.0,
+      "lucro_liquido": -2988000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -10.23,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.041.260/0652-90",
+      "empresa": "GRUPO CASAS BAHIA S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "VIIA3",
+      "tickers": [
+        "VIIA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 29197000.0,
+      "lucro_liquido": -2988000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -10.23,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.041.260/0652-90",
+      "empresa": "GRUPO CASAS BAHIA S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "VVAR11",
+      "tickers": [
+        "VVAR11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 29197000.0,
+      "lucro_liquido": -2988000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -10.23,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.041.260/0652-90",
+      "empresa": "GRUPO CASAS BAHIA S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "VVAR3",
+      "tickers": [
+        "VVAR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 29197000.0,
+      "lucro_liquido": -2988000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -10.23,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.041.260/0652-90",
+      "empresa": "GRUPO CASAS BAHIA S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "VVAR4",
+      "tickers": [
         "VVAR4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3439,9 +4090,27 @@
     {
       "cnpj": "13.217.485/0001-11",
       "empresa": "GRUPO SBF S.A.",
-      "ticker": "CNTO3 / SBFG3",
+      "ticker": "CNTO3",
       "tickers": [
-        "CNTO3",
+        "CNTO3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 7736413.0,
+      "lucro_liquido": 327970.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 4.24,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "13.217.485/0001-11",
+      "empresa": "GRUPO SBF S.A.",
+      "ticker": "SBFG3",
+      "tickers": [
         "SBFG3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3459,9 +4128,27 @@
     {
       "cnpj": "31.553.627/0001-01",
       "empresa": "GRUPO TOKY S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": "MBLY3 / TOKY3",
+      "ticker": "MBLY3",
       "tickers": [
-        "MBLY3",
+        "MBLY3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1445029.0,
+      "lucro_liquido": -146886.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -10.16,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "31.553.627/0001-01",
+      "empresa": "GRUPO TOKY S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "TOKY3",
+      "tickers": [
         "TOKY3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3479,10 +4166,46 @@
     {
       "cnpj": "08.402.943/0001-52",
       "empresa": "GUARARAPES CONFECÇÕES SA",
-      "ticker": "GUAR3 / GUAR4 / RIAA3",
+      "ticker": "GUAR3",
       "tickers": [
-        "GUAR3",
-        "GUAR4",
+        "GUAR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 10497046.0,
+      "lucro_liquido": 1475168.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 14.05,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "08.402.943/0001-52",
+      "empresa": "GUARARAPES CONFECÇÕES SA",
+      "ticker": "GUAR4",
+      "tickers": [
+        "GUAR4"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 10497046.0,
+      "lucro_liquido": 1475168.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 14.05,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "08.402.943/0001-52",
+      "empresa": "GUARARAPES CONFECÇÕES SA",
+      "ticker": "RIAA3",
+      "tickers": [
         "RIAA3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3500,9 +4223,27 @@
     {
       "cnpj": "30.540.991/0001-66",
       "empresa": "HAGA S.A. INDÚSTRIA E COMÉRCIO",
-      "ticker": "HAGA3 / HAGA4",
+      "ticker": "HAGA3",
       "tickers": [
-        "HAGA3",
+        "HAGA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 28473425.0,
+      "lucro_liquido": 2144306.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 7.53,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "30.540.991/0001-66",
+      "empresa": "HAGA S.A. INDÚSTRIA E COMÉRCIO",
+      "ticker": "HAGA4",
+      "tickers": [
         "HAGA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3672,11 +4413,65 @@
     {
       "cnpj": "60.543.816/0001-93",
       "empresa": "IGUATEMI S.A.",
-      "ticker": "IGTI11 / IGTI3 / IGTI4 / JPSA3",
+      "ticker": "IGTI11",
       "tickers": [
-        "IGTI11",
-        "IGTI3",
-        "IGTI4",
+        "IGTI11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1486833.0,
+      "lucro_liquido": 582576.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 39.18,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "60.543.816/0001-93",
+      "empresa": "IGUATEMI S.A.",
+      "ticker": "IGTI3",
+      "tickers": [
+        "IGTI3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1486833.0,
+      "lucro_liquido": 582576.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 39.18,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "60.543.816/0001-93",
+      "empresa": "IGUATEMI S.A.",
+      "ticker": "IGTI4",
+      "tickers": [
+        "IGTI4"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1486833.0,
+      "lucro_liquido": 582576.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 39.18,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "60.543.816/0001-93",
+      "empresa": "IGUATEMI S.A.",
+      "ticker": "JPSA3",
+      "tickers": [
         "JPSA3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3694,9 +4489,27 @@
     {
       "cnpj": "76.627.504/0001-06",
       "empresa": "INEPAR S.A. INDUSTRIA E CONSTRUCOES EM RECUPERACAO JUDICIAL",
-      "ticker": "INEP3 / INEP4",
+      "ticker": "INEP3",
       "tickers": [
-        "INEP3",
+        "INEP3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 6503.0,
+      "lucro_liquido": -513225.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -7892.13,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "76.627.504/0001-06",
+      "empresa": "INEPAR S.A. INDUSTRIA E CONSTRUCOES EM RECUPERACAO JUDICIAL",
+      "ticker": "INEP4",
+      "tickers": [
         "INEP4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3714,9 +4527,27 @@
     {
       "cnpj": "38.456.921/0001-36",
       "empresa": "INFRACOMMERCE CXAAS S.A.",
-      "ticker": "IFCM11 / IFCM3",
+      "ticker": "IFCM11",
       "tickers": [
-        "IFCM11",
+        "IFCM11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 709955.0,
+      "lucro_liquido": -341892.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -48.16,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "38.456.921/0001-36",
+      "empresa": "INFRACOMMERCE CXAAS S.A.",
+      "ticker": "IFCM3",
+      "tickers": [
         "IFCM3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3791,9 +4622,27 @@
     {
       "cnpj": "92.791.243/0001-03",
       "empresa": "IRANI PAPEL E EMBALAGEM S.A.",
-      "ticker": "RANI3 / RANI4",
+      "ticker": "RANI3",
       "tickers": [
-        "RANI3",
+        "RANI3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1686311.0,
+      "lucro_liquido": 242050.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 14.35,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "92.791.243/0001-03",
+      "empresa": "IRANI PAPEL E EMBALAGEM S.A.",
+      "ticker": "RANI4",
+      "tickers": [
         "RANI4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3830,11 +4679,65 @@
     {
       "cnpj": "02.998.611/0001-04",
       "empresa": "ISA ENERGIA BRASIL S.A.",
-      "ticker": "ISAE3 / ISAE4 / TRPL3 / TRPL4",
+      "ticker": "ISAE3",
       "tickers": [
-        "ISAE3",
-        "ISAE4",
-        "TRPL3",
+        "ISAE3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 9411153.0,
+      "lucro_liquido": 2511015.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 26.68,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.998.611/0001-04",
+      "empresa": "ISA ENERGIA BRASIL S.A.",
+      "ticker": "ISAE4",
+      "tickers": [
+        "ISAE4"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 9411153.0,
+      "lucro_liquido": 2511015.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 26.68,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.998.611/0001-04",
+      "empresa": "ISA ENERGIA BRASIL S.A.",
+      "ticker": "TRPL3",
+      "tickers": [
+        "TRPL3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 9411153.0,
+      "lucro_liquido": 2511015.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 26.68,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.998.611/0001-04",
+      "empresa": "ISA ENERGIA BRASIL S.A.",
+      "ticker": "TRPL4",
+      "tickers": [
         "TRPL4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3852,9 +4755,27 @@
     {
       "cnpj": "61.532.644/0001-15",
       "empresa": "ITAUSA S.A.",
-      "ticker": "ITSA3 / ITSA4",
+      "ticker": "ITSA3",
       "tickers": [
-        "ITSA3",
+        "ITSA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 8249000.0,
+      "lucro_liquido": 16550000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 200.63,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "61.532.644/0001-15",
+      "empresa": "ITAUSA S.A.",
+      "ticker": "ITSA4",
+      "tickers": [
         "ITSA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3872,9 +4793,27 @@
     {
       "cnpj": "60.872.504/0001-23",
       "empresa": "ITAÚ UNIBANCO HOLDING S.A.",
-      "ticker": "ITUB3 / ITUB4",
+      "ticker": "ITUB3",
       "tickers": [
-        "ITUB3",
+        "ITUB3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": null,
+      "lucro_liquido": 45849000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "60.872.504/0001-23",
+      "empresa": "ITAÚ UNIBANCO HOLDING S.A.",
+      "ticker": "ITUB4",
+      "tickers": [
         "ITUB4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3968,9 +4907,27 @@
     {
       "cnpj": "87.456.562/0001-22",
       "empresa": "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP",
-      "ticker": "JOPA3 / JOPA4",
+      "ticker": "JOPA3",
       "tickers": [
-        "JOPA3",
+        "JOPA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1802130.0,
+      "lucro_liquido": 16792.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 0.93,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "87.456.562/0001-22",
+      "empresa": "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP",
+      "ticker": "JOPA4",
+      "tickers": [
         "JOPA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -3988,9 +4945,27 @@
     {
       "cnpj": "52.548.435/0001-79",
       "empresa": "JSL S.A.",
-      "ticker": "JSLG11 / JSLG3",
+      "ticker": "JSLG11",
       "tickers": [
-        "JSLG11",
+        "JSLG11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 9640608.0,
+      "lucro_liquido": 81704.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 0.85,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "52.548.435/0001-79",
+      "empresa": "JSL S.A.",
+      "ticker": "JSLG3",
+      "tickers": [
         "JSLG3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4008,9 +4983,27 @@
     {
       "cnpj": "82.640.558/0001-04",
       "empresa": "KARSTEN SA",
-      "ticker": "CTKA3 / CTKA4",
+      "ticker": "CTKA3",
       "tickers": [
-        "CTKA3",
+        "CTKA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 759038.0,
+      "lucro_liquido": 70539.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 9.29,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "82.640.558/0001-04",
+      "empresa": "KARSTEN SA",
+      "ticker": "CTKA4",
+      "tickers": [
         "CTKA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4028,9 +5021,27 @@
     {
       "cnpj": "91.983.056/0001-69",
       "empresa": "KEPLER WEBER SA",
-      "ticker": "KEPL11 / KEPL3",
+      "ticker": "KEPL11",
       "tickers": [
-        "KEPL11",
+        "KEPL11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1490300.0,
+      "lucro_liquido": 156270.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 10.49,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "91.983.056/0001-69",
+      "empresa": "KEPLER WEBER SA",
+      "ticker": "KEPL3",
+      "tickers": [
         "KEPL3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4048,10 +5059,46 @@
     {
       "cnpj": "89.637.490/0001-45",
       "empresa": "KLABIN S.A.",
-      "ticker": "KLBN11 / KLBN3 / KLBN4",
+      "ticker": "KLBN11",
       "tickers": [
-        "KLBN11",
-        "KLBN3",
+        "KLBN11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 20697507.0,
+      "lucro_liquido": 1678211.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 8.11,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "89.637.490/0001-45",
+      "empresa": "KLABIN S.A.",
+      "ticker": "KLBN3",
+      "tickers": [
+        "KLBN3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 20697507.0,
+      "lucro_liquido": 1678211.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 8.11,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "89.637.490/0001-45",
+      "empresa": "KLABIN S.A.",
+      "ticker": "KLBN4",
+      "tickers": [
         "KLBN4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4126,9 +5173,27 @@
     {
       "cnpj": "16.670.085/0001-55",
       "empresa": "LOCALIZA RENT A CAR SA",
-      "ticker": "RENT3 / RENT4",
+      "ticker": "RENT3",
       "tickers": [
-        "RENT3",
+        "RENT3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 41781588.0,
+      "lucro_liquido": 1870470.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 4.48,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "16.670.085/0001-55",
+      "empresa": "LOCALIZA RENT A CAR SA",
+      "ticker": "RENT4",
+      "tickers": [
         "RENT4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4336,9 +5401,27 @@
     {
       "cnpj": "61.065.298/0001-02",
       "empresa": "MANGELS INDUSTRIAL S.A.",
-      "ticker": "MGEL3 / MGEL4",
+      "ticker": "MGEL3",
       "tickers": [
-        "MGEL3",
+        "MGEL3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1063608.0,
+      "lucro_liquido": 48022.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 4.52,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "61.065.298/0001-02",
+      "empresa": "MANGELS INDUSTRIAL S.A.",
+      "ticker": "MGEL4",
+      "tickers": [
         "MGEL4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4375,9 +5458,27 @@
     {
       "cnpj": "88.611.835/0001-29",
       "empresa": "MARCOPOLO SA",
-      "ticker": "POMO3 / POMO4",
+      "ticker": "POMO3",
       "tickers": [
-        "POMO3",
+        "POMO3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 9057548.0,
+      "lucro_liquido": 1235508.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 13.64,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "88.611.835/0001-29",
+      "empresa": "MARCOPOLO SA",
+      "ticker": "POMO4",
+      "tickers": [
         "POMO4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4395,9 +5496,27 @@
     {
       "cnpj": "03.853.896/0001-40",
       "empresa": "MARFRIG GLOBAL FOODS SA",
-      "ticker": "MBRF3 / MRFG3",
+      "ticker": "MBRF3",
       "tickers": [
-        "MBRF3",
+        "MBRF3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 163962737.0,
+      "lucro_liquido": 762675.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 0.47,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "03.853.896/0001-40",
+      "empresa": "MARFRIG GLOBAL FOODS SA",
+      "ticker": "MRFG3",
+      "tickers": [
         "MRFG3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4491,9 +5610,27 @@
     {
       "cnpj": "92.690.783/0001-09",
       "empresa": "METALURGICA GERDAU SA",
-      "ticker": "GOAU3 / GOAU4",
+      "ticker": "GOAU3",
       "tickers": [
-        "GOAU3",
+        "GOAU3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 69858532.0,
+      "lucro_liquido": 1413724.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 2.02,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "92.690.783/0001-09",
+      "empresa": "METALURGICA GERDAU SA",
+      "ticker": "GOAU4",
+      "tickers": [
         "GOAU4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4530,9 +5667,27 @@
     {
       "cnpj": "86.375.425/0001-09",
       "empresa": "METISA METALÚRGICA  TIMBOENSE SA",
-      "ticker": "MTSA3 / MTSA4",
+      "ticker": "MTSA3",
       "tickers": [
-        "MTSA3",
+        "MTSA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 532602422.0,
+      "lucro_liquido": 40684240.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 7.64,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "86.375.425/0001-09",
+      "empresa": "METISA METALÚRGICA  TIMBOENSE SA",
+      "ticker": "MTSA4",
+      "tickers": [
         "MTSA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4569,9 +5724,27 @@
     {
       "cnpj": "67.620.377/0001-14",
       "empresa": "MINERVA S/A",
-      "ticker": "BEEF11 / BEEF3",
+      "ticker": "BEEF11",
       "tickers": [
-        "BEEF11",
+        "BEEF11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 54830072.0,
+      "lucro_liquido": 848260.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 1.55,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "67.620.377/0001-14",
+      "empresa": "MINERVA S/A",
+      "ticker": "BEEF3",
+      "tickers": [
         "BEEF3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4627,9 +5800,27 @@
     {
       "cnpj": "02.846.056/0001-97",
       "empresa": "MOTIVA INFRAESTRUTURA DE MOBILIDADE S.A.",
-      "ticker": "CCRO3 / MOTV3",
+      "ticker": "CCRO3",
       "tickers": [
-        "CCRO3",
+        "CCRO3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 18850645.0,
+      "lucro_liquido": 3503497.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 18.59,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.846.056/0001-97",
+      "empresa": "MOTIVA INFRAESTRUTURA DE MOBILIDADE S.A.",
+      "ticker": "MOTV3",
+      "tickers": [
         "MOTV3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4799,9 +5990,27 @@
     {
       "cnpj": "08.613.550/0001-98",
       "empresa": "NEXPE PARTICIPAÇÕES S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": "BBRK3 / NEXP3",
+      "ticker": "BBRK3",
       "tickers": [
-        "BBRK3",
+        "BBRK3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 659.0,
+      "lucro_liquido": 107550.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 16320.18,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "08.613.550/0001-98",
+      "empresa": "NEXPE PARTICIPAÇÕES S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "NEXP3",
+      "tickers": [
         "NEXP3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4857,9 +6066,27 @@
     {
       "cnpj": "76.535.764/0001-43",
       "empresa": "OI S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": "OIBR3 / OIBR4",
+      "ticker": "OIBR3",
       "tickers": [
-        "OIBR3",
+        "OIBR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 2598133.0,
+      "lucro_liquido": -36368915.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -1399.81,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "76.535.764/0001-43",
+      "empresa": "OI S.A. - EM RECUPERAÇÃO JUDICIAL",
+      "ticker": "OIBR4",
+      "tickers": [
         "OIBR4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4972,9 +6199,27 @@
     {
       "cnpj": "02.365.069/0001-44",
       "empresa": "PADTEC HOLDING S.A.",
-      "ticker": "IDNT3 / PDTC3",
+      "ticker": "IDNT3",
       "tickers": [
-        "IDNT3",
+        "IDNT3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 291854.0,
+      "lucro_liquido": 6961.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 2.39,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.365.069/0001-44",
+      "empresa": "PADTEC HOLDING S.A.",
+      "ticker": "PDTC3",
+      "tickers": [
         "PDTC3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -4992,9 +6237,27 @@
     {
       "cnpj": "92.693.019/0001-89",
       "empresa": "PANATLANTICA SA",
-      "ticker": "PATI3 / PATI4",
+      "ticker": "PATI3",
       "tickers": [
-        "PATI3",
+        "PATI3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1928530.0,
+      "lucro_liquido": 49866.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 2.59,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "92.693.019/0001-89",
+      "empresa": "PANATLANTICA SA",
+      "ticker": "PATI4",
+      "tickers": [
         "PATI4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5088,9 +6351,27 @@
     {
       "cnpj": "33.000.167/0001-01",
       "empresa": "PETRÓLEO BRASILEIRO S.A. - PETROBRAS",
-      "ticker": "PETR3 / PETR4",
+      "ticker": "PETR3",
       "tickers": [
-        "PETR3",
+        "PETR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 497549000.0,
+      "lucro_liquido": 110605000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 22.23,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.000.167/0001-01",
+      "empresa": "PETRÓLEO BRASILEIRO S.A. - PETROBRAS",
+      "ticker": "PETR4",
+      "tickers": [
         "PETR4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5108,9 +6389,27 @@
     {
       "cnpj": "88.613.658/0001-10",
       "empresa": "PETTENATI S.A. INDUSTRIA TEXTIL",
-      "ticker": "PTNT3 / PTNT4",
+      "ticker": "PTNT3",
       "tickers": [
-        "PTNT3",
+        "PTNT3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2026,
+      "receita_liquida": 815110451.0,
+      "lucro_liquido": 36613694.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 4.49,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "88.613.658/0001-10",
+      "empresa": "PETTENATI S.A. INDUSTRIA TEXTIL",
+      "ticker": "PTNT4",
+      "tickers": [
         "PTNT4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5299,9 +6598,27 @@
     {
       "cnpj": "89.086.144/0001-16",
       "empresa": "RANDONCORP S.A.",
-      "ticker": "RAPT3 / RAPT4",
+      "ticker": "RAPT3",
       "tickers": [
-        "RAPT3",
+        "RAPT3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 13143266.0,
+      "lucro_liquido": -59791.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -0.45,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "89.086.144/0001-16",
+      "empresa": "RANDONCORP S.A.",
+      "ticker": "RAPT4",
+      "tickers": [
         "RAPT4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5338,9 +6655,27 @@
     {
       "cnpj": "91.333.666/0001-17",
       "empresa": "RECRUSUL SA",
-      "ticker": "RCSL3 / RCSL4",
+      "ticker": "RCSL3",
       "tickers": [
-        "RCSL3",
+        "RCSL3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1575.0,
+      "lucro_liquido": -16965.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -1077.14,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "91.333.666/0001-17",
+      "empresa": "RECRUSUL SA",
+      "ticker": "RCSL4",
+      "tickers": [
         "RCSL4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5415,10 +6750,46 @@
     {
       "cnpj": "08.534.605/0001-74",
       "empresa": "RENOVA ENERGIA S.A.",
-      "ticker": "RNEW11 / RNEW3 / RNEW4",
+      "ticker": "RNEW11",
       "tickers": [
-        "RNEW11",
-        "RNEW3",
+        "RNEW11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 514958.0,
+      "lucro_liquido": -162231.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -31.5,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "08.534.605/0001-74",
+      "empresa": "RENOVA ENERGIA S.A.",
+      "ticker": "RNEW3",
+      "tickers": [
+        "RNEW3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 514958.0,
+      "lucro_liquido": -162231.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -31.5,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "08.534.605/0001-74",
+      "empresa": "RENOVA ENERGIA S.A.",
+      "ticker": "RNEW4",
+      "tickers": [
         "RNEW4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5474,9 +6845,27 @@
     {
       "cnpj": "02.998.301/0001-81",
       "empresa": "RIO PARANAPANEMA ENERGIA SA",
-      "ticker": "GEPA3 / GEPA4",
+      "ticker": "GEPA3",
       "tickers": [
-        "GEPA3",
+        "GEPA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 0.0,
+      "lucro_liquido": 0.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": null,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.998.301/0001-81",
+      "empresa": "RIO PARANAPANEMA ENERGIA SA",
+      "ticker": "GEPA4",
+      "tickers": [
         "GEPA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5551,10 +6940,46 @@
     {
       "cnpj": "14.807.945/0001-24",
       "empresa": "SANSUY SA INDÚSTRIA  DE PLASTICOS",
-      "ticker": "SNSY3 / SNSY5 / SNSY6",
+      "ticker": "SNSY3",
       "tickers": [
-        "SNSY3",
-        "SNSY5",
+        "SNSY3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 975914.0,
+      "lucro_liquido": -284204.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -29.12,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "14.807.945/0001-24",
+      "empresa": "SANSUY SA INDÚSTRIA  DE PLASTICOS",
+      "ticker": "SNSY5",
+      "tickers": [
+        "SNSY5"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 975914.0,
+      "lucro_liquido": -284204.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -29.12,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "14.807.945/0001-24",
+      "empresa": "SANSUY SA INDÚSTRIA  DE PLASTICOS",
+      "ticker": "SNSY6",
+      "tickers": [
         "SNSY6"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5572,9 +6997,27 @@
     {
       "cnpj": "02.762.121/0001-04",
       "empresa": "SANTOS BRASIL PARTICIPAÇÕES S.A.",
-      "ticker": "STBP11 / STBP3",
+      "ticker": "STBP11",
       "tickers": [
-        "STBP11",
+        "STBP11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 3627414.0,
+      "lucro_liquido": 871664.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 24.03,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.762.121/0001-04",
+      "empresa": "SANTOS BRASIL PARTICIPAÇÕES S.A.",
+      "ticker": "STBP3",
+      "tickers": [
         "STBP3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5611,9 +7054,27 @@
     {
       "cnpj": "84.693.183/0001-68",
       "empresa": "SCHULZ SA",
-      "ticker": "SHUL3 / SHUL4",
+      "ticker": "SHUL3",
       "tickers": [
-        "SHUL3",
+        "SHUL3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1938864.0,
+      "lucro_liquido": 288876.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 14.9,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "84.693.183/0001-68",
+      "empresa": "SCHULZ SA",
+      "ticker": "SHUL4",
+      "tickers": [
         "SHUL4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5669,9 +7130,27 @@
     {
       "cnpj": "42.500.384/0001-51",
       "empresa": "SERENA ENERGIA S.A.",
-      "ticker": "MEGA3 / SRNA3",
+      "ticker": "MEGA3",
       "tickers": [
-        "MEGA3",
+        "MEGA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 6393211.0,
+      "lucro_liquido": 20837.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 0.33,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "42.500.384/0001-51",
+      "empresa": "SERENA ENERGIA S.A.",
+      "ticker": "SRNA3",
+      "tickers": [
         "SRNA3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5765,10 +7244,46 @@
     {
       "cnpj": "33.386.210/0001-19",
       "empresa": "SONDOTECNICA ENGENHARIA SOLOS S.A.",
-      "ticker": "SOND3 / SOND5 / SOND6",
+      "ticker": "SOND3",
       "tickers": [
-        "SOND3",
-        "SOND5",
+        "SOND3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 226418.0,
+      "lucro_liquido": 35732.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 15.78,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.386.210/0001-19",
+      "empresa": "SONDOTECNICA ENGENHARIA SOLOS S.A.",
+      "ticker": "SOND5",
+      "tickers": [
+        "SOND5"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 226418.0,
+      "lucro_liquido": 35732.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 15.78,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.386.210/0001-19",
+      "empresa": "SONDOTECNICA ENGENHARIA SOLOS S.A.",
+      "ticker": "SOND6",
+      "tickers": [
         "SOND6"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5805,9 +7320,27 @@
     {
       "cnpj": "08.801.621/0001-86",
       "empresa": "SYN PROP & TECH S.A.",
-      "ticker": "CCPR3 / SYNE3",
+      "ticker": "CCPR3",
       "tickers": [
-        "CCPR3",
+        "CCPR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 327667.0,
+      "lucro_liquido": 74867.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 22.85,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "08.801.621/0001-86",
+      "empresa": "SYN PROP & TECH S.A.",
+      "ticker": "SYNE3",
+      "tickers": [
         "SYNE3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5844,11 +7377,65 @@
     {
       "cnpj": "92.781.335/0001-02",
       "empresa": "TAURUS ARMAS S.A.",
-      "ticker": "FJTA3 / FJTA4 / TASA3 / TASA4",
+      "ticker": "FJTA3",
       "tickers": [
-        "FJTA3",
-        "FJTA4",
-        "TASA3",
+        "FJTA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1463029.0,
+      "lucro_liquido": 17673.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 1.21,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "92.781.335/0001-02",
+      "empresa": "TAURUS ARMAS S.A.",
+      "ticker": "FJTA4",
+      "tickers": [
+        "FJTA4"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1463029.0,
+      "lucro_liquido": 17673.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 1.21,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "92.781.335/0001-02",
+      "empresa": "TAURUS ARMAS S.A.",
+      "ticker": "TASA3",
+      "tickers": [
+        "TASA3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1463029.0,
+      "lucro_liquido": 17673.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 1.21,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "92.781.335/0001-02",
+      "empresa": "TAURUS ARMAS S.A.",
+      "ticker": "TASA4",
+      "tickers": [
         "TASA4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -5923,9 +7510,27 @@
     {
       "cnpj": "02.558.157/0001-62",
       "empresa": "TELEFÔNICA BRASIL S.A.",
-      "ticker": "VIVT3 / VIVT4",
+      "ticker": "VIVT3",
       "tickers": [
-        "VIVT3",
+        "VIVT3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 59595000.0,
+      "lucro_liquido": 6177543.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 10.37,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "02.558.157/0001-62",
+      "empresa": "TELEFÔNICA BRASIL S.A.",
+      "ticker": "VIVT4",
+      "tickers": [
         "VIVT4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6038,10 +7643,46 @@
     {
       "cnpj": "07.859.971/0001-30",
       "empresa": "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.",
-      "ticker": "TAEE11 / TAEE3 / TAEE4",
+      "ticker": "TAEE11",
       "tickers": [
-        "TAEE11",
-        "TAEE3",
+        "TAEE11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 4624113.0,
+      "lucro_liquido": 1579863.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 34.17,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "07.859.971/0001-30",
+      "empresa": "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.",
+      "ticker": "TAEE3",
+      "tickers": [
+        "TAEE3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 4624113.0,
+      "lucro_liquido": 1579863.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 34.17,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "07.859.971/0001-30",
+      "empresa": "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.",
+      "ticker": "TAEE4",
+      "tickers": [
         "TAEE4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6211,10 +7852,46 @@
     {
       "cnpj": "33.958.695/0001-78",
       "empresa": "UNIPAR CARBOCLORO S.A.",
-      "ticker": "UNIP3 / UNIP5 / UNIP6",
+      "ticker": "UNIP3",
       "tickers": [
-        "UNIP3",
-        "UNIP5",
+        "UNIP3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 5142676.0,
+      "lucro_liquido": 481744.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 9.37,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.958.695/0001-78",
+      "empresa": "UNIPAR CARBOCLORO S.A.",
+      "ticker": "UNIP5",
+      "tickers": [
+        "UNIP5"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 5142676.0,
+      "lucro_liquido": 481744.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 9.37,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.958.695/0001-78",
+      "empresa": "UNIPAR CARBOCLORO S.A.",
+      "ticker": "UNIP6",
+      "tickers": [
         "UNIP6"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6251,10 +7928,46 @@
     {
       "cnpj": "60.894.730/0001-05",
       "empresa": "USINAS SID DE MINAS GERAIS S.A.-USIMINAS",
-      "ticker": "USIM3 / USIM5 / USIM6",
+      "ticker": "USIM3",
       "tickers": [
-        "USIM3",
-        "USIM5",
+        "USIM3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 26263450.0,
+      "lucro_liquido": -2910034.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -11.08,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "60.894.730/0001-05",
+      "empresa": "USINAS SID DE MINAS GERAIS S.A.-USIMINAS",
+      "ticker": "USIM5",
+      "tickers": [
+        "USIM5"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 26263450.0,
+      "lucro_liquido": -2910034.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -11.08,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "60.894.730/0001-05",
+      "empresa": "USINAS SID DE MINAS GERAIS S.A.-USIMINAS",
+      "ticker": "USIM6",
+      "tickers": [
         "USIM6"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6329,9 +8042,27 @@
     {
       "cnpj": "49.669.856/0001-43",
       "empresa": "VESTE SA ESTILO",
-      "ticker": "LLIS3 / VSTE3",
+      "ticker": "LLIS3",
       "tickers": [
-        "LLIS3",
+        "LLIS3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1230948.0,
+      "lucro_liquido": 24409.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 1.98,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "49.669.856/0001-43",
+      "empresa": "VESTE SA ESTILO",
+      "ticker": "VSTE3",
+      "tickers": [
         "VSTE3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6349,9 +8080,27 @@
     {
       "cnpj": "34.274.233/0001-02",
       "empresa": "VIBRA ENERGIA S/A",
-      "ticker": "BRDT3 / VBBR3",
+      "ticker": "BRDT3",
       "tickers": [
-        "BRDT3",
+        "BRDT3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 189256000.0,
+      "lucro_liquido": 1979000.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 1.05,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "34.274.233/0001-02",
+      "empresa": "VIBRA ENERGIA S/A",
+      "ticker": "VBBR3",
+      "tickers": [
         "VBBR3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6426,10 +8175,46 @@
     {
       "cnpj": "67.571.414/0001-41",
       "empresa": "VIVER INCORPORADORA E CONSTRUTORA S.A",
-      "ticker": "INPR3 / VIVR11 / VIVR3",
+      "ticker": "INPR3",
       "tickers": [
-        "INPR3",
-        "VIVR11",
+        "INPR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 28779.0,
+      "lucro_liquido": -17549.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -60.98,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "67.571.414/0001-41",
+      "empresa": "VIVER INCORPORADORA E CONSTRUTORA S.A",
+      "ticker": "VIVR11",
+      "tickers": [
+        "VIVR11"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 28779.0,
+      "lucro_liquido": -17549.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -60.98,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "67.571.414/0001-41",
+      "empresa": "VIVER INCORPORADORA E CONSTRUTORA S.A",
+      "ticker": "VIVR3",
+      "tickers": [
         "VIVR3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6485,9 +8270,27 @@
     {
       "cnpj": "84.683.671/0001-94",
       "empresa": "WETZEL S.A.",
-      "ticker": "MWET3 / MWET4",
+      "ticker": "MWET3",
       "tickers": [
-        "MWET3",
+        "MWET3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 197561.0,
+      "lucro_liquido": -28578.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -14.47,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "84.683.671/0001-94",
+      "empresa": "WETZEL S.A.",
+      "ticker": "MWET4",
+      "tickers": [
         "MWET4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6505,9 +8308,27 @@
     {
       "cnpj": "59.105.999/0001-86",
       "empresa": "WHIRLPOOL S.A",
-      "ticker": "WHRL3 / WHRL4",
+      "ticker": "WHRL3",
       "tickers": [
-        "WHRL3",
+        "WHRL3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 12561821.0,
+      "lucro_liquido": 450784.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 3.59,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "59.105.999/0001-86",
+      "empresa": "WHIRLPOOL S.A",
+      "ticker": "WHRL4",
+      "tickers": [
         "WHRL4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6525,9 +8346,27 @@
     {
       "cnpj": "42.278.473/0001-03",
       "empresa": "WIZ CO PARTICIPAÇÕES E CORRETAGEM DE SEGUROS S.A.",
-      "ticker": "WIZC3 / WIZS3",
+      "ticker": "WIZC3",
       "tickers": [
-        "WIZC3",
+        "WIZC3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 1382973.0,
+      "lucro_liquido": 367710.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 26.59,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "42.278.473/0001-03",
+      "empresa": "WIZ CO PARTICIPAÇÕES E CORRETAGEM DE SEGUROS S.A.",
+      "ticker": "WIZS3",
+      "tickers": [
         "WIZS3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6545,9 +8384,27 @@
     {
       "cnpj": "33.228.024/0001-51",
       "empresa": "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A.",
-      "ticker": "WLMM3 / WLMM4",
+      "ticker": "WLMM3",
       "tickers": [
-        "WLMM3",
+        "WLMM3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 3011892.0,
+      "lucro_liquido": 86892.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 2.88,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "33.228.024/0001-51",
+      "empresa": "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A.",
+      "ticker": "WLMM4",
+      "tickers": [
         "WLMM4"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6584,9 +8441,27 @@
     {
       "cnpj": "08.807.432/0001-10",
       "empresa": "YDUQS PARTICIPACOES S.A.",
-      "ticker": "ESTC3 / YDUQ3",
+      "ticker": "ESTC3",
       "tickers": [
-        "ESTC3",
+        "ESTC3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 5521740.0,
+      "lucro_liquido": 180177.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": 3.26,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "08.807.432/0001-10",
+      "empresa": "YDUQS PARTICIPACOES S.A.",
+      "ticker": "YDUQ3",
+      "tickers": [
         "YDUQ3"
       ],
       "fonte": "CVM - DFP consolidada",
@@ -6604,9 +8479,27 @@
     {
       "cnpj": "13.574.594/0001-96",
       "empresa": "ZAMP S.A.",
-      "ticker": "BKBR3 / ZAMP3",
+      "ticker": "BKBR3",
       "tickers": [
-        "BKBR3",
+        "BKBR3"
+      ],
+      "fonte": "CVM - DFP consolidada",
+      "ano_referencia": 2025,
+      "receita_liquida": 5231945.0,
+      "lucro_liquido": -107137.0,
+      "pvp": null,
+      "pl": null,
+      "roe": null,
+      "margem_liquida": -2.05,
+      "roic": null,
+      "divida_ebitda": null,
+      "cagr_lucros": null
+    },
+    {
+      "cnpj": "13.574.594/0001-96",
+      "empresa": "ZAMP S.A.",
+      "ticker": "ZAMP3",
+      "tickers": [
         "ZAMP3"
       ],
       "fonte": "CVM - DFP consolidada",
