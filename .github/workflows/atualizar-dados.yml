@@ -7,11 +7,17 @@ on:
   schedule:
     - cron: "30 10 * * 1-5"
 
+concurrency:
+  group: atualizar-dados-b3
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
 jobs:
   atualizar:
+    # Evita que o commit automático do JSON inicie outra coleta em loop.
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, 'Atualiza dados fundamentalistas da CVM')
     runs-on: ubuntu-latest
     steps:
       - name: Baixar repositório
@@ -23,7 +29,7 @@ jobs:
           cache: "pip"
       - name: Instalar dependências
         run: pip install -r requirements.txt
-      - name: Coletar demonstrações financeiras da CVM
+      - name: Coletar demonstrações financeiras da CVM e tickers
         run: python scripts/atualizar_dados.py
       - name: Publicar base JSON
         run: |
@@ -31,4 +37,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/indicadores.json
           git diff --cached --quiet || git commit -m "Atualiza dados fundamentalistas da CVM"
+          git pull --rebase origin main
           git push
