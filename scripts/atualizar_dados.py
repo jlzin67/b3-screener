@@ -6,7 +6,7 @@ import io
 import json
 import re
 import zipfile
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pandas as pd
@@ -30,7 +30,45 @@ def cnpj_limpo(valor) -> str:
     return re.sub(r"\D", "", str(valor or ""))
 
 
-def carregar_mapa_tickers() -> tuple[dict[str, list[str]], int]:
+def carregar_tickers_com_negociacao_b3() -> tuple[set[str], str]:
+    """Retorna tickers com negociação à vista registrada na B3 nos últimos 365 dias."""
+    hoje = datetime.now(timezone.utc).date()
+    corte = hoje - timedelta(days=365)
+    ultimos_pregoes: dict[str, object] = {}
+
+    # A série anual da B3 é atualizada com os negócios do respectivo ano.
+    for ano in (hoje.year - 1, hoje.year):
+        zip_bytes = baixar(f"https://bvmf.bmfbovespa.com.br/InstDados/SerHist/COTAHIST_A{ano}.ZIP")
+        with zipfile.ZipFile(io.BytesIO(zip_bytes)) as zf:
+            candidatos = [nome for nome in zf.namelist() if nome.lower().endswith(".txt")]
+            if not candidatos:
+                raise RuntimeError(f"COTAHIST {ano}: arquivo TXT não encontrado.")
+            with zf.open(candidatos[0]) as arquivo:
+                for bruto in arquivo:
+                    linha = bruto.decode("latin1").rstrip("\\r\\n")
+                    if len(linha) < 245 or linha[:2] != "01":
+                        continue
+                    if linha[10:12].strip() not in {"02", "96"}:
+                        continue
+                    if linha[24:27].strip() not in {"010", "020"}:
+                        continue
+                    ticker = linha[12:24].strip().upper()
+                    if not ticker:
+                        continue
+                    try:
+                        data_pregao = datetime.strptime(linha[2:10], "%Y%m%d").date()
+                    except ValueError:
+                        continue
+                    if data_pregao >= corte and data_pregao <= hoje:
+                        if ticker not in ultimos_pregoes or data_pregao > ultimos_pregoes[ticker]:
+                            ultimos_pregoes[ticker] = data_pregao
+
+    if not ultimos_pregoes:
+        raise RuntimeError("COTAHIST da B3 não retornou negociações recentes.")
+    return set(ultimos_pregoes), max(data.isoformat() for data in ultimos_pregoes.values())
+
+
+def carregar_mapa_tickers() -> tuple[dict[str, list[str]], int, str]:
     """Carrega tickers de ações e agrupa classes negociadas pelo CNPJ do emissor."""
     csv_bytes = baixar(TICKERS_URL)
     ativos = pd.read_csv(io.BytesIO(csv_bytes), dtype=str).fillna("")
@@ -38,15 +76,20 @@ def carregar_mapa_tickers() -> tuple[dict[str, list[str]], int]:
     if not obrigatorias.issubset(ativos.columns):
         raise RuntimeError(f"CSV de tickers sem colunas esperadas: {sorted(ativos.columns)}")
 
+    tickers_b3_ativos, data_cotahist = carregar_tickers_com_negociacao_b3()
     ativos["classe_norm"] = ativos["classe"].str.strip().str.casefold()
-    acoes = ativos[ativos["classe_norm"].isin(["acao", "ações", "acoes"])]
+    ativos["ticker"] = ativos["ticker"].str.strip().str.upper()
+    acoes = ativos[
+        ativos["classe_norm"].isin(["acao", "ações", "acoes"])
+        & ativos["ticker"].isin(tickers_b3_ativos)
+    ]
     mapa: dict[str, set[str]] = {}
     for _, linha in acoes.iterrows():
         cnpj = cnpj_limpo(linha["cnpj"])
         ticker = linha["ticker"].strip().upper()
         if len(cnpj) == 14 and ticker:
             mapa.setdefault(cnpj, set()).add(ticker)
-    return {cnpj: sorted(tickers) for cnpj, tickers in mapa.items()}, len(acoes)
+    return {cnpj: sorted(tickers) for cnpj, tickers in mapa.items()}, len(acoes), data_cotahist
 
 
 def ler_csv_zip(conteudo: bytes, nome: str) -> pd.DataFrame:
@@ -95,9 +138,10 @@ def main():
 
     mapa_tickers = {}
     total_ativos_b3 = 0
+    data_cotahist = None
     erros = []
     try:
-        mapa_tickers, total_ativos_b3 = carregar_mapa_tickers()
+        mapa_tickers, total_ativos_b3, data_cotahist = carregar_mapa_tickers()
     except Exception as exc:
         erros.append(f"Mapeamento de tickers: {str(exc)[:220]}")
 
@@ -171,13 +215,15 @@ def main():
         "emissores_sem_ticker_excluidos": empresas_cvm_com_dados - empresas_com_ticker,
         "quantidade_empresas_com_ticker": empresas_com_ticker,
         "quantidade_ativos_acao_no_mapa": total_ativos_b3,
-        "observacao": "Exibe emissores com registro ativo na CVM e ticker de ação no universo de referência; cada classe/ticker aparece em uma linha separada. Os indicadores contábeis do emissor se repetem entre classes. Nomes conciliados por CNPJ normalizado, com razão social da DFP como alternativa. Dados DFP consolidados; indicadores não calculados permanecem nulos.",
+        "data_ultimo_pregao_b3": data_cotahist,
+        "criterio_ticker_ativo": "Negociação à vista registrada no COTAHIST da B3 nos últimos 365 dias; considera lote padrão e fracionário.",
+        "observacao": "Exibe emissores com registro ativo na CVM e ticker com negociação à vista registrada na B3 nos últimos 365 dias; cada classe/ticker aparece em uma linha separada. Os indicadores contábeis do emissor se repetem entre classes. Nomes conciliados por CNPJ normalizado, com razão social da DFP como alternativa. Dados DFP consolidados; indicadores não calculados permanecem nulos.",
         "erros": erros,
         "empresas": empresas,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"JSON gerado: {OUT} | empresas={len(empresas)} | com ticker={empresas_com_ticker} | ativos B3 no mapa={total_ativos_b3} | anos={anos_ok} | erros={erros}")
+    print(f"JSON gerado: {OUT} | empresas={len(empresas)} | com ticker={empresas_com_ticker} | ativos B3 recentes no mapa={total_ativos_b3} | anos={anos_ok} | erros={erros}")
 
 
 if __name__ == "__main__":
