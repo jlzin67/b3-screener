@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Baixa dados oficiais DFP da CVM e publica um JSON conservador.
-
-Nesta primeira versão são publicados cadastro e dados financeiros de origem.
-Indicadores só são calculados quando a identificação das contas é inequívoca.
-Não há cotação de mercado nesta etapa; P/L e P/VP permanecem indisponíveis.
-"""
+"""Baixa dados da CVM e associa tickers de ações da B3 por CNPJ."""
 from __future__ import annotations
 
 import io
@@ -20,7 +15,8 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "indicadores.json"
 BASE = "https://dados.cvm.gov.br/dados/CIA_ABERTA"
-HEADERS = {"User-Agent": "b3-screener-educacional/1.0 contato: github.com/jlzin67/b3-screener"}
+TICKERS_URL = "https://developers.lummios.com.br/dados/universo-ativos.csv"
+HEADERS = {"User-Agent": "b3-screener-educacional/1.0 (projeto público)"}
 TIMEOUT = 90
 
 
@@ -28,6 +24,29 @@ def baixar(url: str) -> bytes:
     response = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
     response.raise_for_status()
     return response.content
+
+
+def cnpj_limpo(valor) -> str:
+    return re.sub(r"\D", "", str(valor or ""))
+
+
+def carregar_mapa_tickers() -> tuple[dict[str, list[str]], int]:
+    """Carrega tickers de ações e agrupa classes negociadas pelo CNPJ do emissor."""
+    csv_bytes = baixar(TICKERS_URL)
+    ativos = pd.read_csv(io.BytesIO(csv_bytes), dtype=str).fillna("")
+    obrigatorias = {"ticker", "cnpj", "classe"}
+    if not obrigatorias.issubset(ativos.columns):
+        raise RuntimeError(f"CSV de tickers sem colunas esperadas: {sorted(ativos.columns)}")
+
+    ativos["classe_norm"] = ativos["classe"].str.strip().str.casefold()
+    acoes = ativos[ativos["classe_norm"].isin(["acao", "ações", "acoes"])]
+    mapa: dict[str, set[str]] = {}
+    for _, linha in acoes.iterrows():
+        cnpj = cnpj_limpo(linha["cnpj"])
+        ticker = linha["ticker"].strip().upper()
+        if len(cnpj) == 14 and ticker:
+            mapa.setdefault(cnpj, set()).add(ticker)
+    return {cnpj: sorted(tickers) for cnpj, tickers in mapa.items()}, len(acoes)
 
 
 def ler_csv_zip(conteudo: bytes, nome: str) -> pd.DataFrame:
@@ -50,7 +69,6 @@ def numero(v):
 def localizar_conta(df: pd.DataFrame, termos: tuple[str, ...]) -> float | None:
     if df.empty:
         return None
-    # DRE consolidada: prioriza contas fixas e a linha de maior nível de detalhe.
     dados = df.copy()
     dados["DS_CONTA"] = dados["DS_CONTA"].fillna("").astype(str).str.lower()
     for termo in termos:
@@ -62,8 +80,7 @@ def localizar_conta(df: pd.DataFrame, termos: tuple[str, ...]) -> float | None:
 
 
 def ano_dfp(ano: int):
-    url = f"{BASE}/DOC/DFP/DADOS/dfp_cia_aberta_{ano}.zip"
-    return baixar(url)
+    return baixar(f"{BASE}/DOC/DFP/DADOS/dfp_cia_aberta_{ano}.zip")
 
 
 def main():
@@ -74,16 +91,23 @@ def main():
     cadastro = cadastro.drop_duplicates("CNPJ_CIA", keep="last")
     nomes = cadastro.set_index("CNPJ_CIA")["DENOM_SOCIAL"].to_dict()
 
+    mapa_tickers = {}
+    total_ativos_b3 = 0
+    erros = []
+    try:
+        mapa_tickers, total_ativos_b3 = carregar_mapa_tickers()
+    except Exception as exc:
+        erros.append(f"Mapeamento de tickers: {str(exc)[:220]}")
+
     registros = {}
     anos_ok = []
-    erros = []
     ano_atual = datetime.now(timezone.utc).year
     for ano in range(ano_atual, ano_atual - 6, -1):
         try:
             zip_bytes = ano_dfp(ano)
             dre = ler_csv_zip(zip_bytes, "DRE_con")
-            bpa = ler_csv_zip(zip_bytes, "BPA_con")
-            bpp = ler_csv_zip(zip_bytes, "BPP_con")
+            ler_csv_zip(zip_bytes, "BPA_con")
+            ler_csv_zip(zip_bytes, "BPP_con")
             anos_ok.append(ano)
         except Exception as exc:
             erros.append(f"{ano}: {str(exc)[:180]}")
@@ -95,11 +119,14 @@ def main():
                 exercicio = grupo
             receita = localizar_conta(exercicio, (r"receita de venda de bens e/ou serviços", r"receita líquida de vendas e/ou serviços"))
             lucro = localizar_conta(exercicio, (r"lucro/prejuízo consolidado do período", r"lucro/prejuízo do período"))
-            if cnpj not in registros:
-                registros[cnpj] = {
+            cnpj_key = cnpj_limpo(cnpj)
+            if cnpj_key not in registros:
+                tickers = mapa_tickers.get(cnpj_key, [])
+                registros[cnpj_key] = {
                     "cnpj": cnpj,
                     "empresa": nomes.get(cnpj, cnpj),
-                    "ticker": None,
+                    "ticker": " / ".join(tickers) if tickers else None,
+                    "tickers": tickers,
                     "fonte": "CVM - DFP consolidada",
                     "ano_referencia": ano,
                     "receita_liquida": receita,
@@ -108,25 +135,30 @@ def main():
                     "roic": None, "divida_ebitda": None, "cagr_lucros": None,
                 }
 
-    # Cálculos que usam linhas padronizadas da DRE e são possíveis sem cotação.
     for item in registros.values():
         receita, lucro = item["receita_liquida"], item["lucro_liquido"]
         if receita not in (None, 0) and lucro is not None:
             item["margem_liquida"] = round(lucro / receita * 100, 2)
 
-    OUT.parent.mkdir(parents=True, exist_ok=True)
+    empresas = sorted(registros.values(), key=lambda x: x["empresa"])
+    empresas_com_ticker = sum(bool(item["tickers"]) for item in empresas)
     payload = {
         "atualizado_em": datetime.now(timezone.utc).isoformat(),
-        "fonte": "Comissão de Valores Mobiliários (CVM) - Dados Abertos",
+        "fonte": "CVM - Dados Abertos; universo de ativos Lummios (CC BY 4.0)",
         "url_fonte": "https://dados.cvm.gov.br/dataset/cia_aberta-doc-dfp",
+        "url_mapa_tickers": "https://developers.lummios.com.br/dados-abertos.html",
+        "licenca_mapa_tickers": "CC BY 4.0 - atribuição à Lummios",
         "anos_processados": sorted(anos_ok),
-        "quantidade_empresas": len(registros),
-        "observacao": "Versão inicial: dados consolidados DFP. Ticker e indicadores dependentes de cotação ainda não integrados. Campos sem cálculo validado ficam nulos.",
+        "quantidade_empresas": len(empresas),
+        "quantidade_empresas_com_ticker": empresas_com_ticker,
+        "quantidade_ativos_acao_no_mapa": total_ativos_b3,
+        "observacao": "Tickers de ações associados pelo CNPJ do emissor. Empresas sem correspondência permanecem sem ticker. Dados financeiros DFP consolidados; indicadores não calculados permanecem nulos.",
         "erros": erros,
-        "empresas": sorted(registros.values(), key=lambda x: x["empresa"]),
+        "empresas": empresas,
     }
+    OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"JSON gerado: {OUT} | empresas={len(registros)} | anos={anos_ok} | erros={erros}")
+    print(f"JSON gerado: {OUT} | empresas={len(empresas)} | com ticker={empresas_com_ticker} | ativos B3 no mapa={total_ativos_b3} | anos={anos_ok} | erros={erros}")
 
 
 if __name__ == "__main__":
