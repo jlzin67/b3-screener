@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Baixa dados da CVM e associa tickers de ações da B3 por CNPJ."""
+"""Gera indicadores fundamentalistas com dados públicos da CVM e cotações da B3."""
 from __future__ import annotations
 
 import io
 import json
 import re
 import zipfile
+import unicodedata
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -33,8 +34,21 @@ def cnpj_limpo(valor) -> str:
     return re.sub(r"\D", "", str(valor or ""))
 
 
+def normalizar_texto(valor) -> str:
+    texto = unicodedata.normalize("NFKD", str(valor or ""))
+    texto = "".join(c for c in texto if not unicodedata.combining(c))
+    return re.sub(r"[^A-Z0-9]", "", texto.upper())
+
+
+def numero(valor):
+    try:
+        x = float(valor)
+        return x if pd.notna(x) else None
+    except (TypeError, ValueError):
+        return None
+
+
 def baixar_cotahist(ano: int) -> bytes:
-    """Tenta os domínios oficiais da B3 que distribuem a série histórica."""
     urls = [
         f"https://bvmf.bmfbovespa.com.br/InstDados/SerHist/COTAHIST_A{ano}.ZIP",
         f"https://www.b3.com.br/InstDados/SerHist/COTAHIST_A{ano}.ZIP",
@@ -49,13 +63,12 @@ def baixar_cotahist(ano: int) -> bytes:
     raise RuntimeError("Não foi possível baixar o COTAHIST da B3. " + " | ".join(falhas))
 
 
-def carregar_tickers_com_negociacao_b3() -> tuple[set[str], str]:
-    """Retorna tickers com negociação à vista registrada na B3 nos últimos 365 dias."""
+def carregar_cotacoes_b3() -> tuple[dict[str, dict], str]:
+    """Último fechamento à vista por ticker; o BDI 96 é o mercado fracionário."""
     hoje = datetime.now(timezone.utc).date()
     corte = hoje - timedelta(days=365)
-    ultimos_pregoes: dict[str, object] = {}
+    cotacoes: dict[str, dict] = {}
 
-    # A série anual da B3 é atualizada com os negócios do respectivo ano.
     for ano in (hoje.year - 1, hoje.year):
         zip_bytes = baixar_cotahist(ano)
         with zipfile.ZipFile(io.BytesIO(zip_bytes)) as zf:
@@ -67,48 +80,53 @@ def carregar_tickers_com_negociacao_b3() -> tuple[set[str], str]:
                     linha = bruto.decode("latin1").rstrip("\r\n")
                     if len(linha) < 245 or linha[:2] != "01":
                         continue
-                    if linha[10:12].strip() not in {"02", "96"}:
-                        continue
-                    if linha[24:27].strip() not in {"010", "020"}:
+                    if linha[10:12].strip() not in {"02", "96"} or linha[24:27].strip() != "010":
                         continue
                     ticker = linha[12:24].strip().upper()
                     if not ticker:
                         continue
                     try:
                         data_pregao = datetime.strptime(linha[2:10], "%Y%m%d").date()
-                    except ValueError:
+                        preco = int(linha[108:121].strip() or "0") / 100
+                        negocios = int(linha[147:152].strip() or "0")
+                    except (ValueError, TypeError):
                         continue
-                    if data_pregao >= corte and data_pregao <= hoje:
-                        if ticker not in ultimos_pregoes or data_pregao > ultimos_pregoes[ticker]:
-                            ultimos_pregoes[ticker] = data_pregao
+                    if data_pregao < corte or data_pregao > hoje or preco <= 0:
+                        continue
+                    atual = cotacoes.get(ticker)
+                    if atual is None or data_pregao > atual["data"]:
+                        cotacoes[ticker] = {
+                            "preco": preco,
+                            "data": data_pregao,
+                            "especie": linha[39:49].strip().upper(),
+                            "negocios": negocios,
+                        }
 
-    if not ultimos_pregoes:
-        raise RuntimeError("COTAHIST da B3 não retornou negociações recentes.")
-    return set(ultimos_pregoes), max(data.isoformat() for data in ultimos_pregoes.values())
+    if not cotacoes:
+        raise RuntimeError("COTAHIST da B3 não retornou cotações à vista recentes.")
+    data_maxima = max(item["data"] for item in cotacoes.values()).isoformat()
+    return cotacoes, data_maxima
 
 
-def carregar_mapa_tickers() -> tuple[dict[str, list[str]], int, str]:
-    """Carrega tickers de ações e agrupa classes negociadas pelo CNPJ do emissor."""
+def carregar_mapa_tickers(cotacoes: dict[str, dict]) -> tuple[dict[str, list[str]], int]:
     csv_bytes = baixar(TICKERS_URL)
     ativos = pd.read_csv(io.BytesIO(csv_bytes), dtype=str).fillna("")
     obrigatorias = {"ticker", "cnpj", "classe"}
     if not obrigatorias.issubset(ativos.columns):
         raise RuntimeError(f"CSV de tickers sem colunas esperadas: {sorted(ativos.columns)}")
-
-    tickers_b3_ativos, data_cotahist = carregar_tickers_com_negociacao_b3()
     ativos["classe_norm"] = ativos["classe"].str.strip().str.casefold()
     ativos["ticker"] = ativos["ticker"].str.strip().str.upper()
     acoes = ativos[
         ativos["classe_norm"].isin(["acao", "ações", "acoes"])
-        & ativos["ticker"].isin(tickers_b3_ativos)
+        & ativos["ticker"].isin(cotacoes)
     ]
     mapa: dict[str, set[str]] = {}
     for _, linha in acoes.iterrows():
         cnpj = cnpj_limpo(linha["cnpj"])
-        ticker = linha["ticker"].strip().upper()
+        ticker = linha["ticker"]
         if len(cnpj) == 14 and ticker:
             mapa.setdefault(cnpj, set()).add(ticker)
-    return {cnpj: sorted(tickers) for cnpj, tickers in mapa.items()}, len(acoes), data_cotahist
+    return {cnpj: sorted(tickers) for cnpj, tickers in mapa.items()}, len(acoes)
 
 
 def ler_csv_zip(conteudo: bytes, nome: str) -> pd.DataFrame:
@@ -116,136 +134,412 @@ def ler_csv_zip(conteudo: bytes, nome: str) -> pd.DataFrame:
         candidatos = [n for n in zf.namelist() if n.lower().endswith(".csv") and nome.lower() in n.lower()]
         if not candidatos:
             raise RuntimeError(f"Arquivo {nome} não encontrado no ZIP.")
-        with zf.open(candidatos[0]) as f:
-            return pd.read_csv(f, sep=";", encoding="latin1", dtype={"CNPJ_CIA": str}, low_memory=False)
+        with zf.open(candidatos[0]) as arquivo:
+            return pd.read_csv(
+                arquivo, sep=";", encoding="latin1",
+                dtype={"CNPJ_CIA": str}, low_memory=False
+            )
 
 
-def numero(v):
-    try:
-        x = float(v)
-        return x if pd.notna(x) else None
-    except (TypeError, ValueError):
+def indexar_por_cnpj(df: pd.DataFrame) -> dict[str, pd.DataFrame]:
+    if df.empty or "CNPJ_CIA" not in df.columns:
+        return {}
+    return {cnpj_limpo(cnpj): grupo for cnpj, grupo in df.groupby("CNPJ_CIA", sort=False)}
+
+
+def valor_escalado(linha) -> float | None:
+    valor = numero(linha.get("VL_CONTA"))
+    if valor is None:
         return None
+    escala = normalizar_texto(linha.get("ESCALA_MOEDA", ""))
+    if escala in {"MIL", "MILHAR", "MILHARES"}:
+        valor *= 1000
+    elif escala in {"MILHAO", "MILHOES"}:
+        valor *= 1_000_000
+    return valor
 
 
-def localizar_conta(df: pd.DataFrame, termos: tuple[str, ...]) -> float | None:
-    if df.empty:
+def localizar_conta(df: pd.DataFrame | None, codigos=(), termos=()) -> float | None:
+    if df is None or df.empty:
         return None
-    dados = df.copy()
-    dados["DS_CONTA"] = dados["DS_CONTA"].fillna("").astype(str).str.lower()
-    for termo in termos:
-        achados = dados[dados["DS_CONTA"].str.fullmatch(termo, case=False, na=False)]
-        if not achados.empty:
-            linha = achados.sort_values("CD_CONTA").iloc[-1]
-            return numero(linha["VL_CONTA"])
+    dados = df
+    if "ORDEM_EXERC" in dados.columns:
+        ultimo = dados[dados["ORDEM_EXERC"].astype(str).str.normalize("NFKD").str.encode("ascii", errors="ignore").str.decode("ascii").str.upper().str.contains("ULTIMO", na=False)]
+        if not ultimo.empty:
+            dados = ultimo
+    if "VERSAO" in dados.columns:
+        dados = dados.assign(_versao=pd.to_numeric(dados["VERSAO"], errors="coerce").fillna(0))
+    if "CD_CONTA" in dados.columns:
+        codigos = [str(c) for c in codigos]
+        for codigo in codigos:
+            achados = dados[dados["CD_CONTA"].astype(str).str.strip() == codigo]
+            if not achados.empty:
+                if "_versao" in achados.columns:
+                    achados = achados.sort_values("_versao")
+                return valor_escalado(achados.iloc[-1])
+    if termos and "DS_CONTA" in dados.columns:
+        descricoes = dados["DS_CONTA"].fillna("").astype(str).map(normalizar_texto)
+        for termo in termos:
+            alvo = normalizar_texto(termo)
+            achados = dados[descricoes == alvo]
+            if not achados.empty:
+                if "_versao" in achados.columns:
+                    achados = achados.sort_values("_versao")
+                return valor_escalado(achados.iloc[-1])
     return None
 
 
-def ano_dfp(ano: int):
-    return baixar(f"{BASE}/DOC/DFP/DADOS/dfp_cia_aberta_{ano}.zip")
+def localizar_depreciacao(df: pd.DataFrame | None) -> float | None:
+    if df is None or df.empty or "DS_CONTA" not in df.columns:
+        return None
+    descricoes = df["DS_CONTA"].fillna("").astype(str).map(normalizar_texto)
+    mascara = descricoes.str.contains("DEPRECIACAO|AMORTIZACAO|EXAUSTAO", regex=True, na=False)
+    candidatos = df[mascara].copy()
+    if candidatos.empty:
+        return None
+    # Mantém apenas contas-folha para não somar uma conta-pai com seus componentes.
+    codigos = candidatos.get("CD_CONTA", pd.Series("", index=candidatos.index)).astype(str)
+    folhas = []
+    for idx, codigo in codigos.items():
+        if not any(outro.startswith(codigo + ".") for outro in codigos if outro != codigo):
+            folhas.append(idx)
+    candidatos = candidatos.loc[folhas]
+    valores = [valor_escalado(linha) for _, linha in candidatos.iterrows()]
+    valores = [abs(v) for v in valores if v is not None]
+    return sum(valores) if valores else None
+
+
+def linha_capital(df: pd.DataFrame | None):
+    if df is None or df.empty:
+        return None
+    dados = df.copy()
+    if "VERSAO" in dados.columns:
+        dados["_versao"] = pd.to_numeric(dados["VERSAO"], errors="coerce").fillna(0)
+        dados = dados.sort_values("_versao")
+    return dados.iloc[-1]
+
+
+def capital_coluna(linha, candidatos) -> float:
+    if linha is None:
+        return 0.0
+    mapa = {normalizar_texto(coluna): coluna for coluna in linha.index}
+    for candidato in candidatos:
+        coluna = mapa.get(normalizar_texto(candidato))
+        if coluna:
+            return numero(linha.get(coluna)) or 0.0
+    # Compatibilidade com nomes abreviados usados em algumas versões do arquivo.
+    for chave, coluna in mapa.items():
+        if any(normalizar_texto(c) in chave for c in candidatos):
+            valor = numero(linha.get(coluna))
+            if valor is not None:
+                return valor
+    return 0.0
+
+
+def quantidades_acoes(linha) -> dict[str, float]:
+    on = capital_coluna(linha, [
+        "QT_ACAO_ORDINARIA_CAPITAL_INTEGRALIZADO",
+        "QT_ACAO_ORDINARIA_CAPITAL_INTEGR",
+        "QT_ACAO_ORDIN_CAP_INTEGR",
+    ])
+    pn = capital_coluna(linha, [
+        "QT_ACAO_PREFERENCIAL_CAPITAL_INTEGRALIZADO",
+        "QT_ACAO_PREFERENCIAL_CAPITAL_INTEGR",
+        "QT_ACAO_PREF_CAP_INTEGR",
+    ])
+    total = capital_coluna(linha, [
+        "QT_ACAO_TOTAL_CAPITAL_INTEGRALIZADO",
+        "QT_ACAO_TOTAL_CAPITAL_INTEGR",
+        "QT_ACAO_TOTAL_CAP_INTEGR",
+    ])
+    on_tes = capital_coluna(linha, ["QT_ACAO_ORDINARIA_TESOURARIA", "QT_ACAO_ORDIN_TESOURO"])
+    pn_tes = capital_coluna(linha, ["QT_ACAO_PREFERENCIAL_TESOURARIA", "QT_ACAO_PREF_TESOURO"])
+    total_tes = capital_coluna(linha, ["QT_ACAO_TOTAL_TESOURARIA", "QT_ACAO_TOTAL_TESOURO"])
+    on = max(0.0, on - on_tes)
+    pn = max(0.0, pn - pn_tes)
+    if total <= 0:
+        total = on + pn
+    else:
+        total = max(0.0, total - total_tes)
+    if on + pn > 0:
+        total = on + pn
+    return {"on": on, "pn": pn, "total": total}
+
+
+def calcular_valor_mercado(tickers: list[str], cotacoes: dict[str, dict], capital) -> float | None:
+    quantidades = quantidades_acoes(capital)
+    cotacoes_validas = [(t, cotacoes[t]) for t in tickers if t in cotacoes]
+    if not cotacoes_validas:
+        return None
+
+    por_tipo = {"on": [], "pn": [], "outro": []}
+    for ticker, cotacao in cotacoes_validas:
+        especie = cotacao["especie"]
+        if especie.startswith("ON") or ticker.endswith("3"):
+            tipo = "on"
+        elif especie.startswith("PN") or ticker[-1:] in {"4", "5", "6", "7", "8"}:
+            tipo = "pn"
+        else:
+            tipo = "outro"
+        por_tipo[tipo].append((ticker, cotacao))
+
+    # Sem classe identificável, só é seguro usar o total quando há um único ticker.
+    if not por_tipo["on"] and not por_tipo["pn"]:
+        if len(cotacoes_validas) == 1 and quantidades["total"] > 0:
+            return cotacoes_validas[0][1]["preco"] * quantidades["total"]
+        return None
+
+    valor_mercado = 0.0
+    classes_precificadas = 0
+    for tipo in ("on", "pn"):
+        quantidade = quantidades[tipo]
+        if quantidade <= 0:
+            continue
+        opcoes = por_tipo[tipo]
+        if not opcoes:
+            return None
+        # Se houver mais de um ticker da mesma classe, usa a série mais negociada
+        # como referência, pois a CVM informa a quantidade agregada por classe.
+        _, cotacao = max(opcoes, key=lambda item: (item[1]["negocios"], item[1]["data"]))
+        valor_mercado += cotacao["preco"] * quantidade
+        classes_precificadas += 1
+    if classes_precificadas == 0 or valor_mercado <= 0:
+        return None
+    return valor_mercado
 
 
 def main():
     cadastro_url = f"{BASE}/CAD/DADOS/cad_cia_aberta.csv"
-    cadastro = pd.read_csv(io.BytesIO(baixar(cadastro_url)), sep=";", encoding="latin1", dtype={"CNPJ_CIA": str})
+    cadastro = pd.read_csv(
+        io.BytesIO(baixar(cadastro_url)), sep=";", encoding="latin1",
+        dtype={"CNPJ_CIA": str}
+    )
     if "SIT" in cadastro.columns:
         cadastro = cadastro[cadastro["SIT"].astype(str).str.contains("ATIVO", case=False, na=False)]
     cadastro = cadastro.drop_duplicates("CNPJ_CIA", keep="last")
     nomes = {cnpj_limpo(cnpj): nome for cnpj, nome in zip(cadastro["CNPJ_CIA"], cadastro["DENOM_SOCIAL"])}
-    # SIT=ATIVO é o filtro da CVM para emissores com registro ativo.
     cnpjs_ativos_cvm = set(nomes)
 
-    mapa_tickers = {}
-    total_ativos_b3 = 0
-    data_cotahist = None
-    erros = []
-    try:
-        mapa_tickers, total_ativos_b3, data_cotahist = carregar_mapa_tickers()
-    except Exception as exc:
-        erros.append(f"Mapeamento de tickers: {str(exc)[:220]}")
-        raise RuntimeError("Falha no mapeamento de tickers; a base anterior será preservada.") from exc
+    cotacoes, data_cotahist = carregar_cotacoes_b3()
+    mapa_tickers, total_ativos_b3 = carregar_mapa_tickers(cotacoes)
     if not mapa_tickers:
         raise RuntimeError("O mapeamento de tickers retornou vazio; a base anterior será preservada.")
 
-    registros = {}
+    historico: dict[str, dict[int, dict]] = {}
+    capitais: dict[str, object] = {}
     anos_ok = []
+    erros = []
     ano_atual = datetime.now(timezone.utc).year
-    for ano in range(ano_atual, ano_atual - 6, -1):
+    anos_dados = list(range(ano_atual - 1, ano_atual - 7, -1))
+
+    for ano in anos_dados:
         try:
-            zip_bytes = ano_dfp(ano)
-            dre = ler_csv_zip(zip_bytes, "DRE_con")
-            ler_csv_zip(zip_bytes, "BPA_con")
-            ler_csv_zip(zip_bytes, "BPP_con")
+            zip_bytes = baixar(f"{BASE}/DOC/DFP/DADOS/dfp_cia_aberta_{ano}.zip")
+            dre_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "DRE_con"))
+            bpa_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "BPA_con"))
+            bpp_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "BPP_con"))
+            try:
+                dfc_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "DFC_MI_con"))
+            except RuntimeError:
+                dfc_idx = {}
+            try:
+                capital_idx = indexar_por_cnpj(ler_csv_zip(zip_bytes, "composicao_capital"))
+            except RuntimeError:
+                capital_idx = {}
             anos_ok.append(ano)
         except Exception as exc:
             erros.append(f"{ano}: {str(exc)[:180]}")
             continue
 
-        for cnpj, grupo in dre.groupby("CNPJ_CIA"):
-            exercicio = grupo[grupo["ORDEM_EXERC"].astype(str).str.contains("ÚLTIMO|ULTIMO", case=False, na=False)]
-            if exercicio.empty:
-                exercicio = grupo
-            receita = localizar_conta(exercicio, (r"receita de venda de bens e/ou serviços", r"receita líquida de vendas e/ou serviços"))
-            lucro = localizar_conta(exercicio, (r"lucro/prejuízo consolidado do período", r"lucro/prejuízo do período"))
-            cnpj_key = cnpj_limpo(cnpj)
-            # Não basta o ticker existir em um cadastro histórico: exigimos emissor ativo na CVM.
-            if cnpj_key not in cnpjs_ativos_cvm:
+        for cnpj_key, dre in dre_idx.items():
+            if cnpj_key not in cnpjs_ativos_cvm or cnpj_key not in mapa_tickers:
                 continue
-            if cnpj_key not in registros:
-                tickers = mapa_tickers.get(cnpj_key, [])
-                if not tickers:
-                    continue
-                registros[cnpj_key] = {
-                    "cnpj": cnpj,
-                    "empresa": nomes.get(cnpj_key) or (str(grupo["DENOM_CIA"].dropna().iloc[0]) if "DENOM_CIA" in grupo.columns and not grupo["DENOM_CIA"].dropna().empty else cnpj),
-                    "ticker": " / ".join(tickers) if tickers else None,
-                    "tickers": tickers,
-                    "fonte": "CVM - DFP consolidada",
-                    "ano_referencia": ano,
-                    "receita_liquida": receita,
-                    "lucro_liquido": lucro,
-                    "pvp": None, "pl": None, "roe": None, "margem_liquida": None,
-                    "roic": None, "divida_ebitda": None, "cagr_lucros": None,
-                }
+            bpa = bpa_idx.get(cnpj_key)
+            bpp = bpp_idx.get(cnpj_key)
+            dfc = dfc_idx.get(cnpj_key)
+            receita = localizar_conta(dre, ["3.01"], ["Receita de Venda de Bens e/ou Serviços"])
+            lucro = localizar_conta(dre, ["3.11", "3.11.01"], [
+                "Lucro/Prejuízo Consolidado do Período",
+                "Lucro/Prejuízo do Período",
+            ])
+            ebit = localizar_conta(dre, ["3.05"], [
+                "Resultado Antes do Resultado Financeiro e dos Tributos",
+            ])
+            resultado_antes_impostos = localizar_conta(dre, ["3.07"], [
+                "Resultado Antes dos Tributos sobre o Lucro",
+            ])
+            imposto = localizar_conta(dre, ["3.08"], [
+                "Imposto de Renda e Contribuição Social sobre o Lucro",
+            ])
+            caixa = localizar_conta(bpa, ["1.01.01"], [
+                "Caixa e Equivalentes de Caixa",
+            ])
+            divida_cp = localizar_conta(bpp, ["2.01.04"], [
+                "Empréstimos e Financiamentos",
+            ])
+            divida_lp = localizar_conta(bpp, ["2.02.01"], [
+                "Empréstimos e Financiamentos",
+            ])
+            patrimonio = localizar_conta(bpp, ["2.03"], [
+                "Patrimônio Líquido Consolidado",
+                "Patrimônio Líquido",
+            ])
+            depreciacao = localizar_depreciacao(dfc)
 
-    for item in registros.values():
-        receita, lucro = item["receita_liquida"], item["lucro_liquido"]
-        if receita not in (None, 0) and lucro is not None:
-            item["margem_liquida"] = round(lucro / receita * 100, 2)
+            capital = linha_capital(capital_idx.get(cnpj_key))
+            if capital is not None and ano == max(anos_dados):
+                capitais[cnpj_key] = capital
 
-    empresas_cvm_com_dados = len(registros)
-    # Uma linha por ticker: classes diferentes do mesmo emissor ficam individualizadas.
+            historico.setdefault(cnpj_key, {})[ano] = {
+                "receita_liquida": receita,
+                "lucro_liquido": lucro,
+                "ebit": ebit,
+                "resultado_antes_impostos": resultado_antes_impostos,
+                "imposto": imposto,
+                "caixa": caixa,
+                "divida_cp": divida_cp,
+                "divida_lp": divida_lp,
+                "patrimonio": patrimonio,
+                "depreciacao": depreciacao,
+            }
+
     empresas = []
-    for emissor in registros.values():
+    for cnpj_key, anos in historico.items():
+        if not anos:
+            continue
+        ano_ref = max(anos)
+        atual = anos[ano_ref]
+        anterior = anos.get(ano_ref - 1, {})
+
+        receita = atual["receita_liquida"]
+        lucro = atual["lucro_liquido"]
+        patrimonio = atual["patrimonio"]
+        caixa = atual["caixa"]
+        divida_bruta = None
+        if atual["divida_cp"] is not None or atual["divida_lp"] is not None:
+            divida_bruta = (atual["divida_cp"] or 0) + (atual["divida_lp"] or 0)
+        divida_liquida = (
+            divida_bruta - (caixa or 0)
+            if divida_bruta is not None and caixa is not None else None
+        )
+        ebitda = (
+            atual["ebit"] + atual["depreciacao"]
+            if atual["ebit"] is not None and atual["depreciacao"] is not None else None
+        )
+
+        roe = None
+        if lucro is not None and patrimonio is not None:
+            pl_anterior = anterior.get("patrimonio")
+            pl_medio = (patrimonio + pl_anterior) / 2 if pl_anterior is not None else None
+            if pl_medio and pl_medio > 0:
+                roe = lucro / pl_medio * 100
+
+        margem = lucro / receita * 100 if lucro is not None and receita not in (None, 0) else None
+
+        roic = None
+        if atual["ebit"] is not None and patrimonio is not None and divida_liquida is not None:
+            capital_investido = patrimonio + divida_liquida
+            ebitda_anterior = anterior.get("ebit")
+            patrimonio_anterior = anterior.get("patrimonio")
+            caixa_anterior = anterior.get("caixa")
+            divida_cp_anterior = anterior.get("divida_cp")
+            divida_lp_anterior = anterior.get("divida_lp")
+            if (
+                patrimonio_anterior is not None
+                and divida_cp_anterior is not None
+                and divida_lp_anterior is not None
+                and caixa_anterior is not None
+            ):
+                capital_anterior = patrimonio_anterior + divida_cp_anterior + divida_lp_anterior - caixa_anterior
+                capital_medio = (capital_investido + capital_anterior) / 2
+                ebt = atual["resultado_antes_impostos"]
+                tax_rate = min(0.34, max(0.0, abs(atual["imposto"] or 0) / abs(ebt))) if ebt not in (None, 0) else 0.34
+                if capital_medio > 0:
+                    roic = atual["ebit"] * (1 - tax_rate) / capital_medio * 100
+
+        divida_ebitda = (
+            divida_liquida / ebitda
+            if divida_liquida is not None and ebitda is not None and ebitda > 0 else None
+        )
+
+        lucro_inicio = anos.get(ano_ref - 5, {}).get("lucro_liquido")
+        cagr = None
+        if lucro_inicio is not None and lucro is not None and lucro_inicio > 0 and lucro > 0:
+            cagr = ((lucro / lucro_inicio) ** (1 / 5) - 1) * 100
+
+        tickers = mapa_tickers.get(cnpj_key, [])
+        valor_mercado = calcular_valor_mercado(tickers, cotacoes, capitais.get(cnpj_key))
+        pl_ratio = valor_mercado / lucro if valor_mercado is not None and lucro is not None and lucro > 0 else None
+        pvp = valor_mercado / patrimonio if valor_mercado is not None and patrimonio is not None and patrimonio > 0 else None
+
+        empresa = nomes.get(cnpj_key, cnpj_key)
+        empresas.append({
+            "cnpj": cnpj_key,
+            "empresa": empresa,
+            "tickers": tickers,
+            "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
+            "ano_referencia": ano_ref,
+            "receita_liquida": round(receita, 2) if receita is not None else None,
+            "lucro_liquido": round(lucro, 2) if lucro is not None else None,
+            "pvp": round(pvp, 2) if pvp is not None else None,
+            "pl": round(pl_ratio, 2) if pl_ratio is not None else None,
+            "roe": round(roe, 2) if roe is not None else None,
+            "margem_liquida": round(margem, 2) if margem is not None else None,
+            "roic": round(roic, 2) if roic is not None else None,
+            "divida_ebitda": round(divida_ebitda, 2) if divida_ebitda is not None else None,
+            "cagr_lucros": round(cagr, 2) if cagr is not None else None,
+            "valor_mercado": round(valor_mercado, 2) if valor_mercado is not None else None,
+        })
+
+    linhas = []
+    for emissor in empresas:
         for ticker in emissor["tickers"]:
             linha = dict(emissor)
             linha["ticker"] = ticker
             linha["tickers"] = [ticker]
-            empresas.append(linha)
-    empresas.sort(key=lambda x: (x["empresa"], x["ticker"]))
-    empresas_com_ticker = len({item["cnpj"] for item in empresas})
+            linhas.append(linha)
+    linhas.sort(key=lambda x: (x["empresa"], x["ticker"]))
+    empresas_com_ticker = len({item["cnpj"] for item in linhas})
+
+    if not linhas:
+        raise RuntimeError("A coleta não gerou linhas de tickers; a base anterior será preservada.")
+
     payload = {
         "atualizado_em": datetime.now(timezone.utc).isoformat(),
-        "fonte": "CVM - Dados Abertos; universo de ativos Lummios (CC BY 4.0)",
+        "fonte": "CVM - Dados Abertos (DFP consolidada); B3 - COTAHIST; universo de ativos Lummios (CC BY 4.0)",
         "url_fonte": "https://dados.cvm.gov.br/dataset/cia_aberta-doc-dfp",
+        "url_cotacoes": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/mercado-a-vista/cotacoes-historicas/",
         "url_mapa_tickers": "https://developers.lummios.com.br/dados-abertos.html",
         "licenca_mapa_tickers": "CC BY 4.0 - atribuição à Lummios",
         "anos_processados": sorted(anos_ok),
-        "quantidade_empresas": empresas_com_ticker,
-        "quantidade_linhas_ticker": len(empresas),
-        "quantidade_emissores_cvm_com_dados": empresas_cvm_com_dados,
-        "emissores_sem_ticker_excluidos": empresas_cvm_com_dados - empresas_com_ticker,
-        "quantidade_empresas_com_ticker": empresas_com_ticker,
-        "quantidade_ativos_acao_no_mapa": total_ativos_b3,
+        "ano_referencia_fundamentos": max(anos_ok) if anos_ok else None,
         "data_ultimo_pregao_b3": data_cotahist,
-        "criterio_ticker_ativo": "Negociação à vista registrada no COTAHIST da B3 nos últimos 365 dias; considera lote padrão e fracionário.",
-        "observacao": "Exibe emissores com registro ativo na CVM e ticker com negociação à vista registrada na B3 nos últimos 365 dias; cada classe/ticker aparece em uma linha separada. Os indicadores contábeis do emissor se repetem entre classes. Nomes conciliados por CNPJ normalizado, com razão social da DFP como alternativa. Dados DFP consolidados; indicadores não calculados permanecem nulos.",
+        "quantidade_empresas": empresas_com_ticker,
+        "quantidade_linhas_ticker": len(linhas),
+        "quantidade_emissores_cvm_com_dados": len(empresas),
+        "quantidade_ativos_acao_no_mapa": total_ativos_b3,
+        "metodologia": {
+            "p_l": "Valor de mercado estimado / lucro líquido consolidado anual; só exibido com lucro positivo.",
+            "pvp": "Valor de mercado estimado / patrimônio líquido consolidado.",
+            "roe": "Lucro líquido consolidado / patrimônio líquido médio entre dois exercícios.",
+            "margem_liquida": "Lucro líquido consolidado / receita líquida.",
+            "roic": "EBIT após imposto estimado / capital investido médio; taxa tributária limitada a 34%.",
+            "divida_ebitda": "Dívida de curto e longo prazo menos caixa, dividida por EBITDA (EBIT + depreciação/amortização).",
+            "cagr_lucros": "Crescimento anual composto do lucro líquido em cinco anos; requer lucro positivo nos dois extremos.",
+            "valor_mercado": "Preço de fechamento mais recente da B3 multiplicado pelas ações em circulação informadas na composição de capital da CVM; quando há mais de uma série da mesma classe, usa a mais negociada como referência.",
+        },
+        "observacao": "Indicadores contábeis usam o último exercício anual DFP disponível, não valores TTM. P/L e P/VP dependem de preço recente e composição de capital; quando os dados necessários não são suficientes, o indicador fica nulo. ROE e ROIC usam médias de saldos entre exercícios. Instituições financeiras podem não ter EBITDA/ROIC comparáveis. Cada classe/ticker aparece em uma linha; indicadores do emissor se repetem entre classes.",
         "erros": erros,
-        "empresas": empresas,
+        "empresas": linhas,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"JSON gerado: {OUT} | empresas={len(empresas)} | com ticker={empresas_com_ticker} | ativos B3 recentes no mapa={total_ativos_b3} | anos={anos_ok} | erros={erros}")
+    indicadores = ["pvp", "pl", "roe", "margem_liquida", "roic", "divida_ebitda", "cagr_lucros"]
+    cobertura = {chave: sum(1 for item in linhas if item[chave] is not None) for chave in indicadores}
+    print(
+        f"JSON gerado: {OUT} | empresas={empresas_com_ticker} | tickers={len(linhas)} "
+        f"| cotações={len(cotacoes)} | cobertura={cobertura} | anos={anos_ok} | erros={erros}"
+    )
 
 
 if __name__ == "__main__":
