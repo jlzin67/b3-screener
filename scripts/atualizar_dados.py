@@ -16,7 +16,10 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "indicadores.json"
 BASE = "https://dados.cvm.gov.br/dados/CIA_ABERTA"
 TICKERS_URL = "https://developers.lummios.com.br/dados/universo-ativos.csv"
-HEADERS = {"User-Agent": "b3-screener-educacional/1.0 (projeto público)"}
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36",
+    "Referer": "https://www.b3.com.br/",
+}
 TIMEOUT = 90
 
 
@@ -30,6 +33,22 @@ def cnpj_limpo(valor) -> str:
     return re.sub(r"\D", "", str(valor or ""))
 
 
+def baixar_cotahist(ano: int) -> bytes:
+    """Tenta os domínios oficiais da B3 que distribuem a série histórica."""
+    urls = [
+        f"https://bvmf.bmfbovespa.com.br/InstDados/SerHist/COTAHIST_A{ano}.ZIP",
+        f"https://www.b3.com.br/InstDados/SerHist/COTAHIST_A{ano}.ZIP",
+        f"https://b3.com.br/InstDados/SerHist/COTAHIST_A{ano}.ZIP",
+    ]
+    falhas = []
+    for url in urls:
+        try:
+            return baixar(url)
+        except requests.RequestException as exc:
+            falhas.append(f"{url}: {exc}")
+    raise RuntimeError("Não foi possível baixar o COTAHIST da B3. " + " | ".join(falhas))
+
+
 def carregar_tickers_com_negociacao_b3() -> tuple[set[str], str]:
     """Retorna tickers com negociação à vista registrada na B3 nos últimos 365 dias."""
     hoje = datetime.now(timezone.utc).date()
@@ -38,7 +57,7 @@ def carregar_tickers_com_negociacao_b3() -> tuple[set[str], str]:
 
     # A série anual da B3 é atualizada com os negócios do respectivo ano.
     for ano in (hoje.year - 1, hoje.year):
-        zip_bytes = baixar(f"https://bvmf.bmfbovespa.com.br/InstDados/SerHist/COTAHIST_A{ano}.ZIP")
+        zip_bytes = baixar_cotahist(ano)
         with zipfile.ZipFile(io.BytesIO(zip_bytes)) as zf:
             candidatos = [nome for nome in zf.namelist() if nome.lower().endswith(".txt")]
             if not candidatos:
@@ -144,6 +163,9 @@ def main():
         mapa_tickers, total_ativos_b3, data_cotahist = carregar_mapa_tickers()
     except Exception as exc:
         erros.append(f"Mapeamento de tickers: {str(exc)[:220]}")
+        raise RuntimeError("Falha no mapeamento de tickers; a base anterior será preservada.") from exc
+    if not mapa_tickers:
+        raise RuntimeError("O mapeamento de tickers retornou vazio; a base anterior será preservada.")
 
     registros = {}
     anos_ok = []
