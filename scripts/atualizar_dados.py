@@ -116,9 +116,18 @@ def carregar_mapa_tickers(cotacoes: dict[str, dict]) -> tuple[dict[str, list[str
         raise RuntimeError(f"CSV de tickers sem colunas esperadas: {sorted(ativos.columns)}")
     ativos["classe_norm"] = ativos["classe"].str.strip().str.casefold()
     ativos["ticker"] = ativos["ticker"].str.strip().str.upper()
+    # O COTAHIST anual inclui códigos que já trocaram de ticker. Consideramos
+    # negociável apenas o código com pregão recente, usando a data mais recente
+    # encontrada no próprio arquivo como referência (não o relógio da máquina).
+    data_referencia = max(item["data"] for item in cotacoes.values())
+    limite_recencia = data_referencia - timedelta(days=60)
+    tickers_recentes = {
+        ticker for ticker, cotacao in cotacoes.items()
+        if cotacao["data"] >= limite_recencia and cotacao["negocios"] > 0
+    }
     acoes = ativos[
         ativos["classe_norm"].isin(["acao", "ações", "acoes"])
-        & ativos["ticker"].isin(cotacoes)
+        & ativos["ticker"].isin(tickers_recentes)
     ]
     mapa: dict[str, set[str]] = {}
     for _, linha in acoes.iterrows():
@@ -243,6 +252,18 @@ def capital_coluna(linha, candidatos) -> float:
 
 
 def quantidades_acoes(linha) -> dict[str, float]:
+    # A CVM permite informar quantidades em unidades ou milhares de ações.
+    # A escala vem no próprio formulário de composição do capital.
+    multiplicador = 1.0
+    if linha is not None:
+        for coluna in linha.index:
+            chave = normalizar_texto(coluna)
+            if "ESCALA" in chave and ("ACAO" in chave or "QUANTIDADE" in chave):
+                escala = normalizar_texto(linha.get(coluna))
+                if escala in {"MIL", "MILHAR", "MILHARES"}:
+                    multiplicador = 1000.0
+                break
+
     on = capital_coluna(linha, [
         "QT_ACAO_ORDINARIA_CAPITAL_INTEGRALIZADO",
         "QT_ACAO_ORDINARIA_CAPITAL_INTEGR",
@@ -261,8 +282,10 @@ def quantidades_acoes(linha) -> dict[str, float]:
     on_tes = capital_coluna(linha, ["QT_ACAO_ORDINARIA_TESOURARIA", "QT_ACAO_ORDIN_TESOURO"])
     pn_tes = capital_coluna(linha, ["QT_ACAO_PREFERENCIAL_TESOURARIA", "QT_ACAO_PREF_TESOURO"])
     total_tes = capital_coluna(linha, ["QT_ACAO_TOTAL_TESOURARIA", "QT_ACAO_TOTAL_TESOURO"])
-    on = max(0.0, on - on_tes)
-    pn = max(0.0, pn - pn_tes)
+    on = max(0.0, on - on_tes) * multiplicador
+    pn = max(0.0, pn - pn_tes) * multiplicador
+    total = total * multiplicador
+    total_tes *= multiplicador
     if total <= 0:
         total = on + pn
     else:
@@ -540,9 +563,10 @@ def main():
             "roic": "EBIT após imposto estimado / capital investido médio; taxa tributária limitada a 34%.",
             "divida_ebitda": "Dívida de curto e longo prazo menos caixa, dividida por EBITDA (EBIT + depreciação/amortização).",
             "cagr_lucros": "Crescimento anual composto do lucro líquido em cinco anos; requer lucro positivo nos dois extremos.",
-            "valor_mercado": "Preço de fechamento mais recente da B3 multiplicado pelas ações em circulação informadas na composição de capital da CVM; quando há mais de uma série da mesma classe, usa a mais negociada como referência.",
+            "valor_mercado": "Preço de fechamento mais recente da B3 multiplicado pelas ações em circulação informadas na composição de capital da CVM, respeitando a escala de quantidade (unidades ou milhares); quando há mais de uma série da mesma classe, usa a mais negociada como referência.",
+            "ticker_ativo": "Ticker incluído somente se teve ao menos um negócio nos últimos 60 dias corridos em relação ao pregão mais recente encontrado no COTAHIST.",
         },
-        "observacao": "Indicadores contábeis usam o último exercício anual DFP disponível, não valores TTM. P/L e P/VP dependem de preço recente e composição de capital; quando os dados necessários não são suficientes, o indicador fica nulo. ROE e ROIC usam médias de saldos entre exercícios. Instituições financeiras podem não ter EBITDA/ROIC comparáveis. Cada classe/ticker aparece em uma linha; indicadores do emissor se repetem entre classes.",
+        "observacao": "Indicadores contábeis usam o último exercício anual DFP disponível, não valores TTM. P/L e P/VP dependem de preço recente e composição de capital; a escala da quantidade de ações (unidade/milhar) é aplicada conforme o formulário da CVM. Quando os dados necessários não são suficientes, o indicador fica nulo. ROE e ROIC usam médias de saldos entre exercícios. Instituições financeiras podem não ter EBITDA/ROIC comparáveis. Tickers sem negociação nos últimos 60 dias são excluídos para evitar códigos antigos após mudança de ticker. Cada classe/ticker aparece em uma linha; indicadores do emissor se repetem entre classes.",
         "erros": erros,
         "empresas": linhas,
     }
