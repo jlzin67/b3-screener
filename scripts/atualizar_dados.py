@@ -192,18 +192,24 @@ def localizar_conta(df: pd.DataFrame | None, codigos=(), termos=()) -> float | N
 def localizar_depreciacao(df: pd.DataFrame | None) -> float | None:
     if df is None or df.empty or "DS_CONTA" not in df.columns:
         return None
-    descricoes = df["DS_CONTA"].fillna("").astype(str).map(normalizar_texto)
+    dados = df
+    if "ORDEM_EXERC" in dados.columns:
+        ordem = dados["ORDEM_EXERC"].astype(str).map(normalizar_texto)
+        ultimo = dados[ordem == "ULTIMO"]
+        if not ultimo.empty:
+            dados = ultimo
+    descricoes = dados["DS_CONTA"].fillna("").astype(str).map(normalizar_texto)
     mascara = descricoes.str.contains("DEPRECIACAO|AMORTIZACAO|EXAUSTAO", regex=True, na=False)
-    candidatos = df[mascara].copy()
+    candidatos = dados[mascara].copy()
     if candidatos.empty:
         return None
     # Mantém apenas contas-folha para não somar uma conta-pai com seus componentes.
     codigos = candidatos.get("CD_CONTA", pd.Series("", index=candidatos.index)).astype(str)
-    folhas = []
-    for idx, codigo in codigos.items():
-        if not any(outro.startswith(codigo + ".") for outro in codigos if outro != codigo):
-            folhas.append(idx)
-    candidatos = candidatos.loc[folhas]
+    pais = set()
+    for codigo in codigos:
+        partes = codigo.split(".")
+        pais.update(".".join(partes[:i]) for i in range(1, len(partes)))
+    candidatos = candidatos.loc[[idx for idx, codigo in codigos.items() if codigo not in pais]]
     valores = [valor_escalado(linha) for _, linha in candidatos.iterrows()]
     valores = [abs(v) for v in valores if v is not None]
     return sum(valores) if valores else None
@@ -285,7 +291,8 @@ def calcular_valor_mercado(tickers: list[str], cotacoes: dict[str, dict], capita
 
     # Sem classe identificável, só é seguro usar o total quando há um único ticker.
     if not por_tipo["on"] and not por_tipo["pn"]:
-        if len(cotacoes_validas) == 1 and quantidades["total"] > 0:
+        # Units (por exemplo, sufixo 11) não equivalem a uma ação individual.
+        if len(cotacoes_validas) == 1 and not cotacoes_validas[0][0].endswith("11") and quantidades["total"] > 0:
             return cotacoes_validas[0][1]["preco"] * quantidades["total"]
         return None
 
@@ -387,7 +394,7 @@ def main():
             depreciacao = localizar_depreciacao(dfc)
 
             capital = linha_capital(capital_idx.get(cnpj_key))
-            if capital is not None and ano == max(anos_dados):
+            if capital is not None and cnpj_key not in capitais:
                 capitais[cnpj_key] = capital
 
             historico.setdefault(cnpj_key, {})[ano] = {
