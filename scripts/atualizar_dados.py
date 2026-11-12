@@ -337,7 +337,8 @@ def main():
     anos_ok = []
     erros = []
     ano_atual = datetime.now(timezone.utc).year
-    anos_dados = list(range(ano_atual - 1, ano_atual - 7, -1))
+    # 2025 e 2024 atendem aos saldos atuais/médios; 2020 é a base do CAGR de cinco anos.
+    anos_dados = [ano_atual - 1, ano_atual - 2, ano_atual - 6]
 
     for ano in anos_dados:
         try:
