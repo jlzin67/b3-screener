@@ -1,7 +1,9 @@
 {
-  "atualizado_em": "2026-11-12T13:43:57.120554+00:00",
-  "fonte": "Comissão de Valores Mobiliários (CVM) - Dados Abertos",
+  "atualizado_em": "2026-11-12T13:48:34.407870+00:00",
+  "fonte": "CVM - Dados Abertos; universo de ativos Lummios (CC BY 4.0)",
   "url_fonte": "https://dados.cvm.gov.br/dataset/cia_aberta-doc-dfp",
+  "url_mapa_tickers": "https://developers.lummios.com.br/dados-abertos.html",
+  "licenca_mapa_tickers": "CC BY 4.0 - atribuição à Lummios",
   "anos_processados": [
     2021,
     2022,
@@ -11,13 +13,20 @@
     2026
   ],
   "quantidade_empresas": 538,
-  "observacao": "Versão inicial: dados consolidados DFP. Ticker e indicadores dependentes de cotação ainda não integrados. Campos sem cálculo validado ficam nulos.",
+  "quantidade_empresas_com_ticker": 338,
+  "quantidade_ativos_acao_no_mapa": 640,
+  "observacao": "Tickers de ações associados pelo CNPJ do emissor. Empresas sem correspondência permanecem sem ticker. Dados financeiros DFP consolidados; indicadores não calculados permanecem nulos.",
   "erros": [],
   "empresas": [
     {
       "cnpj": "00.416.968/0001-01",
       "empresa": "00.416.968/0001-01",
-      "ticker": null,
+      "ticker": "BIDI11 / BIDI3 / BIDI4",
+      "tickers": [
+        "BIDI11",
+        "BIDI3",
+        "BIDI4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": null,
@@ -34,6 +43,7 @@
       "cnpj": "00.622.416/0001-41",
       "empresa": "00.622.416/0001-41",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 944636.0,
@@ -50,6 +60,7 @@
       "cnpj": "01.468.594/0001-22",
       "empresa": "01.468.594/0001-22",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 144226.0,
@@ -66,6 +77,7 @@
       "cnpj": "01.968.293/0001-68",
       "empresa": "01.968.293/0001-68",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 728479.0,
@@ -81,7 +93,11 @@
     {
       "cnpj": "01.971.614/0001-83",
       "empresa": "01.971.614/0001-83",
-      "ticker": null,
+      "ticker": "ECPR3 / ECPR4",
+      "tickers": [
+        "ECPR3",
+        "ECPR4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 0.0,
@@ -98,6 +114,7 @@
       "cnpj": "02.105.040/0001-23",
       "empresa": "02.105.040/0001-23",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 3830.0,
@@ -113,7 +130,11 @@
     {
       "cnpj": "02.762.113/0001-50",
       "empresa": "02.762.113/0001-50",
-      "ticker": null,
+      "ticker": "BFRE11 / BFRE12",
+      "tickers": [
+        "BFRE11",
+        "BFRE12"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": null,
@@ -129,7 +150,10 @@
     {
       "cnpj": "02.860.694/0001-62",
       "empresa": "02.860.694/0001-62",
-      "ticker": null,
+      "ticker": "SHOW3",
+      "tickers": [
+        "SHOW3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 180765.0,
@@ -146,6 +170,7 @@
       "cnpj": "03.494.776/0001-01",
       "empresa": "03.494.776/0001-01",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 202515.0,
@@ -161,7 +186,10 @@
     {
       "cnpj": "03.802.115/0001-98",
       "empresa": "03.802.115/0001-98",
-      "ticker": null,
+      "ticker": "CLSA3",
+      "tickers": [
+        "CLSA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 474576.0,
@@ -178,6 +206,7 @@
       "cnpj": "03.818.379/0001-30",
       "empresa": "03.818.379/0001-30",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 728413.0,
@@ -194,6 +223,7 @@
       "cnpj": "03.953.509/0001-47",
       "empresa": "03.953.509/0001-47",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 5045523.0,
@@ -209,7 +239,11 @@
     {
       "cnpj": "04.065.791/0001-99",
       "empresa": "04.065.791/0001-99",
-      "ticker": null,
+      "ticker": "SNSL3 / SQIA3",
+      "tickers": [
+        "SNSL3",
+        "SQIA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 616472.0,
@@ -226,6 +260,7 @@
       "cnpj": "05.303.439/0001-07",
       "empresa": "05.303.439/0001-07",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 3148937.0,
@@ -242,6 +277,7 @@
       "cnpj": "05.347.060/0001-07",
       "empresa": "05.347.060/0001-07",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 250075.0,
@@ -257,7 +293,12 @@
     {
       "cnpj": "06.164.253/0001-87",
       "empresa": "06.164.253/0001-87",
-      "ticker": null,
+      "ticker": "GOLL4 / GOLL54 / GOLL80",
+      "tickers": [
+        "GOLL4",
+        "GOLL54",
+        "GOLL80"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 22103281.0,
@@ -274,6 +315,7 @@
       "cnpj": "06.977.751/0001-49",
       "empresa": "06.977.751/0001-49",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 297523.0,
@@ -290,6 +332,7 @@
       "cnpj": "07.437.016/0001-05",
       "empresa": "07.437.016/0001-05",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 122408.0,
@@ -306,6 +349,7 @@
       "cnpj": "07.704.246/0001-93",
       "empresa": "07.704.246/0001-93",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 720234.0,
@@ -321,7 +365,10 @@
     {
       "cnpj": "07.718.269/0001-57",
       "empresa": "07.718.269/0001-57",
-      "ticker": null,
+      "ticker": "SGPS3",
+      "tickers": [
+        "SGPS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 439368.0,
@@ -338,6 +385,7 @@
       "cnpj": "07.857.093/0001-14",
       "empresa": "07.857.093/0001-14",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5112417.0,
@@ -354,6 +402,7 @@
       "cnpj": "07.857.850/0001-50",
       "empresa": "07.857.850/0001-50",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": -132019.0,
@@ -370,6 +419,7 @@
       "cnpj": "07.859.510/0001-68",
       "empresa": "07.859.510/0001-68",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 185222.0,
@@ -385,7 +435,10 @@
     {
       "cnpj": "07.950.674/0001-04",
       "empresa": "07.950.674/0001-04",
-      "ticker": null,
+      "ticker": "CCXC3",
+      "tickers": [
+        "CCXC3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 0.0,
@@ -402,6 +455,7 @@
       "cnpj": "08.493.364/0001-62",
       "empresa": "08.493.364/0001-62",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 2167225.0,
@@ -418,6 +472,7 @@
       "cnpj": "08.769.451/0001-08",
       "empresa": "08.769.451/0001-08",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 28904.0,
@@ -434,6 +489,7 @@
       "cnpj": "08.773.135/0001-00",
       "empresa": "08.773.135/0001-00",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 84916.0,
@@ -450,6 +506,7 @@
       "cnpj": "08.773.191/0001-36",
       "empresa": "08.773.191/0001-36",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 0.0,
@@ -466,6 +523,7 @@
       "cnpj": "08.810.422/0001-34",
       "empresa": "08.810.422/0001-34",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 1601648.0,
@@ -482,6 +540,7 @@
       "cnpj": "08.935.054/0001-50",
       "empresa": "08.935.054/0001-50",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 207866.0,
@@ -498,6 +557,7 @@
       "cnpj": "09.267.996/0001-70",
       "empresa": "09.267.996/0001-70",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 247624.0,
@@ -513,7 +573,10 @@
     {
       "cnpj": "09.347.516/0001-81",
       "empresa": "09.347.516/0001-81",
-      "ticker": null,
+      "ticker": "ELMD3",
+      "tickers": [
+        "ELMD3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 1187207.0,
@@ -529,7 +592,10 @@
     {
       "cnpj": "10.139.870/0001-08",
       "empresa": "10.139.870/0001-08",
-      "ticker": null,
+      "ticker": "NGRD3",
+      "tickers": [
+        "NGRD3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 270844.0,
@@ -545,7 +611,10 @@
     {
       "cnpj": "10.215.988/0001-60",
       "empresa": "10.215.988/0001-60",
-      "ticker": null,
+      "ticker": "LCAM3",
+      "tickers": [
+        "LCAM3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 8503476.0,
@@ -561,7 +630,10 @@
     {
       "cnpj": "10.285.590/0001-08",
       "empresa": "10.285.590/0001-08",
-      "ticker": null,
+      "ticker": "SOMA3",
+      "tickers": [
+        "SOMA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 5360547.0,
@@ -578,6 +650,7 @@
       "cnpj": "10.440.482/0001-54",
       "empresa": "10.440.482/0001-54",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 2853141.0,
@@ -594,6 +667,7 @@
       "cnpj": "10.452.416/0001-02",
       "empresa": "10.452.416/0001-02",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 133466.0,
@@ -610,6 +684,7 @@
       "cnpj": "10.851.805/0001-00",
       "empresa": "10.851.805/0001-00",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 406803.0,
@@ -625,7 +700,11 @@
     {
       "cnpj": "11.669.021/0001-10",
       "empresa": "11.669.021/0001-10",
-      "ticker": null,
+      "ticker": "ENAT3 / QGEP3",
+      "tickers": [
+        "ENAT3",
+        "QGEP3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 1388562.0,
@@ -641,7 +720,10 @@
     {
       "cnpj": "11.721.921/0001-60",
       "empresa": "11.721.921/0001-60",
-      "ticker": null,
+      "ticker": "APER3",
+      "tickers": [
+        "APER3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 510843.0,
@@ -657,7 +739,10 @@
     {
       "cnpj": "11.725.176/0001-27",
       "empresa": "11.725.176/0001-27",
-      "ticker": null,
+      "ticker": "BOAS3",
+      "tickers": [
+        "BOAS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 872293.0,
@@ -674,6 +759,7 @@
       "cnpj": "13.457.942/0001-45",
       "empresa": "13.457.942/0001-45",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 422787.0,
@@ -690,6 +776,7 @@
       "cnpj": "13.522.948/0001-59",
       "empresa": "13.522.948/0001-59",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 845831.0,
@@ -706,6 +793,7 @@
       "cnpj": "13.584.310/0001-42",
       "empresa": "13.584.310/0001-42",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": -12594.0,
@@ -722,6 +810,7 @@
       "cnpj": "14.191.427/0001-29",
       "empresa": "14.191.427/0001-29",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 6097.0,
@@ -738,6 +827,7 @@
       "cnpj": "14.796.754/0001-04",
       "empresa": "14.796.754/0001-04",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 19361261.0,
@@ -753,7 +843,10 @@
     {
       "cnpj": "15.101.405/0001-93",
       "empresa": "15.101.405/0001-93",
-      "ticker": null,
+      "ticker": "CORR4",
+      "tickers": [
+        "CORR4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 2260.0,
@@ -769,7 +862,11 @@
     {
       "cnpj": "15.144.017/0001-90",
       "empresa": "15.144.017/0001-90",
-      "ticker": null,
+      "ticker": "CSAB3 / CSAB4",
+      "tickers": [
+        "CSAB3",
+        "CSAB4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": null,
@@ -785,7 +882,10 @@
     {
       "cnpj": "15.527.906/0001-36",
       "empresa": "15.527.906/0001-36",
-      "ticker": null,
+      "ticker": "BSEV3",
+      "tickers": [
+        "BSEV3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 10329992.0,
@@ -802,6 +902,7 @@
       "cnpj": "15.675.715/0001-11",
       "empresa": "15.675.715/0001-11",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 20864.0,
@@ -818,6 +919,7 @@
       "cnpj": "16.838.421/0001-26",
       "empresa": "16.838.421/0001-26",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": null,
@@ -834,6 +936,7 @@
       "cnpj": "17.157.777/0001-67",
       "empresa": "17.157.777/0001-67",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": null,
@@ -849,7 +952,11 @@
     {
       "cnpj": "17.167.412/0001-13",
       "empresa": "17.167.412/0001-13",
-      "ticker": null,
+      "ticker": "CRIV3 / CRIV4",
+      "tickers": [
+        "CRIV3",
+        "CRIV4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": null,
@@ -865,7 +972,16 @@
     {
       "cnpj": "17.193.806/0001-46",
       "empresa": "17.193.806/0001-46",
-      "ticker": null,
+      "ticker": "BRGE11 / BRGE12 / BRGE3 / BRGE5 / BRGE6 / BRGE7 / BRGE8",
+      "tickers": [
+        "BRGE11",
+        "BRGE12",
+        "BRGE3",
+        "BRGE5",
+        "BRGE6",
+        "BRGE7",
+        "BRGE8"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 3555.0,
@@ -882,6 +998,7 @@
       "cnpj": "17.943.792/0001-30",
       "empresa": "17.943.792/0001-30",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 104824.0,
@@ -897,7 +1014,10 @@
     {
       "cnpj": "18.328.118/0001-09",
       "empresa": "18.328.118/0001-09",
-      "ticker": null,
+      "ticker": "PETZ3",
+      "tickers": [
+        "PETZ3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3586622.0,
@@ -914,6 +1034,7 @@
       "cnpj": "18.483.666/0001-03",
       "empresa": "18.483.666/0001-03",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 2191955.0,
@@ -930,6 +1051,7 @@
       "cnpj": "19.276.528/0001-16",
       "empresa": "19.276.528/0001-16",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 14358975.0,
@@ -945,7 +1067,10 @@
     {
       "cnpj": "19.378.769/0001-76",
       "empresa": "19.378.769/0001-76",
-      "ticker": null,
+      "ticker": "PARD3",
+      "tickers": [
+        "PARD3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 2098683.0,
@@ -961,7 +1086,10 @@
     {
       "cnpj": "19.796.586/0001-70",
       "empresa": "19.796.586/0001-70",
-      "ticker": null,
+      "ticker": "BRIT3",
+      "tickers": [
+        "BRIT3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 1227870.0,
@@ -978,6 +1106,7 @@
       "cnpj": "21.110.778/0001-23",
       "empresa": "21.110.778/0001-23",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 329215.0,
@@ -993,7 +1122,11 @@
     {
       "cnpj": "21.255.567/0001-89",
       "empresa": "21.255.567/0001-89",
-      "ticker": null,
+      "ticker": "CTSA3 / CTSA4",
+      "tickers": [
+        "CTSA3",
+        "CTSA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 35551.0,
@@ -1010,6 +1143,7 @@
       "cnpj": "21.331.849/0001-18",
       "empresa": "21.331.849/0001-18",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 3892265.0,
@@ -1025,7 +1159,11 @@
     {
       "cnpj": "22.677.520/0001-76",
       "empresa": "22.677.520/0001-76",
-      "ticker": null,
+      "ticker": "CTNM3 / CTNM4",
+      "tickers": [
+        "CTNM3",
+        "CTNM4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 470295.0,
@@ -1042,6 +1180,7 @@
       "cnpj": "22.902.694/0001-95",
       "empresa": "22.902.694/0001-95",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 97904.0,
@@ -1058,6 +1197,7 @@
       "cnpj": "23.041.875/0001-37",
       "empresa": "23.041.875/0001-37",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 28934575.0,
@@ -1074,6 +1214,7 @@
       "cnpj": "23.864.409/0001-51",
       "empresa": "23.864.409/0001-51",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 2249611.0,
@@ -1090,6 +1231,7 @@
       "cnpj": "24.410.913/0001-44",
       "empresa": "24.410.913/0001-44",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": null,
@@ -1105,7 +1247,12 @@
     {
       "cnpj": "29.978.814/0001-87",
       "empresa": "29.978.814/0001-87",
-      "ticker": null,
+      "ticker": "SULA11 / SULA3 / SULA4",
+      "tickers": [
+        "SULA11",
+        "SULA3",
+        "SULA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 20362901.0,
@@ -1121,7 +1268,11 @@
     {
       "cnpj": "30.723.886/0001-62",
       "empresa": "30.723.886/0001-62",
-      "ticker": null,
+      "ticker": "MODL11 / MODL3",
+      "tickers": [
+        "MODL11",
+        "MODL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": null,
@@ -1138,6 +1289,7 @@
       "cnpj": "31.701.408/0001-14",
       "empresa": "31.701.408/0001-14",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 700506.0,
@@ -1153,7 +1305,10 @@
     {
       "cnpj": "32.785.497/0001-97",
       "empresa": "32.785.497/0001-97",
-      "ticker": null,
+      "ticker": "NTCO3",
+      "tickers": [
+        "NTCO3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 24089804.0,
@@ -1169,7 +1324,10 @@
     {
       "cnpj": "33.102.476/0001-92",
       "empresa": "33.102.476/0001-92",
-      "ticker": null,
+      "ticker": "MOAR3",
+      "tickers": [
+        "MOAR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 0.0,
@@ -1185,7 +1343,11 @@
     {
       "cnpj": "33.111.246/0001-90",
       "empresa": "33.111.246/0001-90",
-      "ticker": null,
+      "ticker": "TCNO3 / TCNO4",
+      "tickers": [
+        "TCNO3",
+        "TCNO4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 0.0,
@@ -1201,7 +1363,10 @@
     {
       "cnpj": "33.130.691/0001-05",
       "empresa": "33.130.691/0001-05",
-      "ticker": null,
+      "ticker": "PORT3",
+      "tickers": [
+        "PORT3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 2925895.0,
@@ -1217,7 +1382,11 @@
     {
       "cnpj": "33.467.572/0001-34",
       "empresa": "33.467.572/0001-34",
-      "ticker": null,
+      "ticker": "TKNO3 / TKNO4",
+      "tickers": [
+        "TKNO3",
+        "TKNO4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 296981.0,
@@ -1234,6 +1403,7 @@
       "cnpj": "35.502.310/0001-99",
       "empresa": "35.502.310/0001-99",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 556247.0,
@@ -1250,6 +1420,7 @@
       "cnpj": "38.126.888/0001-86",
       "empresa": "38.126.888/0001-86",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 519987.0,
@@ -1266,6 +1437,7 @@
       "cnpj": "38.307.135/0001-77",
       "empresa": "38.307.135/0001-77",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": -217697.0,
@@ -1282,6 +1454,7 @@
       "cnpj": "38.482.780/0001-26",
       "empresa": "38.482.780/0001-26",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 157508.0,
@@ -1298,6 +1471,7 @@
       "cnpj": "38.543.489/0001-10",
       "empresa": "38.543.489/0001-10",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 0.0,
@@ -1314,6 +1488,7 @@
       "cnpj": "39.346.861/0350-38",
       "empresa": "39.346.861/0350-38",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 9981865.0,
@@ -1330,6 +1505,7 @@
       "cnpj": "40.480.481/0001-02",
       "empresa": "40.480.481/0001-02",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 126053.0,
@@ -1346,6 +1522,7 @@
       "cnpj": "41.096.674/0001-19",
       "empresa": "41.096.674/0001-19",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3498268.0,
@@ -1362,6 +1539,7 @@
       "cnpj": "42.737.954/0001-21",
       "empresa": "42.737.954/0001-21",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -1377,7 +1555,10 @@
     {
       "cnpj": "43.185.362/0001-07",
       "empresa": "43.185.362/0001-07",
-      "ticker": null,
+      "ticker": "IGBR3",
+      "tickers": [
+        "IGBR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 5501.0,
@@ -1394,6 +1575,7 @@
       "cnpj": "43.513.237/0001-89",
       "empresa": "43.513.237/0001-89",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 6970812.0,
@@ -1410,6 +1592,7 @@
       "cnpj": "49.115.815/0001-05",
       "empresa": "49.115.815/0001-05",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 480583047.0,
@@ -1425,7 +1608,10 @@
     {
       "cnpj": "59.285.411/0001-13",
       "empresa": "59.285.411/0001-13",
-      "ticker": null,
+      "ticker": "BPAN4",
+      "tickers": [
+        "BPAN4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": null,
@@ -1441,7 +1627,11 @@
     {
       "cnpj": "60.500.139/0001-26",
       "empresa": "60.500.139/0001-26",
-      "ticker": null,
+      "ticker": "SLED3 / SLED4",
+      "tickers": [
+        "SLED3",
+        "SLED4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 86582.0,
@@ -1457,7 +1647,12 @@
     {
       "cnpj": "60.637.238/0001-54",
       "empresa": "60.637.238/0001-54",
-      "ticker": null,
+      "ticker": "BLUT3 / BLUT4 / JBDU3",
+      "tickers": [
+        "BLUT3",
+        "BLUT4",
+        "JBDU3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 0.0,
@@ -1473,7 +1668,11 @@
     {
       "cnpj": "60.770.336/0001-65",
       "empresa": "60.770.336/0001-65",
-      "ticker": null,
+      "ticker": "BRIV3 / BRIV4",
+      "tickers": [
+        "BRIV3",
+        "BRIV4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": null,
@@ -1490,6 +1689,7 @@
       "cnpj": "62.258.884/0001-36",
       "empresa": "62.258.884/0001-36",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3305864.0,
@@ -1505,7 +1705,10 @@
     {
       "cnpj": "67.010.660/0001-24",
       "empresa": "67.010.660/0001-24",
-      "ticker": null,
+      "ticker": "RDNI3",
+      "tickers": [
+        "RDNI3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 349314.0,
@@ -1522,6 +1725,7 @@
       "cnpj": "68.400.225/0001-79",
       "empresa": "68.400.225/0001-79",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2022,
       "receita_liquida": 216157.0,
@@ -1537,7 +1741,10 @@
     {
       "cnpj": "75.315.333/0001-09",
       "empresa": "75.315.333/0001-09",
-      "ticker": null,
+      "ticker": "CRFB3",
+      "tickers": [
+        "CRFB3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 115636000.0,
@@ -1554,6 +1761,7 @@
       "cnpj": "81.106.957/0001-19",
       "empresa": "81.106.957/0001-19",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 1420361.0,
@@ -1569,7 +1777,11 @@
     {
       "cnpj": "82.636.986/0001-55",
       "empresa": "82.636.986/0001-55",
-      "ticker": null,
+      "ticker": "TEKA3 / TEKA4",
+      "tickers": [
+        "TEKA3",
+        "TEKA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 361360.0,
@@ -1586,6 +1798,7 @@
       "cnpj": "82.981.929/0001-03",
       "empresa": "82.981.929/0001-03",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 0.0,
@@ -1601,7 +1814,10 @@
     {
       "cnpj": "86.550.951/0001-50",
       "empresa": "86.550.951/0001-50",
-      "ticker": null,
+      "ticker": "FRTA3",
+      "tickers": [
+        "FRTA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 7531.0,
@@ -1618,6 +1834,7 @@
       "cnpj": "08.827.501/0001-58",
       "empresa": "AEGEA SANEAMENTO E PARTICIPAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 18780466.0,
@@ -1633,7 +1850,10 @@
     {
       "cnpj": "12.528.708/0001-07",
       "empresa": "AERIS IND. E COM. DE EQUIP. PARA GER. DE ENG. S.A.",
-      "ticker": null,
+      "ticker": "AERI3",
+      "tickers": [
+        "AERI3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 746006.0,
@@ -1649,7 +1869,10 @@
     {
       "cnpj": "21.240.146/0001-84",
       "empresa": "AGROGALAXY PARTICIPAÇÕES S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "AGXY3",
+      "tickers": [
+        "AGXY3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 4612367.0,
@@ -1666,6 +1889,7 @@
       "cnpj": "23.438.929/0001-00",
       "empresa": "ALARES INTERNET PARTICIPAÇÕES S/A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 938903.0,
@@ -1682,6 +1906,7 @@
       "cnpj": "71.208.516/0001-74",
       "empresa": "ALGAR TELECOM S/A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2931979.0,
@@ -1697,7 +1922,10 @@
     {
       "cnpj": "61.156.931/0001-78",
       "empresa": "ALIPERTI S.A.",
-      "ticker": null,
+      "ticker": "APTI4",
+      "tickers": [
+        "APTI4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 45296.0,
@@ -1713,7 +1941,10 @@
     {
       "cnpj": "42.771.949/0001-35",
       "empresa": "ALLIANÇA SAÚDE E PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "AALR3",
+      "tickers": [
+        "AALR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1153825.0,
@@ -1729,7 +1960,10 @@
     {
       "cnpj": "20.247.322/0001-47",
       "empresa": "ALLIED TECNOLOGIA S.A.",
-      "ticker": null,
+      "ticker": "ALLD3",
+      "tickers": [
+        "ALLD3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5504620.0,
@@ -1745,7 +1979,12 @@
     {
       "cnpj": "05.878.397/0001-32",
       "empresa": "ALLOS S.A.",
-      "ticker": null,
+      "ticker": "ALOS3 / ALSO3 / SSBR3",
+      "tickers": [
+        "ALOS3",
+        "ALSO3",
+        "SSBR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2859106.0,
@@ -1761,7 +2000,10 @@
     {
       "cnpj": "60.537.263/0001-66",
       "empresa": "ALLPARK EMPREENDIMENTOS, PARTICIPAÇÕES E SERVIÇOS S.A.",
-      "ticker": null,
+      "ticker": "ALPK3",
+      "tickers": [
+        "ALPK3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1872588.0,
@@ -1778,6 +2020,7 @@
       "cnpj": "82.120.676/0001-83",
       "empresa": "ALMEIDA JUNIOR SHOPPING CENTERS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 304738.0,
@@ -1793,7 +2036,11 @@
     {
       "cnpj": "61.079.117/0001-05",
       "empresa": "ALPARGATAS SA",
-      "ticker": null,
+      "ticker": "ALPA3 / ALPA4",
+      "tickers": [
+        "ALPA3",
+        "ALPA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4564874.0,
@@ -1809,7 +2056,10 @@
     {
       "cnpj": "16.811.931/0001-00",
       "empresa": "ALPHAVILLE S.A.",
-      "ticker": null,
+      "ticker": "AVLL3",
+      "tickers": [
+        "AVLL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 584948.0,
@@ -1826,6 +2076,7 @@
       "cnpj": "08.262.121/0001-13",
       "empresa": "ALUBAR METAIS E CABOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2516449.0,
@@ -1841,7 +2092,12 @@
     {
       "cnpj": "08.364.948/0001-38",
       "empresa": "ALUPAR INVESTIMENTO S/A",
-      "ticker": null,
+      "ticker": "ALUP11 / ALUP3 / ALUP4",
+      "tickers": [
+        "ALUP11",
+        "ALUP3",
+        "ALUP4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4397883.0,
@@ -1857,7 +2113,10 @@
     {
       "cnpj": "07.526.557/0001-00",
       "empresa": "AMBEV S.A.",
-      "ticker": null,
+      "ticker": "ABEV3",
+      "tickers": [
+        "ABEV3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 88242467.0,
@@ -1873,7 +2132,10 @@
     {
       "cnpj": "12.648.266/0001-24",
       "empresa": "AMBIPAR PARTICIPAÇÕES E EMPREENDIMENTOS S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "AMBP3",
+      "tickers": [
+        "AMBP3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 6413676.0,
@@ -1889,7 +2151,11 @@
     {
       "cnpj": "00.776.574/0001-56",
       "empresa": "AMERICANAS S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "AMER3 / BTOW3",
+      "tickers": [
+        "AMER3",
+        "BTOW3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 12305000.0,
@@ -1905,7 +2171,10 @@
     {
       "cnpj": "09.288.252/0001-32",
       "empresa": "ANIMA HOLDING S/A",
-      "ticker": null,
+      "ticker": "ANIM3",
+      "tickers": [
+        "ANIM3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4023697.0,
@@ -1921,7 +2190,11 @@
     {
       "cnpj": "14.127.813/0001-51",
       "empresa": "ARANDU INVESTIMENTOS S.A.",
-      "ticker": null,
+      "ticker": "ARND3 / NINJ3",
+      "tickers": [
+        "ARND3",
+        "NINJ3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 70943.0,
@@ -1938,6 +2211,7 @@
       "cnpj": "24.624.551/0001-94",
       "empresa": "ARGO ENERGIA EMPREENDIMENTOS E PARTICIPAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1079334.0,
@@ -1953,7 +2227,10 @@
     {
       "cnpj": "00.242.184/0001-04",
       "empresa": "ARMAC LOCAÇÃO, LOGÍSTICA E SERVIÇOS S.A.",
-      "ticker": null,
+      "ticker": "ARML3",
+      "tickers": [
+        "ARML3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1887757.0,
@@ -1970,6 +2247,7 @@
       "cnpj": "02.919.555/0001-67",
       "empresa": "ARTERIS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4264811.0,
@@ -1986,6 +2264,7 @@
       "cnpj": "09.359.927/0001-97",
       "empresa": "ASA BRANCA HOLDING S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 106268.0,
@@ -2002,6 +2281,7 @@
       "cnpj": "38.286.323/0001-66",
       "empresa": "ASSURUÁ 4 E 5 HOLDING ENERGIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 648205.0,
@@ -2017,7 +2297,10 @@
     {
       "cnpj": "23.994.857/0001-70",
       "empresa": "ATOM EDUCAÇÃO E EDITORA S.A.",
-      "ticker": null,
+      "ticker": "ATED3",
+      "tickers": [
+        "ATED3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 26465.0,
@@ -2034,6 +2317,7 @@
       "cnpj": "08.213.823/0001-07",
       "empresa": "AURA ALMAS MINERAÇÃO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1088657.0,
@@ -2049,7 +2333,10 @@
     {
       "cnpj": "28.594.234/0001-23",
       "empresa": "AUREN ENERGIA S.A",
-      "ticker": null,
+      "ticker": "AURE3",
+      "tickers": [
+        "AURE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 13176952.0,
@@ -2066,6 +2353,7 @@
       "cnpj": "00.194.724/0001-13",
       "empresa": "AUREN OPERAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3575301.0,
@@ -2081,7 +2369,10 @@
     {
       "cnpj": "37.663.076/0001-07",
       "empresa": "AUREN PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "AESB3",
+      "tickers": [
+        "AESB3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4095677.0,
@@ -2098,6 +2389,7 @@
       "cnpj": "37.702.340/0001-74",
       "empresa": "AUSTRAVIAS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 517193.0,
@@ -2113,7 +2405,10 @@
     {
       "cnpj": "35.654.688/0001-08",
       "empresa": "AUTOMOB PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "AMOB3",
+      "tickers": [
+        "AMOB3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 12815400.0,
@@ -2130,6 +2425,7 @@
       "cnpj": "33.541.368/0001-16",
       "empresa": "AXIA ENERGIA NORDESTE S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 8839001.0,
@@ -2146,6 +2442,7 @@
       "cnpj": "00.357.038/0001-16",
       "empresa": "AXIA ENERGIA NORTE S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 11258680.0,
@@ -2161,7 +2458,14 @@
     {
       "cnpj": "00.001.180/0001-26",
       "empresa": "AXIA ENERGIA S.A.",
-      "ticker": null,
+      "ticker": "AXIA3 / AXIA7 / ELET3 / ELET5 / ELET6",
+      "tickers": [
+        "AXIA3",
+        "AXIA7",
+        "ELET3",
+        "ELET5",
+        "ELET6"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 41281596.0,
@@ -2178,6 +2482,7 @@
       "cnpj": "02.016.507/0001-69",
       "empresa": "AXIA ENERGIA SUL S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3181404.0,
@@ -2193,7 +2498,10 @@
     {
       "cnpj": "52.017.473/0001-03",
       "empresa": "AZEVEDO & TRAVASSOS ENERGIA S.A.",
-      "ticker": null,
+      "ticker": "AZTE3",
+      "tickers": [
+        "AZTE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2873.0,
@@ -2209,7 +2517,12 @@
     {
       "cnpj": "61.351.532/0001-68",
       "empresa": "AZEVEDO & TRAVASSOS SA",
-      "ticker": null,
+      "ticker": "AZEV11 / AZEV3 / AZEV4",
+      "tickers": [
+        "AZEV11",
+        "AZEV3",
+        "AZEV4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 349427.0,
@@ -2225,7 +2538,14 @@
     {
       "cnpj": "09.305.994/0001-29",
       "empresa": "AZUL S.A.",
-      "ticker": null,
+      "ticker": "AZUL3 / AZUL4 / AZUL97 / AZUL98 / AZUL99",
+      "tickers": [
+        "AZUL3",
+        "AZUL4",
+        "AZUL97",
+        "AZUL98",
+        "AZUL99"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 21640393.0,
@@ -2241,7 +2561,11 @@
     {
       "cnpj": "16.590.234/0001-76",
       "empresa": "AZZAS 2154 S.A.",
-      "ticker": null,
+      "ticker": "ARZZ3 / AZZA3",
+      "tickers": [
+        "ARZZ3",
+        "AZZA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 11819492.0,
@@ -2257,7 +2581,11 @@
     {
       "cnpj": "52.270.350/0001-71",
       "empresa": "B100 S.A.",
-      "ticker": null,
+      "ticker": "ADMF3 / B1003",
+      "tickers": [
+        "ADMF3",
+        "B1003"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 0.0,
@@ -2273,7 +2601,11 @@
     {
       "cnpj": "09.346.601/0001-25",
       "empresa": "B3 S.A. - BRASIL, BOLSA, BALCÃO",
-      "ticker": null,
+      "ticker": "B3SA3 / BVMF3",
+      "tickers": [
+        "B3SA3",
+        "BVMF3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 11121545.0,
@@ -2289,7 +2621,10 @@
     {
       "cnpj": "28.195.667/0001-06",
       "empresa": "BANCO ABC BRASIL S/A",
-      "ticker": null,
+      "ticker": "ABCB4",
+      "tickers": [
+        "ABCB4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": null,
@@ -2305,7 +2640,11 @@
     {
       "cnpj": "61.186.680/0001-74",
       "empresa": "BANCO BMG S/A",
-      "ticker": null,
+      "ticker": "BMGB11 / BMGB4",
+      "tickers": [
+        "BMGB11",
+        "BMGB4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2321,7 +2660,11 @@
     {
       "cnpj": "60.746.948/0001-12",
       "empresa": "BANCO BRADESCO S.A.",
-      "ticker": null,
+      "ticker": "BBDC3 / BBDC4",
+      "tickers": [
+        "BBDC3",
+        "BBDC4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2337,7 +2680,12 @@
     {
       "cnpj": "30.306.294/0001-45",
       "empresa": "BANCO BTG PACTUAL S/A",
-      "ticker": null,
+      "ticker": "BPAC11 / BPAC3 / BPAC5",
+      "tickers": [
+        "BPAC11",
+        "BPAC3",
+        "BPAC5"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2354,6 +2702,7 @@
       "cnpj": "62.232.889/0001-90",
       "empresa": "BANCO DAYCOVAL S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2369,7 +2718,10 @@
     {
       "cnpj": "00.000.000/0001-91",
       "empresa": "BANCO DO BRASIL S.A.",
-      "ticker": null,
+      "ticker": "BBAS3",
+      "tickers": [
+        "BBAS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2385,7 +2737,12 @@
     {
       "cnpj": "92.702.067/0001-96",
       "empresa": "BANCO DO ESTADO DO RIO GRANDE DO SUL SA",
-      "ticker": null,
+      "ticker": "BRSR3 / BRSR5 / BRSR6",
+      "tickers": [
+        "BRSR3",
+        "BRSR5",
+        "BRSR6"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2401,7 +2758,11 @@
     {
       "cnpj": "17.184.037/0001-10",
       "empresa": "BANCO MERCANTIL BRASIL SA",
-      "ticker": null,
+      "ticker": "BMEB3 / BMEB4",
+      "tickers": [
+        "BMEB3",
+        "BMEB4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2417,7 +2778,11 @@
     {
       "cnpj": "62.144.175/0001-20",
       "empresa": "BANCO PINE S/A",
-      "ticker": null,
+      "ticker": "PINE3 / PINE4",
+      "tickers": [
+        "PINE3",
+        "PINE4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2434,6 +2799,7 @@
       "cnpj": "62.307.848/0001-15",
       "empresa": "BANCO RCI BRASIL S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2449,7 +2815,12 @@
     {
       "cnpj": "90.400.888/0001-42",
       "empresa": "BANCO SANTANDER (BRASIL) S.A.",
-      "ticker": null,
+      "ticker": "SANB11 / SANB3 / SANB4",
+      "tickers": [
+        "SANB11",
+        "SANB3",
+        "SANB4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2465,7 +2836,11 @@
     {
       "cnpj": "28.127.603/0001-78",
       "empresa": "BANESTES SA BANCO DO ESTADO DO ESPIRITO SANTO",
-      "ticker": null,
+      "ticker": "BEES3 / BEES4",
+      "tickers": [
+        "BEES3",
+        "BEES4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2481,7 +2856,11 @@
     {
       "cnpj": "60.851.615/0001-53",
       "empresa": "BARDELLA S.A. INDUSTRIAS MECANICAS - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "BDLL3 / BDLL4",
+      "tickers": [
+        "BDLL3",
+        "BDLL4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 48072.0,
@@ -2497,7 +2876,11 @@
     {
       "cnpj": "61.374.161/0001-30",
       "empresa": "BAUMER SA",
-      "ticker": null,
+      "ticker": "BALM3 / BALM4",
+      "tickers": [
+        "BALM3",
+        "BALM4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 213729.0,
@@ -2513,7 +2896,10 @@
     {
       "cnpj": "17.344.597/0001-94",
       "empresa": "BB SEGURIDADE PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "BBSE3",
+      "tickers": [
+        "BBSE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -2530,6 +2916,7 @@
       "cnpj": "01.107.327/0001-20",
       "empresa": "BBM LOGÍSTICA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1345480.0,
@@ -2545,7 +2932,10 @@
     {
       "cnpj": "09.042.817/0001-05",
       "empresa": "BEMOBI MOBILE TECH S.A.",
-      "ticker": null,
+      "ticker": "BMOB3",
+      "tickers": [
+        "BMOB3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1696407.0,
@@ -2561,7 +2951,11 @@
     {
       "cnpj": "45.987.245/0001-92",
       "empresa": "BIOMA EDUCAÇÃO S.A.",
-      "ticker": null,
+      "ticker": "BAHI3 / BIED3",
+      "tickers": [
+        "BAHI3",
+        "BIED3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 332743.0,
@@ -2577,7 +2971,10 @@
     {
       "cnpj": "04.752.991/0001-10",
       "empresa": "BIOMM SA",
-      "ticker": null,
+      "ticker": "BIOM3",
+      "tickers": [
+        "BIOM3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 269299.0,
@@ -2594,6 +2991,7 @@
       "cnpj": "04.069.709/0001-02",
       "empresa": "BIONEXO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 207000.0,
@@ -2609,7 +3007,10 @@
     {
       "cnpj": "58.430.828/0001-60",
       "empresa": "BLAU FARMACÊUTICA S.A.",
-      "ticker": null,
+      "ticker": "BLAU3",
+      "tickers": [
+        "BLAU3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1702382.0,
@@ -2626,6 +3027,7 @@
       "cnpj": "24.921.465/0001-43",
       "empresa": "BLUEFIT ACADEMIAS DE GINÁSTICA E PARTICIPAÇÕES S.A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 550447.0,
@@ -2641,7 +3043,10 @@
     {
       "cnpj": "10.807.374/0001-77",
       "empresa": "BOA SAFRA SEMENTES S.A",
-      "ticker": null,
+      "ticker": "SOJA3",
+      "tickers": [
+        "SOJA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2622416.0,
@@ -2657,7 +3062,11 @@
     {
       "cnpj": "50.564.053/0001-03",
       "empresa": "BOMBRIL S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "BOBR3 / BOBR4",
+      "tickers": [
+        "BOBR3",
+        "BOBR4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1729013.0,
@@ -2674,6 +3083,7 @@
       "cnpj": "87.870.952/0001-44",
       "empresa": "BORRACHAS VIPAL S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2829299.0,
@@ -2689,7 +3099,10 @@
     {
       "cnpj": "06.977.745/0001-91",
       "empresa": "BR MALLS PARTICIPAÇOES S.A.",
-      "ticker": null,
+      "ticker": "BRML3",
+      "tickers": [
+        "BRML3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1643621.0,
@@ -2705,7 +3118,11 @@
     {
       "cnpj": "03.847.461/0001-92",
       "empresa": "BRADESPAR S/A",
-      "ticker": null,
+      "ticker": "BRAP3 / BRAP4",
+      "tickers": [
+        "BRAP3",
+        "BRAP4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 0.0,
@@ -2721,7 +3138,11 @@
     {
       "cnpj": "58.119.199/0001-51",
       "empresa": "BRADSAÚDE S.A.",
-      "ticker": null,
+      "ticker": "ODPV3 / SAUD3",
+      "tickers": [
+        "ODPV3",
+        "SAUD3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2420159.0,
@@ -2738,6 +3159,7 @@
       "cnpj": "09.478.309/0001-66",
       "empresa": "BRASIL BIOFUELS S.A. - EM RECUPERAÇÃO JUDICIAL",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 608446.0,
@@ -2754,6 +3176,7 @@
       "cnpj": "35.764.708/0001-01",
       "empresa": "BRASIL TECNOLOGIA E PARTICIPAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1754404.0,
@@ -2770,6 +3193,7 @@
       "cnpj": "20.961.867/0001-10",
       "empresa": "BRASIL TERRENOS HOLDING S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1534833.0,
@@ -2785,7 +3209,10 @@
     {
       "cnpj": "07.628.528/0001-59",
       "empresa": "BRASILAGRO CIA BRAS DE PROP AGRICOLAS",
-      "ticker": null,
+      "ticker": "AGRO3",
+      "tickers": [
+        "AGRO3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2026,
       "receita_liquida": 924736.0,
@@ -2801,7 +3228,12 @@
     {
       "cnpj": "42.150.391/0001-70",
       "empresa": "BRASKEM S.A.",
-      "ticker": null,
+      "ticker": "BRKM3 / BRKM5 / BRKM6",
+      "tickers": [
+        "BRKM3",
+        "BRKM5",
+        "BRKM6"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 70717000.0,
@@ -2817,7 +3249,11 @@
     {
       "cnpj": "12.091.809/0001-55",
       "empresa": "BRAVA ENERGIA S.A.",
-      "ticker": null,
+      "ticker": "BRAV3 / RRRP3",
+      "tickers": [
+        "BRAV3",
+        "RRRP3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 11622991.0,
@@ -2834,6 +3270,7 @@
       "cnpj": "14.292.540/0001-09",
       "empresa": "BRAZIL TOWER, CESSÃO DE INFRA-ESTRUTURAS S.A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 184691.0,
@@ -2849,7 +3286,11 @@
     {
       "cnpj": "00.000.208/0001-00",
       "empresa": "BRB BANCO DE BRASILIA SA",
-      "ticker": null,
+      "ticker": "BSLI3 / BSLI4",
+      "tickers": [
+        "BSLI3",
+        "BSLI4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": null,
@@ -2865,7 +3306,10 @@
     {
       "cnpj": "10.739.356/0001-03",
       "empresa": "BRBI BR PARTNERS S.A",
-      "ticker": null,
+      "ticker": "BRBI11",
+      "tickers": [
+        "BRBI11"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 319804.0,
@@ -2881,7 +3325,10 @@
     {
       "cnpj": "01.838.723/0001-27",
       "empresa": "BRF S.A.",
-      "ticker": null,
+      "ticker": "BRFS3",
+      "tickers": [
+        "BRFS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 65048731.0,
@@ -2897,7 +3344,10 @@
     {
       "cnpj": "04.601.397/0001-28",
       "empresa": "BRISANET SERVIÇOS DE TELECOMUNICAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "BRST3",
+      "tickers": [
+        "BRST3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1677263.0,
@@ -2914,6 +3364,7 @@
       "cnpj": "24.396.489/0001-20",
       "empresa": "BRK AMBIENTAL PARTICIPAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4782404.0,
@@ -2930,6 +3381,7 @@
       "cnpj": "36.542.025/0001-64",
       "empresa": "BRQ SOLUÇÕES EM INFORMÁTICA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 593671.0,
@@ -2946,6 +3398,7 @@
       "cnpj": "04.065.053/0001-41",
       "empresa": "BRZ EMPREENDIMENTOS E CONSTRUÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1082975.0,
@@ -2962,6 +3415,7 @@
       "cnpj": "04.626.426/0001-06",
       "empresa": "BTG PACTUAL COMMODITIES SERTRADING S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 13010932.0,
@@ -2977,7 +3431,10 @@
     {
       "cnpj": "45.242.914/0001-05",
       "empresa": "C&A MODAS S.A.",
-      "ticker": null,
+      "ticker": "CEAB3",
+      "tickers": [
+        "CEAB3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 7982958.0,
@@ -2993,7 +3450,10 @@
     {
       "cnpj": "22.543.331/0001-00",
       "empresa": "CAIXA SEGURIDADE PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "CXSE3",
+      "tickers": [
+        "CXSE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 0.0,
@@ -3009,7 +3469,11 @@
     {
       "cnpj": "61.088.894/0001-08",
       "empresa": "CAMBUCI SA",
-      "ticker": null,
+      "ticker": "CAMB3 / CAMB4",
+      "tickers": [
+        "CAMB3",
+        "CAMB4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 383122.0,
@@ -3025,7 +3489,10 @@
     {
       "cnpj": "64.904.295/0001-03",
       "empresa": "CAMIL ALIMENTOS S/A",
-      "ticker": null,
+      "ticker": "CAML3",
+      "tickers": [
+        "CAML3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2026,
       "receita_liquida": 11115003.0,
@@ -3042,6 +3509,7 @@
       "cnpj": "00.080.671/0001-00",
       "empresa": "CARAMURU ALIMENTOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 8157897.0,
@@ -3058,6 +3526,7 @@
       "cnpj": "14.882.295/0001-81",
       "empresa": "CBO HOLDING S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2171990.0,
@@ -3074,6 +3543,7 @@
       "cnpj": "02.201.787/0001-85",
       "empresa": "CEL PARTICIPAÇÕES S.A. - CELPAR",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 80854699.0,
@@ -3090,6 +3560,7 @@
       "cnpj": "31.001.230/0001-07",
       "empresa": "CELEO REDES TRANSMISSÃO DE ENERGIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 131681.0,
@@ -3106,6 +3577,7 @@
       "cnpj": "06.981.176/0001-58",
       "empresa": "CEMIG GERAÇÃO E TRANSMISSÃO S/A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 7225809.0,
@@ -3121,7 +3593,11 @@
     {
       "cnpj": "83.878.892/0001-55",
       "empresa": "CENTRAIS ELETRICAS DE SANTA CATARINA S.A",
-      "ticker": null,
+      "ticker": "CLSC3 / CLSC4",
+      "tickers": [
+        "CLSC3",
+        "CLSC4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 11900276.0,
@@ -3138,6 +3614,7 @@
       "cnpj": "08.322.396/0001-03",
       "empresa": "CERRADINHO BIOENERGIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2026,
       "receita_liquida": 4288218.0,
@@ -3153,7 +3630,12 @@
     {
       "cnpj": "60.933.603/0001-78",
       "empresa": "CESP - COMPANHIA ENERGÉTICA DE SÃO PAULO",
-      "ticker": null,
+      "ticker": "CESP3 / CESP5 / CESP6",
+      "tickers": [
+        "CESP3",
+        "CESP5",
+        "CESP6"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1710155.0,
@@ -3170,6 +3652,7 @@
       "cnpj": "19.014.221/0001-47",
       "empresa": "CHINA THREE GORGES BRASIL ENERGIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 6408632.0,
@@ -3185,7 +3668,11 @@
     {
       "cnpj": "01.938.783/0001-11",
       "empresa": "CIA DE PARTICIPAÇÕES ALIANÇA DA BAHIA",
-      "ticker": null,
+      "ticker": "PEAB3 / PEAB4",
+      "tickers": [
+        "PEAB3",
+        "PEAB4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 117260.0,
@@ -3201,7 +3688,11 @@
     {
       "cnpj": "17.155.730/0001-64",
       "empresa": "CIA ENERG MINAS GERAIS - CEMIG",
-      "ticker": null,
+      "ticker": "CMIG3 / CMIG4",
+      "tickers": [
+        "CMIG3",
+        "CMIG4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 42751283.0,
@@ -3217,7 +3708,11 @@
     {
       "cnpj": "15.141.799/0001-03",
       "empresa": "CIA FERRO LIGAS BAHIA FERBASA",
-      "ticker": null,
+      "ticker": "FESA3 / FESA4",
+      "tickers": [
+        "FESA3",
+        "FESA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2334454.0,
@@ -3233,7 +3728,10 @@
     {
       "cnpj": "43.776.517/0001-80",
       "empresa": "CIA SANEAMENTO BÁSICO ESTADO SÃO PAULO",
-      "ticker": null,
+      "ticker": "SBSP3",
+      "tickers": [
+        "SBSP3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 38092050.0,
@@ -3249,7 +3747,10 @@
     {
       "cnpj": "33.042.730/0001-04",
       "empresa": "CIA SIDERURGICA NACIONAL",
-      "ticker": null,
+      "ticker": "CSNA3",
+      "tickers": [
+        "CSNA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 44797946.0,
@@ -3265,7 +3766,10 @@
     {
       "cnpj": "01.027.058/0001-91",
       "empresa": "CIELO S.A. - INSTITUIÇÃO DE PAGAMENTO",
-      "ticker": null,
+      "ticker": "CIEL3",
+      "tickers": [
+        "CIEL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 10948799.0,
@@ -3282,6 +3786,7 @@
       "cnpj": "07.043.628/0001-13",
       "empresa": "CLARO TELECOM PARTICIPAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 51812080.0,
@@ -3298,6 +3803,7 @@
       "cnpj": "43.514.079/0001-81",
       "empresa": "CLI SUL S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 0.0,
@@ -3313,7 +3819,10 @@
     {
       "cnpj": "12.420.164/0001-57",
       "empresa": "CM HOSPITALAR S.A",
-      "ticker": null,
+      "ticker": "VVEO3",
+      "tickers": [
+        "VVEO3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 11566926.0,
@@ -3330,6 +3839,7 @@
       "cnpj": "61.080.313/0001-91",
       "empresa": "COBRASMA SA",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 398.0,
@@ -3345,7 +3855,10 @@
     {
       "cnpj": "02.800.026/0001-40",
       "empresa": "COGNA EDUCAÇÃO S.A.",
-      "ticker": null,
+      "ticker": "COGN3",
+      "tickers": [
+        "COGN3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 7016663.0,
@@ -3362,6 +3875,7 @@
       "cnpj": "25.369.840/0001-57",
       "empresa": "COMERC ENERGIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5788986.0,
@@ -3377,7 +3891,11 @@
     {
       "cnpj": "60.730.348/0001-66",
       "empresa": "COMPANHIA  MELHORAMENTOS DE SÃO PAULO",
-      "ticker": null,
+      "ticker": "MSPA3 / MSPA4",
+      "tickers": [
+        "MSPA3",
+        "MSPA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 177091.0,
@@ -3393,7 +3911,10 @@
     {
       "cnpj": "61.409.892/0001-73",
       "empresa": "COMPANHIA BRASILEIRA DE ALUMINIO",
-      "ticker": null,
+      "ticker": "CBAV3",
+      "tickers": [
+        "CBAV3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 8788797.0,
@@ -3409,7 +3930,11 @@
     {
       "cnpj": "47.508.411/0001-56",
       "empresa": "COMPANHIA BRASILEIRA DE DISTRIBUIÇÃO",
-      "ticker": null,
+      "ticker": "PCAR3 / PCAR4",
+      "tickers": [
+        "PCAR3",
+        "PCAR4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 19113000.0,
@@ -3426,6 +3951,7 @@
       "cnpj": "06.267.630/0001-03",
       "empresa": "COMPANHIA BRASILEIRA DE EDUCAÇÃO E SISTEMA DE ENSINO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1218061.0,
@@ -3441,7 +3967,10 @@
     {
       "cnpj": "08.560.444/0001-93",
       "empresa": "COMPANHIA CELG DE PARTICIPAÇÕES - CELGPAR",
-      "ticker": null,
+      "ticker": "GPAR3",
+      "tickers": [
+        "GPAR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 31297.0,
@@ -3457,7 +3986,11 @@
     {
       "cnpj": "17.245.234/0001-00",
       "empresa": "COMPANHIA DE FIACAO E TECIDOS CEDRO E CACHOEIRA",
-      "ticker": null,
+      "ticker": "CEDO3 / CEDO4",
+      "tickers": [
+        "CEDO3",
+        "CEDO4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 1036777.0,
@@ -3473,7 +4006,10 @@
     {
       "cnpj": "17.281.106/0001-03",
       "empresa": "COMPANHIA DE SANEAMENTO DE MINAS GERAIS",
-      "ticker": null,
+      "ticker": "CSMG3",
+      "tickers": [
+        "CSMG3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 8330190.0,
@@ -3489,7 +4025,12 @@
     {
       "cnpj": "00.070.698/0001-11",
       "empresa": "COMPANHIA ENERGÉTICA DE BRASÍLIA - CEB",
-      "ticker": null,
+      "ticker": "CEBR3 / CEBR5 / CEBR6",
+      "tickers": [
+        "CEBR3",
+        "CEBR5",
+        "CEBR6"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 510334.0,
@@ -3506,6 +4047,7 @@
       "cnpj": "39.881.421/0001-04",
       "empresa": "COMPANHIA ESTADUAL DE GERAÇÃO DE ENERGIA ELÉTRICA - CEEE-G",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 364017.0,
@@ -3522,6 +4064,7 @@
       "cnpj": "19.526.748/0001-50",
       "empresa": "COMPANHIA INDUSTRIAL CATAGUASES",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 298894.0,
@@ -3537,7 +4080,12 @@
     {
       "cnpj": "76.483.817/0001-20",
       "empresa": "COMPANHIA PARANAENSE DE ENERGIA COPEL",
-      "ticker": null,
+      "ticker": "CPLE3 / CPLE5 / CPLE6",
+      "tickers": [
+        "CPLE3",
+        "CPLE5",
+        "CPLE6"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 26116856.0,
@@ -3553,7 +4101,10 @@
     {
       "cnpj": "87.762.563/0001-03",
       "empresa": "COMPANHIIA HABITASUL DE PARTICIPAÇÕES",
-      "ticker": null,
+      "ticker": "HBTS5",
+      "tickers": [
+        "HBTS5"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 67165.0,
@@ -3569,7 +4120,10 @@
     {
       "cnpj": "21.389.501/0001-81",
       "empresa": "COMPASS GÁS E ENERGIA S.A.",
-      "ticker": null,
+      "ticker": "PASS3",
+      "tickers": [
+        "PASS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 16604055.0,
@@ -3586,6 +4140,7 @@
       "cnpj": "18.572.225/0001-88",
       "empresa": "CONCEBRA - CONCESSIONARIA DAS RODOVIAS CENTRAIS DO BRASIL S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2021,
       "receita_liquida": 244986.0,
@@ -3602,6 +4157,7 @@
       "cnpj": "07.682.638/0001-07",
       "empresa": "CONCESSIONÁRIA DA LINHA 4 DO METRÔ DE SÃO PAULO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2206074.0,
@@ -3617,7 +4173,10 @@
     {
       "cnpj": "97.191.902/0001-94",
       "empresa": "CONSERVAS ODERICH SA",
-      "ticker": null,
+      "ticker": "ODER4",
+      "tickers": [
+        "ODER4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 828048.0,
@@ -3633,7 +4192,11 @@
     {
       "cnpj": "61.022.042/0001-18",
       "empresa": "CONSTRUTORA ADOLPHO LINDENBERG S.A.",
-      "ticker": null,
+      "ticker": "CALI11 / CALI3",
+      "tickers": [
+        "CALI11",
+        "CALI3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 365614.0,
@@ -3650,6 +4213,7 @@
       "cnpj": "27.743.642/0001-37",
       "empresa": "CONSTRUTORA METROCASA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1458798.0,
@@ -3666,6 +4230,7 @@
       "cnpj": "89.723.993/0001-33",
       "empresa": "CONSTRUTORA SULTEPA S.A. - EM RECUPERAÇÃO JUDICIAL",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 200033.0,
@@ -3681,7 +4246,10 @@
     {
       "cnpj": "71.476.527/0001-35",
       "empresa": "CONSTRUTORA TENDA S/A",
-      "ticker": null,
+      "ticker": "TEND3",
+      "tickers": [
+        "TEND3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4173389.0,
@@ -3697,7 +4265,12 @@
     {
       "cnpj": "04.032.433/0001-80",
       "empresa": "CONTAX PARTICIPAÇÕES S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "ATMP3 / CTAX3 / LIQO3",
+      "tickers": [
+        "ATMP3",
+        "CTAX3",
+        "LIQO3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 447089.0,
@@ -3714,6 +4287,7 @@
       "cnpj": "04.370.282/0001-70",
       "empresa": "COPEL GERAÇÃO E TRANSMISSÃO S/A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5096933.0,
@@ -3730,6 +4304,7 @@
       "cnpj": "08.845.676/0001-98",
       "empresa": "CORPÓREOS - SERVIÇOS TERAPÊUTICOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1011629.0,
@@ -3746,6 +4321,7 @@
       "cnpj": "15.114.494/0001-02",
       "empresa": "CORREDOR LOGÍSTICA E INFRAESTRUTURA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 955118.0,
@@ -3761,7 +4337,10 @@
     {
       "cnpj": "50.746.577/0001-15",
       "empresa": "COSAN S.A.",
-      "ticker": null,
+      "ticker": "CSAN3",
+      "tickers": [
+        "CSAN3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 40418596.0,
@@ -3777,7 +4356,10 @@
     {
       "cnpj": "02.429.144/0001-93",
       "empresa": "CPFL ENERGIA SA",
-      "ticker": null,
+      "ticker": "CPFE3",
+      "tickers": [
+        "CPFE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 44367780.0,
@@ -3793,7 +4375,10 @@
     {
       "cnpj": "08.439.659/0001-50",
       "empresa": "CPFL ENERGIAS RENOVÁVEIS S.A.",
-      "ticker": null,
+      "ticker": "CPRE3",
+      "tickers": [
+        "CPRE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3557591.0,
@@ -3809,7 +4394,11 @@
     {
       "cnpj": "92.715.812/0001-31",
       "empresa": "CPFL TRANSMISSÃO S.A.",
-      "ticker": null,
+      "ticker": "EEEL3 / EEEL4",
+      "tickers": [
+        "EEEL3",
+        "EEEL4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2106957.0,
@@ -3826,6 +4415,7 @@
       "cnpj": "10.158.356/0001-01",
       "empresa": "CPX DISTRIBUIDORA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3023315.0,
@@ -3841,7 +4431,10 @@
     {
       "cnpj": "62.984.091/0001-02",
       "empresa": "CRUZEIRO DO SUL EDUCACIONAL S.A.",
-      "ticker": null,
+      "ticker": "CSED3",
+      "tickers": [
+        "CSED3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2836184.0,
@@ -3857,7 +4450,10 @@
     {
       "cnpj": "08.902.291/0001-15",
       "empresa": "CSN MINERAÇÃO S.A.",
-      "ticker": null,
+      "ticker": "CMIN3",
+      "tickers": [
+        "CMIN3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 18025121.0,
@@ -3873,7 +4469,11 @@
     {
       "cnpj": "01.896.779/0001-38",
       "empresa": "CSU DIGITAL S.A.",
-      "ticker": null,
+      "ticker": "CARD3 / CSUD3",
+      "tickers": [
+        "CARD3",
+        "CSUD3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 623529.0,
@@ -3890,6 +4490,7 @@
       "cnpj": "06.981.381/0001-13",
       "empresa": "CTC - CENTRO DE TECNOLOGIA CANAVIEIRA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2026,
       "receita_liquida": 470580.0,
@@ -3905,7 +4506,10 @@
     {
       "cnpj": "08.797.760/0001-83",
       "empresa": "CURY CONSTRUTORA E INCORPORADORA S.A.",
-      "ticker": null,
+      "ticker": "CURY3",
+      "tickers": [
+        "CURY3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5399424.0,
@@ -3921,7 +4525,10 @@
     {
       "cnpj": "10.760.260/0001-19",
       "empresa": "CVC BRASIL OPERADORA E AGÊNCIA DE VIAGENS SA",
-      "ticker": null,
+      "ticker": "CVCB3",
+      "tickers": [
+        "CVCB3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1488493.0,
@@ -3938,6 +4545,7 @@
       "cnpj": "16.233.389/0001-55",
       "empresa": "CVLB BRASIL S.A EM RECUPERAÇÃO JUDICAL",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2089068.0,
@@ -3953,7 +4561,11 @@
     {
       "cnpj": "73.178.600/0001-18",
       "empresa": "CYRELA BRAZIL REALTY S.A.EMPREEND E PART",
-      "ticker": null,
+      "ticker": "CYRE3 / CYRE4",
+      "tickers": [
+        "CYRE3",
+        "CYRE4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 9423494.0,
@@ -3969,7 +4581,10 @@
     {
       "cnpj": "12.108.897/0001-50",
       "empresa": "D1000 VAREJO FARMA PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "DMVF3",
+      "tickers": [
+        "DMVF3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2666765.0,
@@ -3985,7 +4600,10 @@
     {
       "cnpj": "08.170.849/0001-15",
       "empresa": "DESKTOP S.A",
-      "ticker": null,
+      "ticker": "DESK3",
+      "tickers": [
+        "DESK3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1218547.0,
@@ -4001,7 +4619,11 @@
     {
       "cnpj": "97.837.181/0001-47",
       "empresa": "DEXCO S.A.",
-      "ticker": null,
+      "ticker": "DTEX3 / DXCO3",
+      "tickers": [
+        "DTEX3",
+        "DXCO3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 8248752.0,
@@ -4017,7 +4639,13 @@
     {
       "cnpj": "02.193.750/0001-52",
       "empresa": "DEXXOS PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "DEXP3 / DEXP4 / GPCP3 / GPCP4",
+      "tickers": [
+        "DEXP3",
+        "DEXP4",
+        "GPCP3",
+        "GPCP4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2136828.0,
@@ -4033,7 +4661,10 @@
     {
       "cnpj": "61.486.650/0001-83",
       "empresa": "DIAGNOSTICOS DA AMERICA SA",
-      "ticker": null,
+      "ticker": "DASA3",
+      "tickers": [
+        "DASA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 11170362.0,
@@ -4049,7 +4680,11 @@
     {
       "cnpj": "92.665.611/0001-77",
       "empresa": "DIMED SA DISTRIBUIDORA DE MEDICAMENTOS",
-      "ticker": null,
+      "ticker": "PNVL3 / PNVL4",
+      "tickers": [
+        "PNVL3",
+        "PNVL4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5512118.0,
@@ -4065,7 +4700,10 @@
     {
       "cnpj": "16.614.075/0001-00",
       "empresa": "DIRECIONAL ENGENHARIA SA",
-      "ticker": null,
+      "ticker": "DIRR3",
+      "tickers": [
+        "DIRR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4343008.0,
@@ -4081,7 +4719,10 @@
     {
       "cnpj": "18.174.270/0001-84",
       "empresa": "DOTZ S.A.",
-      "ticker": null,
+      "ticker": "DOTZ3",
+      "tickers": [
+        "DOTZ3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 230776.0,
@@ -4097,7 +4738,11 @@
     {
       "cnpj": "26.345.998/0001-50",
       "empresa": "ECONOMATICA S.A.",
-      "ticker": null,
+      "ticker": "ECOM3 / TRAD3",
+      "tickers": [
+        "ECOM3",
+        "TRAD3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 22335.0,
@@ -4114,6 +4759,7 @@
       "cnpj": "08.873.873/0001-10",
       "empresa": "ECORODOVIAS CONCESSÕES E SERVIÇOS S/A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 11096230.0,
@@ -4129,7 +4775,10 @@
     {
       "cnpj": "04.149.454/0001-80",
       "empresa": "ECORODOVIAS INFRAESTRUTURA E LOGÍSTICA S.A.",
-      "ticker": null,
+      "ticker": "ECOR3",
+      "tickers": [
+        "ECOR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 11521073.0,
@@ -4145,7 +4794,10 @@
     {
       "cnpj": "03.983.431/0001-03",
       "empresa": "EDP ENERGIAS DO BRASIL S/A",
-      "ticker": null,
+      "ticker": "ENBR3",
+      "tickers": [
+        "ENBR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 20174062.0,
@@ -4162,6 +4814,7 @@
       "cnpj": "07.401.436/0001-31",
       "empresa": "ELDORADO BRASIL CELULOSE S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5879469.0,
@@ -4178,6 +4831,7 @@
       "cnpj": "35.980.592/0001-30",
       "empresa": "ELEA DIGITAL INFRAESTRUTURA E REDES DE TELECOMUNICAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 220436.0,
@@ -4193,7 +4847,11 @@
     {
       "cnpj": "82.643.537/0001-34",
       "empresa": "ELECTRO AÇO ALTONA S/A",
-      "ticker": null,
+      "ticker": "EALT3 / EALT4",
+      "tickers": [
+        "EALT3",
+        "EALT4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 556054.0,
@@ -4210,6 +4868,7 @@
       "cnpj": "09.053.134/0001-45",
       "empresa": "ELFA MEDICAMENTOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4558538.0,
@@ -4225,7 +4884,11 @@
     {
       "cnpj": "02.302.101/0001-42",
       "empresa": "EMAE - EMPRESA METROP.AGUAS ENERGIA S.A.",
-      "ticker": null,
+      "ticker": "EMAE3 / EMAE4",
+      "tickers": [
+        "EMAE3",
+        "EMAE4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 476851.0,
@@ -4241,7 +4904,10 @@
     {
       "cnpj": "42.331.462/0001-31",
       "empresa": "EMBPAR PARTICIPAÇÕES S/A",
-      "ticker": null,
+      "ticker": "EPAR3",
+      "tickers": [
+        "EPAR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2391.0,
@@ -4257,7 +4923,11 @@
     {
       "cnpj": "07.689.002/0001-89",
       "empresa": "EMBRAER S.A.",
-      "ticker": null,
+      "ticker": "EMBJ3 / EMBR3",
+      "tickers": [
+        "EMBJ3",
+        "EMBR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 41883234.0,
@@ -4274,6 +4944,7 @@
       "cnpj": "19.403.252/0001-90",
       "empresa": "EMCCAMP RESIDENCIAL S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 864190.0,
@@ -4289,7 +4960,10 @@
     {
       "cnpj": "06.626.253/0001-51",
       "empresa": "EMPREENDIMENTOS PAGUE MENOS SA",
-      "ticker": null,
+      "ticker": "PGMN3",
+      "tickers": [
+        "PGMN3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 14906429.0,
@@ -4305,7 +4979,12 @@
     {
       "cnpj": "00.864.214/0001-06",
       "empresa": "ENERGISA SA",
-      "ticker": null,
+      "ticker": "ENGI11 / ENGI3 / ENGI4",
+      "tickers": [
+        "ENGI11",
+        "ENGI3",
+        "ENGI4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 35441353.0,
@@ -4322,6 +5001,7 @@
       "cnpj": "28.201.130/0001-01",
       "empresa": "ENERGISA TRANSMISSÃO DE ENERGIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1187272.0,
@@ -4337,7 +5017,10 @@
     {
       "cnpj": "04.423.567/0001-21",
       "empresa": "ENEVA S.A.",
-      "ticker": null,
+      "ticker": "ENEV3",
+      "tickers": [
+        "ENEV3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 18416056.0,
@@ -4353,7 +5036,10 @@
     {
       "cnpj": "02.474.103/0001-19",
       "empresa": "ENGIE BRASIL ENERGIA S.A.",
-      "ticker": null,
+      "ticker": "EGIE3",
+      "tickers": [
+        "EGIE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 12860075.0,
@@ -4369,7 +5055,10 @@
     {
       "cnpj": "16.922.038/0001-51",
       "empresa": "ENJOEI S.A.",
-      "ticker": null,
+      "ticker": "ENJU3",
+      "tickers": [
+        "ENJU3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 263964.0,
@@ -4386,6 +5075,7 @@
       "cnpj": "09.527.023/0001-23",
       "empresa": "ENVIRONMENTAL ESG PARTICIPAÇÕES S.A. - EM RECUPERAÇÃO JUDICIAL",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 3108856.0,
@@ -4402,6 +5092,7 @@
       "cnpj": "51.136.974/0001-38",
       "empresa": "EPR INFRAESTRUTURA PR S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1272753.0,
@@ -4417,7 +5108,10 @@
     {
       "cnpj": "03.220.438/0001-73",
       "empresa": "EQUATORIAL S.A.",
-      "ticker": null,
+      "ticker": "EQTL3",
+      "tickers": [
+        "EQTL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 52073804.0,
@@ -4434,6 +5128,7 @@
       "cnpj": "15.385.166/0001-40",
       "empresa": "EQUIPAV SANEAMENTO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 18780466.0,
@@ -4450,6 +5145,7 @@
       "cnpj": "07.802.794/0001-56",
       "empresa": "ESSENTIA PCHS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 340436.0,
@@ -4465,7 +5161,10 @@
     {
       "cnpj": "61.092.037/0001-81",
       "empresa": "ETERNIT S.A.",
-      "ticker": null,
+      "ticker": "ETER3",
+      "tickers": [
+        "ETER3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1150164.0,
@@ -4481,7 +5180,11 @@
     {
       "cnpj": "56.643.018/0001-66",
       "empresa": "EUCATEX S.A. INDUSTRIA E COMERCIO",
-      "ticker": null,
+      "ticker": "EUCA3 / EUCA4",
+      "tickers": [
+        "EUCA3",
+        "EUCA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3104252.0,
@@ -4498,6 +5201,7 @@
       "cnpj": "61.190.096/0001-92",
       "empresa": "EUROFARMA LABORATÓRIOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 12478397.0,
@@ -4513,7 +5217,10 @@
     {
       "cnpj": "43.470.988/0001-65",
       "empresa": "EVEN CONSTRUTORA E INCORPORADORA S/A",
-      "ticker": null,
+      "ticker": "EVEN3",
+      "tickers": [
+        "EVEN3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1920257.0,
@@ -4530,6 +5237,7 @@
       "cnpj": "35.727.157/0001-06",
       "empresa": "EZ INC INCORPORAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 130733.0,
@@ -4545,7 +5253,10 @@
     {
       "cnpj": "08.312.229/0001-73",
       "empresa": "EZ TEC EMPREEND. E PARTICIPAÇÕES S/A",
-      "ticker": null,
+      "ticker": "EZTC3",
+      "tickers": [
+        "EZTC3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1498822.0,
@@ -4562,6 +5273,7 @@
       "cnpj": "79.430.682/0001-22",
       "empresa": "FARMÁCIA E DROGARIA NISSEI S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3484182.0,
@@ -4577,7 +5289,11 @@
     {
       "cnpj": "00.359.742/0001-08",
       "empresa": "FASA S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "ATOM3 / FICT3",
+      "tickers": [
+        "ATOM3",
+        "FICT3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 77084.0,
@@ -4594,6 +5310,7 @@
       "cnpj": "02.171.304/0001-47",
       "empresa": "FGR INCORPORAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1563023.0,
@@ -4610,6 +5327,7 @@
       "cnpj": "17.159.005/0001-64",
       "empresa": "FIACAO E TECELAGEM SAO JOSE S/A - EM RECUPERAÇÃO JUDICIAL",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1837.0,
@@ -4625,7 +5343,11 @@
     {
       "cnpj": "07.820.907/0001-46",
       "empresa": "FICA EMPREENDIMENTOS IMOBILIARIOS S.A.",
-      "ticker": null,
+      "ticker": "CRDE3 / FIEI3",
+      "tickers": [
+        "CRDE3",
+        "FIEI3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": -29.0,
@@ -4641,7 +5363,10 @@
     {
       "cnpj": "60.840.055/0001-31",
       "empresa": "FLEURY SA",
-      "ticker": null,
+      "ticker": "FLRY3",
+      "tickers": [
+        "FLRY3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 8291182.0,
@@ -4658,6 +5383,7 @@
       "cnpj": "07.823.262/0001-03",
       "empresa": "FOZ DO RIO CLARO ENERGIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 237913.0,
@@ -4673,7 +5399,10 @@
     {
       "cnpj": "88.610.126/0001-29",
       "empresa": "FRASLE MOBILITY S.A.",
-      "ticker": null,
+      "ticker": "FRAS3",
+      "tickers": [
+        "FRAS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5490878.0,
@@ -4689,7 +5418,10 @@
     {
       "cnpj": "01.545.826/0001-07",
       "empresa": "GAFISA SA",
-      "ticker": null,
+      "ticker": "GFSA3",
+      "tickers": [
+        "GFSA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 619692.0,
@@ -4705,7 +5437,10 @@
     {
       "cnpj": "08.764.621/0001-53",
       "empresa": "GENERAL SHOPPING E OUTLETS DO BRASIL BRASIL S.A.",
-      "ticker": null,
+      "ticker": "GSHP3",
+      "tickers": [
+        "GSHP3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 190189.0,
@@ -4721,7 +5456,11 @@
     {
       "cnpj": "33.611.500/0001-19",
       "empresa": "GERDAU S.A.",
-      "ticker": null,
+      "ticker": "GGBR3 / GGBR4",
+      "tickers": [
+        "GGBR3",
+        "GGBR4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 69858532.0,
@@ -4738,6 +5477,7 @@
       "cnpj": "07.714.104/0001-07",
       "empresa": "GIGA MAIS FIBRA TELECOMUNICAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1715774.0,
@@ -4753,7 +5493,10 @@
     {
       "cnpj": "09.229.201/0001-30",
       "empresa": "GPS PARTICIPAÇÕES E EMPREENDIMENTOS S/A",
-      "ticker": null,
+      "ticker": "GGPS3",
+      "tickers": [
+        "GGPS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 17283159.0,
@@ -4770,6 +5513,7 @@
       "cnpj": "81.616.807/0001-55",
       "empresa": "GRANJA FARIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2536575.0,
@@ -4785,7 +5529,11 @@
     {
       "cnpj": "92.012.467/0001-70",
       "empresa": "GRAZZIOTIN SA",
-      "ticker": null,
+      "ticker": "CGRA3 / CGRA4",
+      "tickers": [
+        "CGRA3",
+        "CGRA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 744815.0,
@@ -4801,7 +5549,10 @@
     {
       "cnpj": "89.850.341/0001-60",
       "empresa": "GRENDENE SA",
-      "ticker": null,
+      "ticker": "GRND3",
+      "tickers": [
+        "GRND3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2584341.0,
@@ -4817,7 +5568,15 @@
     {
       "cnpj": "33.041.260/0652-90",
       "empresa": "GRUPO CASAS BAHIA S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "BHIA12 / BHIA3 / VIIA3 / VVAR11 / VVAR3 / VVAR4",
+      "tickers": [
+        "BHIA12",
+        "BHIA3",
+        "VIIA3",
+        "VVAR11",
+        "VVAR3",
+        "VVAR4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 29197000.0,
@@ -4834,6 +5593,7 @@
       "cnpj": "04.972.092/0001-22",
       "empresa": "GRUPO FARTURA DE HORTIFRUT S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3192356.0,
@@ -4849,7 +5609,10 @@
     {
       "cnpj": "24.990.777/0001-09",
       "empresa": "GRUPO MATEUS S.A.",
-      "ticker": null,
+      "ticker": "GMAT3",
+      "tickers": [
+        "GMAT3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 38424403.0,
@@ -4865,7 +5628,10 @@
     {
       "cnpj": "59.717.553/0001-02",
       "empresa": "GRUPO MULTILASER S.A.",
-      "ticker": null,
+      "ticker": "MLAS3",
+      "tickers": [
+        "MLAS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3923762.0,
@@ -4882,6 +5648,7 @@
       "cnpj": "17.765.891/0001-70",
       "empresa": "GRUPO SALTA EDUCAÇÃO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2791597.0,
@@ -4897,7 +5664,11 @@
     {
       "cnpj": "13.217.485/0001-11",
       "empresa": "GRUPO SBF S.A.",
-      "ticker": null,
+      "ticker": "CNTO3 / SBFG3",
+      "tickers": [
+        "CNTO3",
+        "SBFG3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 7736413.0,
@@ -4913,7 +5684,11 @@
     {
       "cnpj": "31.553.627/0001-01",
       "empresa": "GRUPO TOKY S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "MBLY3 / TOKY3",
+      "tickers": [
+        "MBLY3",
+        "TOKY3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1445029.0,
@@ -4930,6 +5705,7 @@
       "cnpj": "08.397.078/0001-01",
       "empresa": "GSH CORP PARTICIPAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 719786.0,
@@ -4945,7 +5721,12 @@
     {
       "cnpj": "08.402.943/0001-52",
       "empresa": "GUARARAPES CONFECÇÕES SA",
-      "ticker": null,
+      "ticker": "GUAR3 / GUAR4 / RIAA3",
+      "tickers": [
+        "GUAR3",
+        "GUAR4",
+        "RIAA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 10497046.0,
@@ -4961,7 +5742,11 @@
     {
       "cnpj": "30.540.991/0001-66",
       "empresa": "HAGA S.A. INDÚSTRIA E COMÉRCIO",
-      "ticker": null,
+      "ticker": "HAGA3 / HAGA4",
+      "tickers": [
+        "HAGA3",
+        "HAGA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 28473425.0,
@@ -4977,7 +5762,10 @@
     {
       "cnpj": "05.197.443/0001-38",
       "empresa": "HAPVIDA PARTICIPAÇÕES E INVESTIMENTOS S.A.",
-      "ticker": null,
+      "ticker": "HAPV3",
+      "tickers": [
+        "HAPV3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 31577240.0,
@@ -4993,7 +5781,10 @@
     {
       "cnpj": "14.785.152/0001-51",
       "empresa": "HBR REALTY EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
-      "ticker": null,
+      "ticker": "HBRE3",
+      "tickers": [
+        "HBRE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 532608.0,
@@ -5009,7 +5800,10 @@
     {
       "cnpj": "49.263.189/0001-02",
       "empresa": "HELBOR EMPREENDIMENTOS S/A",
-      "ticker": null,
+      "ticker": "HBOR3",
+      "tickers": [
+        "HBOR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1128462.0,
@@ -5025,7 +5819,10 @@
     {
       "cnpj": "12.648.327/0001-53",
       "empresa": "HIDROVIAS DO BRASIL S.A.",
-      "ticker": null,
+      "ticker": "HBSA3",
+      "tickers": [
+        "HBSA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2241099.0,
@@ -5042,6 +5839,7 @@
       "cnpj": "27.902.165/0002-96",
       "empresa": "HIGHLINE BRASIL II INFRAESTRUTURA DE TELECOMUNICAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 639075.0,
@@ -5058,6 +5856,7 @@
       "cnpj": "40.159.947/0001-64",
       "empresa": "HMOBI PARTICIPAÇÕES S.A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1254247.0,
@@ -5074,6 +5873,7 @@
       "cnpj": "18.903.785/0001-78",
       "empresa": "HOLDING DO ARAGUAIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 816591.0,
@@ -5090,6 +5890,7 @@
       "cnpj": "02.560.878/0001-07",
       "empresa": "HOSPITAL ANCHIETA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 579693.0,
@@ -5106,6 +5907,7 @@
       "cnpj": "25.249.439/0001-83",
       "empresa": "HOSPITAL CARE CALEDONIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2023545.0,
@@ -5121,7 +5923,10 @@
     {
       "cnpj": "16.676.520/0001-59",
       "empresa": "HOSPITAL MATER DEI S.A.",
-      "ticker": null,
+      "ticker": "MATD3",
+      "tickers": [
+        "MATD3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2175285.0,
@@ -5137,7 +5942,10 @@
     {
       "cnpj": "33.200.049/0001-47",
       "empresa": "HOTEIS OTHON S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "HOOT4",
+      "tickers": [
+        "HOOT4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 193088.0,
@@ -5153,7 +5961,10 @@
     {
       "cnpj": "02.932.074/0001-91",
       "empresa": "HYPERA S/A",
-      "ticker": null,
+      "ticker": "HYPE3",
+      "tickers": [
+        "HYPE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 7699157.0,
@@ -5170,6 +5981,7 @@
       "cnpj": "32.431.519/0001-10",
       "empresa": "HÉLIO VALGAS SOLAR PARTICIPAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 329672.0,
@@ -5186,6 +5998,7 @@
       "cnpj": "08.159.965/0001-33",
       "empresa": "IGUA SANEAMENTO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3457971.0,
@@ -5201,7 +6014,10 @@
     {
       "cnpj": "51.218.147/0001-93",
       "empresa": "IGUATEMI EMPRESA DE SHOPPING CENTERS S/A",
-      "ticker": null,
+      "ticker": "IGTA3",
+      "tickers": [
+        "IGTA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1188409.0,
@@ -5217,7 +6033,13 @@
     {
       "cnpj": "60.543.816/0001-93",
       "empresa": "IGUATEMI S.A.",
-      "ticker": null,
+      "ticker": "IGTI11 / IGTI3 / IGTI4 / JPSA3",
+      "tickers": [
+        "IGTI11",
+        "IGTI3",
+        "IGTI4",
+        "JPSA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1486833.0,
@@ -5234,6 +6056,7 @@
       "cnpj": "09.054.385/0001-44",
       "empresa": "INBRANDS SA",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 430115.0,
@@ -5250,6 +6073,7 @@
       "cnpj": "09.611.768/0001-76",
       "empresa": "INC EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 560645.0,
@@ -5266,6 +6090,7 @@
       "cnpj": "02.258.422/0001-97",
       "empresa": "INEPAR EQUIPAMENTOS E MONTAGENS S/A - EM RECUPERACAO JUDICIA",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4256.0,
@@ -5281,7 +6106,11 @@
     {
       "cnpj": "76.627.504/0001-06",
       "empresa": "INEPAR S.A. INDUSTRIA E CONSTRUCOES EM RECUPERACAO JUDICIAL",
-      "ticker": null,
+      "ticker": "INEP3 / INEP4",
+      "tickers": [
+        "INEP3",
+        "INEP4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 6503.0,
@@ -5297,7 +6126,11 @@
     {
       "cnpj": "38.456.921/0001-36",
       "empresa": "INFRACOMMERCE CXAAS S.A.",
-      "ticker": null,
+      "ticker": "IFCM11 / IFCM3",
+      "tickers": [
+        "IFCM11",
+        "IFCM3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 709955.0,
@@ -5314,6 +6147,7 @@
       "cnpj": "35.822.503/0001-27",
       "empresa": "INSPIRALI EDUCAÇÃO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3381232.0,
@@ -5329,7 +6163,10 @@
     {
       "cnpj": "82.901.000/0001-27",
       "empresa": "INTELBRAS S.A. IND. DE TELECOMUNICAÇÃO ELETRÔNICA BRASILEIRA",
-      "ticker": null,
+      "ticker": "INTB3",
+      "tickers": [
+        "INTB3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4460379.0,
@@ -5345,7 +6182,10 @@
     {
       "cnpj": "17.314.329/0001-20",
       "empresa": "INTERNATIONAL MEAL COMPANY ALIMENTAÇÃO S.A.",
-      "ticker": null,
+      "ticker": "MEAL3",
+      "tickers": [
+        "MEAL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1729658.0,
@@ -5362,6 +6202,7 @@
       "cnpj": "03.758.318/0001-24",
       "empresa": "INVESTIMENTOS E PARTICIP EM INFRA SA INVEPAR",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3818051.0,
@@ -5377,7 +6218,10 @@
     {
       "cnpj": "61.156.113/0001-75",
       "empresa": "IOCHPE MAXION SA",
-      "ticker": null,
+      "ticker": "MYPK3",
+      "tickers": [
+        "MYPK3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 15366537.0,
@@ -5393,7 +6237,11 @@
     {
       "cnpj": "92.791.243/0001-03",
       "empresa": "IRANI PAPEL E EMBALAGEM S.A.",
-      "ticker": null,
+      "ticker": "RANI3 / RANI4",
+      "tickers": [
+        "RANI3",
+        "RANI4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1686311.0,
@@ -5409,7 +6257,10 @@
     {
       "cnpj": "33.376.989/0001-91",
       "empresa": "IRB - BRASIL RESSEGUROS S.A.",
-      "ticker": null,
+      "ticker": "IRBR3",
+      "tickers": [
+        "IRBR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -5425,7 +6276,13 @@
     {
       "cnpj": "02.998.611/0001-04",
       "empresa": "ISA ENERGIA BRASIL S.A.",
-      "ticker": null,
+      "ticker": "ISAE3 / ISAE4 / TRPL3 / TRPL4",
+      "tickers": [
+        "ISAE3",
+        "ISAE4",
+        "TRPL3",
+        "TRPL4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 9411153.0,
@@ -5441,7 +6298,11 @@
     {
       "cnpj": "61.532.644/0001-15",
       "empresa": "ITAUSA S.A.",
-      "ticker": null,
+      "ticker": "ITSA3 / ITSA4",
+      "tickers": [
+        "ITSA3",
+        "ITSA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 8249000.0,
@@ -5457,7 +6318,11 @@
     {
       "cnpj": "60.872.504/0001-23",
       "empresa": "ITAÚ UNIBANCO HOLDING S.A.",
-      "ticker": null,
+      "ticker": "ITUB3 / ITUB4",
+      "tickers": [
+        "ITUB3",
+        "ITUB4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": null,
@@ -5474,6 +6339,7 @@
       "cnpj": "14.998.371/0001-19",
       "empresa": "J. MACEDO S/A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3241934.0,
@@ -5489,7 +6355,10 @@
     {
       "cnpj": "02.635.522/0001-95",
       "empresa": "JALLES MACHADO S.A.",
-      "ticker": null,
+      "ticker": "JALL3",
+      "tickers": [
+        "JALL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2026,
       "receita_liquida": 2148915.0,
@@ -5505,7 +6374,10 @@
     {
       "cnpj": "02.916.265/0001-60",
       "empresa": "JBS SA",
-      "ticker": null,
+      "ticker": "JBSS3",
+      "tickers": [
+        "JBSS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 480583047.0,
@@ -5521,7 +6393,10 @@
     {
       "cnpj": "08.294.224/0001-65",
       "empresa": "JHSF PARTICIPAÇÕES SA",
-      "ticker": null,
+      "ticker": "JHSF3",
+      "tickers": [
+        "JHSF3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3479142.0,
@@ -5537,7 +6412,10 @@
     {
       "cnpj": "33.035.536/0001-00",
       "empresa": "JOAO FORTES ENGENHARIA SA - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "JFEN3",
+      "tickers": [
+        "JFEN3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 174975.0,
@@ -5553,7 +6431,11 @@
     {
       "cnpj": "87.456.562/0001-22",
       "empresa": "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP",
-      "ticker": null,
+      "ticker": "JOPA3 / JOPA4",
+      "tickers": [
+        "JOPA3",
+        "JOPA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1802130.0,
@@ -5569,7 +6451,11 @@
     {
       "cnpj": "52.548.435/0001-79",
       "empresa": "JSL S.A.",
-      "ticker": null,
+      "ticker": "JSLG11 / JSLG3",
+      "tickers": [
+        "JSLG11",
+        "JSLG3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 9640608.0,
@@ -5586,6 +6472,7 @@
       "cnpj": "09.146.451/0001-06",
       "empresa": "KALLAS INCORPORAÇÕES E CONSTRUÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 923144.0,
@@ -5601,7 +6488,11 @@
     {
       "cnpj": "82.640.558/0001-04",
       "empresa": "KARSTEN SA",
-      "ticker": null,
+      "ticker": "CTKA3 / CTKA4",
+      "tickers": [
+        "CTKA3",
+        "CTKA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 759038.0,
@@ -5617,7 +6508,11 @@
     {
       "cnpj": "91.983.056/0001-69",
       "empresa": "KEPLER WEBER SA",
-      "ticker": null,
+      "ticker": "KEPL11 / KEPL3",
+      "tickers": [
+        "KEPL11",
+        "KEPL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1490300.0,
@@ -5633,7 +6528,12 @@
     {
       "cnpj": "89.637.490/0001-45",
       "empresa": "KLABIN S.A.",
-      "ticker": null,
+      "ticker": "KLBN11 / KLBN3 / KLBN4",
+      "tickers": [
+        "KLBN11",
+        "KLBN3",
+        "KLBN4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 20697507.0,
@@ -5649,7 +6549,10 @@
     {
       "cnpj": "13.270.520/0001-66",
       "empresa": "KORA SAÚDE PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "KRSA3",
+      "tickers": [
+        "KRSA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2384128.0,
@@ -5665,7 +6568,10 @@
     {
       "cnpj": "26.462.693/0001-28",
       "empresa": "LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A",
-      "ticker": null,
+      "ticker": "LAVV3",
+      "tickers": [
+        "LAVV3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1761398.0,
@@ -5682,6 +6588,7 @@
       "cnpj": "00.873.894/0001-24",
       "empresa": "LET'S RENT A CAR S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 1045322.0,
@@ -5698,6 +6605,7 @@
       "cnpj": "02.357.251/0001-53",
       "empresa": "LIFEMED INDUSTRIAL DE EQUIP. E ART. MEDICOS E HOSP. S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 125141.0,
@@ -5714,6 +6622,7 @@
       "cnpj": "04.368.865/0001-66",
       "empresa": "LIGGA TELECOMUNICAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2023,
       "receita_liquida": 616478.0,
@@ -5730,6 +6639,7 @@
       "cnpj": "01.917.818/0001-36",
       "empresa": "LIGHT ENERGIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 672559.0,
@@ -5745,7 +6655,10 @@
     {
       "cnpj": "03.378.521/0001-75",
       "empresa": "LIGHT S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "LIGT3",
+      "tickers": [
+        "LIGT3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 14996448.0,
@@ -5762,6 +6675,7 @@
       "cnpj": "05.917.486/0001-40",
       "empresa": "LIVETECH DA BAHIA INDÚSTRIA E COMÉRCIO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 871847.0,
@@ -5778,6 +6692,7 @@
       "cnpj": "00.389.481/0001-79",
       "empresa": "LM TRANSPORTES INTERESTADUAIS SERVIÇOS E COMÉRCIO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5266307.0,
@@ -5794,6 +6709,7 @@
       "cnpj": "02.286.479/0001-08",
       "empresa": "LOCALIZA  FLEET S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 10637697.0,
@@ -5809,7 +6725,11 @@
     {
       "cnpj": "16.670.085/0001-55",
       "empresa": "LOCALIZA RENT A CAR SA",
-      "ticker": null,
+      "ticker": "RENT3 / RENT4",
+      "tickers": [
+        "RENT3",
+        "RENT4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 41781588.0,
@@ -5825,7 +6745,10 @@
     {
       "cnpj": "09.041.168/0001-10",
       "empresa": "LOG COMMERCIAL PROPERTIES E PARTICIPAÇÕES",
-      "ticker": null,
+      "ticker": "LOGG3",
+      "tickers": [
+        "LOGG3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 248759.0,
@@ -5841,7 +6764,10 @@
     {
       "cnpj": "42.278.291/0001-24",
       "empresa": "LOG-IN LOGISTICA INTERMODAL SA",
-      "ticker": null,
+      "ticker": "LOGN3",
+      "tickers": [
+        "LOGN3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3081024.0,
@@ -5857,7 +6783,10 @@
     {
       "cnpj": "96.418.264/0218-02",
       "empresa": "LOJAS QUERO QUERO S.A.",
-      "ticker": null,
+      "ticker": "LJQQ3",
+      "tickers": [
+        "LJQQ3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2788412.0,
@@ -5873,7 +6802,10 @@
     {
       "cnpj": "92.754.738/0001-62",
       "empresa": "LOJAS RENNER SA",
-      "ticker": null,
+      "ticker": "LREN3",
+      "tickers": [
+        "LREN3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 15829460.0,
@@ -5889,7 +6821,10 @@
     {
       "cnpj": "08.078.847/0001-09",
       "empresa": "LPS BRASIL CONSULTORIA DE IMOVEIS S/A",
-      "ticker": null,
+      "ticker": "LPSB3",
+      "tickers": [
+        "LPSB3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 203138.0,
@@ -5905,7 +6840,10 @@
     {
       "cnpj": "89.463.822/0001-12",
       "empresa": "LUPATECH S.A.",
-      "ticker": null,
+      "ticker": "LUPA3",
+      "tickers": [
+        "LUPA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 52054.0,
@@ -5922,6 +6860,7 @@
       "cnpj": "43.948.405/0001-69",
       "empresa": "LUPO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1589920.0,
@@ -5937,7 +6876,10 @@
     {
       "cnpj": "02.351.877/0001-52",
       "empresa": "LWSA S/A",
-      "ticker": null,
+      "ticker": "LWSA3",
+      "tickers": [
+        "LWSA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1488531.0,
@@ -5953,7 +6895,10 @@
     {
       "cnpj": "07.206.816/0001-15",
       "empresa": "M. DIAS BRANCO SA IND E COM DE ALIMENTOS",
-      "ticker": null,
+      "ticker": "MDIA3",
+      "tickers": [
+        "MDIA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 10437548.0,
@@ -5970,6 +6915,7 @@
       "cnpj": "13.783.221/0004-78",
       "empresa": "MADERO INDÚSTRIA E COMÉRCIO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2042101.0,
@@ -5985,7 +6931,10 @@
     {
       "cnpj": "47.960.950/0001-21",
       "empresa": "MAGAZINE LUIZA SA",
-      "ticker": null,
+      "ticker": "MGLU3",
+      "tickers": [
+        "MGLU3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 38703387.0,
@@ -6001,7 +6950,10 @@
     {
       "cnpj": "60.476.884/0001-87",
       "empresa": "MAHLE METAL LEVE S.A.",
-      "ticker": null,
+      "ticker": "LEVE3",
+      "tickers": [
+        "LEVE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5406682.0,
@@ -6017,7 +6969,11 @@
     {
       "cnpj": "61.065.298/0001-02",
       "empresa": "MANGELS INDUSTRIAL S.A.",
-      "ticker": null,
+      "ticker": "MGEL3 / MGEL4",
+      "tickers": [
+        "MGEL3",
+        "MGEL4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1063608.0,
@@ -6033,7 +6989,10 @@
     {
       "cnpj": "61.082.004/0001-50",
       "empresa": "MANUFATURA DE  BRINQUEDOS ESTRELA SA",
-      "ticker": null,
+      "ticker": "ESTR4",
+      "tickers": [
+        "ESTR4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 150810.0,
@@ -6049,7 +7008,11 @@
     {
       "cnpj": "88.611.835/0001-29",
       "empresa": "MARCOPOLO SA",
-      "ticker": null,
+      "ticker": "POMO3 / POMO4",
+      "tickers": [
+        "POMO3",
+        "POMO4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 9057548.0,
@@ -6065,7 +7028,11 @@
     {
       "cnpj": "03.853.896/0001-40",
       "empresa": "MARFRIG GLOBAL FOODS SA",
-      "ticker": null,
+      "ticker": "MBRF3 / MRFG3",
+      "tickers": [
+        "MBRF3",
+        "MRFG3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 163962737.0,
@@ -6081,7 +7048,10 @@
     {
       "cnpj": "61.189.288/0001-89",
       "empresa": "MARISA LOJAS SA",
-      "ticker": null,
+      "ticker": "AMAR3",
+      "tickers": [
+        "AMAR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1483225.0,
@@ -6097,7 +7067,10 @@
     {
       "cnpj": "14.110.585/0001-07",
       "empresa": "MELIUZ S.A.",
-      "ticker": null,
+      "ticker": "CASH3",
+      "tickers": [
+        "CASH3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 460204.0,
@@ -6113,7 +7086,10 @@
     {
       "cnpj": "12.181.987/0001-77",
       "empresa": "MELNICK DESENVOLVIMENTO IMOBILIÁRIO S.A.",
-      "ticker": null,
+      "ticker": "MELK3",
+      "tickers": [
+        "MELK3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1117283.0,
@@ -6129,7 +7105,10 @@
     {
       "cnpj": "04.821.041/0001-08",
       "empresa": "METALFRIO SOLUTIONS S/A",
-      "ticker": null,
+      "ticker": "FRIO3",
+      "tickers": [
+        "FRIO3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2402881.0,
@@ -6145,7 +7124,11 @@
     {
       "cnpj": "92.690.783/0001-09",
       "empresa": "METALURGICA GERDAU SA",
-      "ticker": null,
+      "ticker": "GOAU3 / GOAU4",
+      "tickers": [
+        "GOAU3",
+        "GOAU4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 69858532.0,
@@ -6161,7 +7144,10 @@
     {
       "cnpj": "85.778.074/0001-06",
       "empresa": "METALURGICA RIOSULENSE SA",
-      "ticker": null,
+      "ticker": "RSUL4",
+      "tickers": [
+        "RSUL4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 420460.0,
@@ -6178,6 +7164,7 @@
       "cnpj": "16.234.171/0001-15",
       "empresa": "METANOR SA METANOL DO NE",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 436704.0,
@@ -6193,7 +7180,11 @@
     {
       "cnpj": "86.375.425/0001-09",
       "empresa": "METISA METALÚRGICA  TIMBOENSE SA",
-      "ticker": null,
+      "ticker": "MTSA3 / MTSA4",
+      "tickers": [
+        "MTSA3",
+        "MTSA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 532602422.0,
@@ -6209,7 +7200,10 @@
     {
       "cnpj": "27.093.558/0001-15",
       "empresa": "MILLS LOCAÇÃO, SERVIÇOS E LOGÍSTICA S.A.",
-      "ticker": null,
+      "ticker": "MILS3",
+      "tickers": [
+        "MILS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1837835.0,
@@ -6225,7 +7219,11 @@
     {
       "cnpj": "67.620.377/0001-14",
       "empresa": "MINERVA S/A",
-      "ticker": null,
+      "ticker": "BEEF11 / BEEF3",
+      "tickers": [
+        "BEEF11",
+        "BEEF3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 54830072.0,
@@ -6241,7 +7239,10 @@
     {
       "cnpj": "90.076.886/0001-40",
       "empresa": "MINUPAR PARTICIPACOES SA",
-      "ticker": null,
+      "ticker": "MNPR3",
+      "tickers": [
+        "MNPR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 436344.0,
@@ -6257,7 +7258,10 @@
     {
       "cnpj": "07.882.930/0001-65",
       "empresa": "MITRE REALTY EMPREENDIMENTOS E PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "MTRE3",
+      "tickers": [
+        "MTRE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1054924.0,
@@ -6274,6 +7278,7 @@
       "cnpj": "13.444.994/0001-87",
       "empresa": "MLOG S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 249476.0,
@@ -6289,7 +7294,11 @@
     {
       "cnpj": "02.846.056/0001-97",
       "empresa": "MOTIVA INFRAESTRUTURA DE MOBILIDADE S.A.",
-      "ticker": null,
+      "ticker": "CCRO3 / MOTV3",
+      "tickers": [
+        "CCRO3",
+        "MOTV3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 18850645.0,
@@ -6305,7 +7314,10 @@
     {
       "cnpj": "12.049.631/0001-84",
       "empresa": "MOURA DUBEUX ENGENHARIA S/A",
-      "ticker": null,
+      "ticker": "MDNE3",
+      "tickers": [
+        "MDNE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2356938.0,
@@ -6321,7 +7333,10 @@
     {
       "cnpj": "21.314.559/0001-66",
       "empresa": "MOVIDA PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "MOVI3",
+      "tickers": [
+        "MOVI3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 14672054.0,
@@ -6337,7 +7352,10 @@
     {
       "cnpj": "26.659.061/0001-59",
       "empresa": "MPM CORPÓREOS S.A.",
-      "ticker": null,
+      "ticker": "ESPA3",
+      "tickers": [
+        "ESPA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1092985.0,
@@ -6354,6 +7372,7 @@
       "cnpj": "01.417.222/0001-77",
       "empresa": "MRS LOGÍSTICA S/A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 7585058.0,
@@ -6369,7 +7388,10 @@
     {
       "cnpj": "08.343.492/0001-20",
       "empresa": "MRV ENGENHARIA E PARTICIPAÇÕES S/A",
-      "ticker": null,
+      "ticker": "MRVE3",
+      "tickers": [
+        "MRVE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 10906236.0,
@@ -6385,7 +7407,10 @@
     {
       "cnpj": "07.816.890/0001-53",
       "empresa": "MULTIPLAN - EMPREEND IMOBILIARIOS S.A.",
-      "ticker": null,
+      "ticker": "MULT3",
+      "tickers": [
+        "MULT3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2739082.0,
@@ -6401,7 +7426,10 @@
     {
       "cnpj": "88.610.191/0001-54",
       "empresa": "MUNDIAL S.A - PRODUTOS DE CONSUMO",
-      "ticker": null,
+      "ticker": "MNDL3",
+      "tickers": [
+        "MNDL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1018848.0,
@@ -6417,7 +7445,10 @@
     {
       "cnpj": "71.673.990/0001-77",
       "empresa": "NATURA COSMETICOS SA",
-      "ticker": null,
+      "ticker": "NATU3",
+      "tickers": [
+        "NATU3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 21823488.0,
@@ -6433,7 +7464,10 @@
     {
       "cnpj": "01.083.200/0001-18",
       "empresa": "NEOENERGIA S.A",
-      "ticker": null,
+      "ticker": "NEOE3",
+      "tickers": [
+        "NEOE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 52633000.0,
@@ -6449,7 +7483,11 @@
     {
       "cnpj": "08.613.550/0001-98",
       "empresa": "NEXPE PARTICIPAÇÕES S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "BBRK3 / NEXP3",
+      "tickers": [
+        "BBRK3",
+        "NEXP3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 659.0,
@@ -6465,7 +7503,10 @@
     {
       "cnpj": "51.128.999/0001-90",
       "empresa": "NUTRIPLANT INDUSTRIA E COMÉRCIO S/A",
-      "ticker": null,
+      "ticker": "NUTR3",
+      "tickers": [
+        "NUTR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 216120.0,
@@ -6481,7 +7522,10 @@
     {
       "cnpj": "09.114.805/0001-30",
       "empresa": "OCEANPACT SERVIÇOS MARÍTIMOS S.A.",
-      "ticker": null,
+      "ticker": "OPCT3",
+      "tickers": [
+        "OPCT3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2133917.0,
@@ -6498,6 +7542,7 @@
       "cnpj": "29.980.141/0001-08",
       "empresa": "OCEÂNICA ENGENHARIA E CONSULTORIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1738742.0,
@@ -6513,7 +7558,11 @@
     {
       "cnpj": "76.535.764/0001-43",
       "empresa": "OI S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "OIBR3 / OIBR4",
+      "tickers": [
+        "OIBR3",
+        "OIBR4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2598133.0,
@@ -6529,7 +7578,10 @@
     {
       "cnpj": "12.104.241/0004-02",
       "empresa": "ONCOCLÍNICAS DO BRASIL SERVIÇOS MÉDICOS S.A.",
-      "ticker": null,
+      "ticker": "ONCO3",
+      "tickers": [
+        "ONCO3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5739367.0,
@@ -6545,7 +7597,10 @@
     {
       "cnpj": "59.693.110/0001-29",
       "empresa": "ORANJEBTC S.A. - EDUCAÇÃO E INVESTIMENTO",
-      "ticker": null,
+      "ticker": "OBTC3",
+      "tickers": [
+        "OBTC3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 0.0,
@@ -6562,6 +7617,7 @@
       "cnpj": "32.021.201/0001-61",
       "empresa": "ORIGEM ENERGIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1784893.0,
@@ -6578,6 +7634,7 @@
       "cnpj": "03.279.285/0001-30",
       "empresa": "ORIZON MEIO AMBIENTE S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 877017.0,
@@ -6593,7 +7650,10 @@
     {
       "cnpj": "11.421.994/0001-36",
       "empresa": "ORIZON VALORIZAÇÃO DE RESÍDUOS S.A.",
-      "ticker": null,
+      "ticker": "ORVR3",
+      "tickers": [
+        "ORVR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1050340.0,
@@ -6609,7 +7669,10 @@
     {
       "cnpj": "09.112.685/0001-32",
       "empresa": "OSX BRASIL S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "OSXB3",
+      "tickers": [
+        "OSXB3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 82656.0,
@@ -6625,7 +7688,10 @@
     {
       "cnpj": "20.258.278/0001-70",
       "empresa": "OUROFINO S.A.",
-      "ticker": null,
+      "ticker": "OFSA3",
+      "tickers": [
+        "OFSA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1224992.0,
@@ -6642,6 +7708,7 @@
       "cnpj": "96.298.013/0001-68",
       "empresa": "PACAEMBU CONSTRUTORA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2319828.0,
@@ -6657,7 +7724,11 @@
     {
       "cnpj": "02.365.069/0001-44",
       "empresa": "PADTEC HOLDING S.A.",
-      "ticker": null,
+      "ticker": "IDNT3 / PDTC3",
+      "tickers": [
+        "IDNT3",
+        "PDTC3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 291854.0,
@@ -6673,7 +7744,11 @@
     {
       "cnpj": "92.693.019/0001-89",
       "empresa": "PANATLANTICA SA",
-      "ticker": null,
+      "ticker": "PATI3 / PATI4",
+      "tickers": [
+        "PATI3",
+        "PATI4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1928530.0,
@@ -6689,7 +7764,10 @@
     {
       "cnpj": "60.398.369/0004-79",
       "empresa": "PARANAPANEMA S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "PMAM3",
+      "tickers": [
+        "PMAM3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 562435.0,
@@ -6706,6 +7784,7 @@
       "cnpj": "23.236.821/0001-27",
       "empresa": "PATRIMAR ENGENHARIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1463176.0,
@@ -6721,7 +7800,10 @@
     {
       "cnpj": "83.475.913/0001-91",
       "empresa": "PBG S/A",
-      "ticker": null,
+      "ticker": "PTBL3",
+      "tickers": [
+        "PTBL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2606148.0,
@@ -6737,7 +7819,10 @@
     {
       "cnpj": "02.950.811/0001-89",
       "empresa": "PDG REALTY S.A. EMPREEND E PARTICIPACOES",
-      "ticker": null,
+      "ticker": "PDGR3",
+      "tickers": [
+        "PDGR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 125272.0,
@@ -6753,7 +7838,10 @@
     {
       "cnpj": "03.342.704/0001-30",
       "empresa": "PETRORECÔNCAVO S.A.",
-      "ticker": null,
+      "ticker": "RECV3",
+      "tickers": [
+        "RECV3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3157609.0,
@@ -6769,7 +7857,11 @@
     {
       "cnpj": "33.000.167/0001-01",
       "empresa": "PETRÓLEO BRASILEIRO S.A. - PETROBRAS",
-      "ticker": null,
+      "ticker": "PETR3 / PETR4",
+      "tickers": [
+        "PETR3",
+        "PETR4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 497549000.0,
@@ -6785,7 +7877,11 @@
     {
       "cnpj": "88.613.658/0001-10",
       "empresa": "PETTENATI S.A. INDUSTRIA TEXTIL",
-      "ticker": null,
+      "ticker": "PTNT3 / PTNT4",
+      "tickers": [
+        "PTNT3",
+        "PTNT4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2026,
       "receita_liquida": 815110451.0,
@@ -6801,7 +7897,10 @@
     {
       "cnpj": "24.230.275/0001-80",
       "empresa": "PLANO & PLANO DESENVOLVIMENTO IMOBILIÁRIO S.A.",
-      "ticker": null,
+      "ticker": "PLPL3",
+      "tickers": [
+        "PLPL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3281707.0,
@@ -6817,7 +7916,10 @@
     {
       "cnpj": "51.928.174/0001-50",
       "empresa": "PLASCAR PARTICIPAÇÕES INDUSTRIAIS S.A",
-      "ticker": null,
+      "ticker": "PLAS3",
+      "tickers": [
+        "PLAS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1152103.0,
@@ -6834,6 +7936,7 @@
       "cnpj": "49.703.913/0001-63",
       "empresa": "PLATÃO CAPITAL S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 23418.0,
@@ -6850,6 +7953,7 @@
       "cnpj": "46.573.272/0001-81",
       "empresa": "PORTO SAÚDE PARTICIPAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 8345588.0,
@@ -6865,7 +7969,10 @@
     {
       "cnpj": "02.149.205/0001-69",
       "empresa": "PORTO SEGURO SA",
-      "ticker": null,
+      "ticker": "PSSA3",
+      "tickers": [
+        "PSSA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 40883141.0,
@@ -6882,6 +7989,7 @@
       "cnpj": "51.430.503/0001-38",
       "empresa": "PORTO SERVIÇO S.A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2312941.0,
@@ -6897,7 +8005,10 @@
     {
       "cnpj": "81.243.735/0001-48",
       "empresa": "POSITIVO TECNOLOGIA S.A.",
-      "ticker": null,
+      "ticker": "POSI3",
+      "tickers": [
+        "POSI3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3354898.0,
@@ -6913,7 +8024,10 @@
     {
       "cnpj": "18.593.815/0001-97",
       "empresa": "PRINER SERVIÇOS INDUSTRIAIS S.A.",
-      "ticker": null,
+      "ticker": "PRNR3",
+      "tickers": [
+        "PRNR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1563623.0,
@@ -6930,6 +8044,7 @@
       "cnpj": "08.926.302/0001-05",
       "empresa": "PRIO FORTE S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 10177997.0,
@@ -6945,7 +8060,10 @@
     {
       "cnpj": "10.629.105/0001-68",
       "empresa": "PRIO S.A.",
-      "ticker": null,
+      "ticker": "PRIO3",
+      "tickers": [
+        "PRIO3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 15583960.0,
@@ -6962,6 +8080,7 @@
       "cnpj": "02.291.077/0001-93",
       "empresa": "PRODUTORES ENERGET.DE MANSO S.A.- PROMAN",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 8836.0,
@@ -6977,7 +8096,10 @@
     {
       "cnpj": "45.453.214/0001-51",
       "empresa": "PROFARMA DISTRIB PROD FARMACEUTICOS S.A.",
-      "ticker": null,
+      "ticker": "PFRM3",
+      "tickers": [
+        "PFRM3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 11450521.0,
@@ -6994,6 +8116,7 @@
       "cnpj": "08.574.411/0001-00",
       "empresa": "PRÁTICA PRODUTOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 388697.0,
@@ -7009,7 +8132,10 @@
     {
       "cnpj": "11.992.680/0001-93",
       "empresa": "QUALICORP CONSULTORIA E CORRETORA DE SEGUROS S.A.",
-      "ticker": null,
+      "ticker": "QUAL3",
+      "tickers": [
+        "QUAL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1426845.0,
@@ -7026,6 +8152,7 @@
       "cnpj": "35.791.391/0001-94",
       "empresa": "QUALITY SOFTWARE S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 65675705.0,
@@ -7041,7 +8168,10 @@
     {
       "cnpj": "61.585.865/0001-51",
       "empresa": "RAIA DROGASIL S.A.",
-      "ticker": null,
+      "ticker": "RADL3",
+      "tickers": [
+        "RADL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 44250449.0,
@@ -7057,7 +8187,11 @@
     {
       "cnpj": "89.086.144/0001-16",
       "empresa": "RANDONCORP S.A.",
-      "ticker": null,
+      "ticker": "RAPT3 / RAPT4",
+      "tickers": [
+        "RAPT3",
+        "RAPT4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 13143266.0,
@@ -7074,6 +8208,7 @@
       "cnpj": "08.070.508/0001-78",
       "empresa": "RAÍZEN ENERGIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2026,
       "receita_liquida": 74274007.0,
@@ -7089,7 +8224,10 @@
     {
       "cnpj": "33.453.598/0001-23",
       "empresa": "RAÍZEN S.A.",
-      "ticker": null,
+      "ticker": "RAIZ4",
+      "tickers": [
+        "RAIZ4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2026,
       "receita_liquida": 225849347.0,
@@ -7105,7 +8243,11 @@
     {
       "cnpj": "91.333.666/0001-17",
       "empresa": "RECRUSUL SA",
-      "ticker": null,
+      "ticker": "RCSL3 / RCSL4",
+      "tickers": [
+        "RCSL3",
+        "RCSL4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1575.0,
@@ -7121,7 +8263,10 @@
     {
       "cnpj": "06.047.087/0001-39",
       "empresa": "REDE D'OR SÃO LUIZ S.A.",
-      "ticker": null,
+      "ticker": "RDOR3",
+      "tickers": [
+        "RDOR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 55725852.0,
@@ -7137,7 +8282,10 @@
     {
       "cnpj": "61.584.140/0001-49",
       "empresa": "REDE ENERGIA PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "REDE3",
+      "tickers": [
+        "REDE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 19392049.0,
@@ -7153,7 +8301,10 @@
     {
       "cnpj": "33.412.081/0001-96",
       "empresa": "REFINARIA DE PETRÓLEOS DE MANGUINHOS S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "RPMG3",
+      "tickers": [
+        "RPMG3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 6983506.0,
@@ -7169,7 +8320,12 @@
     {
       "cnpj": "08.534.605/0001-74",
       "empresa": "RENOVA ENERGIA S.A.",
-      "ticker": null,
+      "ticker": "RNEW11 / RNEW3 / RNEW4",
+      "tickers": [
+        "RNEW11",
+        "RNEW3",
+        "RNEW4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 514958.0,
@@ -7185,7 +8341,10 @@
     {
       "cnpj": "52.841.191/0001-18",
       "empresa": "REVEE S.A.",
-      "ticker": null,
+      "ticker": "RVEE3",
+      "tickers": [
+        "RVEE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1134000.0,
@@ -7201,7 +8360,10 @@
     {
       "cnpj": "38.199.406/0001-18",
       "empresa": "RIO ALTO ENERGIAS RENOVÁVEIS S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "RIOS3",
+      "tickers": [
+        "RIOS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 139905.0,
@@ -7217,7 +8379,11 @@
     {
       "cnpj": "02.998.301/0001-81",
       "empresa": "RIO PARANAPANEMA ENERGIA SA",
-      "ticker": null,
+      "ticker": "GEPA3 / GEPA4",
+      "tickers": [
+        "GEPA3",
+        "GEPA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 0.0,
@@ -7234,6 +8400,7 @@
       "cnpj": "59.981.829/0001-65",
       "empresa": "RODOBENS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5645722.0,
@@ -7250,6 +8417,7 @@
       "cnpj": "41.508.382/0001-46",
       "empresa": "RODOVIAS DO BRASIL HOLDING S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1371224.0,
@@ -7265,7 +8433,10 @@
     {
       "cnpj": "56.720.428/0001-63",
       "empresa": "ROMI S.A.",
-      "ticker": null,
+      "ticker": "ROMI3",
+      "tickers": [
+        "ROMI3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1326712.0,
@@ -7281,7 +8452,10 @@
     {
       "cnpj": "61.065.751/0001-80",
       "empresa": "ROSSI RESIDENCIAL S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "ticker": null,
+      "ticker": "RSID3",
+      "tickers": [
+        "RSID3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 25852.0,
@@ -7297,7 +8471,10 @@
     {
       "cnpj": "02.387.241/0001-60",
       "empresa": "RUMO S.A.",
-      "ticker": null,
+      "ticker": "RAIL3",
+      "tickers": [
+        "RAIL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 13847776.0,
@@ -7313,7 +8490,12 @@
     {
       "cnpj": "14.807.945/0001-24",
       "empresa": "SANSUY SA INDÚSTRIA  DE PLASTICOS",
-      "ticker": null,
+      "ticker": "SNSY3 / SNSY5 / SNSY6",
+      "tickers": [
+        "SNSY3",
+        "SNSY5",
+        "SNSY6"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 975914.0,
@@ -7329,7 +8511,11 @@
     {
       "cnpj": "02.762.121/0001-04",
       "empresa": "SANTOS BRASIL PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "STBP11 / STBP3",
+      "tickers": [
+        "STBP11",
+        "STBP3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3627414.0,
@@ -7345,7 +8531,10 @@
     {
       "cnpj": "29.780.061/0001-09",
       "empresa": "SAO CARLOS EMPREEND E PARTICIPACOES S.A.",
-      "ticker": null,
+      "ticker": "SCAR3",
+      "tickers": [
+        "SCAR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 299829.0,
@@ -7362,6 +8551,7 @@
       "cnpj": "06.347.409/0001-65",
       "empresa": "SBF COMÉRCIO DE PRODUTOS ESPORTIVOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 12088651.0,
@@ -7377,7 +8567,11 @@
     {
       "cnpj": "84.693.183/0001-68",
       "empresa": "SCHULZ SA",
-      "ticker": null,
+      "ticker": "SHUL3 / SHUL4",
+      "tickers": [
+        "SHUL3",
+        "SHUL4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1938864.0,
@@ -7394,6 +8588,7 @@
       "cnpj": "80.680.093/0001-81",
       "empresa": "SENIOR SISTEMAS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1170283.0,
@@ -7409,7 +8604,10 @@
     {
       "cnpj": "01.599.101/0001-93",
       "empresa": "SEQUOIA LOGÍSTICA E TRANSPORTES S.A.",
-      "ticker": null,
+      "ticker": "SEQL3",
+      "tickers": [
+        "SEQL3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 592928.0,
@@ -7425,7 +8623,10 @@
     {
       "cnpj": "04.986.320/0001-13",
       "empresa": "SER EDUCACIONAL S.A.",
-      "ticker": null,
+      "ticker": "SEER3",
+      "tickers": [
+        "SEER3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2216531.0,
@@ -7441,7 +8642,11 @@
     {
       "cnpj": "42.500.384/0001-51",
       "empresa": "SERENA ENERGIA S.A.",
-      "ticker": null,
+      "ticker": "MEGA3 / SRNA3",
+      "tickers": [
+        "MEGA3",
+        "SRNA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 6393211.0,
@@ -7457,7 +8662,10 @@
     {
       "cnpj": "09.149.503/0001-06",
       "empresa": "SERENA GERAÇÃO S.A.",
-      "ticker": null,
+      "ticker": "OMGE3",
+      "tickers": [
+        "OMGE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5706206.0,
@@ -7473,7 +8681,10 @@
     {
       "cnpj": "07.415.333/0001-20",
       "empresa": "SIMPAR S.A.",
-      "ticker": null,
+      "ticker": "SIMH3",
+      "tickers": [
+        "SIMH3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 43528375.0,
@@ -7489,7 +8700,10 @@
     {
       "cnpj": "89.096.457/0001-55",
       "empresa": "SLC AGRICOLA SA",
-      "ticker": null,
+      "ticker": "SLCE3",
+      "tickers": [
+        "SLCE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 9759214.0,
@@ -7505,7 +8719,10 @@
     {
       "cnpj": "07.594.978/0001-78",
       "empresa": "SMARTFIT ESCOLA DE GINÁSTICA E DANÇA S.A.",
-      "ticker": null,
+      "ticker": "SMFT3",
+      "tickers": [
+        "SMFT3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 7241694.0,
@@ -7522,6 +8739,7 @@
       "cnpj": "41.052.420/0001-07",
       "empresa": "SOLAR BEBIDAS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 12619850.0,
@@ -7538,6 +8756,7 @@
       "cnpj": "40.263.170/0001-83",
       "empresa": "SOLVI ESSENCIS AMBIENTAL S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3514178.0,
@@ -7553,7 +8772,12 @@
     {
       "cnpj": "33.386.210/0001-19",
       "empresa": "SONDOTECNICA ENGENHARIA SOLOS S.A.",
-      "ticker": null,
+      "ticker": "SOND3 / SOND5 / SOND6",
+      "tickers": [
+        "SOND3",
+        "SOND5",
+        "SOND6"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 226418.0,
@@ -7570,6 +8794,7 @@
       "cnpj": "01.957.772/0001-89",
       "empresa": "SUL 116 PARTICIPAÇÕES S.A. - EM LIQUIDAÇÃO",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 0.0,
@@ -7586,6 +8811,7 @@
       "cnpj": "60.651.809/0001-05",
       "empresa": "SUZANO HOLDING S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 50116256.0,
@@ -7601,7 +8827,10 @@
     {
       "cnpj": "16.404.287/0001-55",
       "empresa": "SUZANO S.A.",
-      "ticker": null,
+      "ticker": "SUZB3",
+      "tickers": [
+        "SUZB3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 50115679.0,
@@ -7617,7 +8846,11 @@
     {
       "cnpj": "08.801.621/0001-86",
       "empresa": "SYN PROP & TECH S.A.",
-      "ticker": null,
+      "ticker": "CCPR3 / SYNE3",
+      "tickers": [
+        "CCPR3",
+        "SYNE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 327667.0,
@@ -7633,7 +8866,10 @@
     {
       "cnpj": "51.466.860/0001-56",
       "empresa": "SÃO MARTINHO SA",
-      "ticker": null,
+      "ticker": "SMTO3",
+      "tickers": [
+        "SMTO3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2026,
       "receita_liquida": 7431765.0,
@@ -7649,7 +8885,13 @@
     {
       "cnpj": "92.781.335/0001-02",
       "empresa": "TAURUS ARMAS S.A.",
-      "ticker": null,
+      "ticker": "FJTA3 / FJTA4 / TASA3 / TASA4",
+      "tickers": [
+        "FJTA3",
+        "FJTA4",
+        "TASA3",
+        "TASA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1463029.0,
@@ -7665,7 +8907,10 @@
     {
       "cnpj": "09.295.063/0001-97",
       "empresa": "TECHNOS SA",
-      "ticker": null,
+      "ticker": "TECN3",
+      "tickers": [
+        "TECN3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 478423.0,
@@ -7682,6 +8927,7 @@
       "cnpj": "17.359.233/0001-88",
       "empresa": "TECIDOS E ARMARINHOS MIGUEL BARTOLOMEU S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5464805.0,
@@ -7697,7 +8943,10 @@
     {
       "cnpj": "08.065.557/0001-12",
       "empresa": "TECNISA S/A",
-      "ticker": null,
+      "ticker": "TCSA3",
+      "tickers": [
+        "TCSA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 214539.0,
@@ -7714,6 +8963,7 @@
       "cnpj": "08.100.057/0001-74",
       "empresa": "TECNOGERA-LOCAÇÃO E TRANSFORMAÇÃO DE ENERGIA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 678803.0,
@@ -7729,7 +8979,10 @@
     {
       "cnpj": "02.351.144/0001-18",
       "empresa": "TEGMA GESTÃO LOGÍSTICA SA",
-      "ticker": null,
+      "ticker": "TGMA3",
+      "tickers": [
+        "TGMA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2225428.0,
@@ -7746,6 +8999,7 @@
       "cnpj": "30.213.493/0001-09",
       "empresa": "TEGRA INCORPORADORA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1205697.0,
@@ -7761,7 +9015,11 @@
     {
       "cnpj": "02.558.157/0001-62",
       "empresa": "TELEFÔNICA BRASIL S.A.",
-      "ticker": null,
+      "ticker": "VIVT3 / VIVT4",
+      "tickers": [
+        "VIVT3",
+        "VIVT4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 59595000.0,
@@ -7778,6 +9036,7 @@
       "cnpj": "21.748.188/0001-20",
       "empresa": "TERP GLBL BRASIL I PARTICIPAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 387372.0,
@@ -7793,7 +9052,10 @@
     {
       "cnpj": "40.337.136/0001-06",
       "empresa": "TERRA SANTA PROPRIEDADES AGRÍCOLAS S.A.",
-      "ticker": null,
+      "ticker": "LAND3",
+      "tickers": [
+        "LAND3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 96574.0,
@@ -7810,6 +9072,7 @@
       "cnpj": "84.684.455/0001-63",
       "empresa": "TIGRE S.A. PARTICIPAÇÕES",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4928547.0,
@@ -7826,6 +9089,7 @@
       "cnpj": "02.600.854/0001-34",
       "empresa": "TIM BRASIL SERVIÇOS E PARTICIPAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 26624721.0,
@@ -7841,7 +9105,10 @@
     {
       "cnpj": "02.421.421/0001-11",
       "empresa": "TIM S.A.",
-      "ticker": null,
+      "ticker": "TIMS3",
+      "tickers": [
+        "TIMS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 0.0,
@@ -7857,7 +9124,10 @@
     {
       "cnpj": "53.113.791/0001-22",
       "empresa": "TOTVS S.A",
-      "ticker": null,
+      "ticker": "TOTS3",
+      "tickers": [
+        "TOTS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5771867.0,
@@ -7873,7 +9143,10 @@
     {
       "cnpj": "03.014.553/0001-91",
       "empresa": "TPI - TRIUNFO PARTICIPACOES E INVESTIMENTOS S.A.",
-      "ticker": null,
+      "ticker": "TPIS3",
+      "tickers": [
+        "TPIS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1054757.0,
@@ -7889,7 +9162,10 @@
     {
       "cnpj": "59.418.806/0001-47",
       "empresa": "TRACK & FIELD CO S.A",
-      "ticker": null,
+      "ticker": "TFCO4",
+      "tickers": [
+        "TFCO4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1046512.0,
@@ -7905,7 +9181,12 @@
     {
       "cnpj": "07.859.971/0001-30",
       "empresa": "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.",
-      "ticker": null,
+      "ticker": "TAEE11 / TAEE3 / TAEE4",
+      "tickers": [
+        "TAEE11",
+        "TAEE3",
+        "TAEE4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4624113.0,
@@ -7921,7 +9202,10 @@
     {
       "cnpj": "92.660.570/0001-26",
       "empresa": "TREVISA  INVESTIMENTOS SA",
-      "ticker": null,
+      "ticker": "LUXM4",
+      "tickers": [
+        "LUXM4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 158057.0,
@@ -7937,7 +9221,10 @@
     {
       "cnpj": "08.811.643/0001-27",
       "empresa": "TRISUL S/A",
-      "ticker": null,
+      "ticker": "TRIS3",
+      "tickers": [
+        "TRIS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1378596.0,
@@ -7953,7 +9240,10 @@
     {
       "cnpj": "94.813.102/0001-70",
       "empresa": "TRÊS TENTOS AGROINDUSTRIAL S.A.",
-      "ticker": null,
+      "ticker": "TTEN3",
+      "tickers": [
+        "TTEN3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 16423694.0,
@@ -7970,6 +9260,7 @@
       "cnpj": "59.115.685/0001-64",
       "empresa": "TUPI ENERGIAS RENOVÁVEIS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 351864.0,
@@ -7985,7 +9276,10 @@
     {
       "cnpj": "84.683.374/0001-49",
       "empresa": "TUPY SA",
-      "ticker": null,
+      "ticker": "TUPY3",
+      "tickers": [
+        "TUPY3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 9692948.0,
@@ -8002,6 +9296,7 @@
       "cnpj": "26.982.634/0001-80",
       "empresa": "TURBI COMPARTILHAMENTO DE VEÍCULOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 359957.0,
@@ -8017,7 +9312,10 @@
     {
       "cnpj": "82.982.075/0001-80",
       "empresa": "TÊXTIL RENAUXVIEW S/A",
-      "ticker": null,
+      "ticker": "TXRX4",
+      "tickers": [
+        "TXRX4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 115881.0,
@@ -8033,7 +9331,10 @@
     {
       "cnpj": "33.256.439/0001-39",
       "empresa": "ULTRAPAR PARTICIPAÇÕES SA",
-      "ticker": null,
+      "ticker": "UGPA3",
+      "tickers": [
+        "UGPA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 142369540.0,
@@ -8049,7 +9350,10 @@
     {
       "cnpj": "90.441.460/0001-48",
       "empresa": "UNICASA INDÚSTRIA DE MÓVEIS S.A.",
-      "ticker": null,
+      "ticker": "UCAS3",
+      "tickers": [
+        "UCAS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 238958.0,
@@ -8066,6 +9370,7 @@
       "cnpj": "45.736.131/0001-70",
       "empresa": "UNIDAS LOCADORA S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4201733.0,
@@ -8082,6 +9387,7 @@
       "cnpj": "75.609.123/0001-23",
       "empresa": "UNIDAS LOCAÇÕES E SERVIÇOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 7342747.0,
@@ -8097,7 +9403,10 @@
     {
       "cnpj": "02.255.187/0001-08",
       "empresa": "UNIFIQUE TELECOMUNICAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "FIQE3",
+      "tickers": [
+        "FIQE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1185580.0,
@@ -8113,7 +9422,12 @@
     {
       "cnpj": "33.958.695/0001-78",
       "empresa": "UNIPAR CARBOCLORO S.A.",
-      "ticker": null,
+      "ticker": "UNIP3 / UNIP5 / UNIP6",
+      "tickers": [
+        "UNIP3",
+        "UNIP5",
+        "UNIP6"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5142676.0,
@@ -8129,7 +9443,10 @@
     {
       "cnpj": "53.153.938/0001-08",
       "empresa": "UNIÃO PET PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "AUAU3",
+      "tickers": [
+        "AUAU3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3013799.0,
@@ -8146,6 +9463,7 @@
       "cnpj": "60.665.981/0001-18",
       "empresa": "UNIÃO QUÍMICA FARMACÊUTICA NACIONAL S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4411560.0,
@@ -8162,6 +9480,7 @@
       "cnpj": "10.571.175/0001-02",
       "empresa": "URBA DESENVOLVIMENTO URBANO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 370909.0,
@@ -8177,7 +9496,12 @@
     {
       "cnpj": "60.894.730/0001-05",
       "empresa": "USINAS SID DE MINAS GERAIS S.A.-USIMINAS",
-      "ticker": null,
+      "ticker": "USIM3 / USIM5 / USIM6",
+      "tickers": [
+        "USIM3",
+        "USIM5",
+        "USIM6"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 26263450.0,
@@ -8194,6 +9518,7 @@
       "cnpj": "02.041.460/0001-93",
       "empresa": "V. TAL - REDE NEUTRA DE TELECOMUNICAÇÕES S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 7049844.0,
@@ -8209,7 +9534,10 @@
     {
       "cnpj": "33.592.510/0001-54",
       "empresa": "VALE S.A.",
-      "ticker": null,
+      "ticker": "VALE3",
+      "tickers": [
+        "VALE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 213595000.0,
@@ -8225,7 +9553,10 @@
     {
       "cnpj": "33.113.309/0001-47",
       "empresa": "VALID SOLUÇÕES S.A.",
-      "ticker": null,
+      "ticker": "VLID3",
+      "tickers": [
+        "VLID3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2062563.0,
@@ -8241,7 +9572,10 @@
     {
       "cnpj": "23.373.000/0001-32",
       "empresa": "VAMOS LOCAÇÃO DE CAMINHÕES, MÁQUINAS E EQUIPAMENTOS S.A.",
-      "ticker": null,
+      "ticker": "VAMO3",
+      "tickers": [
+        "VAMO3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5755712.0,
@@ -8258,6 +9592,7 @@
       "cnpj": "31.748.174/0001-60",
       "empresa": "VERO S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2024,
       "receita_liquida": 1660862.0,
@@ -8273,7 +9608,11 @@
     {
       "cnpj": "49.669.856/0001-43",
       "empresa": "VESTE SA ESTILO",
-      "ticker": null,
+      "ticker": "LLIS3 / VSTE3",
+      "tickers": [
+        "LLIS3",
+        "VSTE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1230948.0,
@@ -8289,7 +9628,11 @@
     {
       "cnpj": "34.274.233/0001-02",
       "empresa": "VIBRA ENERGIA S/A",
-      "ticker": null,
+      "ticker": "BRDT3 / VBBR3",
+      "tickers": [
+        "BRDT3",
+        "VBBR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 189256000.0,
@@ -8306,6 +9649,7 @@
       "cnpj": "02.536.066/0001-26",
       "empresa": "VITAL ENGENHARIA AMBIENTAL S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2302758.0,
@@ -8321,7 +9665,10 @@
     {
       "cnpj": "20.512.706/0001-40",
       "empresa": "VITRU EDUCAÇÃO S.A.",
-      "ticker": null,
+      "ticker": "VTRU3",
+      "tickers": [
+        "VTRU3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 2259078.0,
@@ -8337,7 +9684,10 @@
     {
       "cnpj": "45.365.558/0001-09",
       "empresa": "VITTIA S.A.",
-      "ticker": null,
+      "ticker": "VITT3",
+      "tickers": [
+        "VITT3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 819983.0,
@@ -8353,7 +9703,10 @@
     {
       "cnpj": "33.839.910/0001-11",
       "empresa": "VIVARA PARTICIPAÇÕES S.A.",
-      "ticker": null,
+      "ticker": "VIVA3",
+      "tickers": [
+        "VIVA3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3026581564.0,
@@ -8369,7 +9722,12 @@
     {
       "cnpj": "67.571.414/0001-41",
       "empresa": "VIVER INCORPORADORA E CONSTRUTORA S.A",
-      "ticker": null,
+      "ticker": "INPR3 / VIVR11 / VIVR3",
+      "tickers": [
+        "INPR3",
+        "VIVR11",
+        "VIVR3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 28779.0,
@@ -8386,6 +9744,7 @@
       "cnpj": "32.681.371/0001-72",
       "empresa": "VIX LOGÍSTICA S/A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 4043611.0,
@@ -8402,6 +9761,7 @@
       "cnpj": "42.276.907/0001-28",
       "empresa": "VLI MULTIMODAL S.A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 9953533.0,
@@ -8418,6 +9778,7 @@
       "cnpj": "04.212.396/0001-91",
       "empresa": "VOKE S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 532959.0,
@@ -8434,6 +9795,7 @@
       "cnpj": "01.637.895/0001-32",
       "empresa": "VOTORANTIM CIMENTOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 29416000.0,
@@ -8449,7 +9811,10 @@
     {
       "cnpj": "50.926.955/0001-42",
       "empresa": "VULCABRAS S.A.",
-      "ticker": null,
+      "ticker": "VULC3",
+      "tickers": [
+        "VULC3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3560287.0,
@@ -8466,6 +9831,7 @@
       "cnpj": "09.813.204/0001-16",
       "empresa": "W2W E-COMMERCE DE VINHOS S.A.",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 766844.0,
@@ -8481,7 +9847,10 @@
     {
       "cnpj": "84.429.695/0001-11",
       "empresa": "WEG SA",
-      "ticker": null,
+      "ticker": "WEGE3",
+      "tickers": [
+        "WEGE3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 40804110.0,
@@ -8497,7 +9866,11 @@
     {
       "cnpj": "84.683.671/0001-94",
       "empresa": "WETZEL S.A.",
-      "ticker": null,
+      "ticker": "MWET3 / MWET4",
+      "tickers": [
+        "MWET3",
+        "MWET4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 197561.0,
@@ -8513,7 +9886,11 @@
     {
       "cnpj": "59.105.999/0001-86",
       "empresa": "WHIRLPOOL S.A",
-      "ticker": null,
+      "ticker": "WHRL3 / WHRL4",
+      "tickers": [
+        "WHRL3",
+        "WHRL4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 12561821.0,
@@ -8529,7 +9906,11 @@
     {
       "cnpj": "42.278.473/0001-03",
       "empresa": "WIZ CO PARTICIPAÇÕES E CORRETAGEM DE SEGUROS S.A.",
-      "ticker": null,
+      "ticker": "WIZC3 / WIZS3",
+      "tickers": [
+        "WIZC3",
+        "WIZS3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 1382973.0,
@@ -8545,7 +9926,11 @@
     {
       "cnpj": "33.228.024/0001-51",
       "empresa": "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A.",
-      "ticker": null,
+      "ticker": "WLMM3 / WLMM4",
+      "tickers": [
+        "WLMM3",
+        "WLMM4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 3011892.0,
@@ -8561,7 +9946,10 @@
     {
       "cnpj": "02.217.319/0001-07",
       "empresa": "YBYRA CAPITAL S.A",
-      "ticker": null,
+      "ticker": "YBRA4",
+      "tickers": [
+        "YBRA4"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 0.0,
@@ -8577,7 +9965,11 @@
     {
       "cnpj": "08.807.432/0001-10",
       "empresa": "YDUQS PARTICIPACOES S.A.",
-      "ticker": null,
+      "ticker": "ESTC3 / YDUQ3",
+      "tickers": [
+        "ESTC3",
+        "YDUQ3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5521740.0,
@@ -8594,6 +9986,7 @@
       "cnpj": "11.284.204/0001-18",
       "empresa": "YOU INC INCORPORADORA E PARTICIPAÇÃO S.A",
       "ticker": null,
+      "tickers": [],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 629856.0,
@@ -8609,7 +10002,11 @@
     {
       "cnpj": "13.574.594/0001-96",
       "empresa": "ZAMP S.A.",
-      "ticker": null,
+      "ticker": "BKBR3 / ZAMP3",
+      "tickers": [
+        "BKBR3",
+        "ZAMP3"
+      ],
       "fonte": "CVM - DFP consolidada",
       "ano_referencia": 2025,
       "receita_liquida": 5231945.0,
