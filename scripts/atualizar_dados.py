@@ -90,6 +90,8 @@ def main():
         cadastro = cadastro[cadastro["SIT"].astype(str).str.contains("ATIVO", case=False, na=False)]
     cadastro = cadastro.drop_duplicates("CNPJ_CIA", keep="last")
     nomes = {cnpj_limpo(cnpj): nome for cnpj, nome in zip(cadastro["CNPJ_CIA"], cadastro["DENOM_SOCIAL"])}
+    # SIT=ATIVO é o filtro da CVM para emissores com registro ativo.
+    cnpjs_ativos_cvm = set(nomes)
 
     mapa_tickers = {}
     total_ativos_b3 = 0
@@ -120,11 +122,16 @@ def main():
             receita = localizar_conta(exercicio, (r"receita de venda de bens e/ou serviços", r"receita líquida de vendas e/ou serviços"))
             lucro = localizar_conta(exercicio, (r"lucro/prejuízo consolidado do período", r"lucro/prejuízo do período"))
             cnpj_key = cnpj_limpo(cnpj)
+            # Não basta o ticker existir em um cadastro histórico: exigimos emissor ativo na CVM.
+            if cnpj_key not in cnpjs_ativos_cvm:
+                continue
             if cnpj_key not in registros:
                 tickers = mapa_tickers.get(cnpj_key, [])
+                if not tickers:
+                    continue
                 registros[cnpj_key] = {
                     "cnpj": cnpj,
-                    "empresa": nomes.get(cnpj_key, cnpj),
+                    "empresa": nomes.get(cnpj_key) or (str(grupo["DENOM_CIA"].dropna().iloc[0]) if "DENOM_CIA" in grupo.columns and not grupo["DENOM_CIA"].dropna().empty else cnpj),
                     "ticker": " / ".join(tickers) if tickers else None,
                     "tickers": tickers,
                     "fonte": "CVM - DFP consolidada",
@@ -141,9 +148,16 @@ def main():
             item["margem_liquida"] = round(lucro / receita * 100, 2)
 
     empresas_cvm_com_dados = len(registros)
-    # O screener é de ações negociadas na B3: não exibir emissores CVM sem ticker de ação no universo de referência.
-    empresas = sorted((item for item in registros.values() if item["tickers"]), key=lambda x: x["empresa"])
-    empresas_com_ticker = len(empresas)
+    # Uma linha por ticker: classes diferentes do mesmo emissor ficam individualizadas.
+    empresas = []
+    for emissor in registros.values():
+        for ticker in emissor["tickers"]:
+            linha = dict(emissor)
+            linha["ticker"] = ticker
+            linha["tickers"] = [ticker]
+            empresas.append(linha)
+    empresas.sort(key=lambda x: (x["empresa"], x["ticker"]))
+    empresas_com_ticker = len({item["cnpj"] for item in empresas})
     payload = {
         "atualizado_em": datetime.now(timezone.utc).isoformat(),
         "fonte": "CVM - Dados Abertos; universo de ativos Lummios (CC BY 4.0)",
@@ -151,12 +165,13 @@ def main():
         "url_mapa_tickers": "https://developers.lummios.com.br/dados-abertos.html",
         "licenca_mapa_tickers": "CC BY 4.0 - atribuição à Lummios",
         "anos_processados": sorted(anos_ok),
-        "quantidade_empresas": len(empresas),
+        "quantidade_empresas": empresas_com_ticker,
+        "quantidade_linhas_ticker": len(empresas),
         "quantidade_emissores_cvm_com_dados": empresas_cvm_com_dados,
         "emissores_sem_ticker_excluidos": empresas_cvm_com_dados - empresas_com_ticker,
         "quantidade_empresas_com_ticker": empresas_com_ticker,
         "quantidade_ativos_acao_no_mapa": total_ativos_b3,
-        "observacao": "Exibe somente emissores com ao menos um ticker classificado como ação no universo de referência da B3. Nomes conciliados por CNPJ normalizado. Dados financeiros DFP consolidados; indicadores não calculados permanecem nulos.",
+        "observacao": "Exibe emissores com registro ativo na CVM e ticker de ação no universo de referência; cada classe/ticker aparece em uma linha separada. Os indicadores contábeis do emissor se repetem entre classes. Nomes conciliados por CNPJ normalizado, com razão social da DFP como alternativa. Dados DFP consolidados; indicadores não calculados permanecem nulos.",
         "erros": erros,
         "empresas": empresas,
     }
