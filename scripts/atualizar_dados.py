@@ -89,7 +89,7 @@ def main():
     if "SIT" in cadastro.columns:
         cadastro = cadastro[cadastro["SIT"].astype(str).str.contains("ATIVO", case=False, na=False)]
     cadastro = cadastro.drop_duplicates("CNPJ_CIA", keep="last")
-    nomes = cadastro.set_index("CNPJ_CIA")["DENOM_SOCIAL"].to_dict()
+    nomes = {cnpj_limpo(cnpj): nome for cnpj, nome in zip(cadastro["CNPJ_CIA"], cadastro["DENOM_SOCIAL"])}
 
     mapa_tickers = {}
     total_ativos_b3 = 0
@@ -124,7 +124,7 @@ def main():
                 tickers = mapa_tickers.get(cnpj_key, [])
                 registros[cnpj_key] = {
                     "cnpj": cnpj,
-                    "empresa": nomes.get(cnpj, cnpj),
+                    "empresa": nomes.get(cnpj_key, cnpj),
                     "ticker": " / ".join(tickers) if tickers else None,
                     "tickers": tickers,
                     "fonte": "CVM - DFP consolidada",
@@ -140,8 +140,10 @@ def main():
         if receita not in (None, 0) and lucro is not None:
             item["margem_liquida"] = round(lucro / receita * 100, 2)
 
-    empresas = sorted(registros.values(), key=lambda x: x["empresa"])
-    empresas_com_ticker = sum(bool(item["tickers"]) for item in empresas)
+    empresas_cvm_com_dados = len(registros)
+    # O screener é de ações negociadas na B3: não exibir emissores CVM sem ticker de ação no universo de referência.
+    empresas = sorted((item for item in registros.values() if item["tickers"]), key=lambda x: x["empresa"])
+    empresas_com_ticker = len(empresas)
     payload = {
         "atualizado_em": datetime.now(timezone.utc).isoformat(),
         "fonte": "CVM - Dados Abertos; universo de ativos Lummios (CC BY 4.0)",
@@ -150,9 +152,11 @@ def main():
         "licenca_mapa_tickers": "CC BY 4.0 - atribuição à Lummios",
         "anos_processados": sorted(anos_ok),
         "quantidade_empresas": len(empresas),
+        "quantidade_emissores_cvm_com_dados": empresas_cvm_com_dados,
+        "emissores_sem_ticker_excluidos": empresas_cvm_com_dados - empresas_com_ticker,
         "quantidade_empresas_com_ticker": empresas_com_ticker,
         "quantidade_ativos_acao_no_mapa": total_ativos_b3,
-        "observacao": "Tickers de ações associados pelo CNPJ do emissor. Empresas sem correspondência permanecem sem ticker. Dados financeiros DFP consolidados; indicadores não calculados permanecem nulos.",
+        "observacao": "Exibe somente emissores com ao menos um ticker classificado como ação no universo de referência da B3. Nomes conciliados por CNPJ normalizado. Dados financeiros DFP consolidados; indicadores não calculados permanecem nulos.",
         "erros": erros,
         "empresas": empresas,
     }
