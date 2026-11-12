@@ -45,7 +45,7 @@ def carregar_tickers_com_negociacao_b3() -> tuple[set[str], str]:
                 raise RuntimeError(f"COTAHIST {ano}: arquivo TXT não encontrado.")
             with zf.open(candidatos[0]) as arquivo:
                 for bruto in arquivo:
-                    linha = bruto.decode("latin1").rstrip("\\r\\n")
+                    linha = bruto.decode("latin1").rstrip("\r\n")
                     if len(linha) < 245 or linha[:2] != "01":
                         continue
                     if linha[10:12].strip() not in {"02", "96"}:
