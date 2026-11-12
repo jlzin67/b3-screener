@@ -1,6 +1,8 @@
 name: Atualizar dados fundamentalistas
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: "30 10 * * 1-5"
