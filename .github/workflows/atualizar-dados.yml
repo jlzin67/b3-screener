@@ -1,0 +1,32 @@
+name: Atualizar dados fundamentalistas
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 10 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+      - name: Coletar demonstrações financeiras da CVM
+        run: python scripts/atualizar_dados.py
+      - name: Publicar base JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/indicadores.json
+          git diff --cached --quiet || git commit -m "Atualiza dados fundamentalistas da CVM"
+          git push
