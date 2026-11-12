@@ -7,6 +7,7 @@ import json
 import re
 import zipfile
 import unicodedata
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -55,12 +56,31 @@ def baixar_cotahist(ano: int) -> bytes:
         f"https://b3.com.br/InstDados/SerHist/COTAHIST_A{ano}.ZIP",
     ]
     falhas = []
+    # O COTAHIST anual pode ultrapassar 90 MB e a B3 ocasionalmente encerra
+    # a conexão antes de concluir a transferência. Repetimos o download e
+    # só aceitamos o arquivo depois de validar a estrutura e a integridade ZIP.
     for url in urls:
-        try:
-            return baixar(url)
-        except requests.RequestException as exc:
-            falhas.append(f"{url}: {exc}")
-    raise RuntimeError("Não foi possível baixar o COTAHIST da B3. " + " | ".join(falhas))
+        for tentativa in range(1, 5):
+            try:
+                response = requests.get(
+                    url,
+                    headers={**HEADERS, "Accept-Encoding": "identity"},
+                    timeout=(30, 240),
+                )
+                response.raise_for_status()
+                conteudo = response.content
+                with zipfile.ZipFile(io.BytesIO(conteudo)) as zf:
+                    membro_corrompido = zf.testzip()
+                    if membro_corrompido:
+                        raise zipfile.BadZipFile(
+                            f"membro corrompido: {membro_corrompido}"
+                        )
+                return conteudo
+            except (requests.RequestException, zipfile.BadZipFile, OSError) as exc:
+                falhas.append(f"{url} (tentativa {tentativa}/4): {exc}")
+                if tentativa < 4:
+                    time.sleep(3 * tentativa)
+    raise RuntimeError("Não foi possível baixar um COTAHIST íntegro da B3. " + " | ".join(falhas))
 
 
 def carregar_cotacoes_b3() -> tuple[dict[str, dict], str]:
