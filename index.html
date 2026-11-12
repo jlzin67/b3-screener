@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Screener fundamentalista de ações negociadas na B3.">
+<title>B3 Screener</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121c2e;--line:#26354d;--muted:#93a4bb;--text:#edf3fb;--accent:#35d0ad;--warn:#f4c46b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1400px;margin:auto;padding:32px 22px}header{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:26px}.brand{display:flex;align-items:center;gap:12px}.logo{width:42px;height:42px;border-radius:12px;background:#123c3b;color:var(--accent);display:grid;place-items:center;font-weight:800;font-size:20px}h1{font-size:22px;margin:0}header p,.muted{color:var(--muted);margin:3px 0 0}.status{border:1px solid #70572b;color:var(--warn);padding:7px 11px;border-radius:999px;font-size:12px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:18px}.panel h2{font-size:16px;margin:0 0 5px}.intro{color:var(--muted);font-size:13px;margin:0 0 18px}.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.filter{border:1px solid var(--line);border-radius:12px;padding:12px}.filter label{display:block;font-size:13px;font-weight:650;margin-bottom:9px}.range{display:flex;gap:8px}.range input,.search{width:100%;min-width:0;background:#0b1423;border:1px solid #30415c;color:var(--text);border-radius:8px;padding:9px}.range input::placeholder,.search::placeholder{color:#72839b}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.toolbar input{flex:1;min-width:220px}.button{background:#1b9e83;border:0;color:#061713;border-radius:9px;padding:10px 15px;font-weight:700;cursor:pointer}.button.secondary{background:#26354d;color:var(--text)}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:900px}th,td{text-align:left;padding:13px 12px;border-bottom:1px solid var(--line);font-size:13px}th{color:var(--muted);font-weight:600}td.empty{text-align:center;padding:38px;color:var(--muted)}.note{font-size:12px;color:var(--muted);margin-top:14px}.foot{color:var(--muted);font-size:12px;text-align:center;padding:12px}
+@media(max-width:650px){main{padding:20px 12px}header{align-items:flex-start;flex-direction:column}.panel{padding:15px}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="brand"><div class="logo">B3</div><div><h1>B3 Screener</h1><p>Filtro fundamentalista de ações brasileiras</p></div></div><span class="status">Base de dados em preparação</span></header>
+<section class="panel">
+<h2>Filtros fundamentalistas</h2>
+<p class="intro">Defina limites mínimos e máximos para os sete indicadores selecionados.</p>
+<div class="filters" id="filters"></div>
+<div class="toolbar"><input class="search" id="search" placeholder="Pesquisar por ticker ou empresa (ex.: PETR4)"><button class="button" id="apply">Aplicar filtros</button><button class="button secondary" id="clear">Limpar</button></div>
+</section>
+<section class="panel">
+<h2>Ações encontradas</h2>
+<p class="intro" id="resultCount">Aguardando conexão com a base fundamentalista.</p>
+<div class="table-wrap"><table><thead><tr><th>Ticker</th><th>Empresa</th><th>P/VP</th><th>P/L</th><th>ROE</th><th>Margem líquida</th><th>ROIC</th><th>Dívida líquida / EBITDA</th><th>CAGR lucros 5 anos</th></tr></thead><tbody id="results"><tr><td class="empty" colspan="9">Os filtros estão prontos. A integração com os dados oficiais e as cotações será implementada na próxima etapa. Nenhum dado fictício é exibido.</td></tr></tbody></table></div>
+<p class="note">Os indicadores serão preenchidos após a integração das demonstrações financeiras da CVM e de uma fonte de cotações. A data de referência e a metodologia de cálculo serão exibidas junto aos dados.</p>
+</section>
+<div class="foot">B3 Screener · Projeto independente para análise fundamentalista. Não constitui recomendação de investimento.</div>
+</main>
+<script>
+const metrics=[["pvp","P/VP"],["pl","P/L"],["roe","ROE (%)"],["margem_liquida","Margem líquida (%)"],["roic","ROIC (%)"],["divida_ebitda","Dívida líquida / EBITDA"],["cagr_lucros","CAGR dos lucros — 5 anos (%)"]];
+const root=document.getElementById("filters");
+for(const [key,label] of metrics){const box=document.createElement("div");box.className="filter";box.innerHTML='<label for="'+key+'-min">'+label+'</label><div class="range"><input id="'+key+'-min" type="number" step="any" placeholder="Mínimo" aria-label="'+label+' mínimo"><input id="'+key+'-max" type="number" step="any" placeholder="Máximo" aria-label="'+label+' máximo"></div>';root.appendChild(box)}
+document.getElementById("apply").addEventListener("click",()=>{document.getElementById("resultCount").textContent="Filtros configurados. A consulta será ativada quando a base de dados estiver conectada."});
+document.getElementById("clear").addEventListener("click",()=>{document.querySelectorAll('input').forEach(x=>x.value="");document.getElementById("resultCount").textContent="Filtros limpos. Aguardando conexão com a base fundamentalista."});
+</script>
+</body>
+</html>
