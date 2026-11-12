@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-12T14:25:31.724082+00:00",
+  "atualizado_em": "2026-11-12T14:37:15.168761+00:00",
   "fonte": "CVM - Dados Abertos (DFP consolidada); B3 - COTAHIST; universo de ativos Lummios (CC BY 4.0)",
   "url_fonte": "https://dados.cvm.gov.br/dataset/cia_aberta-doc-dfp",
   "url_cotacoes": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/mercado-a-vista/cotacoes-historicas/",
@@ -12,10 +12,10 @@
   ],
   "ano_referencia_fundamentos": 2025,
   "data_ultimo_pregao_b3": "2026-11-11",
-  "quantidade_empresas": 267,
-  "quantidade_linhas_ticker": 347,
-  "quantidade_emissores_cvm_com_dados": 267,
-  "quantidade_ativos_acao_no_mapa": 406,
+  "quantidade_empresas": 254,
+  "quantidade_linhas_ticker": 323,
+  "quantidade_emissores_cvm_com_dados": 254,
+  "quantidade_ativos_acao_no_mapa": 367,
   "metodologia": {
     "p_l": "Valor de mercado estimado / lucro líquido consolidado anual; só exibido com lucro positivo.",
     "pvp": "Valor de mercado estimado / patrimônio líquido consolidado.",
@@ -24,9 +24,10 @@
     "roic": "EBIT após imposto estimado / capital investido médio; taxa tributária limitada a 34%.",
     "divida_ebitda": "Dívida de curto e longo prazo menos caixa, dividida por EBITDA (EBIT + depreciação/amortização).",
     "cagr_lucros": "Crescimento anual composto do lucro líquido em cinco anos; requer lucro positivo nos dois extremos.",
-    "valor_mercado": "Preço de fechamento mais recente da B3 multiplicado pelas ações em circulação informadas na composição de capital da CVM; quando há mais de uma série da mesma classe, usa a mais negociada como referência."
+    "valor_mercado": "Preço de fechamento mais recente da B3 multiplicado pelas ações em circulação informadas na composição de capital da CVM, respeitando a escala de quantidade (unidades ou milhares); quando há mais de uma série da mesma classe, usa a mais negociada como referência.",
+    "ticker_ativo": "Ticker incluído somente se teve ao menos um negócio nos últimos 60 dias corridos em relação ao pregão mais recente encontrado no COTAHIST."
   },
-  "observacao": "Indicadores contábeis usam o último exercício anual DFP disponível, não valores TTM. P/L e P/VP dependem de preço recente e composição de capital; quando os dados necessários não são suficientes, o indicador fica nulo. ROE e ROIC usam médias de saldos entre exercícios. Instituições financeiras podem não ter EBITDA/ROIC comparáveis. Cada classe/ticker aparece em uma linha; indicadores do emissor se repetem entre classes.",
+  "observacao": "Indicadores contábeis usam o último exercício anual DFP disponível, não valores TTM. P/L e P/VP dependem de preço recente e composição de capital; a escala da quantidade de ações (unidade/milhar) é aplicada conforme o formulário da CVM. Quando os dados necessários não são suficientes, o indicador fica nulo. ROE e ROIC usam médias de saldos entre exercícios. Instituições financeiras podem não ter EBITDA/ROIC comparáveis. Tickers sem negociação nos últimos 60 dias são excluídos para evitar códigos antigos após mudança de ticker. Cada classe/ticker aparece em uma linha; indicadores do emissor se repetem entre classes.",
   "erros": [],
   "empresas": [
     {
@@ -48,26 +49,6 @@
       "cagr_lucros": null,
       "valor_mercado": 116022231.36,
       "ticker": "AERI3"
-    },
-    {
-      "cnpj": "42771949000135",
-      "empresa": "ALLIANÇA SAÚDE E PARTICIPAÇÕES S.A.",
-      "tickers": [
-        "AALR3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 1153825000.0,
-      "lucro_liquido": -1371831000.0,
-      "pvp": null,
-      "pl": null,
-      "roe": -310.16,
-      "margem_liquida": -118.89,
-      "roic": -105.64,
-      "divida_ebitda": null,
-      "cagr_lucros": null,
-      "valor_mercado": 470674599.93,
-      "ticker": "AALR3"
     },
     {
       "cnpj": "20247322000147",
@@ -608,26 +589,6 @@
       "cagr_lucros": 79.73,
       "valor_mercado": 3103593736.14,
       "ticker": "AZZA3"
-    },
-    {
-      "cnpj": "52270350000171",
-      "empresa": "B100 S.A.",
-      "tickers": [
-        "ADMF3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 0.0,
-      "lucro_liquido": -465085000.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": null,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null,
-      "valor_mercado": 192459168.0,
-      "ticker": "ADMF3"
     },
     {
       "cnpj": "52270350000171",
@@ -1273,26 +1234,6 @@
       "cnpj": "58119199000151",
       "empresa": "BRADSAÚDE S.A.",
       "tickers": [
-        "ODPV3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 2420159000.0,
-      "lucro_liquido": 582537000.0,
-      "pvp": 7.02,
-      "pl": 15.46,
-      "roe": 46.41,
-      "margem_liquida": 24.07,
-      "roic": 43.88,
-      "divida_ebitda": null,
-      "cagr_lucros": 10.12,
-      "valor_mercado": 9004939432.72,
-      "ticker": "ODPV3"
-    },
-    {
-      "cnpj": "58119199000151",
-      "empresa": "BRADSAÚDE S.A.",
-      "tickers": [
         "SAUD3"
       ],
       "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
@@ -1328,66 +1269,6 @@
       "cagr_lucros": 2.91,
       "valor_mercado": 1790089762.29,
       "ticker": "AGRO3"
-    },
-    {
-      "cnpj": "42150391000170",
-      "empresa": "BRASKEM S.A.",
-      "tickers": [
-        "BRKM3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 70717000000.0,
-      "lucro_liquido": -10961000000.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -15.5,
-      "roic": -4.06,
-      "divida_ebitda": 14.42,
-      "cagr_lucros": null,
-      "valor_mercado": 3404941191.28,
-      "ticker": "BRKM3"
-    },
-    {
-      "cnpj": "42150391000170",
-      "empresa": "BRASKEM S.A.",
-      "tickers": [
-        "BRKM5"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 70717000000.0,
-      "lucro_liquido": -10961000000.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -15.5,
-      "roic": -4.06,
-      "divida_ebitda": 14.42,
-      "cagr_lucros": null,
-      "valor_mercado": 3404941191.28,
-      "ticker": "BRKM5"
-    },
-    {
-      "cnpj": "42150391000170",
-      "empresa": "BRASKEM S.A.",
-      "tickers": [
-        "BRKM6"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 70717000000.0,
-      "lucro_liquido": -10961000000.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -15.5,
-      "roic": -4.06,
-      "divida_ebitda": 14.42,
-      "cagr_lucros": null,
-      "valor_mercado": 3404941191.28,
-      "ticker": "BRKM6"
     },
     {
       "cnpj": "12091809000155",
@@ -1813,40 +1694,20 @@
       "cnpj": "60730348000166",
       "empresa": "COMPANHIA  MELHORAMENTOS DE SÃO PAULO",
       "tickers": [
-        "MSPA3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 177091000.0,
-      "lucro_liquido": -32702000.0,
-      "pvp": 0.0,
-      "pl": null,
-      "roe": -3.94,
-      "margem_liquida": -18.47,
-      "roic": -1.25,
-      "divida_ebitda": 14.09,
-      "cagr_lucros": null,
-      "valor_mercado": 235901.6,
-      "ticker": "MSPA3"
-    },
-    {
-      "cnpj": "60730348000166",
-      "empresa": "COMPANHIA  MELHORAMENTOS DE SÃO PAULO",
-      "tickers": [
         "MSPA4"
       ],
       "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
       "ano_referencia": 2025,
       "receita_liquida": 177091000.0,
       "lucro_liquido": -32702000.0,
-      "pvp": 0.0,
+      "pvp": null,
       "pl": null,
       "roe": -3.94,
       "margem_liquida": -18.47,
       "roic": -1.25,
       "divida_ebitda": 14.09,
       "cagr_lucros": null,
-      "valor_mercado": 235901.6,
+      "valor_mercado": null,
       "ticker": "MSPA4"
     },
     {
@@ -2039,35 +1900,15 @@
       "ano_referencia": 2025,
       "receita_liquida": 26116856000.0,
       "lucro_liquido": 2687939000.0,
-      "pvp": 1.97,
-      "pl": 16.88,
+      "pvp": null,
+      "pl": null,
       "roe": 11.03,
       "margem_liquida": 10.29,
       "roic": 10.54,
       "divida_ebitda": 2.59,
       "cagr_lucros": -7.22,
-      "valor_mercado": 45382674564.3,
+      "valor_mercado": null,
       "ticker": "CPLE3"
-    },
-    {
-      "cnpj": "76483817000120",
-      "empresa": "COMPANHIA PARANAENSE DE ENERGIA COPEL",
-      "tickers": [
-        "CPLE5"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 26116856000.0,
-      "lucro_liquido": 2687939000.0,
-      "pvp": 1.97,
-      "pl": 16.88,
-      "roe": 11.03,
-      "margem_liquida": 10.29,
-      "roic": 10.54,
-      "divida_ebitda": 2.59,
-      "cagr_lucros": -7.22,
-      "valor_mercado": 45382674564.3,
-      "ticker": "CPLE5"
     },
     {
       "cnpj": "87762563000103",
@@ -2566,28 +2407,8 @@
       "roic": -65.02,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 45181.62,
+      "valor_mercado": 36462.36,
       "ticker": "ECOM3"
-    },
-    {
-      "cnpj": "26345998000150",
-      "empresa": "ECONOMATICA S.A.",
-      "tickers": [
-        "TRAD3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 22335000.0,
-      "lucro_liquido": -85986000.0,
-      "pvp": 0.0,
-      "pl": null,
-      "roe": -52.17,
-      "margem_liquida": -384.98,
-      "roic": -65.02,
-      "divida_ebitda": null,
-      "cagr_lucros": null,
-      "valor_mercado": 45181.62,
-      "ticker": "TRAD3"
     },
     {
       "cnpj": "04149454000180",
@@ -2970,26 +2791,6 @@
       "ticker": "EZTC3"
     },
     {
-      "cnpj": "00359742000108",
-      "empresa": "FASA S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "tickers": [
-        "FICT3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 77084000.0,
-      "lucro_liquido": -23420000.0,
-      "pvp": 0.71,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": -30.38,
-      "roic": null,
-      "divida_ebitda": null,
-      "cagr_lucros": null,
-      "valor_mercado": 27633189.15,
-      "ticker": "FICT3"
-    },
-    {
       "cnpj": "07820907000146",
       "empresa": "FICA EMPREENDIMENTOS IMOBILIARIOS S.A.",
       "tickers": [
@@ -3210,26 +3011,6 @@
       "ticker": "GRND3"
     },
     {
-      "cnpj": "33041260065290",
-      "empresa": "GRUPO CASAS BAHIA S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "tickers": [
-        "BHIA3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 29197000000.0,
-      "lucro_liquido": -2988000000.0,
-      "pvp": 0.0,
-      "pl": null,
-      "roe": -113.81,
-      "margem_liquida": -10.23,
-      "roic": 11.04,
-      "divida_ebitda": 2.13,
-      "cagr_lucros": null,
-      "valor_mercado": 287699.72,
-      "ticker": "BHIA3"
-    },
-    {
       "cnpj": "24990777000109",
       "empresa": "GRUPO MATEUS S.A.",
       "tickers": [
@@ -3288,46 +3069,6 @@
       "cagr_lucros": null,
       "valor_mercado": 1073401197.12,
       "ticker": "SBFG3"
-    },
-    {
-      "cnpj": "31553627000101",
-      "empresa": "GRUPO TOKY S.A. - EM RECUPERAÇÃO JUDICIAL",
-      "tickers": [
-        "TOKY3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 1445029000.0,
-      "lucro_liquido": -146886000.0,
-      "pvp": 0.0,
-      "pl": null,
-      "roe": -70.65,
-      "margem_liquida": -10.16,
-      "roic": 0.94,
-      "divida_ebitda": 2.31,
-      "cagr_lucros": null,
-      "valor_mercado": 36853.62,
-      "ticker": "TOKY3"
-    },
-    {
-      "cnpj": "08402943000152",
-      "empresa": "GUARARAPES CONFECÇÕES SA",
-      "tickers": [
-        "GUAR3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 10497046000.0,
-      "lucro_liquido": 1475168000.0,
-      "pvp": 0.58,
-      "pl": 2.12,
-      "roe": 27.43,
-      "margem_liquida": 14.05,
-      "roic": 29.57,
-      "divida_ebitda": 0.22,
-      "cagr_lucros": null,
-      "valor_mercado": 3125347987.5,
-      "ticker": "GUAR3"
     },
     {
       "cnpj": "08402943000152",
@@ -4250,26 +3991,6 @@
       "ticker": "LPSB3"
     },
     {
-      "cnpj": "89463822000112",
-      "empresa": "LUPATECH S.A.",
-      "tickers": [
-        "LUPA3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 52054000.0,
-      "lucro_liquido": -60176000.0,
-      "pvp": 0.47,
-      "pl": null,
-      "roe": -56.54,
-      "margem_liquida": -115.6,
-      "roic": -21.78,
-      "divida_ebitda": null,
-      "cagr_lucros": null,
-      "valor_mercado": 35015770.5,
-      "ticker": "LUPA3"
-    },
-    {
       "cnpj": "02351877000152",
       "empresa": "LWSA S/A",
       "tickers": [
@@ -4368,26 +4089,6 @@
       "cagr_lucros": null,
       "valor_mercado": null,
       "ticker": "MGEL4"
-    },
-    {
-      "cnpj": "61082004000150",
-      "empresa": "MANUFATURA DE  BRINQUEDOS ESTRELA SA",
-      "tickers": [
-        "ESTR4"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 150810000.0,
-      "lucro_liquido": 142138000.0,
-      "pvp": null,
-      "pl": null,
-      "roe": null,
-      "margem_liquida": 94.25,
-      "roic": null,
-      "divida_ebitda": 0.5,
-      "cagr_lucros": null,
-      "valor_mercado": null,
-      "ticker": "ESTR4"
     },
     {
       "cnpj": "88611835000129",
@@ -4508,26 +4209,6 @@
       "cagr_lucros": 21.29,
       "valor_mercado": 470634049.08,
       "ticker": "MELK3"
-    },
-    {
-      "cnpj": "04821041000108",
-      "empresa": "METALFRIO SOLUTIONS S/A",
-      "tickers": [
-        "FRIO3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 2402881000.0,
-      "lucro_liquido": 21936000.0,
-      "pvp": 2.85,
-      "pl": 59.65,
-      "roe": 4.91,
-      "margem_liquida": 0.91,
-      "roic": 11.65,
-      "divida_ebitda": 2.31,
-      "cagr_lucros": null,
-      "valor_mercado": 1308387285.0,
-      "ticker": "FRIO3"
     },
     {
       "cnpj": "92690783000109",
@@ -4850,26 +4531,6 @@
       "ticker": "NATU3"
     },
     {
-      "cnpj": "01083200000118",
-      "empresa": "NEOENERGIA S.A",
-      "tickers": [
-        "NEOE3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 52633000000.0,
-      "lucro_liquido": 5057000000.0,
-      "pvp": 1.12,
-      "pl": 8.11,
-      "roe": 14.59,
-      "margem_liquida": 9.61,
-      "roic": 12.76,
-      "divida_ebitda": 3.43,
-      "cagr_lucros": 11.72,
-      "valor_mercado": 41026346982.4,
-      "ticker": "NEOE3"
-    },
-    {
       "cnpj": "51128999000190",
       "empresa": "NUTRIPLANT INDUSTRIA E COMÉRCIO S/A",
       "tickers": [
@@ -4908,26 +4569,6 @@
       "cagr_lucros": null,
       "valor_mercado": 1877852065.26,
       "ticker": "OPCT3"
-    },
-    {
-      "cnpj": "12104241000402",
-      "empresa": "ONCOCLÍNICAS DO BRASIL SERVIÇOS MÉDICOS S.A.",
-      "tickers": [
-        "ONCO3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 5739367000.0,
-      "lucro_liquido": -3671107000.0,
-      "pvp": 1.01,
-      "pl": null,
-      "roe": -165.19,
-      "margem_liquida": -63.96,
-      "roic": -26.39,
-      "divida_ebitda": null,
-      "cagr_lucros": null,
-      "valor_mercado": 1073474295.36,
-      "ticker": "ONCO3"
     },
     {
       "cnpj": "59693110000129",
@@ -5148,46 +4789,6 @@
       "cagr_lucros": 77.68,
       "valor_mercado": 607669413251.41,
       "ticker": "PETR4"
-    },
-    {
-      "cnpj": "88613658000110",
-      "empresa": "PETTENATI S.A. INDUSTRIA TEXTIL",
-      "tickers": [
-        "PTNT3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 854123394.0,
-      "lucro_liquido": 57768709.0,
-      "pvp": 0.8,
-      "pl": 7.05,
-      "roe": 11.65,
-      "margem_liquida": 6.76,
-      "roic": 7.51,
-      "divida_ebitda": 1.41,
-      "cagr_lucros": 70.42,
-      "valor_mercado": 407113794.08,
-      "ticker": "PTNT3"
-    },
-    {
-      "cnpj": "88613658000110",
-      "empresa": "PETTENATI S.A. INDUSTRIA TEXTIL",
-      "tickers": [
-        "PTNT4"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 854123394.0,
-      "lucro_liquido": 57768709.0,
-      "pvp": 0.8,
-      "pl": 7.05,
-      "roe": 11.65,
-      "margem_liquida": 6.76,
-      "roic": 7.51,
-      "divida_ebitda": 1.41,
-      "cagr_lucros": 70.42,
-      "valor_mercado": 407113794.08,
-      "ticker": "PTNT4"
     },
     {
       "cnpj": "24230275000180",
@@ -5810,26 +5411,6 @@
       "ticker": "SEER3"
     },
     {
-      "cnpj": "42500384000151",
-      "empresa": "SERENA ENERGIA S.A.",
-      "tickers": [
-        "SRNA3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 6393211000.0,
-      "lucro_liquido": 20837000.0,
-      "pvp": 1.38,
-      "pl": 377.13,
-      "roe": 0.37,
-      "margem_liquida": 0.33,
-      "roic": 4.87,
-      "divida_ebitda": 3.37,
-      "cagr_lucros": null,
-      "valor_mercado": 7858184623.4,
-      "ticker": "SRNA3"
-    },
-    {
       "cnpj": "07415333000120",
       "empresa": "SIMPAR S.A.",
       "tickers": [
@@ -5893,40 +5474,20 @@
       "cnpj": "33386210000119",
       "empresa": "SONDOTECNICA ENGENHARIA SOLOS S.A.",
       "tickers": [
-        "SOND3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 226418000.0,
-      "lucro_liquido": 35732000.0,
-      "pvp": 0.0,
-      "pl": 0.0,
-      "roe": 53.5,
-      "margem_liquida": 15.78,
-      "roic": 63.96,
-      "divida_ebitda": -0.28,
-      "cagr_lucros": 11.11,
-      "valor_mercado": 159092.96,
-      "ticker": "SOND3"
-    },
-    {
-      "cnpj": "33386210000119",
-      "empresa": "SONDOTECNICA ENGENHARIA SOLOS S.A.",
-      "tickers": [
         "SOND5"
       ],
       "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
       "ano_referencia": 2025,
       "receita_liquida": 226418000.0,
       "lucro_liquido": 35732000.0,
-      "pvp": 0.0,
-      "pl": 0.0,
+      "pvp": null,
+      "pl": null,
       "roe": 53.5,
       "margem_liquida": 15.78,
       "roic": 63.96,
       "divida_ebitda": -0.28,
       "cagr_lucros": 11.11,
-      "valor_mercado": 159092.96,
+      "valor_mercado": null,
       "ticker": "SOND5"
     },
     {
@@ -5939,14 +5500,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 226418000.0,
       "lucro_liquido": 35732000.0,
-      "pvp": 0.0,
-      "pl": 0.0,
+      "pvp": null,
+      "pl": null,
       "roe": 53.5,
       "margem_liquida": 15.78,
       "roic": 63.96,
       "divida_ebitda": -0.28,
       "cagr_lucros": 11.11,
-      "valor_mercado": 159092.96,
+      "valor_mercado": null,
       "ticker": "SOND6"
     },
     {
@@ -6793,40 +6354,20 @@
       "cnpj": "84683671000194",
       "empresa": "WETZEL S.A.",
       "tickers": [
-        "MWET3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 197561000.0,
-      "lucro_liquido": -28578000.0,
-      "pvp": 0.01,
-      "pl": null,
-      "roe": -174.27,
-      "margem_liquida": -14.47,
-      "roic": -2.38,
-      "divida_ebitda": 35.65,
-      "cagr_lucros": null,
-      "valor_mercado": 50805.16,
-      "ticker": "MWET3"
-    },
-    {
-      "cnpj": "84683671000194",
-      "empresa": "WETZEL S.A.",
-      "tickers": [
         "MWET4"
       ],
       "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
       "ano_referencia": 2025,
       "receita_liquida": 197561000.0,
       "lucro_liquido": -28578000.0,
-      "pvp": 0.01,
+      "pvp": null,
       "pl": null,
       "roe": -174.27,
       "margem_liquida": -14.47,
       "roic": -2.38,
       "divida_ebitda": 35.65,
       "cagr_lucros": null,
-      "valor_mercado": 50805.16,
+      "valor_mercado": null,
       "ticker": "MWET4"
     },
     {
@@ -6948,26 +6489,6 @@
       "cagr_lucros": 12.91,
       "valor_mercado": 2582829.2,
       "ticker": "YDUQ3"
-    },
-    {
-      "cnpj": "13574594000196",
-      "empresa": "ZAMP S.A.",
-      "tickers": [
-        "ZAMP3"
-      ],
-      "fonte": "CVM - DFP consolidada; B3 - COTAHIST",
-      "ano_referencia": 2025,
-      "receita_liquida": 5231945000.0,
-      "lucro_liquido": -107137000.0,
-      "pvp": 0.93,
-      "pl": null,
-      "roe": -7.03,
-      "margem_liquida": -2.05,
-      "roic": 6.82,
-      "divida_ebitda": 1.46,
-      "cagr_lucros": null,
-      "valor_mercado": 1396234850.5,
-      "ticker": "ZAMP3"
     }
   ]
 }
