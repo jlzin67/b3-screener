@@ -256,12 +256,15 @@ def quantidades_acoes(linha) -> dict[str, float]:
     # A escala vem no próprio formulário de composição do capital.
     multiplicador = 1.0
     if linha is not None:
-        for coluna in linha.index:
-            chave = normalizar_texto(coluna)
-            if "ESCALA" in chave and ("ACAO" in chave or "QUANTIDADE" in chave):
-                escala = normalizar_texto(linha.get(coluna))
-                if escala in {"MIL", "MILHAR", "MILHARES"}:
-                    multiplicador = 1000.0
+        # Nos arquivos DFP de composição de capital, a escala pode vir
+        # identificada genericamente como ESCALA_MOEDA (sem "ACAO" no nome).
+        # Ela se aplica aos valores numéricos do formulário, inclusive às
+        # quantidades de ações exportadas em milhares.
+        colunas_escala = [coluna for coluna in linha.index if "ESCALA" in normalizar_texto(coluna)]
+        for coluna in colunas_escala:
+            escala = normalizar_texto(linha.get(coluna))
+            if escala in {"MIL", "MILHAR", "MILHARES", "MILUNIDADE", "MILUNIDADES"}:
+                multiplicador = 1000.0
                 break
 
     on = capital_coluna(linha, [
@@ -426,6 +429,13 @@ def main():
             capital = linha_capital(capital_idx.get(cnpj_key))
             if capital is not None and cnpj_key not in capitais:
                 capitais[cnpj_key] = capital
+                if cnpj_key == "07526557000100":
+                    quant_debug = quantidades_acoes(capital)
+                    escalas_debug = {
+                        str(col): str(capital.get(col))
+                        for col in capital.index if "ESCALA" in normalizar_texto(col)
+                    }
+                    print(f"DEBUG ABEV3 composição de capital: escalas={escalas_debug}; quantidades={quant_debug}")
 
             historico.setdefault(cnpj_key, {})[ano] = {
                 "receita_liquida": receita,
