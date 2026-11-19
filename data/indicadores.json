@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-18T11:31:18.690200+00:00",
+  "atualizado_em": "2026-11-19T11:28:03.356395+00:00",
   "fonte": "CVM - Dados Abertos (DFP consolidada); B3 - COTAHIST; universo de ativos Lummios (CC BY 4.0)",
   "url_fonte": "https://dados.cvm.gov.br/dataset/cia_aberta-doc-dfp",
   "url_cotacoes": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/historico/mercado-a-vista/cotacoes-historicas/",
@@ -11,7 +11,7 @@
     2025
   ],
   "ano_referencia_fundamentos": 2025,
-  "data_ultimo_pregao_b3": "2026-11-17",
+  "data_ultimo_pregao_b3": "2026-11-18",
   "quantidade_empresas": 254,
   "quantidade_linhas_ticker": 323,
   "quantidade_emissores_cvm_com_dados": 254,
@@ -67,7 +67,7 @@
       "roic": 25.22,
       "divida_ebitda": 0.07,
       "cagr_lucros": 14.69,
-      "valor_mercado": 655973.21,
+      "valor_mercado": 646480.11,
       "ticker": "ALLD3"
     },
     {
@@ -80,14 +80,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2859106000.0,
       "lucro_liquido": 945293000.0,
-      "pvp": 0.95,
-      "pl": 13.91,
+      "pvp": 0.94,
+      "pl": 13.84,
       "roe": 6.74,
       "margem_liquida": 33.06,
       "roic": 10.24,
       "divida_ebitda": -0.03,
       "cagr_lucros": 36.09,
-      "valor_mercado": 13148421745.2,
+      "valor_mercado": 13083528243.8,
       "ticker": "ALOS3"
     },
     {
@@ -100,14 +100,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1872588000.0,
       "lucro_liquido": 14096000.0,
-      "pvp": 2.17,
-      "pl": 56.73,
+      "pvp": 2.07,
+      "pl": 54.1,
       "roe": 3.85,
       "margem_liquida": 0.75,
       "roic": 10.82,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 799637171.96,
+      "valor_mercado": 762596758.0,
       "ticker": "ALPK3"
     },
     {
@@ -120,14 +120,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 4564874000.0,
       "lucro_liquido": 567926000.0,
-      "pvp": 2.42,
-      "pl": 14.18,
+      "pvp": 2.39,
+      "pl": 14.01,
       "roe": 15.43,
       "margem_liquida": 12.44,
       "roic": 14.64,
       "divida_ebitda": 0.79,
       "cagr_lucros": 34.95,
-      "valor_mercado": 8054404037.79,
+      "valor_mercado": 7959469598.73,
       "ticker": "ALPA3"
     },
     {
@@ -140,14 +140,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 4564874000.0,
       "lucro_liquido": 567926000.0,
-      "pvp": 2.42,
-      "pl": 14.18,
+      "pvp": 2.39,
+      "pl": 14.01,
       "roe": 15.43,
       "margem_liquida": 12.44,
       "roic": 14.64,
       "divida_ebitda": 0.79,
       "cagr_lucros": 34.95,
-      "valor_mercado": 8054404037.79,
+      "valor_mercado": 7959469598.73,
       "ticker": "ALPA4"
     },
     {
@@ -167,7 +167,7 @@
       "roic": 23.2,
       "divida_ebitda": 4.27,
       "cagr_lucros": null,
-      "valor_mercado": 1021574676.18,
+      "valor_mercado": 916096602.54,
       "ticker": "AVLL3"
     },
     {
@@ -180,14 +180,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 4397883000.0,
       "lucro_liquido": 1733193000.0,
-      "pvp": 0.91,
-      "pl": 6.61,
+      "pvp": 0.9,
+      "pl": 6.54,
       "roe": 14.26,
       "margem_liquida": 39.41,
       "roic": 10.0,
       "divida_ebitda": 3.61,
       "cagr_lucros": -3.35,
-      "valor_mercado": 11455197724.71,
+      "valor_mercado": 11342512562.73,
       "ticker": "ALUP11"
     },
     {
@@ -200,14 +200,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 4397883000.0,
       "lucro_liquido": 1733193000.0,
-      "pvp": 0.91,
-      "pl": 6.61,
+      "pvp": 0.9,
+      "pl": 6.54,
       "roe": 14.26,
       "margem_liquida": 39.41,
       "roic": 10.0,
       "divida_ebitda": 3.61,
       "cagr_lucros": -3.35,
-      "valor_mercado": 11455197724.71,
+      "valor_mercado": 11342512562.73,
       "ticker": "ALUP3"
     },
     {
@@ -220,14 +220,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 4397883000.0,
       "lucro_liquido": 1733193000.0,
-      "pvp": 0.91,
-      "pl": 6.61,
+      "pvp": 0.9,
+      "pl": 6.54,
       "roe": 14.26,
       "margem_liquida": 39.41,
       "roic": 10.0,
       "divida_ebitda": 3.61,
       "cagr_lucros": -3.35,
-      "valor_mercado": 11455197724.71,
+      "valor_mercado": 11342512562.73,
       "ticker": "ALUP4"
     },
     {
@@ -247,7 +247,7 @@
       "roic": 26.06,
       "divida_ebitda": -0.5,
       "cagr_lucros": 6.39,
-      "valor_mercado": 248771259.18,
+      "valor_mercado": 250957572.82,
       "ticker": "ABEV3"
     },
     {
@@ -267,7 +267,7 @@
       "roic": 3.8,
       "divida_ebitda": 0.98,
       "cagr_lucros": null,
-      "valor_mercado": 806987047.75,
+      "valor_mercado": 800979700.0,
       "ticker": "AMER3"
     },
     {
@@ -280,14 +280,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 4023697000.0,
       "lucro_liquido": 256665000.0,
-      "pvp": 0.33,
-      "pl": 3.67,
+      "pvp": 0.32,
+      "pl": 3.58,
       "roe": 9.14,
       "margem_liquida": 6.38,
       "roic": 12.11,
       "divida_ebitda": 3.7,
       "cagr_lucros": null,
-      "valor_mercado": 940871255.58,
+      "valor_mercado": 918199659.06,
       "ticker": "ANIM3"
     },
     {
@@ -321,13 +321,13 @@
       "receita_liquida": 1887757000.0,
       "lucro_liquido": 73771000.0,
       "pvp": 1.08,
-      "pl": 19.39,
+      "pl": 19.49,
       "roe": 5.59,
       "margem_liquida": 3.91,
       "roic": 7.29,
       "divida_ebitda": 4.13,
       "cagr_lucros": null,
-      "valor_mercado": 1430632821.87,
+      "valor_mercado": 1437560825.85,
       "ticker": "ARML3"
     },
     {
@@ -347,7 +347,7 @@
       "roic": -10.4,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 16414.78,
+      "valor_mercado": 16189.92,
       "ticker": "ATED3"
     },
     {
@@ -367,7 +367,7 @@
       "roic": 4.42,
       "divida_ebitda": 4.92,
       "cagr_lucros": null,
-      "valor_mercado": 12544781.28,
+      "valor_mercado": 12408992.64,
       "ticker": "AURE3"
     },
     {
@@ -380,14 +380,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 12815400000.0,
       "lucro_liquido": -285575000.0,
-      "pvp": 0.19,
+      "pvp": 0.18,
       "pl": null,
       "roe": -13.22,
       "margem_liquida": -2.23,
       "roic": 3.43,
       "divida_ebitda": 1.37,
       "cagr_lucros": null,
-      "valor_mercado": 386058920.83,
+      "valor_mercado": 365979310.62,
       "ticker": "AMOB3"
     },
     {
@@ -407,7 +407,7 @@
       "roic": 1.5,
       "divida_ebitda": 6.79,
       "cagr_lucros": 0.53,
-      "valor_mercado": 135141418.26,
+      "valor_mercado": 131673731.12,
       "ticker": "AXIA3"
     },
     {
@@ -427,7 +427,7 @@
       "roic": 1.5,
       "divida_ebitda": 6.79,
       "cagr_lucros": 0.53,
-      "valor_mercado": 135141418.26,
+      "valor_mercado": 131673731.12,
       "ticker": "AXIA7"
     },
     {
@@ -440,14 +440,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2873000.0,
       "lucro_liquido": -9854000.0,
-      "pvp": 0.97,
+      "pvp": 0.9,
       "pl": null,
       "roe": -4.89,
       "margem_liquida": -342.99,
       "roic": -3.42,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 240757293.09,
+      "valor_mercado": 223802554.14,
       "ticker": "AZTE3"
     },
     {
@@ -460,14 +460,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 349427000.0,
       "lucro_liquido": -618309000.0,
-      "pvp": 23.36,
+      "pvp": 22.0,
       "pl": null,
       "roe": -498.47,
       "margem_liquida": -176.95,
       "roic": -115.74,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 2609778985.76,
+      "valor_mercado": 2457197776.86,
       "ticker": "AZEV3"
     },
     {
@@ -480,14 +480,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 349427000.0,
       "lucro_liquido": -618309000.0,
-      "pvp": 23.36,
+      "pvp": 22.0,
       "pl": null,
       "roe": -498.47,
       "margem_liquida": -176.95,
       "roic": -115.74,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 2609778985.76,
+      "valor_mercado": 2457197776.86,
       "ticker": "AZEV4"
     },
     {
@@ -501,13 +501,13 @@
       "receita_liquida": 21640393000.0,
       "lucro_liquido": 124858000.0,
       "pvp": null,
-      "pl": 195.37,
+      "pl": 192.16,
       "roe": null,
       "margem_liquida": 0.58,
       "roic": 81.0,
       "divida_ebitda": 4.75,
       "cagr_lucros": null,
-      "valor_mercado": 24393071256.0,
+      "valor_mercado": 23993090891.19,
       "ticker": "AZUL3"
     },
     {
@@ -521,13 +521,13 @@
       "receita_liquida": 21640393000.0,
       "lucro_liquido": 124858000.0,
       "pvp": null,
-      "pl": 195.37,
+      "pl": 192.16,
       "roe": null,
       "margem_liquida": 0.58,
       "roic": 81.0,
       "divida_ebitda": 4.75,
       "cagr_lucros": null,
-      "valor_mercado": 24393071256.0,
+      "valor_mercado": 23993090891.19,
       "ticker": "AZUL97"
     },
     {
@@ -541,13 +541,13 @@
       "receita_liquida": 21640393000.0,
       "lucro_liquido": 124858000.0,
       "pvp": null,
-      "pl": 195.37,
+      "pl": 192.16,
       "roe": null,
       "margem_liquida": 0.58,
       "roic": 81.0,
       "divida_ebitda": 4.75,
       "cagr_lucros": null,
-      "valor_mercado": 24393071256.0,
+      "valor_mercado": 23993090891.19,
       "ticker": "AZUL98"
     },
     {
@@ -561,13 +561,13 @@
       "receita_liquida": 21640393000.0,
       "lucro_liquido": 124858000.0,
       "pvp": null,
-      "pl": 195.37,
+      "pl": 192.16,
       "roe": null,
       "margem_liquida": 0.58,
       "roic": 81.0,
       "divida_ebitda": 4.75,
       "cagr_lucros": null,
-      "valor_mercado": 24393071256.0,
+      "valor_mercado": 23993090891.19,
       "ticker": "AZUL99"
     },
     {
@@ -581,13 +581,13 @@
       "receita_liquida": 11819492000.0,
       "lucro_liquido": 911249000.0,
       "pvp": 0.4,
-      "pl": 3.47,
+      "pl": 3.5,
       "roe": 11.61,
       "margem_liquida": 7.71,
       "roic": 7.13,
       "divida_ebitda": null,
       "cagr_lucros": 79.73,
-      "valor_mercado": 3158113600.08,
+      "valor_mercado": 3186383159.16,
       "ticker": "AZZA3"
     },
     {
@@ -620,14 +620,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 11121545000.0,
       "lucro_liquido": 4586872000.0,
-      "pvp": 4.22,
-      "pl": 16.08,
+      "pvp": 4.12,
+      "pl": 15.7,
       "roe": 25.59,
       "margem_liquida": 41.24,
       "roic": 14.42,
       "divida_ebitda": 1.2,
       "cagr_lucros": 2.02,
-      "valor_mercado": 73756322927.8,
+      "valor_mercado": 71994226475.6,
       "ticker": "B3SA3"
     },
     {
@@ -680,14 +680,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 270183106000.0,
       "lucro_liquido": 23924636000.0,
-      "pvp": 0.33,
-      "pl": 6.1,
+      "pvp": 0.32,
+      "pl": 5.96,
       "roe": 5.66,
       "margem_liquida": 8.85,
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 8.33,
-      "valor_mercado": 145953170970.66,
+      "valor_mercado": 142674611832.66,
       "ticker": "BBDC3"
     },
     {
@@ -700,14 +700,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 270183106000.0,
       "lucro_liquido": 23924636000.0,
-      "pvp": 0.33,
-      "pl": 6.1,
+      "pvp": 0.32,
+      "pl": 5.96,
       "roe": 5.66,
       "margem_liquida": 8.85,
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 8.33,
-      "valor_mercado": 145953170970.66,
+      "valor_mercado": 142674611832.66,
       "ticker": "BBDC4"
     },
     {
@@ -720,14 +720,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 28145817000.0,
       "lucro_liquido": 16663803000.0,
-      "pvp": 0.4,
-      "pl": 13.56,
+      "pvp": 0.39,
+      "pl": 13.3,
       "roe": 3.4,
       "margem_liquida": 59.21,
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 31.23,
-      "valor_mercado": 225932712133.24,
+      "valor_mercado": 221619707416.8,
       "ticker": "BPAC11"
     },
     {
@@ -740,14 +740,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 28145817000.0,
       "lucro_liquido": 16663803000.0,
-      "pvp": 0.4,
-      "pl": 13.56,
+      "pvp": 0.39,
+      "pl": 13.3,
       "roe": 3.4,
       "margem_liquida": 59.21,
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 31.23,
-      "valor_mercado": 225932712133.24,
+      "valor_mercado": 221619707416.8,
       "ticker": "BPAC3"
     },
     {
@@ -760,14 +760,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 28145817000.0,
       "lucro_liquido": 16663803000.0,
-      "pvp": 0.4,
-      "pl": 13.56,
+      "pvp": 0.39,
+      "pl": 13.3,
       "roe": 3.4,
       "margem_liquida": 59.21,
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 31.23,
-      "valor_mercado": 225932712133.24,
+      "valor_mercado": 221619707416.8,
       "ticker": "BPAC5"
     },
     {
@@ -780,14 +780,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 319462104000.0,
       "lucro_liquido": 16781938000.0,
-      "pvp": 2.16,
-      "pl": 4.97,
+      "pvp": 2.08,
+      "pl": 4.8,
       "roe": 51.8,
       "margem_liquida": 5.25,
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 4.77,
-      "valor_mercado": 83457738431.42,
+      "valor_mercado": 80603506610.92,
       "ticker": "BBAS3"
     },
     {
@@ -807,7 +807,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 22.57,
-      "valor_mercado": 6061475.67,
+      "valor_mercado": 6036925.67,
       "ticker": "BRSR3"
     },
     {
@@ -827,7 +827,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 22.57,
-      "valor_mercado": 6061475.67,
+      "valor_mercado": 6036925.67,
       "ticker": "BRSR5"
     },
     {
@@ -847,7 +847,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 22.57,
-      "valor_mercado": 6061475.67,
+      "valor_mercado": 6036925.67,
       "ticker": "BRSR6"
     },
     {
@@ -867,7 +867,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 28.28,
-      "valor_mercado": 5358702.04,
+      "valor_mercado": 5291299.61,
       "ticker": "BMEB3"
     },
     {
@@ -887,7 +887,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 28.28,
-      "valor_mercado": 5358702.04,
+      "valor_mercado": 5291299.61,
       "ticker": "BMEB4"
     },
     {
@@ -900,14 +900,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 4773522000.0,
       "lucro_liquido": 432878000.0,
-      "pvp": 182.94,
-      "pl": 5.56,
+      "pvp": 178.93,
+      "pl": 5.44,
       "roe": 3.74,
       "margem_liquida": 9.07,
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 2406627258.36,
+      "valor_mercado": 2353821618.28,
       "ticker": "PINE3"
     },
     {
@@ -920,14 +920,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 4773522000.0,
       "lucro_liquido": 432878000.0,
-      "pvp": 182.94,
-      "pl": 5.56,
+      "pvp": 178.93,
+      "pl": 5.44,
       "roe": 3.74,
       "margem_liquida": 9.07,
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 2406627258.36,
+      "valor_mercado": 2353821618.28,
       "ticker": "PINE4"
     },
     {
@@ -947,7 +947,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": -0.73,
-      "valor_mercado": 105528617.13,
+      "valor_mercado": 105307258.29,
       "ticker": "SANB11"
     },
     {
@@ -967,7 +967,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": -0.73,
-      "valor_mercado": 105528617.13,
+      "valor_mercado": 105307258.29,
       "ticker": "SANB3"
     },
     {
@@ -987,7 +987,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": -0.73,
-      "valor_mercado": 105528617.13,
+      "valor_mercado": 105307258.29,
       "ticker": "SANB4"
     },
     {
@@ -1007,7 +1007,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 8.93,
-      "valor_mercado": 3269558.29,
+      "valor_mercado": 3194302.22,
       "ticker": "BEES3"
     },
     {
@@ -1027,7 +1027,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 8.93,
-      "valor_mercado": 3269558.29,
+      "valor_mercado": 3194302.22,
       "ticker": "BEES4"
     },
     {
@@ -1040,14 +1040,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 213729000.0,
       "lucro_liquido": 22106000.0,
-      "pvp": 1.29,
-      "pl": 8.4,
+      "pvp": 1.28,
+      "pl": 8.34,
       "roe": 13.88,
       "margem_liquida": 10.34,
       "roic": 15.87,
       "divida_ebitda": 0.13,
       "cagr_lucros": 6.11,
-      "valor_mercado": 185733928.0,
+      "valor_mercado": 184411817.1,
       "ticker": "BALM3"
     },
     {
@@ -1060,14 +1060,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 213729000.0,
       "lucro_liquido": 22106000.0,
-      "pvp": 1.29,
-      "pl": 8.4,
+      "pvp": 1.28,
+      "pl": 8.34,
       "roe": 13.88,
       "margem_liquida": 10.34,
       "roic": 15.87,
       "divida_ebitda": 0.13,
       "cagr_lucros": 6.11,
-      "valor_mercado": 185733928.0,
+      "valor_mercado": 184411817.1,
       "ticker": "BALM4"
     },
     {
@@ -1080,14 +1080,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 0.0,
       "lucro_liquido": 9017329000.0,
-      "pvp": 6.97,
-      "pl": 8.03,
+      "pvp": 6.85,
+      "pl": 7.89,
       "roe": 89.81,
       "margem_liquida": null,
       "roic": 78.79,
       "divida_ebitda": null,
       "cagr_lucros": 18.55,
-      "valor_mercado": 72368491807.52,
+      "valor_mercado": 71164938563.94,
       "ticker": "BBSE3"
     },
     {
@@ -1100,14 +1100,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1696407000.0,
       "lucro_liquido": 161262000.0,
-      "pvp": 2.22,
-      "pl": 13.39,
+      "pvp": 2.19,
+      "pl": 13.2,
       "roe": 15.05,
       "margem_liquida": 9.51,
       "roic": 15.13,
       "divida_ebitda": -1.04,
       "cagr_lucros": 35.18,
-      "valor_mercado": 2159043646.24,
+      "valor_mercado": 2128224625.12,
       "ticker": "BMOB3"
     },
     {
@@ -1120,14 +1120,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 332743000.0,
       "lucro_liquido": -61569000.0,
-      "pvp": 2.1,
+      "pvp": 2.09,
       "pl": null,
       "roe": -68.76,
       "margem_liquida": -18.5,
       "roic": -19.56,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 115854406.95,
+      "valor_mercado": 115588074.98,
       "ticker": "BIED3"
     },
     {
@@ -1140,14 +1140,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 269299000.0,
       "lucro_liquido": -6687000.0,
-      "pvp": 2.48,
+      "pvp": 2.53,
       "pl": null,
       "roe": -2.32,
       "margem_liquida": -2.48,
       "roic": -1.45,
       "divida_ebitda": 22.33,
       "cagr_lucros": null,
-      "valor_mercado": 777259901.76,
+      "valor_mercado": 793680885.6,
       "ticker": "BIOM3"
     },
     {
@@ -1160,14 +1160,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1702382000.0,
       "lucro_liquido": 296773000.0,
-      "pvp": 0.97,
-      "pl": 7.37,
+      "pvp": 0.96,
+      "pl": 7.33,
       "roe": 13.47,
       "margem_liquida": 17.43,
       "roic": 9.87,
       "divida_ebitda": null,
       "cagr_lucros": 3.13,
-      "valor_mercado": 2186924587.12,
+      "valor_mercado": 2175486697.02,
       "ticker": "BLAU3"
     },
     {
@@ -1180,14 +1180,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2622416000.0,
       "lucro_liquido": 101130000.0,
-      "pvp": 0.38,
-      "pl": 7.49,
+      "pvp": 0.36,
+      "pl": 7.07,
       "roe": 5.16,
       "margem_liquida": 3.86,
       "roic": 2.49,
       "divida_ebitda": 6.01,
       "cagr_lucros": null,
-      "valor_mercado": 757502392.26,
+      "valor_mercado": 715183822.86,
       "ticker": "SOJA3"
     },
     {
@@ -1240,14 +1240,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2420159000.0,
       "lucro_liquido": 582537000.0,
-      "pvp": 6.9,
-      "pl": 15.19,
+      "pvp": 6.73,
+      "pl": 14.82,
       "roe": 46.41,
       "margem_liquida": 24.07,
       "roic": 43.88,
       "divida_ebitda": null,
       "cagr_lucros": 10.12,
-      "valor_mercado": 8846862408.78,
+      "valor_mercado": 8634276066.24,
       "ticker": "SAUD3"
     },
     {
@@ -1260,14 +1260,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1172131000.0,
       "lucro_liquido": 138019000.0,
-      "pvp": 0.79,
-      "pl": 12.52,
+      "pvp": 0.77,
+      "pl": 12.14,
       "roe": 6.33,
       "margem_liquida": 11.78,
       "roic": 5.72,
       "divida_ebitda": 4.17,
       "cagr_lucros": 2.91,
-      "valor_mercado": 1727332024.38,
+      "valor_mercado": 1675531986.74,
       "ticker": "AGRO3"
     },
     {
@@ -1280,14 +1280,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 11622991000.0,
       "lucro_liquido": 1411225000.0,
-      "pvp": 0.54,
-      "pl": 4.51,
+      "pvp": 0.52,
+      "pl": 4.33,
       "roe": 12.66,
       "margem_liquida": 12.14,
       "roic": 8.02,
       "divida_ebitda": 2.41,
       "cagr_lucros": null,
-      "valor_mercado": 6368885928.42,
+      "valor_mercado": 6113387222.32,
       "ticker": "BRAV3"
     },
     {
@@ -1360,14 +1360,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1677263000.0,
       "lucro_liquido": 40884000.0,
-      "pvp": 0.73,
-      "pl": 27.64,
+      "pvp": 0.69,
+      "pl": 26.03,
       "roe": 2.66,
       "margem_liquida": 2.44,
       "roic": 5.98,
       "divida_ebitda": 2.99,
       "cagr_lucros": null,
-      "valor_mercado": 1130059445.46,
+      "valor_mercado": 1064358314.91,
       "ticker": "BRST3"
     },
     {
@@ -1407,7 +1407,7 @@
       "roic": 31.23,
       "divida_ebitda": 0.0,
       "cagr_lucros": 19.39,
-      "valor_mercado": 63840000.0,
+      "valor_mercado": 61500000.0,
       "ticker": "CXSE3"
     },
     {
@@ -1420,14 +1420,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 383122000.0,
       "lucro_liquido": 68390000.0,
-      "pvp": 0.96,
-      "pl": 4.3,
+      "pvp": 0.95,
+      "pl": 4.25,
       "roe": 23.31,
       "margem_liquida": 17.85,
       "roic": 21.43,
       "divida_ebitda": 0.01,
       "cagr_lucros": 25.43,
-      "valor_mercado": 294132198.19,
+      "valor_mercado": 290785032.35,
       "ticker": "CAMB3"
     },
     {
@@ -1440,14 +1440,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 12262939000.0,
       "lucro_liquido": 217001000.0,
-      "pvp": 0.46,
-      "pl": 7.36,
+      "pvp": 0.45,
+      "pl": 7.2,
       "roe": 6.63,
       "margem_liquida": 1.77,
       "roic": 7.92,
       "divida_ebitda": null,
       "cagr_lucros": -1.96,
-      "valor_mercado": 1596213365.76,
+      "valor_mercado": 1562106242.56,
       "ticker": "CAML3"
     },
     {
@@ -1467,7 +1467,7 @@
       "roic": 13.99,
       "divida_ebitda": 2.46,
       "cagr_lucros": 7.06,
-      "valor_mercado": 6453375.36,
+      "valor_mercado": 6398069.76,
       "ticker": "CLSC3"
     },
     {
@@ -1487,7 +1487,7 @@
       "roic": 13.99,
       "divida_ebitda": 2.46,
       "cagr_lucros": 7.06,
-      "valor_mercado": 6453375.36,
+      "valor_mercado": 6398069.76,
       "ticker": "CLSC4"
     },
     {
@@ -1547,7 +1547,7 @@
       "roic": 13.9,
       "divida_ebitda": 2.11,
       "cagr_lucros": 11.33,
-      "valor_mercado": 37829635.22,
+      "valor_mercado": 37638223.58,
       "ticker": "CMIG3"
     },
     {
@@ -1567,7 +1567,7 @@
       "roic": 13.9,
       "divida_ebitda": 2.11,
       "cagr_lucros": 11.33,
-      "valor_mercado": 37829635.22,
+      "valor_mercado": 37638223.58,
       "ticker": "CMIG4"
     },
     {
@@ -1581,13 +1581,13 @@
       "receita_liquida": 2334454000.0,
       "lucro_liquido": 188676000.0,
       "pvp": 0.71,
-      "pl": 12.4,
+      "pl": 12.37,
       "roe": 5.69,
       "margem_liquida": 8.08,
       "roic": 1.3,
       "divida_ebitda": -0.04,
       "cagr_lucros": 21.93,
-      "valor_mercado": 2338814392.0,
+      "valor_mercado": 2334389040.0,
       "ticker": "FESA3"
     },
     {
@@ -1601,13 +1601,13 @@
       "receita_liquida": 2334454000.0,
       "lucro_liquido": 188676000.0,
       "pvp": 0.71,
-      "pl": 12.4,
+      "pl": 12.37,
       "roe": 5.69,
       "margem_liquida": 8.08,
       "roic": 1.3,
       "divida_ebitda": -0.04,
       "cagr_lucros": 21.93,
-      "valor_mercado": 2338814392.0,
+      "valor_mercado": 2334389040.0,
       "ticker": "FESA4"
     },
     {
@@ -1640,14 +1640,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 44797946000.0,
       "lucro_liquido": -1506726000.0,
-      "pvp": 0.32,
+      "pvp": 0.31,
       "pl": null,
       "roe": -9.66,
       "margem_liquida": -3.36,
       "roic": 8.37,
       "divida_ebitda": 1.82,
       "cagr_lucros": null,
-      "valor_mercado": 4999374180.19,
+      "valor_mercado": 4840242906.55,
       "ticker": "CSNA3"
     },
     {
@@ -1661,13 +1661,13 @@
       "receita_liquida": 11566926000.0,
       "lucro_liquido": 18239000.0,
       "pvp": 0.09,
-      "pl": 9.7,
+      "pl": 9.35,
       "roe": 0.94,
       "margem_liquida": 0.16,
       "roic": 6.98,
       "divida_ebitda": null,
       "cagr_lucros": -31.59,
-      "valor_mercado": 176852652.48,
+      "valor_mercado": 170536486.32,
       "ticker": "VVEO3"
     },
     {
@@ -1681,13 +1681,13 @@
       "receita_liquida": 7016663000.0,
       "lucro_liquido": 586035000.0,
       "pvp": 0.24,
-      "pl": 5.52,
+      "pl": 5.45,
       "roe": 4.34,
       "margem_liquida": 8.35,
       "roic": 6.4,
       "divida_ebitda": 2.96,
       "cagr_lucros": null,
-      "valor_mercado": 3232852843.5,
+      "valor_mercado": 3192941080.0,
       "ticker": "COGN3"
     },
     {
@@ -1727,7 +1727,7 @@
       "roic": 4.95,
       "divida_ebitda": 2.41,
       "cagr_lucros": null,
-      "valor_mercado": 7389678.55,
+      "valor_mercado": 7383167.82,
       "ticker": "CBAV3"
     },
     {
@@ -1747,7 +1747,7 @@
       "roic": -2.6,
       "divida_ebitda": 2.15,
       "cagr_lucros": null,
-      "valor_mercado": 1417940.93,
+      "valor_mercado": 1467004.63,
       "ticker": "PCAR3"
     },
     {
@@ -1827,7 +1827,7 @@
       "roic": 11.14,
       "divida_ebitda": 1.95,
       "cagr_lucros": 11.64,
-      "valor_mercado": 21074879.98,
+      "valor_mercado": 21044545.5,
       "ticker": "CSMG3"
     },
     {
@@ -1841,13 +1841,13 @@
       "receita_liquida": 510334000.0,
       "lucro_liquido": 235310000.0,
       "pvp": 1.44,
-      "pl": 7.15,
+      "pl": 7.12,
       "roe": 18.97,
       "margem_liquida": 46.11,
       "roic": 26.87,
       "divida_ebitda": null,
       "cagr_lucros": -12.75,
-      "valor_mercado": 1682331862.35,
+      "valor_mercado": 1675892517.0,
       "ticker": "CEBR3"
     },
     {
@@ -1861,13 +1861,13 @@
       "receita_liquida": 510334000.0,
       "lucro_liquido": 235310000.0,
       "pvp": 1.44,
-      "pl": 7.15,
+      "pl": 7.12,
       "roe": 18.97,
       "margem_liquida": 46.11,
       "roic": 26.87,
       "divida_ebitda": null,
       "cagr_lucros": -12.75,
-      "valor_mercado": 1682331862.35,
+      "valor_mercado": 1675892517.0,
       "ticker": "CEBR5"
     },
     {
@@ -1881,13 +1881,13 @@
       "receita_liquida": 510334000.0,
       "lucro_liquido": 235310000.0,
       "pvp": 1.44,
-      "pl": 7.15,
+      "pl": 7.12,
       "roe": 18.97,
       "margem_liquida": 46.11,
       "roic": 26.87,
       "divida_ebitda": null,
       "cagr_lucros": -12.75,
-      "valor_mercado": 1682331862.35,
+      "valor_mercado": 1675892517.0,
       "ticker": "CEBR6"
     },
     {
@@ -1987,7 +1987,7 @@
       "roic": 21.05,
       "divida_ebitda": 2.2,
       "cagr_lucros": 19.39,
-      "valor_mercado": 1915887.42,
+      "valor_mercado": 1825000.92,
       "ticker": "TEND3"
     },
     {
@@ -2000,14 +2000,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 40418596000.0,
       "lucro_liquido": -10194401000.0,
-      "pvp": 0.41,
+      "pvp": 0.4,
       "pl": null,
       "roe": -28.96,
       "margem_liquida": -25.22,
       "roic": -0.17,
       "divida_ebitda": 2.32,
       "cagr_lucros": null,
-      "valor_mercado": 12868142940.25,
+      "valor_mercado": 12393011508.61,
       "ticker": "CSAN3"
     },
     {
@@ -2020,14 +2020,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 44367780000.0,
       "lucro_liquido": 5742553000.0,
-      "pvp": 2.21,
-      "pl": 9.03,
+      "pvp": 2.16,
+      "pl": 8.86,
       "roe": 25.35,
       "margem_liquida": 12.94,
       "roic": 15.86,
       "divida_ebitda": 1.11,
       "cagr_lucros": 9.15,
-      "valor_mercado": 51851449800.0,
+      "valor_mercado": 50860510981.6,
       "ticker": "CPFE3"
     },
     {
@@ -2040,14 +2040,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2836184000.0,
       "lucro_liquido": 296866000.0,
-      "pvp": 0.88,
-      "pl": 4.73,
+      "pvp": 0.82,
+      "pl": 4.37,
       "roe": 19.39,
       "margem_liquida": 10.47,
       "roic": 28.89,
       "divida_ebitda": 0.63,
       "cagr_lucros": null,
-      "valor_mercado": 1403488825.2,
+      "valor_mercado": 1297771485.12,
       "ticker": "CSED3"
     },
     {
@@ -2060,14 +2060,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 18025121000.0,
       "lucro_liquido": 1649159000.0,
-      "pvp": 38.58,
-      "pl": 156.3,
+      "pvp": 41.18,
+      "pl": 166.83,
       "roe": 19.46,
       "margem_liquida": 9.15,
       "roic": 55.3,
       "divida_ebitda": 0.05,
       "cagr_lucros": -16.37,
-      "valor_mercado": 257768967644.25,
+      "valor_mercado": 275134455990.81,
       "ticker": "CMIN3"
     },
     {
@@ -2087,7 +2087,7 @@
       "roic": 22.25,
       "divida_ebitda": 0.16,
       "cagr_lucros": null,
-      "valor_mercado": 575991.57,
+      "valor_mercado": 568135.26,
       "ticker": "CSUD3"
     },
     {
@@ -2100,14 +2100,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 5399424000.0,
       "lucro_liquido": 1081220000.0,
-      "pvp": 4.88,
-      "pl": 7.5,
+      "pvp": 4.69,
+      "pl": 7.21,
       "roe": 72.77,
       "margem_liquida": 20.02,
       "roic": 72.44,
       "divida_ebitda": 0.09,
       "cagr_lucros": 41.59,
-      "valor_mercado": 8104732198.14,
+      "valor_mercado": 7793604128.2,
       "ticker": "CURY3"
     },
     {
@@ -2147,7 +2147,7 @@
       "roic": 12.41,
       "divida_ebitda": 3.29,
       "cagr_lucros": 5.54,
-      "valor_mercado": 7179695.6,
+      "valor_mercado": 6996540.1,
       "ticker": "CYRE3"
     },
     {
@@ -2167,7 +2167,7 @@
       "roic": 12.41,
       "divida_ebitda": 3.29,
       "cagr_lucros": 5.54,
-      "valor_mercado": 7179695.6,
+      "valor_mercado": 6996540.1,
       "ticker": "CYRE4"
     },
     {
@@ -2187,7 +2187,7 @@
       "roic": 7.91,
       "divida_ebitda": 0.1,
       "cagr_lucros": 183.6,
-      "valor_mercado": 223665.26,
+      "valor_mercado": 221641.14,
       "ticker": "DMVF3"
     },
     {
@@ -2200,14 +2200,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1218547000.0,
       "lucro_liquido": 80773000.0,
-      "pvp": 1.59,
-      "pl": 28.38,
+      "pvp": 1.6,
+      "pl": 28.57,
       "roe": 5.75,
       "margem_liquida": 6.63,
       "roic": 10.04,
       "divida_ebitda": 0.72,
       "cagr_lucros": 24.88,
-      "valor_mercado": 2292396681.69,
+      "valor_mercado": 2307470610.3,
       "ticker": "DESK3"
     },
     {
@@ -2227,7 +2227,7 @@
       "roic": 3.9,
       "divida_ebitda": 1.19,
       "cagr_lucros": -32.62,
-      "valor_mercado": 4447499.7,
+      "valor_mercado": 4311351.75,
       "ticker": "DXCO3"
     },
     {
@@ -2241,13 +2241,13 @@
       "receita_liquida": 2136828000.0,
       "lucro_liquido": 143653000.0,
       "pvp": 0.83,
-      "pl": 5.82,
+      "pl": 5.77,
       "roe": 14.71,
       "margem_liquida": 6.72,
       "roic": 16.3,
       "divida_ebitda": -0.41,
       "cagr_lucros": -0.03,
-      "valor_mercado": 836322949.93,
+      "valor_mercado": 828776662.49,
       "ticker": "DEXP3"
     },
     {
@@ -2261,13 +2261,13 @@
       "receita_liquida": 2136828000.0,
       "lucro_liquido": 143653000.0,
       "pvp": 0.83,
-      "pl": 5.82,
+      "pl": 5.77,
       "roe": 14.71,
       "margem_liquida": 6.72,
       "roic": 16.3,
       "divida_ebitda": -0.41,
       "cagr_lucros": -0.03,
-      "valor_mercado": 836322949.93,
+      "valor_mercado": 828776662.49,
       "ticker": "DEXP4"
     },
     {
@@ -2280,14 +2280,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 11170362000.0,
       "lucro_liquido": -1135024000.0,
-      "pvp": 0.64,
+      "pvp": 0.63,
       "pl": null,
       "roe": -15.31,
       "margem_liquida": -10.16,
       "roic": 4.19,
       "divida_ebitda": 2.45,
       "cagr_lucros": null,
-      "valor_mercado": 4386708642.42,
+      "valor_mercado": 4374210897.0,
       "ticker": "DASA3"
     },
     {
@@ -2301,13 +2301,13 @@
       "receita_liquida": 5512118000.0,
       "lucro_liquido": 124605000.0,
       "pvp": 1.28,
-      "pl": 13.21,
+      "pl": 13.13,
       "roe": 9.9,
       "margem_liquida": 2.26,
       "roic": 8.49,
       "divida_ebitda": 2.22,
       "cagr_lucros": 17.28,
-      "valor_mercado": 1645938688.05,
+      "valor_mercado": 1635530765.0,
       "ticker": "PNVL3"
     },
     {
@@ -2320,14 +2320,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 4343008000.0,
       "lucro_liquido": 979692000.0,
-      "pvp": 2.04,
-      "pl": 4.84,
+      "pvp": 2.0,
+      "pl": 4.73,
       "roe": 43.12,
       "margem_liquida": 22.56,
       "roic": 25.91,
       "divida_ebitda": 0.97,
       "cagr_lucros": 45.52,
-      "valor_mercado": 4743309682.08,
+      "valor_mercado": 4634327730.96,
       "ticker": "DIRR3"
     },
     {
@@ -2387,7 +2387,7 @@
       "roic": null,
       "divida_ebitda": 1.42,
       "cagr_lucros": null,
-      "valor_mercado": 92178622.8,
+      "valor_mercado": 90721776.75,
       "ticker": "DOTZ3"
     },
     {
@@ -2407,7 +2407,7 @@
       "roic": -65.02,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 35273.37,
+      "valor_mercado": 34084.38,
       "ticker": "ECOM3"
     },
     {
@@ -2427,7 +2427,7 @@
       "roic": 11.1,
       "divida_ebitda": 5.87,
       "cagr_lucros": null,
-      "valor_mercado": 4236331.89,
+      "valor_mercado": 4111120.11,
       "ticker": "ECOR3"
     },
     {
@@ -2447,7 +2447,7 @@
       "roic": 10.25,
       "divida_ebitda": 0.97,
       "cagr_lucros": 29.25,
-      "valor_mercado": 244672.5,
+      "valor_mercado": 237555.0,
       "ticker": "EALT3"
     },
     {
@@ -2467,7 +2467,7 @@
       "roic": 10.25,
       "divida_ebitda": 0.97,
       "cagr_lucros": 29.25,
-      "valor_mercado": 244672.5,
+      "valor_mercado": 237555.0,
       "ticker": "EALT4"
     },
     {
@@ -2527,7 +2527,7 @@
       "roic": 8.67,
       "divida_ebitda": 0.74,
       "cagr_lucros": null,
-      "valor_mercado": 79489804.68,
+      "valor_mercado": 79352479.14,
       "ticker": "EMBJ3"
     },
     {
@@ -2540,14 +2540,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 14906429000.0,
       "lucro_liquido": 260930000.0,
-      "pvp": 0.52,
-      "pl": 6.19,
+      "pvp": 0.51,
+      "pl": 5.99,
       "roe": 8.97,
       "margem_liquida": 1.75,
       "roic": 13.17,
       "divida_ebitda": 1.12,
       "cagr_lucros": null,
-      "valor_mercado": 1616039815.6,
+      "valor_mercado": 1563271168.56,
       "ticker": "PGMN3"
     },
     {
@@ -2560,14 +2560,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 35441353000.0,
       "lucro_liquido": 3140072000.0,
-      "pvp": 1.21,
-      "pl": 8.16,
+      "pvp": 1.23,
+      "pl": 8.33,
       "roe": 14.49,
       "margem_liquida": 8.86,
       "roic": 10.53,
       "divida_ebitda": 4.87,
       "cagr_lucros": 14.33,
-      "valor_mercado": 25623700346.5,
+      "valor_mercado": 26154269456.1,
       "ticker": "ENGI11"
     },
     {
@@ -2580,14 +2580,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 35441353000.0,
       "lucro_liquido": 3140072000.0,
-      "pvp": 1.21,
-      "pl": 8.16,
+      "pvp": 1.23,
+      "pl": 8.33,
       "roe": 14.49,
       "margem_liquida": 8.86,
       "roic": 10.53,
       "divida_ebitda": 4.87,
       "cagr_lucros": 14.33,
-      "valor_mercado": 25623700346.5,
+      "valor_mercado": 26154269456.1,
       "ticker": "ENGI3"
     },
     {
@@ -2600,14 +2600,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 35441353000.0,
       "lucro_liquido": 3140072000.0,
-      "pvp": 1.21,
-      "pl": 8.16,
+      "pvp": 1.23,
+      "pl": 8.33,
       "roe": 14.49,
       "margem_liquida": 8.86,
       "roic": 10.53,
       "divida_ebitda": 4.87,
       "cagr_lucros": 14.33,
-      "valor_mercado": 25623700346.5,
+      "valor_mercado": 26154269456.1,
       "ticker": "ENGI4"
     },
     {
@@ -2627,7 +2627,7 @@
       "roic": 7.05,
       "divida_ebitda": 2.68,
       "cagr_lucros": 10.94,
-      "valor_mercado": 51132835.45,
+      "valor_mercado": 50059984.65,
       "ticker": "ENEV3"
     },
     {
@@ -2640,14 +2640,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 12860075000.0,
       "lucro_liquido": 2857919000.0,
-      "pvp": 2.12,
-      "pl": 10.32,
+      "pvp": 2.09,
+      "pl": 10.19,
       "roe": 21.82,
       "margem_liquida": 22.22,
       "roic": 13.88,
       "divida_ebitda": 3.3,
       "cagr_lucros": 0.43,
-      "valor_mercado": 29505578933.88,
+      "valor_mercado": 29117197329.64,
       "ticker": "EGIE3"
     },
     {
@@ -2667,7 +2667,7 @@
       "roic": -26.98,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 1289556.93,
+      "valor_mercado": 1301857.95,
       "ticker": "ENJU3"
     },
     {
@@ -2680,14 +2680,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 52073804000.0,
       "lucro_liquido": 2503931000.0,
-      "pvp": 1.51,
-      "pl": 17.13,
+      "pvp": 1.5,
+      "pl": 16.92,
       "roe": 8.6,
       "margem_liquida": 4.81,
       "roic": 8.29,
       "divida_ebitda": 1.91,
       "cagr_lucros": -6.2,
-      "valor_mercado": 42902031162.1,
+      "valor_mercado": 42361037807.27,
       "ticker": "EQTL3"
     },
     {
@@ -2707,7 +2707,7 @@
       "roic": 6.02,
       "divida_ebitda": 0.14,
       "cagr_lucros": -20.96,
-      "valor_mercado": 184059.7,
+      "valor_mercado": 181589.1,
       "ticker": "ETER3"
     },
     {
@@ -2727,7 +2727,7 @@
       "roic": 11.55,
       "divida_ebitda": 0.46,
       "cagr_lucros": 17.22,
-      "valor_mercado": 1757234.4,
+      "valor_mercado": 1723746.55,
       "ticker": "EUCA3"
     },
     {
@@ -2747,7 +2747,7 @@
       "roic": 11.55,
       "divida_ebitda": 0.46,
       "cagr_lucros": 17.22,
-      "valor_mercado": 1757234.4,
+      "valor_mercado": 1723746.55,
       "ticker": "EUCA4"
     },
     {
@@ -2760,14 +2760,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1920257000.0,
       "lucro_liquido": 299052000.0,
-      "pvp": 0.33,
-      "pl": 2.39,
+      "pvp": 0.32,
+      "pl": 2.37,
       "roe": 14.03,
       "margem_liquida": 15.57,
       "roic": 6.21,
       "divida_ebitda": null,
       "cagr_lucros": 41.16,
-      "valor_mercado": 713514488.96,
+      "valor_mercado": 709594079.68,
       "ticker": "EVEN3"
     },
     {
@@ -2780,14 +2780,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1498822000.0,
       "lucro_liquido": 547595000.0,
-      "pvp": 0.52,
-      "pl": 4.83,
+      "pvp": 0.5,
+      "pl": 4.72,
       "roe": 10.95,
       "margem_liquida": 36.54,
       "roic": 6.33,
       "divida_ebitda": 1.47,
       "cagr_lucros": 5.7,
-      "valor_mercado": 2646005117.58,
+      "valor_mercado": 2584986131.64,
       "ticker": "EZTC3"
     },
     {
@@ -2821,13 +2821,13 @@
       "receita_liquida": 8291182000.0,
       "lucro_liquido": 596671000.0,
       "pvp": 2.24,
-      "pl": 19.11,
+      "pl": 19.16,
       "roe": 11.4,
       "margem_liquida": 7.2,
       "roic": 9.17,
       "divida_ebitda": null,
       "cagr_lucros": 18.35,
-      "valor_mercado": 11401723653.32,
+      "valor_mercado": 11434424581.58,
       "ticker": "FLRY3"
     },
     {
@@ -2900,14 +2900,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 69858532000.0,
       "lucro_liquido": 1418438000.0,
-      "pvp": 0.86,
-      "pl": 32.49,
+      "pvp": 0.89,
+      "pl": 33.66,
       "roe": 2.53,
       "margem_liquida": 2.03,
       "roic": 3.91,
       "divida_ebitda": 1.11,
       "cagr_lucros": -9.89,
-      "valor_mercado": 46083361985.73,
+      "valor_mercado": 47739039638.4,
       "ticker": "GGBR3"
     },
     {
@@ -2920,14 +2920,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 69858532000.0,
       "lucro_liquido": 1418438000.0,
-      "pvp": 0.86,
-      "pl": 32.49,
+      "pvp": 0.89,
+      "pl": 33.66,
       "roe": 2.53,
       "margem_liquida": 2.03,
       "roic": 3.91,
       "divida_ebitda": 1.11,
       "cagr_lucros": -9.89,
-      "valor_mercado": 46083361985.73,
+      "valor_mercado": 47739039638.4,
       "ticker": "GGBR4"
     },
     {
@@ -2940,14 +2940,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 17283159000.0,
       "lucro_liquido": 694143000.0,
-      "pvp": 2.01,
-      "pl": 11.49,
+      "pvp": 2.0,
+      "pl": 11.43,
       "roe": 18.59,
       "margem_liquida": 4.02,
       "roic": 15.19,
       "divida_ebitda": 0.53,
       "cagr_lucros": 19.69,
-      "valor_mercado": 7972606076.77,
+      "valor_mercado": 7935105577.82,
       "ticker": "GGPS3"
     },
     {
@@ -2960,14 +2960,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 744815000.0,
       "lucro_liquido": 83855000.0,
-      "pvp": 0.58,
-      "pl": 6.05,
+      "pvp": 0.57,
+      "pl": 5.96,
       "roe": 9.16,
       "margem_liquida": 11.26,
       "roic": 7.27,
       "divida_ebitda": -1.28,
       "cagr_lucros": 3.38,
-      "valor_mercado": 507349075.44,
+      "valor_mercado": 499914462.34,
       "ticker": "CGRA3"
     },
     {
@@ -2980,14 +2980,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 744815000.0,
       "lucro_liquido": 83855000.0,
-      "pvp": 0.58,
-      "pl": 6.05,
+      "pvp": 0.57,
+      "pl": 5.96,
       "roe": 9.16,
       "margem_liquida": 11.26,
       "roic": 7.27,
       "divida_ebitda": -1.28,
       "cagr_lucros": 3.38,
-      "valor_mercado": 507349075.44,
+      "valor_mercado": 499914462.34,
       "ticker": "CGRA4"
     },
     {
@@ -3007,7 +3007,7 @@
       "roic": 8.58,
       "divida_ebitda": 0.0,
       "cagr_lucros": 9.74,
-      "valor_mercado": 3383100.0,
+      "valor_mercado": 3337992.0,
       "ticker": "GRND3"
     },
     {
@@ -3020,14 +3020,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 38424403000.0,
       "lucro_liquido": 1857293000.0,
-      "pvp": 0.82,
-      "pl": 5.05,
+      "pvp": 0.79,
+      "pl": 4.9,
       "roe": 17.33,
       "margem_liquida": 4.83,
       "roic": 12.92,
       "divida_ebitda": 0.31,
       "cagr_lucros": 20.66,
-      "valor_mercado": 9383368027.66,
+      "valor_mercado": 9091540792.35,
       "ticker": "GMAT3"
     },
     {
@@ -3041,13 +3041,13 @@
       "receita_liquida": 3923762000.0,
       "lucro_liquido": 121899000.0,
       "pvp": 0.6,
-      "pl": 14.7,
+      "pl": 14.51,
       "roe": 4.16,
       "margem_liquida": 3.11,
       "roic": 3.25,
       "divida_ebitda": -1.03,
       "cagr_lucros": -22.79,
-      "valor_mercado": 1792462920.6,
+      "valor_mercado": 1768240448.7,
       "ticker": "MLAS3"
     },
     {
@@ -3060,14 +3060,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 7736413000.0,
       "lucro_liquido": 327970000.0,
-      "pvp": 0.3,
-      "pl": 2.83,
+      "pvp": 0.29,
+      "pl": 2.71,
       "roe": 10.8,
       "margem_liquida": 4.24,
       "roic": 9.01,
       "divida_ebitda": 2.28,
       "cagr_lucros": null,
-      "valor_mercado": 926537451.84,
+      "valor_mercado": 889821515.52,
       "ticker": "SBFG3"
     },
     {
@@ -3080,14 +3080,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 10497046000.0,
       "lucro_liquido": 1475168000.0,
-      "pvp": 0.57,
-      "pl": 2.06,
+      "pvp": 0.56,
+      "pl": 2.03,
       "roe": 27.43,
       "margem_liquida": 14.05,
       "roic": 29.57,
       "divida_ebitda": 0.22,
       "cagr_lucros": null,
-      "valor_mercado": 3045339079.02,
+      "valor_mercado": 3000334068.0,
       "ticker": "RIAA3"
     },
     {
@@ -3101,13 +3101,13 @@
       "receita_liquida": 28473425.0,
       "lucro_liquido": 2144306.0,
       "pvp": null,
-      "pl": 10.97,
+      "pl": 10.8,
       "roe": null,
       "margem_liquida": 7.53,
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": -17.4,
-      "valor_mercado": 23522333.52,
+      "valor_mercado": 23165333.56,
       "ticker": "HAGA3"
     },
     {
@@ -3121,13 +3121,13 @@
       "receita_liquida": 28473425.0,
       "lucro_liquido": 2144306.0,
       "pvp": null,
-      "pl": 10.97,
+      "pl": 10.8,
       "roe": null,
       "margem_liquida": 7.53,
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": -17.4,
-      "valor_mercado": 23522333.52,
+      "valor_mercado": 23165333.56,
       "ticker": "HAGA4"
     },
     {
@@ -3147,7 +3147,7 @@
       "roic": 1.59,
       "divida_ebitda": 3.97,
       "cagr_lucros": null,
-      "valor_mercado": 2905322244.84,
+      "valor_mercado": 3019256450.52,
       "ticker": "HAPV3"
     },
     {
@@ -3161,13 +3161,13 @@
       "receita_liquida": 532608000.0,
       "lucro_liquido": 96823000.0,
       "pvp": 0.05,
-      "pl": 1.41,
+      "pl": 1.39,
       "roe": 3.42,
       "margem_liquida": 18.18,
       "roic": 5.05,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 136945322.64,
+      "valor_mercado": 134885994.48,
       "ticker": "HBRE3"
     },
     {
@@ -3187,7 +3187,7 @@
       "roic": 2.2,
       "divida_ebitda": 13.35,
       "cagr_lucros": 8.24,
-      "valor_mercado": 134020.94,
+      "valor_mercado": 131367.06,
       "ticker": "HBOR3"
     },
     {
@@ -3207,7 +3207,7 @@
       "roic": 7.62,
       "divida_ebitda": 0.83,
       "cagr_lucros": null,
-      "valor_mercado": 4257995.66,
+      "valor_mercado": 4271599.48,
       "ticker": "HBSA3"
     },
     {
@@ -3220,14 +3220,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2175285000.0,
       "lucro_liquido": 111916000.0,
-      "pvp": 1.19,
-      "pl": 15.73,
+      "pvp": 1.17,
+      "pl": 15.49,
       "roe": 7.58,
       "margem_liquida": 5.14,
       "roic": 10.4,
       "divida_ebitda": 1.73,
       "cagr_lucros": null,
-      "valor_mercado": 1760270052.5,
+      "valor_mercado": 1733699938.5,
       "ticker": "MATD3"
     },
     {
@@ -3240,14 +3240,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 7699157000.0,
       "lucro_liquido": 1190132000.0,
-      "pvp": 1.13,
-      "pl": 11.88,
+      "pvp": 1.11,
+      "pl": 11.68,
       "roe": 9.67,
       "margem_liquida": 15.46,
       "roic": 5.98,
       "divida_ebitda": 3.68,
       "cagr_lucros": -1.68,
-      "valor_mercado": 14133851922.96,
+      "valor_mercado": 13905988658.64,
       "ticker": "HYPE3"
     },
     {
@@ -3260,14 +3260,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1486833000.0,
       "lucro_liquido": 582576000.0,
-      "pvp": 1.38,
-      "pl": 11.0,
+      "pvp": 1.37,
+      "pl": 10.98,
       "roe": 13.0,
       "margem_liquida": 39.18,
       "roic": 11.88,
       "divida_ebitda": 2.63,
       "cagr_lucros": 27.04,
-      "valor_mercado": 6411074923.6,
+      "valor_mercado": 6395655636.08,
       "ticker": "IGTI11"
     },
     {
@@ -3280,14 +3280,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1486833000.0,
       "lucro_liquido": 582576000.0,
-      "pvp": 1.38,
-      "pl": 11.0,
+      "pvp": 1.37,
+      "pl": 10.98,
       "roe": 13.0,
       "margem_liquida": 39.18,
       "roic": 11.88,
       "divida_ebitda": 2.63,
       "cagr_lucros": 27.04,
-      "valor_mercado": 6411074923.6,
+      "valor_mercado": 6395655636.08,
       "ticker": "IGTI3"
     },
     {
@@ -3300,14 +3300,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1486833000.0,
       "lucro_liquido": 582576000.0,
-      "pvp": 1.38,
-      "pl": 11.0,
+      "pvp": 1.37,
+      "pl": 10.98,
       "roe": 13.0,
       "margem_liquida": 39.18,
       "roic": 11.88,
       "divida_ebitda": 2.63,
       "cagr_lucros": 27.04,
-      "valor_mercado": 6411074923.6,
+      "valor_mercado": 6395655636.08,
       "ticker": "IGTI4"
     },
     {
@@ -3327,7 +3327,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 55077.66,
+      "valor_mercado": 52408.71,
       "ticker": "INEP3"
     },
     {
@@ -3347,7 +3347,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 55077.66,
+      "valor_mercado": 52408.71,
       "ticker": "INEP4"
     },
     {
@@ -3360,14 +3360,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 709955000.0,
       "lucro_liquido": -341892000.0,
-      "pvp": 0.61,
+      "pvp": 0.57,
       "pl": null,
       "roe": -757.36,
       "margem_liquida": -48.16,
       "roic": -18.48,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 118833785.7,
+      "valor_mercado": 111558247.8,
       "ticker": "IFCM3"
     },
     {
@@ -3381,13 +3381,13 @@
       "receita_liquida": 4460379000.0,
       "lucro_liquido": 483733000.0,
       "pvp": 1.69,
-      "pl": 10.53,
+      "pl": 10.54,
       "roe": 16.18,
       "margem_liquida": 10.85,
       "roic": 14.42,
       "divida_ebitda": -0.34,
       "cagr_lucros": 8.08,
-      "valor_mercado": 5095774667.7,
+      "valor_mercado": 5099047483.8,
       "ticker": "INTB3"
     },
     {
@@ -3427,7 +3427,7 @@
       "roic": 6.95,
       "divida_ebitda": 1.66,
       "cagr_lucros": null,
-      "valor_mercado": 1541133.3,
+      "valor_mercado": 1548621.8,
       "ticker": "MYPK3"
     },
     {
@@ -3447,7 +3447,7 @@
       "roic": 14.44,
       "divida_ebitda": 1.64,
       "cagr_lucros": 21.15,
-      "valor_mercado": 1894718.22,
+      "valor_mercado": 1860143.07,
       "ticker": "RANI3"
     },
     {
@@ -3481,13 +3481,13 @@
       "receita_liquida": 9411153000.0,
       "lucro_liquido": 2511015000.0,
       "pvp": 0.92,
-      "pl": 7.89,
+      "pl": 7.84,
       "roe": 12.1,
       "margem_liquida": 26.68,
       "roic": 11.22,
       "divida_ebitda": 3.52,
       "cagr_lucros": -5.79,
-      "valor_mercado": 19823143362.12,
+      "valor_mercado": 19683347789.88,
       "ticker": "ISAE3"
     },
     {
@@ -3501,13 +3501,13 @@
       "receita_liquida": 9411153000.0,
       "lucro_liquido": 2511015000.0,
       "pvp": 0.92,
-      "pl": 7.89,
+      "pl": 7.84,
       "roe": 12.1,
       "margem_liquida": 26.68,
       "roic": 11.22,
       "divida_ebitda": 3.52,
       "cagr_lucros": -5.79,
-      "valor_mercado": 19823143362.12,
+      "valor_mercado": 19683347789.88,
       "ticker": "ISAE4"
     },
     {
@@ -3527,7 +3527,7 @@
       "roic": 17.82,
       "divida_ebitda": 0.27,
       "cagr_lucros": 17.64,
-      "valor_mercado": 150690905.04,
+      "valor_mercado": 149009202.99,
       "ticker": "ITSA3"
     },
     {
@@ -3547,7 +3547,7 @@
       "roic": 17.82,
       "divida_ebitda": 0.27,
       "cagr_lucros": 17.64,
-      "valor_mercado": 150690905.04,
+      "valor_mercado": 149009202.99,
       "ticker": "ITSA4"
     },
     {
@@ -3567,7 +3567,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 24.93,
-      "valor_mercado": 474412909.53,
+      "valor_mercado": 465907858.71,
       "ticker": "ITUB3"
     },
     {
@@ -3587,7 +3587,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": 24.93,
-      "valor_mercado": 474412909.53,
+      "valor_mercado": 465907858.71,
       "ticker": "ITUB4"
     },
     {
@@ -3600,14 +3600,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2337911000.0,
       "lucro_liquido": -55950000.0,
-      "pvp": 0.37,
+      "pvp": 0.36,
       "pl": null,
       "roe": -2.74,
       "margem_liquida": -2.39,
       "roic": 6.02,
       "divida_ebitda": 1.79,
       "cagr_lucros": null,
-      "valor_mercado": 735776300.16,
+      "valor_mercado": 714667963.68,
       "ticker": "JALL3"
     },
     {
@@ -3620,14 +3620,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 3479142000.0,
       "lucro_liquido": 1868540000.0,
-      "pvp": 0.93,
-      "pl": 3.55,
+      "pvp": 0.91,
+      "pl": 3.48,
       "roe": 28.81,
       "margem_liquida": 53.71,
       "roic": 23.45,
       "divida_ebitda": 0.74,
       "cagr_lucros": 23.94,
-      "valor_mercado": 6629474099.8,
+      "valor_mercado": 6502881127.04,
       "ticker": "JHSF3"
     },
     {
@@ -3680,14 +3680,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 9640608000.0,
       "lucro_liquido": 81704000.0,
-      "pvp": 1.27,
-      "pl": 20.61,
+      "pvp": 1.24,
+      "pl": 20.16,
       "roe": 5.28,
       "margem_liquida": 0.85,
       "roic": 8.16,
       "divida_ebitda": 2.03,
       "cagr_lucros": -9.05,
-      "valor_mercado": 1683914080.32,
+      "valor_mercado": 1646936237.34,
       "ticker": "JSLG3"
     },
     {
@@ -3760,14 +3760,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 20697507000.0,
       "lucro_liquido": 1678211000.0,
-      "pvp": 1.5,
-      "pl": 12.85,
+      "pvp": 1.47,
+      "pl": 12.62,
       "roe": 14.57,
       "margem_liquida": 8.11,
       "roic": 7.65,
       "divida_ebitda": 1.58,
       "cagr_lucros": null,
-      "valor_mercado": 21572318548.65,
+      "valor_mercado": 21173883478.0,
       "ticker": "KLBN11"
     },
     {
@@ -3780,14 +3780,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 20697507000.0,
       "lucro_liquido": 1678211000.0,
-      "pvp": 1.5,
-      "pl": 12.85,
+      "pvp": 1.47,
+      "pl": 12.62,
       "roe": 14.57,
       "margem_liquida": 8.11,
       "roic": 7.65,
       "divida_ebitda": 1.58,
       "cagr_lucros": null,
-      "valor_mercado": 21572318548.65,
+      "valor_mercado": 21173883478.0,
       "ticker": "KLBN3"
     },
     {
@@ -3800,14 +3800,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 20697507000.0,
       "lucro_liquido": 1678211000.0,
-      "pvp": 1.5,
-      "pl": 12.85,
+      "pvp": 1.47,
+      "pl": 12.62,
       "roe": 14.57,
       "margem_liquida": 8.11,
       "roic": 7.65,
       "divida_ebitda": 1.58,
       "cagr_lucros": null,
-      "valor_mercado": 21572318548.65,
+      "valor_mercado": 21173883478.0,
       "ticker": "KLBN4"
     },
     {
@@ -3820,14 +3820,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1761398000.0,
       "lucro_liquido": 464164000.0,
-      "pvp": 0.88,
-      "pl": 3.36,
+      "pvp": 0.86,
+      "pl": 3.31,
       "roe": 26.36,
       "margem_liquida": 26.35,
       "roic": 16.29,
       "divida_ebitda": 1.44,
       "cagr_lucros": 31.33,
-      "valor_mercado": 1561520472.48,
+      "valor_mercado": 1534159663.2,
       "ticker": "LAVV3"
     },
     {
@@ -3840,14 +3840,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 14996448000.0,
       "lucro_liquido": 213095000.0,
-      "pvp": 0.19,
-      "pl": 4.84,
+      "pvp": 0.2,
+      "pl": 5.0,
       "roe": 4.0,
       "margem_liquida": 1.42,
       "roic": 5.66,
       "divida_ebitda": 3.6,
       "cagr_lucros": -20.99,
-      "valor_mercado": 1031978247.48,
+      "valor_mercado": 1065508226.64,
       "ticker": "LIGT3"
     },
     {
@@ -3860,14 +3860,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 41781588000.0,
       "lucro_liquido": 1870470000.0,
-      "pvp": 1.27,
-      "pl": 17.35,
+      "pvp": 1.26,
+      "pl": 17.23,
       "roe": 7.21,
       "margem_liquida": 4.48,
       "roic": 7.64,
       "divida_ebitda": null,
       "cagr_lucros": 12.28,
-      "valor_mercado": 32456200607.3,
+      "valor_mercado": 32226647589.15,
       "ticker": "RENT3"
     },
     {
@@ -3880,14 +3880,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 41781588000.0,
       "lucro_liquido": 1870470000.0,
-      "pvp": 1.27,
-      "pl": 17.35,
+      "pvp": 1.26,
+      "pl": 17.23,
       "roe": 7.21,
       "margem_liquida": 4.48,
       "roic": 7.64,
       "divida_ebitda": null,
       "cagr_lucros": 12.28,
-      "valor_mercado": 32456200607.3,
+      "valor_mercado": 32226647589.15,
       "ticker": "RENT4"
     },
     {
@@ -3907,7 +3907,7 @@
       "roic": 8.99,
       "divida_ebitda": 2.09,
       "cagr_lucros": 20.58,
-      "valor_mercado": 1781721.5,
+      "valor_mercado": 1724021.0,
       "ticker": "LOGG3"
     },
     {
@@ -3921,13 +3921,13 @@
       "receita_liquida": 3081024000.0,
       "lucro_liquido": 93675000.0,
       "pvp": 2.12,
-      "pl": 24.69,
+      "pl": 24.67,
       "roe": 9.1,
       "margem_liquida": 3.04,
       "roic": 14.66,
       "divida_ebitda": 0.64,
       "cagr_lucros": 48.43,
-      "valor_mercado": 2312712165.2,
+      "valor_mercado": 2310590410.92,
       "ticker": "LOGN3"
     },
     {
@@ -3947,7 +3947,7 @@
       "roic": 2.19,
       "divida_ebitda": 0.92,
       "cagr_lucros": null,
-      "valor_mercado": 235885.38,
+      "valor_mercado": 223470.36,
       "ticker": "LJQQ3"
     },
     {
@@ -3967,7 +3967,7 @@
       "roic": 15.55,
       "divida_ebitda": -0.26,
       "cagr_lucros": 5.86,
-      "valor_mercado": 9409466.42,
+      "valor_mercado": 9301424.53,
       "ticker": "LREN3"
     },
     {
@@ -3987,7 +3987,7 @@
       "roic": 21.8,
       "divida_ebitda": -0.67,
       "cagr_lucros": 31.87,
-      "valor_mercado": 135915.12,
+      "valor_mercado": 133169.36,
       "ticker": "LPSB3"
     },
     {
@@ -4007,7 +4007,7 @@
       "roic": -9.02,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 1799912041.59,
+      "valor_mercado": 1794407723.42,
       "ticker": "LWSA3"
     },
     {
@@ -4020,14 +4020,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 10437548000.0,
       "lucro_liquido": 659817000.0,
-      "pvp": 0.7,
-      "pl": 8.69,
+      "pvp": 0.68,
+      "pl": 8.46,
       "roe": 8.13,
       "margem_liquida": 6.32,
       "roic": 8.05,
       "divida_ebitda": -0.42,
       "cagr_lucros": -2.89,
-      "valor_mercado": 5735053626.3,
+      "valor_mercado": 5580777329.92,
       "ticker": "MDIA3"
     },
     {
@@ -4040,14 +4040,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 38703387000.0,
       "lucro_liquido": 204603000.0,
-      "pvp": 0.55,
-      "pl": 30.1,
+      "pvp": 0.57,
+      "pl": 31.5,
       "roe": 1.81,
       "margem_liquida": 0.53,
       "roic": 8.82,
       "divida_ebitda": 1.05,
       "cagr_lucros": -12.18,
-      "valor_mercado": 6158082409.95,
+      "valor_mercado": 6444684987.52,
       "ticker": "MGLU3"
     },
     {
@@ -4060,14 +4060,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 5406682000.0,
       "lucro_liquido": 608756000.0,
-      "pvp": 4.84,
-      "pl": 6.87,
+      "pvp": 4.88,
+      "pl": 6.93,
       "roe": 74.49,
       "margem_liquida": 11.26,
       "roic": 41.03,
       "divida_ebitda": null,
       "cagr_lucros": 37.87,
-      "valor_mercado": 4181378150.0,
+      "valor_mercado": 4216618290.0,
       "ticker": "LEVE3"
     },
     {
@@ -4100,14 +4100,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 9057548000.0,
       "lucro_liquido": 1235508000.0,
-      "pvp": 1.2,
-      "pl": 3.78,
+      "pvp": 1.18,
+      "pl": 3.71,
       "roe": 30.97,
       "margem_liquida": 13.64,
       "roic": 20.05,
       "divida_ebitda": null,
       "cagr_lucros": 68.59,
-      "valor_mercado": 4672561420.09,
+      "valor_mercado": 4585719983.8,
       "ticker": "POMO3"
     },
     {
@@ -4120,14 +4120,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 9057548000.0,
       "lucro_liquido": 1235508000.0,
-      "pvp": 1.2,
-      "pl": 3.78,
+      "pvp": 1.18,
+      "pl": 3.71,
       "roe": 30.97,
       "margem_liquida": 13.64,
       "roic": 20.05,
       "divida_ebitda": null,
       "cagr_lucros": 68.59,
-      "valor_mercado": 4672561420.09,
+      "valor_mercado": 4585719983.8,
       "ticker": "POMO4"
     },
     {
@@ -4140,14 +4140,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 163962737000.0,
       "lucro_liquido": 762675000.0,
-      "pvp": 1.77,
-      "pl": 33.18,
+      "pvp": 1.84,
+      "pl": 34.52,
       "roe": 4.45,
       "margem_liquida": 0.47,
       "roic": 4.45,
       "divida_ebitda": 5.45,
       "cagr_lucros": -29.98,
-      "valor_mercado": 25301922603.28,
+      "valor_mercado": 26330341506.42,
       "ticker": "MBRF3"
     },
     {
@@ -4160,14 +4160,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1483225000.0,
       "lucro_liquido": -59982000.0,
-      "pvp": 1.63,
+      "pvp": 1.6,
       "pl": null,
       "roe": -23.58,
       "margem_liquida": -4.04,
       "roic": 19.5,
       "divida_ebitda": 1.21,
       "cagr_lucros": null,
-      "valor_mercado": 364577013.21,
+      "valor_mercado": 359442125.7,
       "ticker": "AMAR3"
     },
     {
@@ -4187,7 +4187,7 @@
       "roic": 3.4,
       "divida_ebitda": -1.96,
       "cagr_lucros": null,
-      "valor_mercado": 423452351.96,
+      "valor_mercado": 422320126.42,
       "ticker": "CASH3"
     },
     {
@@ -4200,14 +4200,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1117283000.0,
       "lucro_liquido": 150056000.0,
-      "pvp": 0.35,
-      "pl": 2.82,
+      "pvp": 0.33,
+      "pl": 2.68,
       "roe": 11.61,
       "margem_liquida": 13.43,
       "roic": 4.64,
       "divida_ebitda": 1.73,
       "cagr_lucros": 21.29,
-      "valor_mercado": 423365127.12,
+      "valor_mercado": 402813421.92,
       "ticker": "MELK3"
     },
     {
@@ -4220,14 +4220,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 69858532000.0,
       "lucro_liquido": 1413724000.0,
-      "pvp": 0.26,
-      "pl": 9.79,
+      "pvp": 0.27,
+      "pl": 10.11,
       "roe": 2.52,
       "margem_liquida": 2.02,
       "roic": 3.9,
       "divida_ebitda": 1.11,
       "cagr_lucros": -9.92,
-      "valor_mercado": 13842149180.4,
+      "valor_mercado": 14291813956.95,
       "ticker": "GOAU3"
     },
     {
@@ -4240,14 +4240,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 69858532000.0,
       "lucro_liquido": 1413724000.0,
-      "pvp": 0.26,
-      "pl": 9.79,
+      "pvp": 0.27,
+      "pl": 10.11,
       "roe": 2.52,
       "margem_liquida": 2.02,
       "roic": 3.9,
       "divida_ebitda": 1.11,
       "cagr_lucros": -9.92,
-      "valor_mercado": 13842149180.4,
+      "valor_mercado": 14291813956.95,
       "ticker": "GOAU4"
     },
     {
@@ -4307,7 +4307,7 @@
       "roic": 15.47,
       "divida_ebitda": 0.96,
       "cagr_lucros": null,
-      "valor_mercado": 3701619.08,
+      "valor_mercado": 3706152.6,
       "ticker": "MILS3"
     },
     {
@@ -4320,14 +4320,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 54830072000.0,
       "lucro_liquido": 848260000.0,
-      "pvp": 1.82,
-      "pl": 4.05,
+      "pvp": 1.93,
+      "pl": 4.31,
       "roe": 85.66,
       "margem_liquida": 1.55,
       "roic": 14.36,
       "divida_ebitda": null,
       "cagr_lucros": 4.0,
-      "valor_mercado": 3439076792.27,
+      "valor_mercado": 3655866733.33,
       "ticker": "BEEF3"
     },
     {
@@ -4347,7 +4347,7 @@
       "roic": null,
       "divida_ebitda": -0.21,
       "cagr_lucros": 98.92,
-      "valor_mercado": 268383.78,
+      "valor_mercado": 252053.55,
       "ticker": "MNPR3"
     },
     {
@@ -4360,14 +4360,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1054924000.0,
       "lucro_liquido": 78116000.0,
-      "pvp": 0.31,
-      "pl": 4.14,
+      "pvp": 0.3,
+      "pl": 4.04,
       "roe": 7.45,
       "margem_liquida": 7.4,
       "roic": 4.64,
       "divida_ebitda": 0.78,
       "cagr_lucros": 9.74,
-      "valor_mercado": 323670949.2,
+      "valor_mercado": 315208963.6,
       "ticker": "MTRE3"
     },
     {
@@ -4380,14 +4380,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 18850645000.0,
       "lucro_liquido": 3503497000.0,
-      "pvp": 1.94,
-      "pl": 9.0,
+      "pvp": 1.95,
+      "pl": 9.07,
       "roe": 23.14,
       "margem_liquida": 18.59,
       "roic": 11.8,
       "divida_ebitda": 3.82,
       "cagr_lucros": 109.84,
-      "valor_mercado": 31544551463.85,
+      "valor_mercado": 31765705107.0,
       "ticker": "MOTV3"
     },
     {
@@ -4400,14 +4400,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2356938000.0,
       "lucro_liquido": 420173000.0,
-      "pvp": 0.97,
-      "pl": 3.52,
+      "pvp": 0.94,
+      "pl": 3.38,
       "roe": 27.53,
       "margem_liquida": 17.83,
       "roic": 20.49,
       "divida_ebitda": 1.23,
       "cagr_lucros": null,
-      "valor_mercado": 1477607547.57,
+      "valor_mercado": 1421848772.19,
       "ticker": "MDNE3"
     },
     {
@@ -4420,14 +4420,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 14672054000.0,
       "lucro_liquido": 318364000.0,
-      "pvp": 0.68,
-      "pl": 6.34,
+      "pvp": 0.67,
+      "pl": 6.29,
       "roe": 11.66,
       "margem_liquida": 2.17,
       "roic": 13.01,
       "divida_ebitda": 1.77,
       "cagr_lucros": 23.9,
-      "valor_mercado": 2017976807.7,
+      "valor_mercado": 2001019019.4,
       "ticker": "MOVI3"
     },
     {
@@ -4440,14 +4440,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1092985000.0,
       "lucro_liquido": 13158000.0,
-      "pvp": 2.05,
-      "pl": 133.17,
+      "pvp": 2.12,
+      "pl": 137.81,
       "roe": 1.54,
       "margem_liquida": 1.2,
       "roic": 7.65,
       "divida_ebitda": 2.16,
       "cagr_lucros": -25.88,
-      "valor_mercado": 1752307398.8,
+      "valor_mercado": 1813350894.25,
       "ticker": "ESPA3"
     },
     {
@@ -4467,7 +4467,7 @@
       "roic": 0.98,
       "divida_ebitda": 1.48,
       "cagr_lucros": null,
-      "valor_mercado": 2819758.26,
+      "valor_mercado": 2684680.02,
       "ticker": "MRVE3"
     },
     {
@@ -4480,14 +4480,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2739082000.0,
       "lucro_liquido": 1141233000.0,
-      "pvp": 2.08,
-      "pl": 11.51,
+      "pvp": 2.07,
+      "pl": 11.44,
       "roe": 19.11,
       "margem_liquida": 41.66,
       "roic": 14.2,
       "divida_ebitda": null,
       "cagr_lucros": 3.43,
-      "valor_mercado": 13133581422.28,
+      "valor_mercado": 13050395548.89,
       "ticker": "MULT3"
     },
     {
@@ -4500,14 +4500,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1018848000.0,
       "lucro_liquido": -21970000.0,
-      "pvp": 1.34,
+      "pvp": 1.36,
       "pl": null,
       "roe": -14.73,
       "margem_liquida": -2.16,
       "roic": 15.61,
       "divida_ebitda": 3.38,
       "cagr_lucros": null,
-      "valor_mercado": 180011264.4,
+      "valor_mercado": 183482556.0,
       "ticker": "MNDL3"
     },
     {
@@ -4527,7 +4527,7 @@
       "roic": 9.91,
       "divida_ebitda": 2.55,
       "cagr_lucros": null,
-      "valor_mercado": 8421683.5,
+      "valor_mercado": 8474873.08,
       "ticker": "NATU3"
     },
     {
@@ -4540,14 +4540,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 216120000.0,
       "lucro_liquido": 5386000.0,
-      "pvp": 0.77,
-      "pl": 7.2,
+      "pvp": 0.75,
+      "pl": 7.0,
       "roe": 11.26,
       "margem_liquida": 2.49,
       "roic": 8.35,
       "divida_ebitda": 2.16,
       "cagr_lucros": 9.43,
-      "valor_mercado": 38773862.0,
+      "valor_mercado": 37715190.0,
       "ticker": "NUTR3"
     },
     {
@@ -4560,14 +4560,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2133917000.0,
       "lucro_liquido": 105475000.0,
-      "pvp": 1.83,
-      "pl": 17.58,
+      "pvp": 1.84,
+      "pl": 17.65,
       "roe": 10.51,
       "margem_liquida": 4.94,
       "roic": 10.65,
       "divida_ebitda": 2.13,
       "cagr_lucros": null,
-      "valor_mercado": 1853930382.9,
+      "valor_mercado": 1861904277.02,
       "ticker": "OPCT3"
     },
     {
@@ -4607,7 +4607,7 @@
       "roic": 9.33,
       "divida_ebitda": 3.81,
       "cagr_lucros": 25.66,
-      "valor_mercado": 1825451.73,
+      "valor_mercado": 1802381.25,
       "ticker": "ORVR3"
     },
     {
@@ -4620,14 +4620,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1224992000.0,
       "lucro_liquido": 222311000.0,
-      "pvp": 1.78,
-      "pl": 6.39,
+      "pvp": 1.76,
+      "pl": 6.3,
       "roe": 28.62,
       "margem_liquida": 18.15,
       "roic": 24.32,
       "divida_ebitda": 0.87,
       "cagr_lucros": 19.9,
-      "valor_mercado": 1420002474.46,
+      "valor_mercado": 1400646136.3,
       "ticker": "OFSA3"
     },
     {
@@ -4640,14 +4640,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 291854.0,
       "lucro_liquido": 6961.0,
-      "pvp": 959.71,
-      "pl": 18608.75,
+      "pvp": 947.93,
+      "pl": 18380.42,
       "roe": 5.42,
       "margem_liquida": 2.39,
       "roic": 6.46,
       "divida_ebitda": 5.03,
       "cagr_lucros": -79.04,
-      "valor_mercado": 129535490.38,
+      "valor_mercado": 127946097.86,
       "ticker": "PDTC3"
     },
     {
@@ -4707,7 +4707,7 @@
       "roic": 6.87,
       "divida_ebitda": 3.47,
       "cagr_lucros": null,
-      "valor_mercado": 194562.06,
+      "valor_mercado": 188922.58,
       "ticker": "PTBL3"
     },
     {
@@ -4740,14 +4740,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 3157609000.0,
       "lucro_liquido": 638352000.0,
-      "pvp": 0.7,
-      "pl": 4.78,
+      "pvp": 0.69,
+      "pl": 4.71,
       "roe": 14.9,
       "margem_liquida": 20.22,
       "roic": 9.17,
       "divida_ebitda": 1.6,
       "cagr_lucros": null,
-      "valor_mercado": 3052830009.76,
+      "valor_mercado": 3008883320.56,
       "ticker": "RECV3"
     },
     {
@@ -4760,14 +4760,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 497549000000.0,
       "lucro_liquido": 110605000000.0,
-      "pvp": 1.47,
-      "pl": 5.55,
+      "pvp": 1.44,
+      "pl": 5.44,
       "roe": 28.18,
       "margem_liquida": 22.23,
       "roic": 14.39,
       "divida_ebitda": 1.51,
       "cagr_lucros": 77.68,
-      "valor_mercado": 613360412966.28,
+      "valor_mercado": 602027471664.03,
       "ticker": "PETR3"
     },
     {
@@ -4780,14 +4780,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 497549000000.0,
       "lucro_liquido": 110605000000.0,
-      "pvp": 1.47,
-      "pl": 5.55,
+      "pvp": 1.44,
+      "pl": 5.44,
       "roe": 28.18,
       "margem_liquida": 22.23,
       "roic": 14.39,
       "divida_ebitda": 1.51,
       "cagr_lucros": 77.68,
-      "valor_mercado": 613360412966.28,
+      "valor_mercado": 602027471664.03,
       "ticker": "PETR4"
     },
     {
@@ -4800,14 +4800,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 3281707000.0,
       "lucro_liquido": 422700000.0,
-      "pvp": 0.81,
-      "pl": 2.18,
+      "pvp": 0.76,
+      "pl": 2.05,
       "roe": 41.07,
       "margem_liquida": 12.88,
       "roic": 44.71,
       "divida_ebitda": -0.0,
       "cagr_lucros": 26.17,
-      "valor_mercado": 923239499.0,
+      "valor_mercado": 868453858.4,
       "ticker": "PLPL3"
     },
     {
@@ -4847,7 +4847,7 @@
       "roic": 17.5,
       "divida_ebitda": null,
       "cagr_lucros": 15.19,
-      "valor_mercado": 29405331.2,
+      "valor_mercado": 28598477.6,
       "ticker": "PSSA3"
     },
     {
@@ -4867,7 +4867,7 @@
       "roic": 6.61,
       "divida_ebitda": 0.88,
       "cagr_lucros": -42.57,
-      "valor_mercado": 435730.43,
+      "valor_mercado": 441298.87,
       "ticker": "POSI3"
     },
     {
@@ -4880,14 +4880,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1563623000.0,
       "lucro_liquido": 8404000.0,
-      "pvp": 1.29,
-      "pl": 86.05,
+      "pvp": 1.3,
+      "pl": 86.66,
       "roe": 1.83,
       "margem_liquida": 0.54,
       "roic": 10.37,
       "divida_ebitda": 1.12,
       "cagr_lucros": null,
-      "valor_mercado": 723189651.75,
+      "valor_mercado": 728294519.88,
       "ticker": "PRNR3"
     },
     {
@@ -4900,14 +4900,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 15583960000.0,
       "lucro_liquido": 2251479000.0,
-      "pvp": 2.01,
-      "pl": 23.01,
+      "pvp": 1.94,
+      "pl": 22.26,
       "roe": 8.71,
       "margem_liquida": 14.45,
       "roic": 2.51,
       "divida_ebitda": 3.27,
       "cagr_lucros": 37.81,
-      "valor_mercado": 51802657874.76,
+      "valor_mercado": 50109919366.97,
       "ticker": "PRIO3"
     },
     {
@@ -4927,7 +4927,7 @@
       "roic": 14.65,
       "divida_ebitda": 0.25,
       "cagr_lucros": 15.32,
-      "valor_mercado": 896286.41,
+      "valor_mercado": 917130.28,
       "ticker": "PFRM3"
     },
     {
@@ -4940,14 +4940,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1426845000.0,
       "lucro_liquido": 17049000.0,
-      "pvp": 0.37,
-      "pl": 28.73,
+      "pvp": 0.38,
+      "pl": 29.23,
       "roe": 1.31,
       "margem_liquida": 1.19,
       "roic": 6.47,
       "divida_ebitda": null,
       "cagr_lucros": -46.67,
-      "valor_mercado": 489801852.34,
+      "valor_mercado": 498295526.08,
       "ticker": "QUAL3"
     },
     {
@@ -4960,14 +4960,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 44250449000.0,
       "lucro_liquido": 1300243000.0,
-      "pvp": 3.37,
-      "pl": 19.01,
+      "pvp": 3.34,
+      "pl": 18.85,
       "roe": 18.87,
       "margem_liquida": 2.94,
       "roic": 24.75,
       "divida_ebitda": null,
       "cagr_lucros": 21.28,
-      "valor_mercado": 24723784100.1,
+      "valor_mercado": 24514112432.82,
       "ticker": "RADL3"
     },
     {
@@ -4980,14 +4980,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 13143266000.0,
       "lucro_liquido": -59791000.0,
-      "pvp": 0.45,
+      "pvp": 0.44,
       "pl": null,
       "roe": -1.29,
       "margem_liquida": -0.45,
       "roic": 5.79,
       "divida_ebitda": 4.27,
       "cagr_lucros": null,
-      "valor_mercado": 2145272786.41,
+      "valor_mercado": 2111871016.35,
       "ticker": "RAPT3"
     },
     {
@@ -5000,14 +5000,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 13143266000.0,
       "lucro_liquido": -59791000.0,
-      "pvp": 0.45,
+      "pvp": 0.44,
       "pl": null,
       "roe": -1.29,
       "margem_liquida": -0.45,
       "roic": 5.79,
       "divida_ebitda": 4.27,
       "cagr_lucros": null,
-      "valor_mercado": 2145272786.41,
+      "valor_mercado": 2111871016.35,
       "ticker": "RAPT4"
     },
     {
@@ -5047,7 +5047,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 30393.7,
+      "valor_mercado": 31559.91,
       "ticker": "RCSL3"
     },
     {
@@ -5067,7 +5067,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 30393.7,
+      "valor_mercado": 31559.91,
       "ticker": "RCSL4"
     },
     {
@@ -5080,14 +5080,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 55725852000.0,
       "lucro_liquido": 4843623000.0,
-      "pvp": 3.7,
-      "pl": 16.51,
+      "pvp": 3.71,
+      "pl": 16.54,
       "roe": 20.05,
       "margem_liquida": 8.69,
       "roic": 13.1,
       "divida_ebitda": 3.63,
       "cagr_lucros": 60.17,
-      "valor_mercado": 79960299233.52,
+      "valor_mercado": 80114747935.13,
       "ticker": "RDOR3"
     },
     {
@@ -5127,7 +5127,7 @@
       "roic": -0.11,
       "divida_ebitda": 6.39,
       "cagr_lucros": null,
-      "valor_mercado": 295384243.87,
+      "valor_mercado": 297867970.13,
       "ticker": "RNEW3"
     },
     {
@@ -5147,7 +5147,7 @@
       "roic": -0.11,
       "divida_ebitda": 6.39,
       "cagr_lucros": null,
-      "valor_mercado": 295384243.87,
+      "valor_mercado": 297867970.13,
       "ticker": "RNEW4"
     },
     {
@@ -5160,14 +5160,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1134000.0,
       "lucro_liquido": 12042000.0,
-      "pvp": 0.61,
-      "pl": 6.68,
+      "pvp": 0.57,
+      "pl": 6.28,
       "roe": null,
       "margem_liquida": 1061.9,
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 80477050.0,
+      "valor_mercado": 75672450.0,
       "ticker": "RVEE3"
     },
     {
@@ -5187,7 +5187,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 3052713261.78,
+      "valor_mercado": 2990387295.0,
       "ticker": "GEPA3"
     },
     {
@@ -5207,7 +5207,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 3052713261.78,
+      "valor_mercado": 2990387295.0,
       "ticker": "GEPA4"
     },
     {
@@ -5220,14 +5220,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1326712000.0,
       "lucro_liquido": 86170000.0,
-      "pvp": 0.43,
-      "pl": 6.16,
+      "pvp": 0.42,
+      "pl": 6.12,
       "roe": 6.96,
       "margem_liquida": 6.5,
       "roic": 4.02,
       "divida_ebitda": 3.94,
       "cagr_lucros": -13.18,
-      "valor_mercado": 531073257.9,
+      "valor_mercado": 527346428.02,
       "ticker": "ROMI3"
     },
     {
@@ -5240,14 +5240,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 13847776000.0,
       "lucro_liquido": 865125000.0,
-      "pvp": 2.23,
-      "pl": 36.27,
+      "pvp": 2.21,
+      "pl": 35.91,
       "roe": 5.97,
       "margem_liquida": 6.25,
       "roic": 10.65,
       "divida_ebitda": 1.88,
       "cagr_lucros": 23.21,
-      "valor_mercado": 31381343086.28,
+      "valor_mercado": 31065859447.92,
       "ticker": "RAIL3"
     },
     {
@@ -5267,7 +5267,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 37567239.2,
+      "valor_mercado": 37617824.0,
       "ticker": "SNSY3"
     },
     {
@@ -5287,7 +5287,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 37567239.2,
+      "valor_mercado": 37617824.0,
       "ticker": "SNSY5"
     },
     {
@@ -5307,7 +5307,7 @@
       "roic": 2.16,
       "divida_ebitda": 7.8,
       "cagr_lucros": null,
-      "valor_mercado": 654962.9,
+      "valor_mercado": 652102.8,
       "ticker": "SCAR3"
     },
     {
@@ -5320,14 +5320,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1938864000.0,
       "lucro_liquido": 288876000.0,
-      "pvp": 3.62,
-      "pl": 18.8,
+      "pvp": 3.63,
+      "pl": 18.83,
       "roe": 19.75,
       "margem_liquida": 14.9,
       "roic": 10.24,
       "divida_ebitda": 3.02,
       "cagr_lucros": 15.29,
-      "valor_mercado": 5430804055.32,
+      "valor_mercado": 5438958639.16,
       "ticker": "SHUL3"
     },
     {
@@ -5340,14 +5340,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1938864000.0,
       "lucro_liquido": 288876000.0,
-      "pvp": 3.62,
-      "pl": 18.8,
+      "pvp": 3.63,
+      "pl": 18.83,
       "roe": 19.75,
       "margem_liquida": 14.9,
       "roic": 10.24,
       "divida_ebitda": 3.02,
       "cagr_lucros": 15.29,
-      "valor_mercado": 5430804055.32,
+      "valor_mercado": 5438958639.16,
       "ticker": "SHUL4"
     },
     {
@@ -5387,7 +5387,7 @@
       "roic": -26.59,
       "divida_ebitda": 2.64,
       "cagr_lucros": null,
-      "valor_mercado": 80296525.2,
+      "valor_mercado": 74304247.2,
       "ticker": "SEQL3"
     },
     {
@@ -5400,14 +5400,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2216531000.0,
       "lucro_liquido": 214436000.0,
-      "pvp": 1.08,
-      "pl": 6.74,
+      "pvp": 1.05,
+      "pl": 6.58,
       "roe": 16.81,
       "margem_liquida": 9.67,
       "roic": 22.96,
       "divida_ebitda": 0.46,
       "cagr_lucros": 5.38,
-      "valor_mercado": 1444597690.84,
+      "valor_mercado": 1411417885.22,
       "ticker": "SEER3"
     },
     {
@@ -5421,13 +5421,13 @@
       "receita_liquida": 43528375000.0,
       "lucro_liquido": 215250000.0,
       "pvp": 0.65,
-      "pl": 22.41,
+      "pl": 22.25,
       "roe": 3.28,
       "margem_liquida": 0.49,
       "roic": 11.1,
       "divida_ebitda": 2.27,
       "cagr_lucros": -11.55,
-      "valor_mercado": 4822814665.4,
+      "valor_mercado": 4788670844.76,
       "ticker": "SIMH3"
     },
     {
@@ -5440,14 +5440,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 9759214000.0,
       "lucro_liquido": 565213000.0,
-      "pvp": 1.59,
-      "pl": 15.87,
+      "pvp": 1.57,
+      "pl": 15.72,
       "roe": 11.58,
       "margem_liquida": 5.79,
       "roic": 15.55,
       "divida_ebitda": 2.01,
       "cagr_lucros": 2.04,
-      "valor_mercado": 8972582889.48,
+      "valor_mercado": 8883155153.04,
       "ticker": "SLCE3"
     },
     {
@@ -5460,14 +5460,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 7241694000.0,
       "lucro_liquido": 640534000.0,
-      "pvp": 1.86,
-      "pl": 16.41,
+      "pvp": 1.87,
+      "pl": 16.55,
       "roe": 11.5,
       "margem_liquida": 8.85,
       "roic": 13.46,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 10511551864.0,
+      "valor_mercado": 10601138953.75,
       "ticker": "SMFT3"
     },
     {
@@ -5521,13 +5521,13 @@
       "receita_liquida": 50115679000.0,
       "lucro_liquido": 13437687000.0,
       "pvp": 1.56,
-      "pl": 5.09,
+      "pl": 5.11,
       "roe": 35.19,
       "margem_liquida": 26.81,
       "roic": 5.66,
       "divida_ebitda": 3.61,
       "cagr_lucros": null,
-      "valor_mercado": 68456987767.32,
+      "valor_mercado": 68716528612.8,
       "ticker": "SUZB3"
     },
     {
@@ -5547,7 +5547,7 @@
       "roic": 5.43,
       "divida_ebitda": 1.49,
       "cagr_lucros": -10.17,
-      "valor_mercado": 412138.8,
+      "valor_mercado": 422823.88,
       "ticker": "SYNE3"
     },
     {
@@ -5560,14 +5560,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 7162034000.0,
       "lucro_liquido": 556731000.0,
-      "pvp": 0.9,
-      "pl": 10.84,
+      "pvp": 0.88,
+      "pl": 10.54,
       "roe": 8.21,
       "margem_liquida": 7.77,
       "roic": 8.26,
       "divida_ebitda": 2.63,
       "cagr_lucros": -2.72,
-      "valor_mercado": 6035974020.67,
+      "valor_mercado": 5868399347.26,
       "ticker": "SMTO3"
     },
     {
@@ -5581,13 +5581,13 @@
       "receita_liquida": 1463029000.0,
       "lucro_liquido": 17673000.0,
       "pvp": 0.54,
-      "pl": 37.8,
+      "pl": 37.78,
       "roe": 1.39,
       "margem_liquida": 1.21,
       "roic": 1.71,
       "divida_ebitda": 7.93,
       "cagr_lucros": -41.75,
-      "valor_mercado": 668032396.95,
+      "valor_mercado": 667662197.81,
       "ticker": "TASA3"
     },
     {
@@ -5601,13 +5601,13 @@
       "receita_liquida": 1463029000.0,
       "lucro_liquido": 17673000.0,
       "pvp": 0.54,
-      "pl": 37.8,
+      "pl": 37.78,
       "roe": 1.39,
       "margem_liquida": 1.21,
       "roic": 1.71,
       "divida_ebitda": 7.93,
       "cagr_lucros": -41.75,
-      "valor_mercado": 668032396.95,
+      "valor_mercado": 667662197.81,
       "ticker": "TASA4"
     },
     {
@@ -5620,14 +5620,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 478423000.0,
       "lucro_liquido": 71475000.0,
-      "pvp": 1.12,
-      "pl": 6.87,
+      "pvp": 1.15,
+      "pl": 7.02,
       "roe": 16.85,
       "margem_liquida": 14.94,
       "roic": 15.85,
       "divida_ebitda": 0.11,
       "cagr_lucros": null,
-      "valor_mercado": 490754273.62,
+      "valor_mercado": 501714046.48,
       "ticker": "TECN3"
     },
     {
@@ -5647,7 +5647,7 @@
       "roic": -3.78,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 343064.54,
+      "valor_mercado": 346009.3,
       "ticker": "TCSA3"
     },
     {
@@ -5680,14 +5680,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 59595000000.0,
       "lucro_liquido": 6177543000.0,
-      "pvp": 1.66,
-      "pl": 18.57,
+      "pvp": 1.65,
+      "pl": 18.39,
       "roe": 8.9,
       "margem_liquida": 10.37,
       "roic": 10.08,
       "divida_ebitda": null,
       "cagr_lucros": 5.31,
-      "valor_mercado": 114690311973.28,
+      "valor_mercado": 113635761877.12,
       "ticker": "VIVT3"
     },
     {
@@ -5707,7 +5707,7 @@
       "roic": -0.09,
       "divida_ebitda": 1.11,
       "cagr_lucros": null,
-      "valor_mercado": 937056.18,
+      "valor_mercado": 962070.0,
       "ticker": "LAND3"
     },
     {
@@ -5727,7 +5727,7 @@
       "roic": null,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 53768923928.22,
+      "valor_mercado": 53028436748.4,
       "ticker": "TIMS3"
     },
     {
@@ -5740,14 +5740,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 5771867000.0,
       "lucro_liquido": 920742000.0,
-      "pvp": 3.42,
-      "pl": 20.23,
+      "pvp": 3.45,
+      "pl": 20.38,
       "roe": 17.65,
       "margem_liquida": 15.95,
       "roic": 17.78,
       "divida_ebitda": 0.03,
       "cagr_lucros": 25.57,
-      "valor_mercado": 18628285667.7,
+      "valor_mercado": 18763443576.33,
       "ticker": "TOTS3"
     },
     {
@@ -5767,7 +5767,7 @@
       "roic": -23.02,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 493630.26,
+      "valor_mercado": 520090.23,
       "ticker": "TPIS3"
     },
     {
@@ -5807,7 +5807,7 @@
       "roic": 15.04,
       "divida_ebitda": 3.66,
       "cagr_lucros": -6.93,
-      "valor_mercado": 13999416.12,
+      "valor_mercado": 13900504.35,
       "ticker": "TAEE11"
     },
     {
@@ -5827,7 +5827,7 @@
       "roic": 15.04,
       "divida_ebitda": 3.66,
       "cagr_lucros": -6.93,
-      "valor_mercado": 13999416.12,
+      "valor_mercado": 13900504.35,
       "ticker": "TAEE3"
     },
     {
@@ -5847,7 +5847,7 @@
       "roic": 15.04,
       "divida_ebitda": 3.66,
       "cagr_lucros": -6.93,
-      "valor_mercado": 13999416.12,
+      "valor_mercado": 13900504.35,
       "ticker": "TAEE4"
     },
     {
@@ -5887,7 +5887,7 @@
       "roic": 9.05,
       "divida_ebitda": 2.26,
       "cagr_lucros": 3.02,
-      "valor_mercado": 1041490.28,
+      "valor_mercado": 1025144.02,
       "ticker": "TRIS3"
     },
     {
@@ -5900,14 +5900,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 16423694000.0,
       "lucro_liquido": 808699000.0,
-      "pvp": 1.25,
-      "pl": 7.27,
+      "pvp": 1.26,
+      "pl": 7.32,
       "roe": 18.49,
       "margem_liquida": 4.92,
       "roic": 7.5,
       "divida_ebitda": 3.19,
       "cagr_lucros": null,
-      "valor_mercado": 5878884861.19,
+      "valor_mercado": 5918843296.95,
       "ticker": "TTEN3"
     },
     {
@@ -5927,7 +5927,7 @@
       "roic": -1.94,
       "divida_ebitda": 9.96,
       "cagr_lucros": null,
-      "valor_mercado": 2601878.45,
+      "valor_mercado": 2663484.64,
       "ticker": "TUPY3"
     },
     {
@@ -5940,14 +5940,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 142369540000.0,
       "lucro_liquido": 2541908000.0,
-      "pvp": 1.97,
-      "pl": 13.73,
+      "pvp": 1.94,
+      "pl": 13.52,
       "roe": 15.15,
       "margem_liquida": 1.79,
       "roic": 10.89,
       "divida_ebitda": 1.78,
       "cagr_lucros": 22.34,
-      "valor_mercado": 34891709484.12,
+      "valor_mercado": 34358928628.8,
       "ticker": "UGPA3"
     },
     {
@@ -5967,7 +5967,7 @@
       "roic": -3.52,
       "divida_ebitda": 16.14,
       "cagr_lucros": null,
-      "valor_mercado": 60138591.24,
+      "valor_mercado": 59477727.6,
       "ticker": "UCAS3"
     },
     {
@@ -5980,14 +5980,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1185580000.0,
       "lucro_liquido": 208957000.0,
-      "pvp": 1.95,
-      "pl": 10.43,
+      "pvp": 2.01,
+      "pl": 10.71,
       "roe": 18.06,
       "margem_liquida": 17.62,
       "roic": 17.33,
       "divida_ebitda": 0.54,
       "cagr_lucros": 32.87,
-      "valor_mercado": 2179668646.4,
+      "valor_mercado": 2238052628.0,
       "ticker": "FIQE3"
     },
     {
@@ -6000,14 +6000,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 5142676000.0,
       "lucro_liquido": 481744000.0,
-      "pvp": 3.02,
-      "pl": 11.39,
+      "pvp": 2.97,
+      "pl": 11.2,
       "roe": 20.81,
       "margem_liquida": 9.37,
       "roic": 12.94,
       "divida_ebitda": 1.64,
       "cagr_lucros": 5.41,
-      "valor_mercado": 5485531482.84,
+      "valor_mercado": 5396360832.1,
       "ticker": "UNIP3"
     },
     {
@@ -6020,14 +6020,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 5142676000.0,
       "lucro_liquido": 481744000.0,
-      "pvp": 3.02,
-      "pl": 11.39,
+      "pvp": 2.97,
+      "pl": 11.2,
       "roe": 20.81,
       "margem_liquida": 9.37,
       "roic": 12.94,
       "divida_ebitda": 1.64,
       "cagr_lucros": 5.41,
-      "valor_mercado": 5485531482.84,
+      "valor_mercado": 5396360832.1,
       "ticker": "UNIP5"
     },
     {
@@ -6040,14 +6040,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 5142676000.0,
       "lucro_liquido": 481744000.0,
-      "pvp": 3.02,
-      "pl": 11.39,
+      "pvp": 2.97,
+      "pl": 11.2,
       "roe": 20.81,
       "margem_liquida": 9.37,
       "roic": 12.94,
       "divida_ebitda": 1.64,
       "cagr_lucros": 5.41,
-      "valor_mercado": 5485531482.84,
+      "valor_mercado": 5396360832.1,
       "ticker": "UNIP6"
     },
     {
@@ -6060,14 +6060,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 3013799000.0,
       "lucro_liquido": 109339000.0,
-      "pvp": 1.66,
-      "pl": 16.34,
+      "pvp": 1.62,
+      "pl": 15.85,
       "roe": 10.61,
       "margem_liquida": 3.63,
       "roic": 21.24,
       "divida_ebitda": -0.95,
       "cagr_lucros": null,
-      "valor_mercado": 1786255143.2,
+      "valor_mercado": 1733479423.06,
       "ticker": "AUAU3"
     },
     {
@@ -6087,7 +6087,7 @@
       "roic": -3.38,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 6047511617.4,
+      "valor_mercado": 6103776664.08,
       "ticker": "USIM3"
     },
     {
@@ -6107,7 +6107,7 @@
       "roic": -3.38,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 6047511617.4,
+      "valor_mercado": 6103776664.08,
       "ticker": "USIM5"
     },
     {
@@ -6127,7 +6127,7 @@
       "roic": -3.38,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 6047511617.4,
+      "valor_mercado": 6103776664.08,
       "ticker": "USIM6"
     },
     {
@@ -6147,7 +6147,7 @@
       "roic": 7.95,
       "divida_ebitda": 1.28,
       "cagr_lucros": -13.86,
-      "valor_mercado": 257578124.86,
+      "valor_mercado": 251857961.0,
       "ticker": "VALE3"
     },
     {
@@ -6160,14 +6160,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2062563000.0,
       "lucro_liquido": 268707000.0,
-      "pvp": 0.7,
-      "pl": 4.46,
+      "pvp": 0.68,
+      "pl": 4.34,
       "roe": 15.17,
       "margem_liquida": 13.03,
       "roic": 13.89,
       "divida_ebitda": 0.21,
       "cagr_lucros": null,
-      "valor_mercado": 1198867959.6,
+      "valor_mercado": 1167483981.6,
       "ticker": "VLID3"
     },
     {
@@ -6180,14 +6180,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 5755712000.0,
       "lucro_liquido": 328702000.0,
-      "pvp": 1.12,
-      "pl": 8.72,
+      "pvp": 1.08,
+      "pl": 8.4,
       "roe": 13.14,
       "margem_liquida": 5.71,
       "roic": 11.09,
       "divida_ebitda": 4.48,
       "cagr_lucros": 12.9,
-      "valor_mercado": 2867771869.93,
+      "valor_mercado": 2761163250.23,
       "ticker": "VAMO3"
     },
     {
@@ -6207,7 +6207,7 @@
       "roic": 6.34,
       "divida_ebitda": 3.18,
       "cagr_lucros": null,
-      "valor_mercado": 297268.4,
+      "valor_mercado": 317848.52,
       "ticker": "VSTE3"
     },
     {
@@ -6227,7 +6227,7 @@
       "roic": 10.97,
       "divida_ebitda": 3.32,
       "cagr_lucros": -12.71,
-      "valor_mercado": 36545922.84,
+      "valor_mercado": 36224089.86,
       "ticker": "VBBR3"
     },
     {
@@ -6240,14 +6240,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 2259078000.0,
       "lucro_liquido": 369891000.0,
-      "pvp": 0.66,
-      "pl": 5.25,
+      "pvp": 0.65,
+      "pl": 5.17,
       "roe": 13.49,
       "margem_liquida": 16.37,
       "roic": 7.69,
       "divida_ebitda": 2.81,
       "cagr_lucros": null,
-      "valor_mercado": 1943307757.12,
+      "valor_mercado": 1911231150.4,
       "ticker": "VTRU3"
     },
     {
@@ -6260,14 +6260,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 819983000.0,
       "lucro_liquido": 66151000.0,
-      "pvp": 0.58,
-      "pl": 5.66,
+      "pvp": 0.59,
+      "pl": 5.79,
       "roe": 10.34,
       "margem_liquida": 8.07,
       "roic": 8.28,
       "divida_ebitda": 1.36,
       "cagr_lucros": -5.1,
-      "valor_mercado": 374234384.1,
+      "valor_mercado": 383039899.02,
       "ticker": "VITT3"
     },
     {
@@ -6280,14 +6280,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 3026581564.0,
       "lucro_liquido": 619502301.0,
-      "pvp": 1.31,
-      "pl": 6.23,
+      "pvp": 1.32,
+      "pl": 6.28,
       "roe": 22.75,
       "margem_liquida": 20.47,
       "roic": 23.97,
       "divida_ebitda": 0.15,
       "cagr_lucros": 33.39,
-      "valor_mercado": 3857528467.74,
+      "valor_mercado": 3890438521.7,
       "ticker": "VIVA3"
     },
     {
@@ -6307,7 +6307,7 @@
       "roic": -14.21,
       "divida_ebitda": null,
       "cagr_lucros": null,
-      "valor_mercado": 151168604.6,
+      "valor_mercado": 165797824.4,
       "ticker": "VIVR3"
     },
     {
@@ -6327,7 +6327,7 @@
       "roic": 18.62,
       "divida_ebitda": 0.87,
       "cagr_lucros": 105.82,
-      "valor_mercado": 3567142.53,
+      "valor_mercado": 3504615.93,
       "ticker": "VULC3"
     },
     {
@@ -6340,14 +6340,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 40804110000.0,
       "lucro_liquido": 6775958000.0,
-      "pvp": 11.57,
-      "pl": 31.67,
+      "pvp": 11.62,
+      "pl": 31.81,
       "roe": 32.52,
       "margem_liquida": 16.61,
       "roic": 36.73,
       "divida_ebitda": -0.19,
       "cagr_lucros": 23.11,
-      "valor_mercado": 214609849018.95,
+      "valor_mercado": 215574859092.74,
       "ticker": "WEGE3"
     },
     {
@@ -6387,7 +6387,7 @@
       "roic": 87.64,
       "divida_ebitda": -0.16,
       "cagr_lucros": -8.78,
-      "valor_mercado": 4543959.88,
+      "valor_mercado": 4483043.13,
       "ticker": "WHRL3"
     },
     {
@@ -6407,7 +6407,7 @@
       "roic": 87.64,
       "divida_ebitda": -0.16,
       "cagr_lucros": -8.78,
-      "valor_mercado": 4543959.88,
+      "valor_mercado": 4483043.13,
       "ticker": "WHRL4"
     },
     {
@@ -6420,14 +6420,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 1382973000.0,
       "lucro_liquido": 367710000.0,
-      "pvp": 0.78,
-      "pl": 2.76,
+      "pvp": 0.77,
+      "pl": 2.73,
       "roe": 29.97,
       "margem_liquida": 26.59,
       "roic": 25.99,
       "divida_ebitda": 0.51,
       "cagr_lucros": 13.0,
-      "valor_mercado": 1015411240.7,
+      "valor_mercado": 1004217730.96,
       "ticker": "WIZC3"
     },
     {
@@ -6440,14 +6440,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 3011892000.0,
       "lucro_liquido": 86892000.0,
-      "pvp": 0.72,
-      "pl": 6.45,
+      "pvp": 0.74,
+      "pl": 6.6,
       "roe": 11.22,
       "margem_liquida": 2.88,
       "roic": 10.89,
       "divida_ebitda": 1.69,
       "cagr_lucros": 9.81,
-      "valor_mercado": 560850150.8,
+      "valor_mercado": 573549958.8,
       "ticker": "WLMM3"
     },
     {
@@ -6460,14 +6460,14 @@
       "ano_referencia": 2025,
       "receita_liquida": 3011892000.0,
       "lucro_liquido": 86892000.0,
-      "pvp": 0.72,
-      "pl": 6.45,
+      "pvp": 0.74,
+      "pl": 6.6,
       "roe": 11.22,
       "margem_liquida": 2.88,
       "roic": 10.89,
       "divida_ebitda": 1.69,
       "cagr_lucros": 9.81,
-      "valor_mercado": 560850150.8,
+      "valor_mercado": 573549958.8,
       "ticker": "WLMM4"
     },
     {
@@ -6487,7 +6487,7 @@
       "roic": 7.98,
       "divida_ebitda": 2.04,
       "cagr_lucros": 12.91,
-      "valor_mercado": 2538025.02,
+      "valor_mercado": 2509034.08,
       "ticker": "YDUQ3"
     }
   ]
